@@ -1,0 +1,178 @@
+% !TEX root = ../Thesis.tex
+\chapter{Introduction} \label{cha:introduction}
+\pagestyle{plain}
+
+
+
+
+
+
+% Transparency and traceability have become critical concerns in data-driven decision-making environments as the complexity of enterprise data ecosystems continues to increase.\cite{kernstock2025dataecosystems} In industries such as construction equipment, organizations rely on integrating heterogeneous data sources, including internal sales data and external market intelligence, to support market analysis and strategic decision-making.\cite{moller2024industrial} Due to differences in data formats, classification standards, and regional business rules, companies must design complex data processing approaches to harmonize and reconcile these datasets in order to approximate real market conditions.\cite{cheng2024harmonization} 
+
+% To support business operations such as market share analysis, these data are typically processed through complex calculation frameworks implemented in enterprise systems such as SAP.\cite{gessa2023erp} While enterprise systems such as SAP provide strong capabilities for large-scale data processing, their operation is not always fully transparent to end users, particularly when data transformations depend on system configurations, integration mechanisms, and business rules that are not directly visible in everyday use.\cite{acev2025datagovernance} This lack of transparency and traceability makes it difficult to understand how outputs are generated, validate the correctness of results, and identify potential inconsistencies in the data processing pipeline.\cite{foidl2024pipeline} In addition, the separation between business users and technical system implementations introduces communication barriers, making it challenging to adapt or refine business rules efficiently.\cite{ori2024misalignment}
+
+
+% Building on these challenges, Volvo Construction Equipment (Volvo CE) encounters similar issues in the calculation of market share, where complex business logic is applied to integrate multiple data sources and produce aggregated results. The calculation process relies on SAP-based systems to execute a series of transformations, mappings, and adjustments. However, due to the complexity of the calculation logic and the lack of transparency in the system, business users are unable to trace how input data is transformed into final outputs, nor can they easily verify whether the implemented logic aligns with business requirements. This results in reduced trust in the system, increased difficulty in debugging, and inefficiencies in collaboration between business and IT stakeholders.
+
+% To address these challenges, this thesis adopts a Design Science Research approach and proposes the design and implementation of a data processing and visualization system. The proposed solution aims to improve transparency and traceability by reconstructing the calculation logic as a structured data pipeline, enabling users to trace data transformations, validate results, and interact with the system more effectively. By bridging the gap between business understanding and technical implementation, the system supports more efficient error detection, rule adjustment, and data-driven decision-making. 
+
+% \ref{fig:pipe}.
+
+% \begin{figure} [h]
+% \centering
+% \includegraphics[scale = 0.8]{pipe.jpg}
+% \caption{A Picture of a Pipe}
+%  \label{fig:pipe}
+% \end{figure}
+% \section{Overall Background}
+
+% Volvo Construction Equipment (Volvo CE) is a subsidiary of the Volvo Group and operates as a global provider of construction solutions, with its products and services available in more than 140 countries. This thesis is conducted within the Global Business Intelligence department, where market-related data is processed and analyzed to support business understanding across countries, regions, and product categories.
+
+% The construction equipment industry is characterized by considerable complexity. Variations in machine lines, size classes, and regional market conditions make it difficult to establish a consistent view of the market. Market-related data is further drawn from multiple internal and external sources that frequently differ in structure, naming conventions, and classification rules. Structured processing is therefore required to reconcile heterogeneous datasets and establish a consistent foundation for reporting and market share analysis.
+
+% Within Volvo CE, this need is addressed through Total Market Calculation (TMC), an internal process designed to prepare market data for reporting and market share analysis. TMC operates within an SAP BW-based environment, encompassing objects such as ADSOs, cubes, process chains, and planning sequences, alongside matrices that govern how sources, countries, brands, machine lines, and size classes are interpreted during processing. Certain parts of the workflow are additionally managed through portal pages and Analysis for Office workbooks.
+
+% The workflow begins with data input. TMC integrates data from two primary sources: the internal Corporate Reporting Platform data (CRP) system and other external market files (OTH). CRP provides the principal market inputs, including total market data (TMA), detailed market data, and Volvo CE internal sales-related data (SAL). Since the total market in CRP is derived from brands participating in the statistical exchange, and not all brands contribute to it, external sources are incorporated to supplement this market view.
+
+% The subsequent stage concerns data preparation. Prior to calculation, uploaded data must be cleaned and aligned — particularly for external files, which may contain inconsistent brand names, machine line designations, or size-class structures. To support this process, TMC employs a set of mapping and rule tables, including the Reporter List, Source Matrix, Country Group Matrix, and size-class-related tables, which govern source selection, brand treatment, and size-class handling in subsequent steps.
+
+% Following the preparation of the data foundation, TMC proceeds through a series of calculation stages: preparation, adjustment, split, total market calculation, and restatement. The preparation stage establishes the initial calculation basis, while adjustment aligns values with the total market logic. The split stage redistributes data across machine lines and size classes where source data is not available at the required level of granularity. Total market calculation then consolidates market values, and restatement recalculates final values for reporting purposes. These stages are executed sequentially, as each subsequent step is dependent on the output of its predecessor.
+
+% The present thesis focuses on the segment of the TMC workflow spanning from data input through the preparation and adjustment stages — the phase in which data from internal and external sources is uploaded, cleaned, aligned, and converted into the foundation for subsequent calculation steps.
+
+% Although this SAP-based setup provides a formal and operational way to run market-related calculations, the underlying logic is difficult for business users to follow. Business users may see the final results in reports, but they cannot easily trace how a value has been derived across different SAP objects, mappings, and calculation steps. As a result, the process becomes difficult to validate from a business perspective, and communication between business stakeholders and technical teams becomes more challenging when rules need to be checked or adjusted. It is within this context that the present thesis is positioned.
+
+
+
+% \subsection{A Subsection}
+% Here is the first subsection of the first section.
+
+
+\section{Background}
+\pagestyle{plain}
+As enterprise data ecosystems grow in complexity, organizations increasingly rely on integrating heterogeneous data sources to support market analysis and strategic decision-making \cite{putrama2024heterogeneous}. Due to differences in data formats, classification standards, and regional business rules, companies must design complex data processing approaches to harmonize and reconcile these datasets in order to approximate real market conditions \cite{cheng2024harmonization}. To support such analytical tasks, large organizations often rely on enterprise software platforms such as SAP, which is developed by the German software company SAP SE. SAP provides integrated enterprise software products and analytical environments that support business process management, data integration, reporting, and decision support across organizational functions \cite{gessa2023erp,sap_erp_guide}. In analytical settings, SAP-based environments can be used to store, process, transform, and report large volumes of business data. While these systems provide strong capabilities for large-scale data processing, their operation is not always fully transparent to end users. When data transformations depend on system configurations, integration mechanisms, and embedded business rules, it becomes difficult to understand how outputs are generated, validate the correctness of results, and identify potential inconsistencies in the data processing pipeline \cite{acev2025datagovernance,foidl2024pipeline}. Furthermore, the separation between business users and technical system implementations introduces communication barriers, limiting the ability to adapt or refine business rules efficiently \cite{ori2024misalignment}.
+
+The construction equipment industry provides a relevant example of these challenges. Market conditions vary across countries, machine lines, and size classes, and market data is derived from multiple internal and external sources that often differ in structure and classification standards \cite{cece2025,mordor2024construction}. In this context, accurate market share estimation requires integrating heterogeneous datasets and applying a series of transformations and mappings to construct a consistent foundation for analysis and reporting \cite{moller2024industrial}.
+
+These challenges are directly reflected in the practice of Volvo Constr-uction Equipment (Volvo CE), a global provider of construction solutions with operations in more than 140 countries. At Volvo CE, market share estimation is implemented through an internal process known as Total Market Calculation (TMC), which operates within an SAP Business Warehouse (BW) environment and integrates heterogeneous datasets across regions, product categories, and machine segments.
+
+However, due to the complexity of the underlying business logic and its system-level implementation in SAP, the TMC process lacks transparency for business users. It is difficult to trace how input data is transformed into final outputs, to verify whether the implemented logic aligns with business expectations, and to efficiently identify errors or inconsistencies. This results in reduced trust in the system and increased challenges in collaboration between business and IT stakeholders.
+
+To address these limitations, this thesis adopts a Design Science Research approach and proposes the design and implementation of a data processing and visualization system. The proposed solution reconstructs the existing calculation logic as a structured and transparent data pipeline, enabling users to trace data transformations, validate intermediate results, and interact with the system more effectively. By bridging the gap between business understanding and technical implementation, the system supports improved transparency, more efficient error detection, and enhanced data-driven decision-making.
+
+This thesis focuses on the early stages of the TMC workflow, particularly the preparation stage, in which heterogeneous data sources are integrated and cleaned, the adjustment stage, in which source-level values are reorganized and aligned, and the machine line split stage, in which aggregated values are redistributed into more granular categories. Together, these stages form the analytical foundation upon which subsequent market share calculations depend.
+
+
+
+
+
+\section{Problem and Motivation}
+The current TMC workflow at Volvo CE is operated within an SAP BW-based environment, where market-related data is loaded, mapped, calculated, and transferred into reporting through a combination of SAP objects, process chains, planning sequences, workbooks, and mapping tables. While this setup supports the required calculations, the business logic is distributed across multiple system-specific structures that are difficult for non-technical users to inspect or modify directly \cite{wong2016sap}. As a result, the overall calculation flow is not easily visible from a business perspective, and intermediate transformations cannot be followed step by step without specialized technical knowledge.
+
+This limited transparency creates concrete problems in practice. When market share figures or intermediate values do not match expectations, tracing the source of a discrepancy is time-consuming, as users must navigate across multiple SAP objects to identify where in the process an issue was introduced. Furthermore, because the business logic is embedded in SAP-specific execution structures, the Volvo CE Strategy and Business Intelligence team is dependent on the support of dedicated Volvo IT personnel to execute the TMC workflow each year. In practice, this requires the involvement of one to two IT specialists per yearly cycle, with repeated back-and-forth communication between the business and IT sides to coordinate execution, handle data issues, and apply any necessary adjustments. This dependency increases both the time and coordination effort required to complete the yearly TMC cycle, and limits the ability of the business team to run, validate, or adjust the process independently.
+
+These difficulties suggest that, although the existing SAP-based implementation supports the required calculations, it does not fully meet the business team's need for transparency, traceability, and independent validation. Therefore, the motivation for this thesis comes from the need for a more transparent and inspectable way to execute and review the early stages of the TMC process. More specifically, there is a clear interest in developing a platform that re-expresses the relevant workflow logic in a more accessible form, making it possible to follow calculations step by step, inspect intermediate outputs, and reduce operational dependence on IT. This thesis addresses this need by designing and implementing a web-based data processing and visualization system that reconstructs selected parts of the TMC workflow in a more transparent and user-oriented environment.
+
+
+
+
+
+
+
+
+
+
+% \section{Research Goal}
+% The goal of this thesis is to design and implement an interactive data processing and visualization prototype for the Volvo CE TMC workflow, focusing on improving transparency, usability, and traceability in the preparation and adjustment stages of the calculation process.
+
+% The current TMC process relies on a complex SAP-driven workflow integrating multiple data sources — TMA, SAL, CRP, OTH, and matrix-based business rules — whose logic is difficult to trace and interpret from a user perspective. This thesis explores how a modern web-based prototype can make this workflow more visible and accessible by presenting key data inputs, intermediate layers, and adjustment results in a clearer, more interactive way, translating essential business logic into a system that supports data upload, rule handling, table exploration, and result visualization.
+
+% The main research question is:
+% How can an interactive data processing and visualization prototype be designed to improve transparency, traceability, and usability in the Volvo CE TMC workflow?
+% This is addressed through three sub-questions:
+
+% \textbf{Sub-RQ1:} How can a web-based system support the upload, management, and display of workflow input files so that different source datasets and matrix-based business input become easier to access and inspect? \\
+
+% \textbf{Sub-RQ2:} How can the workflow stages of preparation, adjustment, and split be represented in a web-based system so that users can more clearly follow how results are derived from CRP, SAL, OTH, and related business rules? \\
+
+% \textbf{Sub-RQ3:} How can interactive UI elements, such as filtering, summary calculations, chart-based displays, and layer-based views, improve usability and support validation of intermediate and derived workflow results? \\
+
+
+
+% The expected outcome is a deployable web-based prototype system that re-expresses selected parts of the TMC workflow in a more accessible and inspectable environment, while also providing a foundation for future broader internal deployment and extension to later workflow stages.
+
+
+
+\section{Research Objective and Research Question}
+
+The current TMC process integrates multiple data sources — TMA (Total Market reference data), SAL (Volvo CE internal sales data), OTH (supplementary external market data), and matrix-based business rules — within an SAP-driven environment whose logic is difficult to trace and interpret from a business user perspective.
+
+The goal of this thesis is to design and implement an interactive data processing and visualization prototype for the Volvo CE TMC workflow that improves transparency, usability, and traceability in the preparation stage, including market-view derivation, as well as the adjustment and machine line split stages, by translating the underlying business logic into a web-based system that supports data upload, staged processing, and interactive result inspection.
+
+
+The main research question is:
+How can an interactive data processing and visualization prototype be designed and evaluated to enhance transparency, traceability, and usability in the Volvo CE TMC workflow?
+This is addressed through three sub-questions:
+
+\textbf{Sub-RQ1:} How can the architecture and data handling of a web-based prototype be designed to support structured upload, storage, and management of heterogeneous TMC workflow inputs, including source datasets and matrix-based business rules?\\
+
+\textbf{Sub-RQ2:} How can the preparation, adjustment, and machine line split stages of the TMC workflow be re-expressed in a web-based environment so that intermediate transformations and derived results become inspectable and traceable for business users?\\
+
+\textbf{Sub-RQ3:} To what extent does the implemented prototype improve transparency, usability, and traceability in the TMC workflow compared to the existing SAP-based representation, as assessed through demonstration and stakeholder feedback?\\
+
+The expected outcome is a working web-based prototype system that re-expresses selected parts of the TMC workflow in a more accessible and inspectable environment, while also providing a foundation for future broader internal deployment and extension to later workflow stages.
+
+
+
+
+
+
+
+
+
+% \section{Scope and Delimitation}
+% This thesis focuses on the design and implementation of a web-based prototype for the Volvo CE TMC workflow, based on the existing SAP-driven calculation process that integrates multiple data sources, business rules, and matrix-based mappings.
+
+% The scope is limited to the preparation and adjustment stages, which cover source data integration, rule-based mapping, intermediate data transformation, and adjustment logic. The prototype is designed to make these stages more transparent, interactive, and easier to understand through a modern frontend-backend system. It includes interfaces for data upload, workflow navigation, layer-based visualization, and interactive table exploration, as well as filtering, summary calculations, and clearer presentation of intermediate results.
+
+% The thesis does not aim to replace the existing SAP system or implement the full TMC workflow. Later stages — such as split, total market restatement, and full rule automation — are treated as future development rather than part of the current scope.
+
+% The authentication and account management functions are implemented as a local development solution only, and are not intended as a production-ready architecture. Any real deployment would require alignment with Volvo CE's internal IT infrastructure and security requirements.
+
+% This thesis should therefore be understood as an initial but functional prototype that demonstrates how the preparation and adjustment logic of the TMC workflow can be translated into a more transparent, extensible, and user-friendly system.
+
+
+
+% \section{Scope and Delimitation}
+
+% This thesis focuses on the design and implementation of a web-based prototype for the Volvo CE TMC workflow, based on the existing SAP-driven calculation process that integrates multiple data sources, business rules, and matrix-based mappings.
+
+% The scope covers the preparation, adjustment, and selected split-related stages of the workflow. These stages include source data integration, rule-based mapping, intermediate data transformation, adjustment logic, and inspectable split and re-split behaviour for selected cases. The prototype is designed to make these stages more transparent, interactive, and easier to understand through a modern frontend-backend system. It includes interfaces for data upload, workflow navigation, layer-based visualization, and interactive table exploration, as well as filtering, summary calculations, and clearer presentation of intermediate and derived results.
+
+% The thesis does not aim to replace the existing SAP system or implement the full TMC workflow. Later stages, such as total market calculation, restatement, and reporting, are treated as future development rather than part of the current scope.
+
+% % The authentication and account management functions are implemented as a local development solution only, and are not intended as a production-ready architecture. Any real deployment would require alignment with Volvo CE's internal IT infrastructure and security requirements.
+
+% This thesis should therefore be understood as an initial but functional prototype that demonstrates how selected TMC workflow logic, including preparation, adjustment, and Machine line split-related processing, can be translated into a more transparent, extensible, and user-friendly system.
+
+\section{Scope and Delimitation}
+
+This thesis focuses on the design and implementation of a web-based prototype for the Volvo CE TMC workflow, based on the existing SAP-driven calculation process that integrates multiple data sources, business rules, and matrix-based mappings.
+
+The implemented scope covers source data upload, matrix input handling, preparation, market-view derivation, adjustment, and selected split/resplit-related processing. These stages include source data integration, rule-based mapping, intermediate data transformation, adjustment logic, and inspectable redistribution behaviour for selected split and resplit cases. The prototype provides interfaces for workflow navigation, layer-based visualization, interactive table exploration, filtering, summary calculation, and CSV export, so that users can review both stage-level outputs and selected derived results.
+
+The thesis does not aim to replace the existing SAP system or implement the full TMC workflow. Full Total Market Calculation, full Restatement, and final Reporting are treated as future development rather than part of the implemented scope. The market-view output is used as an intermediate reference and inspection layer, not as a full replacement for the final TMC calculation and reporting stages.
+
+This thesis should therefore be understood as an initial but functional prototype that demonstrates how selected TMC workflow logic can be translated into a more transparent, extensible, and user-friendly web-based system for business-oriented inspection and validation.
+
+
+
+
+
+
+
+
+\section{Thesis Structure}
+
+Following this introduction, the thesis is structured into six further chapters. The background chapter introduces the SAP BW environment, the TMC workflow, and key concepts related to data processing, mapping rules, and traceability. The methodology chapter describes the Design Science Research (DSR) approach used in the study. The problem and requirements chapter defines the practical problem and presents the requirements for the prototype. The design and implementation chapter explains the architecture, workflow logic, and implementation of the web-based artefact. The demonstration and evaluation chapter presents the execution of the prototype with 2024 workflow data and evaluates it against the defined requirements. Finally, the conclusions and discussion chapter answers the research questions, discusses contributions and limitations, and suggests future work.
+

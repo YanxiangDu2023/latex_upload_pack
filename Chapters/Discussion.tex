@@ -1,0 +1,309 @@
+% !TEX root = ../Thesis.tex
+
+\chapter{Conclusions and Discussion} 
+\label{cha:Discussion}
+
+
+% \section{Reflection on the Artefact Development}
+
+
+\section{Answer to the Research Questions}
+
+
+
+
+
+
+
+\subsection{Answer to Sub-RQ1: How can the architecture and data handling of a web-based prototype be designed to support structured upload, storage, and management of heterogeneous TMC workflow inputs, including source datasets and matrix-based business rules?}
+
+
+Sub-RQ1 is addressed by implementing a web-based input management layer that supports structured upload, review, and versioning of workflow files. The prototype provides dedicated upload interfaces for both source datasets and matrix inputs. Uploaded files are validated, normalised, and stored together with metadata such as file type, timestamp, processing status, row count, and version information. This makes it possible to track which input files were used and to retrieve the latest valid version of each required dataset.
+
+The frontend also supports practical management actions such as viewing uploaded data, downloading stored inputs, and saving edited data as a new version. In this way, input handling becomes a traceable process rather than a one-time file upload. Users can inspect rows directly in the interface and verify whether required inputs are available before running downstream workflow steps.
+
+The 2024 evaluation showed that different source and matrix files could be ingested, stored, retrieved, downloaded, and re-saved correctly. Therefore, the artefact answers Sub-RQ1 by making workflow inputs easier to access, manage, inspect, and reuse through a structured web-based interface.
+
+
+
+% \subsection{Answer to Sub-RQ2: How can the preparation, adjustment, and machine line split stages of the TMC workflow be re-expressed in a web-based environment so that intermediate transformations and derived results become inspectable and traceable for business users?}
+
+
+% Sub-RQ2 is addressed by re-expressing the preparation, adjustment, and machine line split stages as explicit web-based workflow layers with persisted intermediate outputs, rule-visible fields, and stage-specific inspection views.
+
+% \begin{itemize}
+%     \item \textbf{Preparation re-expression:}  
+%     Preparation is implemented as a dedicated processing layer that validates, cleans, and aligns CRP, SAL, and OTH with matrix-based rules (source, country grouping, machine line, brand, and size class). The system exposes mapped dimensions and control fields (e.g., reporter and deletion-related flags), making the interpretation of raw rows inspectable before downstream calculations.
+
+%     \item \textbf{Adjustment re-expression:}  
+%     Adjustment is represented as a separate regrouping layer that outputs both source-detail and derived rows in a common review structure. This makes the transformation from prepared data to adjusted results traceable at row level and aggregate level.
+
+%     \item \textbf{Machine line split re-expression:}  
+%     Split is represented as an explicit redistribution layer where grouped OTH values are transformed into finer machine-line and size-class buckets using rule-based split ratios derived from prepared references. Before/after values and split details are exposed so users can verify redistribution logic directly.
+
+%     \item \textbf{Traceability and inspection mechanism:}  
+%     Workflow execution is presented through Pipeline Viewer (stage status, readiness, dependencies) and Layer Detail pages (row-level outputs, summaries, rule-related fields). Together, these views connect stage-level monitoring with record-level validation and make intermediate transformations and derived results traceable across the full workflow path.
+% \end{itemize}
+
+% This layered web representation turns previously embedded transformations into explicit, inspectable, and traceable workflow stages for business users.
+
+
+\subsection{Sub-RQ2: How can the preparation, adjustment, and machine line split stages of the TMC workflow be re-expressed in a web-based environment so that intermediate transformations and derived results become inspectable
+and traceable for business users?}
+
+Sub-RQ2 asked how the preparation, adjustment, and machine line split stages of the TMC workflow can be re-expressed in a web-based environment so that intermediate transformations and derived results become inspectable and traceable for business users.
+
+The prototype addresses this by representing the selected TMC stages as explicit web-based workflow layers with persisted intermediate outputs and stage-specific inspection views.
+
+\begin{itemize}
+    \item \textbf{Preparation:} The preparation layer validates, cleans, and aligns CRP, SAL, and OTH data with matrix-based rules, including source, country grouping, machine line, brand, and size class mappings. It exposes mapped dimensions and control fields such as reporter and deletion-related flags, making raw-row interpretation inspectable before downstream processing.
+
+    \item \textbf{Adjustment:} The adjustment layer represents regrouping and derived-value generation as a separate reviewable step. It provides both source-detail and derived rows in a common output structure, supporting traceability at row and aggregate levels.
+
+    \item \textbf{Machine line split:} The split layer makes redistribution logic explicit by transforming grouped OTH values into finer machine-line and size-class categories using rule-based split ratios. Before/after values and split details are exposed so users can verify the redistribution process.
+
+    \item \textbf{Inspection mechanism:} Pipeline Viewer provides stage status, readiness, and dependency information, while Layer Detail pages provide row-level outputs, summaries, and rule-related fields. Together, these views connect workflow-level monitoring with record-level validation.
+\end{itemize}
+
+Overall, the layered web representation turns selected SAP-embedded transformations into explicit, inspectable, and traceable workflow stages.
+
+
+
+% \subsection{Answer to Sub-RQ3: To what extent does the implemented prototype improve transparency, usability, and traceability in the TMC workflow compared to the existing SAP-based representation, as assessed through demonstration and stakeholder feedback?}
+
+
+% In the SAP-based representation, the TMC workflow is organized as technical calculation steps, but intermediate logic is distributed across multiple system objects (e.g., matrix structures, planning functions/sequences, and reporting objects), which makes business-side inspection and step-by-step validation difficult. In practice, users can run the process, but tracing how a specific output is formed from CRP, SAL, OTH, and matrix rules is less direct.
+
+% In the implemented prototype, the same workflow is exposed through explicit web-based inspection flows. Input handling is centralized through matrix/upload pages with latest-version retrieval, download, and edited-save operations; workflow-state visibility is provided through Pipeline Viewer; and stage-level result inspection is provided through Layer Detail pages with row-level outputs, summaries, and rule-related fields. This structure makes preparation, adjustment, and split transformations directly visible and easier to audit.
+
+% Compared with the SAP-based representation, the prototype improved transparency, usability, and traceability in the evaluated scope. Demonstration with 2024 workflow data showed outputs consistent with manually verified reference results in the tested cases, and stakeholder feedback indicated clearer understanding of intermediate steps and easier validation of derived results.
+
+% The improvement was assessed through demonstration with 2024 workflow data and stakeholder feedback. The evaluation showed that, within the implemented scope, the prototype met the main expectations by making intermediate workflow stages more visible, results easier to inspect, and validation more practical. Compared with the existing representation, users could follow dependencies and transformations more directly through the web-based views, which reduced ambiguity and increased confidence during result checking. Overall, stakeholders viewed the prototype as a more transparent and usable representation of the evaluated TMC stages.
+
+\subsection{Answer to Sub-RQ3: To what extent does the implemented prototype improve transparency, usability, and traceability in the TMC workflow compared to the existing SAP-based representation, as assessed through demonstration and stakeholder feedback?}
+
+Sub-RQ3 asked to what extent the implemented prototype improves transparency, usability, and traceability in the TMC workflow compared with the existing SAP-based representation.
+
+In the SAP-based representation, the TMC workflow is organised through technical calculation steps and system objects such as matrix structures, planning functions, planning sequences, and reporting objects. Although the process can be executed in SAP, business-side inspection of intermediate logic is less direct, especially when users need to trace how outputs are formed from CRP, SAL, OTH, and matrix-based rules.
+
+The prototype improves this representation by exposing the workflow through dedicated web-based inspection flows. Input handling is centralised through upload and matrix-management pages, workflow progress is shown through Pipeline Viewer, and intermediate results are made available through Layer Detail pages with row-level outputs, summaries, and rule-related fields. This makes preparation, adjustment, and split-related transformations easier to inspect, validate, and discuss.
+
+The improvement was assessed through demonstration with 2024 workflow data and stakeholder feedback. Within the evaluated scope, the prototype made intermediate stages more visible, reduced ambiguity in result checking, and supported more practical validation of derived outputs. Stakeholder feedback indicated that the separated workflow views helped users follow dependencies, inspect intermediate results, and discuss rule behaviour more directly than in the SAP-based workflow.
+
+
+% \subsection{Restatement of the Research Question}
+
+% This thesis addressed the following research question: \textit{How can an interactive data processing and visualization prototype be designed to improve transparency, inspectability, and usability in the Volvo CE TMC workflow?} To answer this question, three sub-questions were defined:
+
+% \begin{itemize}
+%     \item  \textbf{Sub-RQ1:} How can a web-based system support the upload, management, and display of workflow input files so that different source datasets and matrix-based business input become easier to access and inspect?
+%     \item \textbf{Sub-RQ2:} How can the workflow stages of preparation, adjustment, and split be represented in a web-based system so that users can more clearly follow how results are derived from CRP, SAL, OTH, and related business rules?
+%     \item \textbf{Sub-RQ3:} How can interactive UI elements, such as filtering, summary calculations, chart-based displays, and layer-based views, improve usability and support validation of intermediate and derived workflow results?
+% \end{itemize}
+
+% The developed artefact provides clear answers to these questions. For the first sub-question, the prototype introduced structured upload and display of workflow input through dedicated web-based pages for source data and matrix files. For the second sub-question, the artefact represented preparation-, adjustment-, and split-related logic through staged backend processing and inspectable layer-based views. For the third sub-question, the prototype used filtering, summary values, chart-based displays, and CSV export to support more direct review and validation of workflow results.
+
+% Taken together, the artefact shows that a web-based prototype can make selected parts of the TMC workflow more transparent, inspectable, and usable by combining structured input handling, staged result generation, and interactive frontend inspection.
+
+
+% \subsection{Restatement of the Research Question}
+
+% This thesis addressed the following research question: \textit{How can an interactive data processing and visualization prototype be designed to improve transparency, inspectability, and usability in the Volvo CE TMC workflow?} To answer this question, three sub-questions were defined:
+
+% \begin{itemize}
+%     \item \textbf{Sub-RQ1:} How can a web-based system support the upload, management, and review of workflow input files so that different source datasets and matrix-based business input become easier to access and inspect?
+%     \item \textbf{Sub-RQ2:} How can the workflow stages of preparation, adjustment, and split be represented in a web-based system so that users can more clearly follow how results are derived from CRP, SAL, OTH, and related business rules?
+%     \item \item \textbf{Sub-RQ3:} How can interactive UI elements, such as filtering, summary calculations, chart-based displays, and layer-based views, improve usability and support validation of intermediate and derived workflow results?
+% \end{itemize}
+
+% The developed artefact provides clear answers to these questions. For the first sub-question, the prototype introduced structured upload, display, and download of workflow input through dedicated web-based pages for source data and matrix files. For the second sub-question, the artefact represented preparation-, adjustment-, and split-related logic through staged backend processing and inspectable layer-based views. For the third sub-question, the prototype used filtering, summary values, chart-based displays, and CSV export to support more direct review and validation of workflow results.
+
+% Taken together, the artefact shows that a web-based prototype can make selected parts of the TMC workflow more transparent, inspectable, and usable by combining structured input handling, staged result generation, and interactive frontend inspection.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \subsection{Design Decisions of the Artefact}
+
+% Several design decisions influenced the development of the artefact. First, the workflow was represented in a web-based prototype rather than within SAP itself. This was done because the aim of the thesis was to improve transparency and inspectability for business users instead of extending the existing SAP environment directly.
+
+% Second, a modular frontend-backend architecture was adopted. This allowed upload handling, workflow processing, and result visualization to be separated into distinct components, which supported both implementation and extensibility.
+
+% Third, CSV-based input handling was chosen as the prototype interface to workflow data. This made it possible to work with realistic workflow input while remaining independent from direct SAP integration during development and evaluation.
+
+% Finally, the workflow was represented through inspectable layers instead of only final outputs. This decision was important for making intermediate transformations visible and for supporting validation of workflow logic in a more user-oriented way.
+
+
+
+
+
+
+% \subsection{Practical Value}
+
+
+% The practical value of the artefact lies in its re-expression of selected parts of the SAP-based TMC workflow in a more inspectable web-based environment. In the existing process, important workflow logic is embedded in SAP-specific planning functions, planning sequences, and matrix-related structures, which makes it difficult for business users to understand how intermediate and final results are formed. The developed prototype addresses this by translating selected parts of that logic into SQL-based backend processing and presenting the resulting workflow stages through a web interface.
+
+% A further practical contribution is that the artefact supports structured upload, staged result generation, and direct review of intermediate and derived outputs. Through layer-based views, filterable tables, summary values, charts, and CSV export, users can inspect how values are formed and review workflow results in a more direct and transparent way.
+
+
+% If deployed for internal use, the artefact could also enable the Business Intelligence team to run and inspect selected workflow stages more independently, without relying entirely on Volvo IT to execute the corresponding process in SAP. In this way, the artefact provides a more transparent basis for reviewing yearly TMC results and reduces some of the effort required to interpret workflow behaviour outside the SAP environment.
+
+
+
+
+% The practical value of the artefact lies in its re-expression of selected parts of the SAP-based TMC workflow in a more transparent and inspectable web-based environment. In the existing process, important workflow logic is embedded in SAP-specific planning functions and matrix structures, making it difficult for business users to trace how values are derived. The prototype addresses this by separating input handling, processing, and result inspection into explicit and reviewable steps accessible through a standard web interface.
+
+% A key contribution is that the artefact exposes intermediate workflow stages rather than only final aggregated outputs. Through dedicated views for preparation, adjustment, and split-related results, users can inspect how values are formed step by step, compare grouped results with source rows, and validate whether the implemented logic behaves as expected. Filterable tables, summary values, charts, and CSV export further support both overview and row-level inspection within the same interface.
+
+% The prototype also has practical value because it was validated against manually verified 2024 SAP reference data. This indicates that the artefact is not only a conceptual demonstration, but a working system that produced outputs consistent with the tested reference cases. For the Business Intelligence team, this provides a more transparent basis for reviewing TMC results, comparing outputs, and identifying mismatches in the underlying data or rule
+
+
+
+
+
+% From an academic perspective, this thesis provides a practical example of how a complex enterprise workflow can be re-expressed in a more inspectable and user-oriented prototype environment. By applying the Design Science Research approach, the study translates a problem of limited transparency in a SAP-based process into design requirements, artefact development, and evaluation.
+
+% The study is also relevant to research on enterprise-system usability and transparency. Prior work has shown that usability characteristics influence end-user satisfaction in ERP systems and that information transparency affects how such systems are perceived and adopted \cite{calisir2004erp}. In addition, SAP itself has been discussed as a system where usability can become a significant issue for business users \cite{wong2016sap}. Against this background, the thesis contributes a concrete case in which selected workflow logic is moved from embedded SAP-related structures into a combination of SQL-based processing and web-based visualization.
+
+% In this way, the thesis adds practical knowledge to research on workflow transparency, inspectability, and usability in enterprise data processes, while also showing how these goals can be addressed through an implemented prototype rather than through conceptual discussion alone.
+
+
+
+% This thesis contributes a design approach for making complex enterprise data workflows more inspectable. Rather than treating the SAP-based TMC process as a single black-box calculation, the study decomposes selected workflow stages into separate and reviewable layers. Each layer produces intermediate outputs that can be inspected, compared, exported, and validated. This staged representation is a central contribution of the artefact, because it makes the transformation process itself visible instead of only presenting final results.
+
+% A further artefact contribution is the combination of rule-based backend processing with interactive frontend inspection. The prototype does not only automate selected parts of the TMC workflow; it also exposes how results are formed through upload management, preparation-, adjustment-, and split-related views, filtering, summary values, charts, and export functions. In this sense, the artefact differs from a conventional dashboard, where the emphasis is mainly on final indicators. Here, intermediate data states are treated as important outputs of the system and as a basis for validation.
+
+% Methodologically, the thesis shows how Design Science Research can be used to translate a practical organizational problem into an implemented and evaluated artefact. The study connects stakeholder needs, artefact requirements, implementation decisions, and evaluation through 2024 reference-data comparison and stakeholder feedback. This provides a structured example of how transparency, inspectability, and usability concerns can be turned into concrete design features in an enterprise data workflow.
+
+
+% \subsection{Practical Contributions}
+
+
+
+
+
+% The main practical contribution of this thesis is the development of a working web-based prototype for selected stages of the Volvo CE TMC workflow. The artefact provides a more transparent and inspectable alternative to relying only on the existing SAP-based execution and review process. By re-expressing selected workflow logic in a user-oriented web environment, the prototype demonstrates how SAP-based enterprise processes can be complemented by a dedicated validation and inspection tool.
+
+% A key contribution is that the prototype exposes intermediate workflow outputs, including preparation, adjustment, and split-related results, rather than only presenting final aggregated figures. Through filterable tables, summary values, charts, and CSV export, users can inspect how values are formed, compare outputs with source data, and validate whether the implemented logic behaves as expected.
+
+% For the Strategy and Business Intelligence function, the prototype offers a new digital way of working with TMC-related data. It supports process transparency, independent review, and more efficient discussion of workflow logic and data-quality issues.
+
+
+
+
+
+
+
+
+
+
+
+% \subsection{Methodological and Artefact Contributions}
+
+% This thesis contributes a design approach for making complex enterprise data workflows more inspectable. Instead of treating the SAP-based TMC process as a single black-box calculation, the study decomposes selected workflow stages into separate layers that can be processed, inspected, exported, and validated.
+
+% The artefact contribution lies in combining rule-based backend processing with interactive frontend inspection. Unlike a conventional dashboard that mainly presents final indicators, the prototype treats intermediate data states as important outputs of the system. This supports both technical validation and business-user understanding.
+
+% Methodologically, the thesis shows how stakeholder needs, artefact requirements, implementation decisions, reference-data comparison, and stakeholder feedback can be connected within a Design Science Research process. It provides an example of how organizational concerns about transparency and usability can be translated into concrete design features in an enterprise data workflow.
+
+
+% \subsection{Academic Contributions}
+
+% From an academic perspective, this thesis contributes to research on enterprise-system usability and workflow transparency by providing an implementation-oriented case in an industrial setting. Prior research has shown that usability characteristics influence end-user satisfaction in ERP systems and that information transparency affects how such systems are perceived and adopted \cite{calisir2004erp}. SAP has also been discussed as a system where usability can become a significant issue for business users \cite{wong2016sap}. This thesis extends this discussion by showing how such concerns can be addressed through a concrete prototype rather than through conceptual analysis alone.
+
+% The academic contribution is not the proposal of a new algorithm, but practical design knowledge about how embedded ERP workflow logic can be made more transparent and inspectable. The thesis demonstrates that selected SAP-related logic can be externalized into a web-based environment while preserving step-wise traceability and supporting user-oriented validation.
+
+% In this way, the thesis adds to existing work by showing how a black-box enterprise process can be transformed into an inspectable prototype that supports both technical validation and business-user understanding.
+
+
+\section{Contributions and Originality}
+\subsection{Practical Contributions}
+
+The main practical contribution of this thesis is the development of a working web-based prototype for selected stages of the Volvo CE Total Market Calculation (TMC) workflow. The artefact provides a more transparent and inspectable complement to the existing SAP-based execution and review process. Rather than replacing SAP, the prototype demonstrates how selected parts of an SAP-based enterprise workflow can be re-expressed in a user-oriented web environment to support validation, inspection, and communication.
+
+A key contribution is that the prototype exposes intermediate workflow outputs, including preparation, adjustment, and split-related results, instead of only presenting final aggregated figures. Through filterable tables, summary values, charts, and CSV export, users can inspect how values are formed, compare outputs with source data, and validate whether the implemented logic behaves as expected.
+
+For the Strategy and Business Intelligence function at Volvo CE, the prototype offers a new digital way of working with TMC-related data. It supports process transparency, independent review, and more efficient discussion of workflow logic and data-quality issues. In this sense, the artefact provides practical support for business users who need to understand and validate complex enterprise data transformations without relying only on technical system interpretation.
+
+\subsection{Originality}
+
+The originality of this thesis lies in the independent design and development of a dedicated web-based prototype for the studied Volvo CE TMC context. Before this work, there was no specific solution in this context that exposed selected TMC workflow stages as inspectable processing layers outside the existing SAP-based environment.
+
+The prototype is original in its practical re-expression of preparation, adjustment, and split-related logic into a transparent web-based inspection environment. Instead of only reviewing final aggregated outputs, users can inspect intermediate results through tables, summaries, charts, and exportable data.
+
+The contribution is not a new algorithm, but a context-specific solution that demonstrates how embedded SAP-based workflow logic can be complemented by a more transparent, traceable, and usable prototype.
+
+
+\section{Software Tools and the Use of AI Tools}
+
+
+Several software tools were used during the development of the artefact and the writing of the thesis.
+
+Codex was used as a supportive tool during development, mainly for exploring implementation alternatives, discussing frontend–backend interactions, and assisting with SQL, API logic, and debugging. While it helped improve efficiency, all system design decisions and final implementations were made by the author.
+
+ChatGPT was used during the writing process to refine language, improve clarity, and adjust phrasing to a more academic style. As English is not the author’s first language, it was particularly useful for improving grammar and sentence structure. However, all ideas and conclusions were developed independently.
+
+Visual Studio Code served as the main development environment, draw.io was used for diagrams, and Overleaf was used for writing and formatting the thesis in LaTeX. These tools supported the development and documentation process but did not influence the research direction or results.
+
+
+
+\section{Limitations}
+
+Although the artefact was developed and demonstrated as a working prototype, several limitations remain.
+
+First, the evaluation was conducted in a controlled prototype setting using selected 2024 TMC workflow data. The system has not yet been tested as a regular internal tool with broader yearly data, different workflow variations, or day-to-day business use.
+
+Second, the implemented scope only covers selected parts of the TMC workflow, including preparation, market-view derivation, adjustment, and selected split/resplit-related processing. Full Total Market Calculation, full Restatement, and final Reporting were not implemented as complete production-level stages. Therefore, the prototype should be understood as a partial workflow inspection and validation tool rather than a full replacement of the existing SAP-based process.
+
+Third, some rule changes are still dependent on backend development. Certain mappings, workflow conditions, and calculation logic are implemented in SQL queries and Python code, so business users cannot yet configure all rules directly through the interface.
+
+Fourth, the prototype supports stage-level traceability, but not full end-to-end row-level lineage. Key context fields such as country, machine line, source, brand, flags, split level, and split ratio are preserved in the outputs. However, the system does not yet provide a complete audit trail from every output row back to the original input rows and rule applications.
+
+Finally, the prototype has not yet been evaluated for production-level deployment or large-scale multi-user use. Although the system can be configured with PostgreSQL, broader internal use would require internal authentication, monitoring, backup and recovery, process orchestration, and deployment within Volvo CE's internal infrastructure.
+
+
+\section{Ethical and Societal Implications}
+
+The artefact provides a more accessible way to process and inspect selected parts of the Volvo CE TMC workflow. By exposing inputs, intermediate steps, rule-related fields, and generated outputs, it can support transparency and make validation easier for business users.
+
+The main ethical consideration concerns company-internal data and business logic. Since the TMC workflow includes market-related data, internal mappings, and rule structures specific to Volvo CE, the prototype was developed and demonstrated in a controlled setting, and sensitive details were handled carefully in the thesis material.
+
+Another consideration is overreliance on generated outputs. The results produced by the artefact still depend on the quality of uploaded data, mappings, and implemented rules. Therefore, the artefact should be treated as a validation and inspection tool, rather than as a system that automatically guarantees correctness \cite{goddard2012automation}.
+
+Finally, responsibility for incorrect results may involve input data, mapping files, rule interpretation, backend implementation, or user interpretation. Future use should therefore keep intermediate steps and assumptions visible, so that errors can be traced and reviewed rather than hidden behind final outputs \cite{martin2019ethics}.
+
+
+\section{Future Work}
+
+Several directions for future work follow from the current prototype. One important direction is to extend the artefact beyond the currently implemented stages. Future versions could cover full Total Market Calculation, full Restatement, and final Reporting, so that the prototype can develop from a partial workflow inspection tool into a more complete end-to-end representation of the TMC process.
+
+Rule handling is another area for improvement. In the current implementation, some mappings, workflow conditions, and selected calculation rules are still partly embedded in backend SQL queries and Python processing logic. A future version could move more of these rules into configurable data structures or administrative interfaces. This would make selected workflow logic easier to adjust without requiring direct code changes.
+
+The interaction model could also be developed further. Although the current frontend supports filtering, dynamic summaries, chart-based views, and CSV export, future versions could add richer drill-down functionality, cross-view linking, configurable comparison modes, and more detailed step-by-step inspection of intermediate results and derived metrics. These functions would strengthen the artefact's role as a validation and investigation tool for business users.
+
+Finally, deployment, scalability, and enterprise integration would need to be strengthened before broader internal use. The current prototype supports a relational database setup and can be configured for PostgreSQL, but it has not yet been evaluated as a production-level multi-user system within Volvo CE's internal infrastructure. Future work should therefore address service architecture, container-based deployment, environment configuration, backend process orchestration, monitoring and logging, backup and recovery, and integration with internal authentication, authorization, and hosting infrastructure.
+
