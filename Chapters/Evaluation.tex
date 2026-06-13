@@ -903,52 +903,9 @@ The evaluation used real workflow data from the 2024 TMC calculation cycle, incl
 
 \subsection{Execution with Uploaded Workflow Data}
 
-After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution followed the implemented workflow sequence from file upload and backend processing to preparation, adjustment, market-view generation, split/resplit processing, and output review.
+After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution moved from file upload and backend processing to preparation, market-view generation, adjustment, split/resplit processing, and output review.
 
-The generated outputs were presented through filterable tables, summary views, charts, and CSV export functions. Table~\ref{tab:execution_outputs} summarises the execution steps and main outputs.
-
-{\small
-\renewcommand{\arraystretch}{1.0}
-\setlength{\tabcolsep}{3pt}
-
-\begin{longtable}{|>{\raggedright\arraybackslash}p{0.8cm}|>{\raggedright\arraybackslash}p{4.2cm}|>{\raggedright\arraybackslash}p{7.2cm}|}
-\caption{Execution flow and main outputs}
-\label{tab:execution_outputs} \
-\hline
-\textbf{Step} & \textbf{Execution Activity} & \textbf{Main Output Produced} \
-\hline
-\endfirsthead
-
-\hline
-\textbf{Step} & \textbf{Execution Activity} & \textbf{Main Output Produced} \
-\hline
-\endhead
-
-1 & Upload source and matrix files & Stored workflow inputs, including Source Matrix, Reporter List, Size Class, Brand Mapping, Group Country, and Machine Line Mapping, with display and download functions. \
-\hline
-
-2 & Upload and register CRP/TMA/SAL/OTH input data & Stored CRP- and TMA-related files, Volvo CE sales data, and OTH data as executable workflow inputs for downstream stages. \
-\hline
-
-3 & Run preparation-stage processing & Cleaned, mapped, and aggregated preparation outputs with mapped dimensions, reporter/deletion fields, and stage-level intermediate results. \
-\hline
-
-4 & Generate market-view intermediate output & Market-view outputs showing Total Market reference values, Volvo CE values, Non-Volvo CE values, summary cards, and ratio-related values for review. \
-\hline
-
-5 & Run adjustment-stage processing & Adjustment-layer tables with grouped and derived values for intermediate workflow review. \
-\hline
-
-6 & Execute split and resplit logic & Split and resplit outputs with split level, split ratio, before/after values, and redistributed rows. \
-\hline
-
-7 & Inspect and export outputs & Filterable stage views, summary views, chart-based review, and CSV export files for comparison and evaluation. \
-\hline
-
-\end{longtable}
-}
-
-The execution demonstrated that the prototype could move from uploaded source and matrix files to staged workflow outputs within the selected scope. These generated outputs were then used as the basis for validation and requirement-based evaluation.
+The generated outputs were available through filterable tables, summary views, charts, and CSV export. Within the selected scope, the execution demonstrated that the prototype could transform uploaded source and matrix files into inspectable staged workflow outputs, which were then used as the basis for validation and requirement-based evaluation.
 
 
 
@@ -986,26 +943,14 @@ The artefact was evaluated against the requirements defined in Section~\ref{sec:
 
 \subsection{Validation of Prototype Outputs}
 
-The generated prototype outputs were validated against the expected workflow logic and, where comparable, against 2024 SAP reference outputs. This validation focused on whether the SQL-based processing produced correct cleaned, mapped, aggregated, split, and resplit-related outputs within the implemented workflow scope.
-
-For the preparation stage, validation focused on row counts, mapped fields, reporter and deletion-related flags, aggregated values, and VCE / Non-VCE market-view calculations. For the split and resplit stages, validation focused on whether the prototype identified the correct split records, assigned the expected split levels and split ratios, redistributed values according to the defined business rules, and preserved before- and after-split totals. The detailed validation results are presented in the following subsections.
+The generated prototype outputs were validated against expected workflow logic and, where comparable, against 2024 SAP reference outputs. The focus was on whether the implemented processing produced correct preparation, market-view, split, and resplit-related results within the selected scope.
 
 
 \subsection{Preparation-Stage Validation}
 
-The preparation stage was validated through manual Excel-based checks, comparison with 2024 SAP reference data, and stakeholder clarification. The validation first examined whether the prototype correctly applied the predefined preparation rules based on the input files used in the prototype, before comparing the results with SAP outputs.
+The preparation stage was validated through manual Excel-based checks, comparison with 2024 SAP reference data, and stakeholder clarification. For CRP-related preparation, the reporter classification and grouped output matched the SAP reference result, including the identification of 338 reporter rows. For OTH-related preparation, mapped fields such as country, market area, machine line, brand code, and size class were manually checked and found to follow the intended rules.
 
-For the CRP-related preparation output, the reporter classification and grouped preparation structure were manually checked in Excel and then compared with the SAP reference data. In the tested dataset, 338 CRP rows were identified as reporter rows, matching the corresponding SAP result. This indicated that the CRP preparation logic was implemented correctly within the tested scope.
-
-For the OTH-related preparation output, the prototype executed the preparation logic and mapped OTH rows. Among them, 3,452 rows were classified as reporter rows according to the reporter-list input used during validation. Key mapped fields, including country, country grouping, region, market area, machine line, brand code, and size class, were manually inspected in Excel to confirm that the mapping logic was applied as expected.
-
-When the OTH reporter-classified result was compared with the SAP reference output, the SAP result contained 3,467 reporter rows, with a net difference of 68 FID. The records causing this difference were then identified and manually checked against the predefined reporter-list rules used by the prototype. This check showed that the prototype had applied the available reporter-list rules consistently, meaning that the discrepancy did not indicate an implementation error.
-
-The difference was later discussed with stakeholders, who confirmed that the reporter list provided for the prototype validation had been adjusted compared with the version reflected in the SAP reference result. Therefore, the observed OTH difference was caused by a reference-data version difference rather than incorrect execution of the preparation-stage logic.
-
-The preparation-stage validation also included the generated VCE / Non-VCE market view. Selected country and machine-line combinations were manually spot-checked in Excel to verify whether the TMA value was correctly reduced by the corresponding Volvo CE sales value and whether the resulting VCE / Non-VCE ratio was displayed correctly. The checked records were consistent with the expected calculations.
-
-Overall, the validation showed that the prototype correctly applied the tested preparation rules based on the available input data. The CRP output matched the SAP reference data, while the OTH difference was traced to a later reporter-list adjustment and was therefore considered an expected reference-data discrepancy rather than a prototype error.
+The main discrepancy concerned OTH reporter-row counts: the prototype identified 3,452 rows, while the SAP reference output contained 3,467 rows, with a net difference of 68 FID. Manual checking and later stakeholder clarification showed that this difference came from a reporter-list version adjustment rather than from incorrect prototype execution. Selected VCE / Non-VCE market-view records were also spot-checked in Excel and were consistent with the expected calculations. Overall, the preparation-stage results were considered correct within the tested scope.
 
 
 \begin{figure}[H]
@@ -1026,20 +971,9 @@ Overall, the validation showed that the prototype correctly applied the tested p
 
 \subsection{Split- and Resplit-Related Validation}
 
-The split- and resplit-related outputs were validated through manual Excel-based checks, SAP reference comparison, and output inspection. The validation focused on whether the correct records were selected for splitting, whether aggregated totals were preserved, and whether the split and resplit rules were applied consistently.
+The split- and resplit-related outputs were validated through manual Excel-based checks, SAP reference comparison, and output inspection. For split validation, records that should enter the split process were manually filtered in Excel and compared with the prototype's split input totals. The totals were consistent for the tested Excavators and Wheel Loaders split cases, indicating correct record selection.
 
-For split validation, Excel was first used to manually filter the records that should enter the split process according to the predefined split rules. This check focused on the Excavators Split Case and Wheel Loaders Split Case, and used country, source, machine line, and size class as the main filtering dimensions. The filtered records were then aggregated in Excel and compared with the prototype's split input totals. The totals were consistent, indicating that the prototype selected the expected records for the relevant split cases.
-
-After the split input totals had been verified, approximately 10\% of the split output rows were manually spot-checked across selected country, source, machine-line, and size-class combinations. For the sampled records, the validation checked whether the split ratios and redistributed values followed the prototype's predefined split logic. The before- and after-split totals were also reviewed and found to be consistent in the checked cases, confirming that the split process redistributed values without changing the overall total.
-
-For resplit validation, approximately 10\% of the resplit output rows were manually spot-checked. The checks examined whether invalid brand--machine-line--size-class combinations were correctly removed according to the size-class flag rules, and whether the affected values were redistributed to valid categories. The sampled resplit cases were consistent with the intended resplit logic.
-
-\textbf{Observed discrepancy in split logic.}
-During comparison with SAP reference outputs, some differences were observed in the split results. Part of the difference was related to the reporter list used by SAP not being fully identical to the reporter list available during prototype validation. In addition, one reviewed SAP case showed a different split-ratio basis from the prototype result. The SAP split ratio appeared to be calculated on a total TMA basis, including Volvo CE volume, while the prototype calculated the ratio based on the non-VCE interpretation of the TMA value. Since the split logic is applied to non-VCE reporter-brand volumes, the prototype first excluded Volvo CE volume before calculating the split ratio.
-
-These findings were treated as reference-data and rule-clarification issues rather than direct prototype failures. They also highlight the value of exposing intermediate split records, ratios, and before/after totals, since such discrepancies are difficult to identify from final SAP outputs alone.
-
-Overall, the split- and resplit-related validation showed that the prototype correctly applied the tested split and resplit rules based on the available input data. The Excel aggregation checks confirmed that the split input totals were consistent with the manually filtered records, and the 10\% manual spot checks confirmed that the sampled split and resplit records followed the expected logic.
+Approximately 10\% of split output rows and 10\% of resplit output rows were then spot-checked across selected country, source, machine-line, and size-class combinations. The sampled records followed the intended split and resplit logic, and the before/after totals remained consistent. Some differences from SAP outputs were nevertheless observed. Part of that difference was again related to reporter-list version differences, while one reviewed case suggested a different split-ratio basis in SAP than in the prototype. These findings were treated as reference-data and rule-clarification issues rather than direct prototype failures. Overall, the split and resplit logic behaved correctly within the tested scope.
 
 \begin{figure}[H]
     \centering
@@ -1278,32 +1212,7 @@ Performance and stability results were also acceptable for the evaluated setting
 
 To further clarify transparency, traceability, usability, and validation support, the prototype was compared with the SAP-based workflow from a business-user perspective. The comparison does not claim that SAP lacks these capabilities technically, but assesses whether they are directly available and inspectable for business users within the reviewed workflow.
 
-\begin{longtable}{|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{5.8cm}|}
-\caption{Comparison between SAP-based representation and prototype}
-\label{tab:sap_prototype_comparison} \\
-\hline
-\textbf{Dimension} & \textbf{SAP-based Workflow} & \textbf{Prototype} & \textbf{Explanation} \\
-\hline
-\endfirsthead
-
-\hline
-\textbf{Dimension} & \textbf{SAP-based Workflow} & \textbf{Prototype} & \textbf{Explanation} \\
-\hline
-\endhead
-
-Transparency & Limited for business-user inspection & Supported & In SAP, workflow logic is distributed across planning functions, planning sequences, matrix files, and report extractions. In the prototype, preparation, adjustment, and split/resplit outputs are exposed as separate inspectable stages with row-level and summary views. \\
-\hline
-
-Traceability & Limited and indirect & Partly supported & In SAP-based review, linking final outputs back to source rows, matrix rules, and stage-level transformations often requires cross-checking across multiple artefacts and exported files. The prototype preserves stage-level source/rule context fields such as country, machine line, source, brand, flags, split level, and split ratio. \\
-\hline
-
-Usability & Limited for non-technical review & Supported & SAP-based review requires SAP-specific navigation and familiarity with technical objects. The prototype supports browser-based filtering, summaries, charts, and CSV export for BI review tasks. \\
-\hline
-
-Validation support & Limited and extraction-dependent & Supported & Rule-level validation of intermediate values in SAP often depends on additional extraction or IT-supported investigation. In the prototype, intermediate values, totals, flags, and split parameters are directly inspectable and comparable with expected rules and SAP references. \\
-\hline
-
-\end{longtable}
+Compared with the SAP-based representation, the prototype made four differences visible within the evaluated scope. First, transparency improved because preparation, adjustment, and split/resplit outputs were exposed as separate inspectable stages rather than being dispersed across technical SAP artefacts. Second, traceability improved at stage level because outputs retained source and rule context such as country, machine line, source, brand, flags, split level, and split ratio. Third, usability improved because business users could review results through browser-based filtering, summaries, charts, and CSV export rather than SAP-specific navigation. Fourth, validation became more direct because intermediate values and rule-relevant fields could be inspected without additional extraction or IT-supported investigation.
 
 
 
