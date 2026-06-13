@@ -1,22 +1,23 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Execution flow of the SAP-based TMC framework from data upload to reporting.}}{12}{figure.2.1}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Execution flow of the SAP-based TMC framework from data upload to reporting.}}{10}{figure.2.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces High-level architecture of the web-based TMC artefact}}{28}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Data Flow and Processing Stages of the TMC Artefact}}{30}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Selected frontend views developed during the implementation of the prototype}}{36}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Implementation of CSV Upload and Preparation-Stage Processing}}{37}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Anonymised and Simplified SQL Fragments for CRP/TMA and OTH Clean Report Generation}}{38}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Adjustment-Layer Result View}}{39}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Anonymised SQL Fragment for Adjustment-Layer Value Calculation}}{40}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Machine Line Split Layer Overview}}{42}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Machine Line Split Detail View}}{42}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Anonymised SQL and backend-processing fragments for adjustment- and split-related logic}}{43}{figure.5.10}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces High-level architecture of the web-based TMC artefact}}{26}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Data Flow and Processing Stages of the TMC Artefact}}{28}{figure.5.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces CRP preparation validation result}}{49}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces OTH deletion flag and reporter flag validation result}}{49}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Example of split and resplit validation results for GEC records}}{51}{figure.6.3}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces CRP preparation validation result}}{39}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces OTH deletion flag and reporter flag validation result}}{39}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Example of split and resplit validation results for GEC records}}{41}{figure.6.3}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Selected frontend views developed during the implementation of the prototype}}{60}{figure.A.1}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Implementation of CSV upload and preparation-stage processing}}{62}{figure.A.2}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Anonymised and simplified SQL fragments for CRP/TMA and OTH clean report generation}}{62}{figure.A.3}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Adjustment-layer result view}}{63}{figure.A.4}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Anonymised SQL fragment for adjustment-layer value calculation}}{64}{figure.A.5}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Machine line split layer overview}}{65}{figure.A.6}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Machine line split detail view}}{66}{figure.A.7}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Anonymised SQL and backend-processing fragments for adjustment- and split-related logic}}{66}{figure.A.8}%

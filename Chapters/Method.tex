@@ -60,9 +60,7 @@
 
 \section{Research Strategy}
 
-Design Science Research (DSR) was selected as the research strategy for this thesis because the study aims to design and evaluate an artefact that addresses a practical problem in a real organisational context \cite{johannesson2021}. In this thesis, the artefact is a web-based prototype that reconstructs and visualises selected early stages of the Volvo CE Total Market Calculation (TMC) workflow outside the original SAP environment, including source data upload, preparation, adjustment, and machine line split.
-
-DSR is suitable because the main contribution of the thesis is not only an analysis of the existing SAP-based workflow, but also the development of a prototype intended to improve transparency, usability, and traceability. The prototype re-expresses selected parts of the TMC process in a more inspectable form, making key transformations, data dependencies, business rules, and intermediate outputs easier to review.
+Design Science Research (DSR) was selected as the research strategy because the study aims to design and evaluate an artefact that addresses a practical problem while also generating design knowledge \cite{johannesson2021}. In this thesis, the artefact is a web-based prototype that re-expresses selected stages of an enterprise data-processing workflow in a more inspectable form.
 
 To structure the research process, the thesis follows the five core DSR activities proposed by Johannesson and Perjons \cite{johannesson2021}:
 
@@ -74,9 +72,7 @@ To structure the research process, the thesis follows the five core DSR activiti
     \item \textbf{Evaluate the Artefact}: assess whether the artefact fulfils its intended purpose and addresses the identified problem.
 \end{itemize}
 
-Alternative research strategies were also considered. A case study strategy could have supported an in-depth investigation of the existing SAP-based TMC workflow, since case study research is commonly used to study a contemporary phenomenon within its real-world context \cite{yin2018}. However, a case study alone was considered insufficient because the aim of this thesis is also to design, develop, and evaluate a new technical artefact.
-
-Action research was also considered, as it supports close collaboration with practitioners and intervention in organisational practice \cite{susman1978}. However, this thesis does not aim to introduce changes into the production TMC process or manage an organisational change initiative. The prototype is instead developed and assessed in a test setting as a research artefact. Therefore, DSR was considered more suitable as the main research strategy.
+DSR was considered more suitable than a pure case-study or action-research approach because the thesis does not only analyse an existing situation, but also develops and evaluates a technical artefact in a controlled research setting.
 
 
 
@@ -109,13 +105,9 @@ Action research was also considered, as it supports close collaboration with pra
 
 \subsection{Data Collection Methods}
 
-This thesis used three main data collection methods: \textbf{document analysis}, \textbf{stakeholder discussions}, and \textbf{prototype-based data collection}. These methods were selected because the study required both contextual understanding of the existing SAP-based TMC workflow and technical material for designing, demonstrating, and evaluating the prototype.
+This thesis used three main data collection methods: \textbf{document analysis}, \textbf{stakeholder discussions}, and \textbf{prototype-based data collection}. These methods were selected because the study required both contextual understanding of the existing workflow and technical material for designing, demonstrating, and evaluating the prototype.
 
-Document analysis was used to examine TMC- and SAP-related process materials, workflow descriptions, source data structures, and matrix files. This method was suitable because documents can provide contextual evidence about organisational practices and existing work processes \cite{bowen2009document}. Stakeholder discussions and weekly review meetings were used to clarify business rules, user needs, validation expectations, feedback on prototype outputs, and workflow steps that were not fully visible from documentation alone. These discussions were semi-structured in nature, which allowed focused but flexible knowledge elicitation \cite{kallio2016systematic}.
-
-Prototype-based data collection was used during design, demonstration, and evaluation. During development, CSV inputs, mapping tables, matrix rules, and generated intermediate outputs were inspected to support the reconstruction of selected TMC workflow stages. During demonstration and evaluation, the prototype was applied to a realistic TMC scenario based on the 2024 market data and matrix files used by Volvo CE for the yearly TMC calculation. The generated outputs and stakeholder feedback were then used to assess whether the prototype made the workflow easier to inspect and understand. Using multiple sources of evidence is suitable in software-oriented research in organisational settings \cite{runeson2009guidelines}.
-
-Alternative data collection methods such as \textbf{large-scale surveys} and \textbf{direct SAP backend log extraction} were considered. However, a large-scale survey was less suitable because the TMC workflow involves a small group of specialised users and required detailed process-level understanding. Direct SAP backend log extraction was also outside the thesis scope. Therefore, the prototype was developed and assessed outside the SAP environment using Volvo CE's 2024 market data and matrix files.
+Document analysis was used to examine process materials, workflow descriptions, source data structures, and matrix files \cite{bowen2009document}. Stakeholder discussions and weekly review meetings were used to clarify business rules, user needs, and validation expectations in a semi-structured format \cite{kallio2016systematic}. Prototype-based data collection was used during design, demonstration, and evaluation, where uploaded inputs, intermediate outputs, and stakeholder feedback were inspected to assess whether the prototype improved workflow inspectability. Using multiple sources of evidence is suitable in software-oriented organisational research \cite{runeson2009guidelines}.
 
 
 
@@ -154,15 +146,9 @@ Alternative data collection methods such as \textbf{large-scale surveys} and \te
 
 \subsection{Data Analysis Method}
 
-The collected material was analysed through a combination of \textbf{qualitative analysis} and \textbf{technical analysis}. The analysis included \textbf{workflow decomposition}, \textbf{requirements analysis}, \textbf{rule interpretation}, \textbf{structured output inspection}, and \textbf{requirement-based evaluation}. This was suitable because the thesis needed to interpret stakeholder input and workflow documentation, while also examining data structures, matrix-based rules, workflow dependencies, and prototype outputs. In DSR, analysis supports both problem understanding and artefact development and evaluation \cite{johannesson2021,hevner2004design}.
+The collected material was analysed through a combination of \textbf{qualitative analysis} and \textbf{technical analysis}. The analysis included \textbf{workflow decomposition}, \textbf{requirements analysis}, \textbf{rule interpretation}, \textbf{structured output inspection}, and \textbf{requirement-based evaluation} \cite{johannesson2021,hevner2004design}.
 
-During problem explication and requirements definition, Volvo CE's TMC internal workflow documentation, related process materials, and stakeholder input were analysed to identify issues related to transparency, traceability, usability, validation support, and prototype performance. These findings were translated into functional requirements, which describe the artefact's main capabilities, and performance requirements, which address execution time, stability, and reliability \cite{johannesson2021}.
-
-During design and development, source files, mapping tables, matrix rules, and selected SAP-related workflow descriptions were examined to reformulate parts of the TMC workflow into explicit backend processing steps. The analysis focused on decomposing workflow logic, interpreting rules, and inspecting intermediate outputs.
-
-For demonstration and evaluation, generated outputs were analysed through output inspection, comparison with expected workflow logic, and requirement-based assessment. Stakeholder feedback was reviewed qualitatively and descriptively to identify comments related to transparency, usability, and inspectability. This supported the assessment of whether the artefact fulfilled its intended purpose in the Volvo CE context \cite{hevner2004design}.
-
-Alternative methods such as \textbf{statistical survey analysis} and \textbf{controlled experiments} were considered but were less suitable because the artefact was evaluated as a prototype with a small group of specialised stakeholders. Therefore, the analysis focused on workflow understanding, output inspection, stakeholder feedback, and requirement-based evaluation.
+During problem explication and requirements definition, workflow documentation and stakeholder input were analysed to identify issues related to transparency, traceability, usability, validation support, and prototype performance. During design and development, source files, mapping tables, matrix rules, and workflow descriptions were examined to reformulate selected logic into explicit processing steps. During demonstration and evaluation, generated outputs were analysed through output inspection, comparison with expected workflow logic, and requirement-based assessment, while stakeholder feedback was reviewed qualitatively to identify recurring comments related to inspectability and usability.
 
 
 
@@ -171,7 +157,7 @@ Alternative methods such as \textbf{statistical survey analysis} and \textbf{con
 
 \section{Application of the Research Method}
 
-This section briefly explains how the selected data collection and data analysis methods were applied across the five DSR activities. The purpose is to show how the research method was used in this thesis, while the detailed artefact design, implementation, demonstration, and evaluation are presented in the following chapters.
+This section briefly explains how the selected data collection and data analysis methods were applied across the five DSR activities. Detailed artefact design, implementation, demonstration, and evaluation are presented in the following chapters.
 
 
 % \subsection{Define Requirements}

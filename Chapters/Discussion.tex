@@ -7,7 +7,7 @@
 % \section{Reflection on the Artefact Development}
 
 
-\section{Answer to the Research Questions 111}
+\section{Answer to the Research Questions}
 
 
 
@@ -245,30 +245,17 @@ The improvement was assessed through demonstration with 2024 workflow data and s
 
 The main practical contribution of this thesis is the development of a working web-based prototype for selected stages of the Volvo CE Total Market Calculation (TMC) workflow. The artefact provides a more transparent and inspectable complement to the existing SAP-based execution and review process. Rather than replacing SAP, the prototype demonstrates how selected parts of an SAP-based enterprise workflow can be re-expressed in a user-oriented web environment to support validation, inspection, and communication.
 
-A key contribution is that the prototype exposes intermediate workflow outputs, including preparation, adjustment, and split-related results, instead of only presenting final aggregated figures. Through filterable tables, summary values, charts, and CSV export, users can inspect how values are formed, compare outputs with source data, and validate whether the implemented logic behaves as expected.
+A key contribution is that the prototype exposes intermediate workflow outputs, including preparation, adjustment, and split-related results, instead of only presenting final aggregated figures. Through filterable tables, summary values, charts, and CSV export, users can inspect how values are formed, compare outputs with source data, and validate whether the implemented logic behaves as expected. More broadly, this contributes practical design knowledge on how complex enterprise data-processing workflows can be made more inspectable through staged output exposure and workflow-oriented review views.
 
-For the Strategy and Business Intelligence function at Volvo CE, the prototype offers a new digital way of working with TMC-related data. It supports process transparency, independent review, and more efficient discussion of workflow logic and data-quality issues. In this sense, the artefact provides practical support for business users who need to understand and validate complex enterprise data transformations without relying only on technical system interpretation.
+For the Strategy and Business Intelligence function at Volvo CE, the prototype offers a new digital way of working with TMC-related data. At the same time, the case illustrates a more general point: where enterprise workflows rely on heterogeneous inputs, embedded rules, and sequential transformations, a separate inspection-oriented prototype can improve reviewability without replacing the underlying operational platform.
 
 \subsection{Originality}
 
-The originality of this thesis lies in the independent design and development of a dedicated web-based prototype for the studied Volvo CE TMC context. Before this work, there was no specific solution in this context that exposed selected TMC workflow stages as inspectable processing layers outside the existing SAP-based environment.
+The originality of this thesis lies in the independent design and development of a dedicated web-based prototype that re-expresses selected SAP-embedded workflow stages as inspectable processing layers. Before this work, there was no such solution in the studied Volvo CE context.
 
-The prototype is original in its practical re-expression of preparation, adjustment, and split-related logic into a transparent web-based inspection environment. Instead of only reviewing final aggregated outputs, users can inspect intermediate results through tables, summaries, charts, and exportable data.
+The prototype is original in its combination of structured input management, staged processing outputs, and workflow-oriented inspection views. Instead of only reviewing final aggregated outputs, users can inspect intermediate results through tables, summaries, charts, and exportable data.
 
-The contribution is not a new algorithm, but a context-specific solution that demonstrates how embedded SAP-based workflow logic can be complemented by a more transparent, traceable, and usable prototype.
-
-
-\section{Software Tools and the Use of AI Tools}
-
-
-Several software tools were used during the development of the artefact and the writing of the thesis.
-
-Codex was used as a supportive tool during development, mainly for exploring implementation alternatives, discussing frontend–backend interactions, and assisting with SQL, API logic, and debugging. While it helped improve efficiency, all system design decisions and final implementations were made by the author.
-
-ChatGPT was used during the writing process to refine language, improve clarity, and adjust phrasing to a more academic style. As English is not the author’s first language, it was particularly useful for improving grammar and sentence structure. However, all ideas and conclusions were developed independently.
-
-Visual Studio Code served as the main development environment, draw.io was used for diagrams, and Overleaf was used for writing and formatting the thesis in LaTeX. These tools supported the development and documentation process but did not influence the research direction or results.
-
+The contribution is not a new algorithm, but a case-grounded design contribution that demonstrates how embedded enterprise workflow logic can be complemented by a more transparent, traceable, and usable inspection-oriented prototype. Although the artefact was developed in the Volvo CE setting, the underlying design idea is relevant to other enterprise workflows that involve heterogeneous data sources, rule-based transformations, and limited visibility of intermediate results.
 
 
 \section{Limitations}
