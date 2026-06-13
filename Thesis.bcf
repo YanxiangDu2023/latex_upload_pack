@@ -2422,8 +2422,14 @@
     <bcf:citekey order="28" intorder="1">vr_good_research_2024</bcf:citekey>
     <bcf:citekey order="29" intorder="1">su_ethics_policy</bcf:citekey>
     <bcf:citekey order="30" intorder="1">vr_good_research_2024</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">goddard2012automation</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">martin2019ethics</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">foidl2024pipeline</bcf:citekey>
+    <bcf:citekey order="31" intorder="2">putrama2024heterogeneous</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">vassiliadis2009etl</bcf:citekey>
+    <bcf:citekey order="32" intorder="2">calisir2004erp</bcf:citekey>
+    <bcf:citekey order="32" intorder="3">ori2024misalignment</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">johannesson2021</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">goddard2012automation</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">martin2019ethics</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

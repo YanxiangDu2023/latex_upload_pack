@@ -1212,6 +1212,33 @@ Performance and stability results were also acceptable for the evaluated setting
 
 To further clarify transparency, traceability, usability, and validation support, the prototype was compared with the SAP-based workflow from a business-user perspective. The comparison does not claim that SAP lacks these capabilities technically, but assesses whether they are directly available and inspectable for business users within the reviewed workflow.
 
+\begin{longtable}{|>{\raggedright\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{5.8cm}|}
+\caption{Concise comparison between SAP-based representation and prototype}
+\label{tab:sap_prototype_comparison} \\
+\hline
+\textbf{Dimension} & \textbf{SAP-based Workflow} & \textbf{Prototype} & \textbf{Evidence in this thesis} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Dimension} & \textbf{SAP-based Workflow} & \textbf{Prototype} & \textbf{Evidence in this thesis} \\
+\hline
+\endhead
+
+Transparency & Limited for business-user inspection & Supported & Preparation, adjustment, and split/resplit are exposed as separate inspectable stages with row-level and summary views. \\
+\hline
+
+Traceability & Limited and dispersed across technical structures & Partly supported & Stage outputs preserve source and rule context fields, including country, machine line, source, brand, flags, split level, and split ratio, enabling stage-level tracing. \\
+\hline
+
+Usability & Requires more SAP-specific navigation & Supported & Browser-based filtering, summaries, charts, and CSV export supported practical BI review tasks. \\
+\hline
+
+Validation support & Often requires extra extraction or IT support & Supported & Intermediate values and rule-relevant fields were directly inspectable and comparable with expected business rules and SAP references. \\
+\hline
+
+\end{longtable}
+
 Compared with the SAP-based representation, the prototype made four differences visible within the evaluated scope. First, transparency improved because preparation, adjustment, and split/resplit outputs were exposed as separate inspectable stages rather than being dispersed across technical SAP artefacts. Second, traceability improved at stage level because outputs retained source and rule context such as country, machine line, source, brand, flags, split level, and split ratio. Third, usability improved because business users could review results through browser-based filtering, summaries, charts, and CSV export rather than SAP-specific navigation. Fourth, validation became more direct because intermediate values and rule-relevant fields could be inspected without additional extraction or IT-supported investigation.
 
 

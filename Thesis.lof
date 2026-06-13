@@ -6,7 +6,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces High-level architecture of the web-based TMC artefact}}{24}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Data Flow and Processing Stages of the TMC Artefact}}{26}{figure.5.2}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Data Flow and Processing Stages of the TMC Artefact}}{25}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Selected frontend views developed during the implementation of the prototype}}{30}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Implementation of CSV upload and preparation-stage processing}}{31}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Adjustment-layer result view}}{32}{figure.5.5}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces CRP preparation validation result}}{35}{figure.6.1}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces OTH deletion flag and reporter flag validation result}}{36}{figure.6.2}%

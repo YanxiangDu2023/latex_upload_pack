@@ -14,8 +14,8 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem and Motivation}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Research Objective and Research Question}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Scope and Delimitation}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.3}Research Objective and Research Question}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Scope and Delimitation}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Thesis Structure}{4}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Extended Background}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Construction Equipment Industry Overview}{5}{section.2.1}%
@@ -47,12 +47,12 @@
 \contentsline {section}{\numberline {5.2}Overall Design}{24}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}System Architecture}{24}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Workflow and Data Flow}{25}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Detail Design}{27}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}CSV Upload and Input Handling}{27}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Preparation Stage}{28}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Adjustment and Split Stage}{29}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Visualization and Interaction}{30}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Implementation}{31}{section.5.4}%
+\contentsline {section}{\numberline {5.3}Detail Design}{26}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}CSV Upload and Input Handling}{26}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Preparation Stage}{27}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Adjustment and Split Stage}{28}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Visualisation and Interaction}{29}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Implementation}{30}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Demonstration and Evaluation}{33}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Demonstration of the Artefact}{33}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Setup of the Test Environment}{33}{subsection.6.1.1}%
@@ -63,18 +63,19 @@
 \contentsline {subsection}{\numberline {6.2.3}Split- and Resplit-Related Validation}{36}{subsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.2.4}Evaluation Against Requirements}{37}{subsection.6.2.4}%
 \contentsline {section}{\numberline {6.3}Comparison with the SAP-Based Workflow}{38}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Summary and Limitations}{38}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Summary and Limitations}{39}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Conclusions and Discussion}{41}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Answer to the Research Questions}{41}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Answer to Sub-RQ1: How can the architecture and data handling of a web-based prototype be designed to support structured upload, storage, and management of heterogeneous TMC workflow inputs, including source datasets and matrix-based business rules?}{41}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Answer to Sub-RQ2: How can the preparation, adjustment, and machine line split stages of the TMC workflow be re-expressed in a web-based environment so that intermediate transformations and derived results become inspectable and traceable for business users?}{42}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Answer to Sub-RQ3: To what extent does the implemented prototype improve transparency, usability, and traceability in the TMC workflow compared to the existing SAP-based representation, as assessed through demonstration and stakeholder feedback?}{42}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.1}Answer to Sub-RQ1: How can the architecture and data handling of a web-based prototype be designed to support structured upload, storage, and management of heterogeneous workflow inputs, including source datasets and matrix-based business rules?}{41}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Answer to Sub-RQ2: How can staged data-processing activities be re-expressed in a web-based environment so that intermediate transformations and derived results become inspectable and traceable for business users?}{42}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Answer to Sub-RQ3: To what extent does the implemented prototype improve transparency, usability, and traceability compared to an existing SAP-based workflow representation, as assessed through demonstration and stakeholder feedback?}{42}{subsection.7.1.3}%
 \contentsline {section}{\numberline {7.2}Contributions and Originality}{43}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Practical Contributions}{43}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Originality}{44}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Limitations}{44}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Ethical and Societal Implications}{45}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Future Work}{45}{section.7.5}%
+\contentsline {subsection}{\numberline {7.2.2}Academic Contributions}{44}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Originality}{44}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Limitations}{45}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Ethical and Societal Implications}{46}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Future Work}{46}{section.7.5}%
 \vspace \bigskipamount 
 \contentsline {part}{Bibliography}{51}{chapter*.13}%
 \contentsline {chapter}{\numberline {A}Supplementary Implementation and Evaluation Material}{53}{appendix.A}%
