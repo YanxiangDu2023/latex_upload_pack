@@ -903,7 +903,7 @@ The evaluation used real workflow data from the 2024 TMC calculation cycle, incl
 
 \subsection{Execution with Uploaded Workflow Data}
 
-After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution moved from file upload and backend processing to preparation, market-view generation, adjustment, split/resplit processing, and output review.
+After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution moved from file upload and backend processing to preparation, market-view generation, adjustment, split and resplit processing, and output review.
 
 The generated outputs were available through filterable tables, summary views, charts, and CSV export. Within the selected scope, the execution demonstrated that the prototype could transform uploaded source and matrix files into inspectable staged workflow outputs, which were then used as the basis for validation and requirement-based evaluation.
 
@@ -1164,7 +1164,7 @@ Approximately 10\% of split output rows and 10\% of resplit output rows were the
 
 The artefact was evaluated against the functional and performance requirements defined in Section~\ref{sec:requirements}. The assessment combined generated workflow outputs, SAP reference comparisons where applicable, manual Excel checks, runtime observations, repeated stability testing, and stakeholder feedback from weekly review discussions.
 
-Overall, the results indicate that the main requirements were met within the prototype scope. The system supported upload and reuse of the required datasets, generated staged outputs for the selected workflow layers, and provided structured inspection through filters, summaries, charts, and CSV export. Validation support was also largely confirmed: manually checked rule behaviour matched the prototype outputs, CRP reporter rows matched the SAP reference result, and sampled market-view and split/resplit records followed the expected calculation logic. The main observed exception was an OTH reporter-row difference that was traced to a reporter-list version difference rather than a prototype error.
+Overall, the results indicate that the main requirements were met within the prototype scope. The system supported upload and reuse of the required datasets, generated staged outputs for the selected workflow layers, and provided structured inspection through filters, summaries, charts, and CSV export. Validation support was also largely confirmed: manually checked rule behavior matched the prototype outputs, CRP reporter rows matched the SAP reference result, and sampled market-view and split and resplit records followed the expected calculation logic. The main observed exception was an OTH reporter-row difference that was traced to a reporter-list version difference rather than a prototype error.
 
 Performance and stability results were also acceptable for the evaluated setting. Repeated workflow cycles remained within the defined review window, and no crash, data loss, or inconsistent save/reload behaviour was observed during the repeated test runs. A more detailed requirement-by-requirement table is provided in Appendix~\ref{app:supplementary-material}.
 
@@ -1225,7 +1225,7 @@ To further clarify transparency, traceability, usability, and validation support
 \hline
 \endhead
 
-Transparency & Limited for business-user inspection & Supported & Preparation, adjustment, and split/resplit are exposed as separate inspectable stages with row-level and summary views. \\
+Transparency & Limited for business-user inspection & Supported & Preparation, adjustment, and split and resplit outputs are exposed as separate inspectable stages with row-level and summary views. \\
 \hline
 
 Traceability & Limited and dispersed across technical structures & Partly supported & Stage outputs preserve source and rule context fields, including country, machine line, source, brand, flags, split level, and split ratio, enabling stage-level tracing. \\
@@ -1239,7 +1239,7 @@ Validation support & Often requires extra extraction or IT support & Supported &
 
 \end{longtable}
 
-Compared with the SAP-based representation, the prototype made four differences visible within the evaluated scope. First, transparency improved because preparation, adjustment, and split/resplit outputs were exposed as separate inspectable stages rather than being dispersed across technical SAP artefacts. Second, traceability improved at stage level because outputs retained source and rule context such as country, machine line, source, brand, flags, split level, and split ratio. Third, usability improved because business users could review results through browser-based filtering, summaries, charts, and CSV export rather than SAP-specific navigation. Fourth, validation became more direct because intermediate values and rule-relevant fields could be inspected without additional extraction or IT-supported investigation.
+Compared with the SAP-based representation, the prototype made four differences visible within the evaluated scope. First, transparency improved because preparation, adjustment, and split and resplit outputs were exposed as separate inspectable stages rather than being dispersed across technical SAP artefacts. Second, traceability improved at stage level because outputs retained source and rule context such as country, machine line, source, brand, flags, split level, and split ratio. Third, usability improved because business users could review results through browser-based filtering, summaries, charts, and CSV export rather than SAP-specific navigation. Fourth, validation became more direct because intermediate values and rule-relevant fields could be inspected without additional extraction or IT-supported investigation.
 
 
 
@@ -1263,13 +1263,13 @@ Compared with the SAP-based representation, the prototype made four differences 
 
 \section{Summary and Limitations}
 
-The evaluation showed that the artefact fulfilled its core purpose as a web-based prototype for the selected TMC workflow stages. Within the implemented scope, it supported structured CSV upload, staged backend processing, intermediate output inspection, and rule-based validation against 2024 SAP reference outputs where comparison was possible. The results indicate that the prototype improved transparency and stage-level traceability by making preparation, market-view, adjustment, and split/resplit outputs easier to inspect and verify.
+The evaluation showed that the artefact fulfilled its core purpose as a web-based prototype for the selected TMC workflow stages. Within the implemented scope, it supported structured CSV upload, staged backend processing, intermediate output inspection, and rule-based validation against 2024 SAP reference outputs where comparison was possible. The results indicate that the prototype improved transparency and stage-level traceability by making preparation, market-view, adjustment, and split and resplit outputs easier to inspect and verify.
 
 The validation results were largely consistent with the expected business rules. CRP preparation matched the SAP reference output, while the observed OTH reporter-flag difference was traced to a reporter-list version difference rather than a prototype error. For split and resplit, Excel-based checks showed that totals were preserved and sampled records followed the expected split-case, redistribution, and size-class flag rules. One split-ratio difference was identified as a rule-clarification issue.
 
 Several limitations nonetheless apply:
 \begin{itemize}
-    \item The prototype covers only selected stages of the broader TMC process. Formal evaluation was limited to source upload, preparation, market-view derivation, adjustment, and selected split/resplit-related outputs.
+    \item The prototype covers only selected stages of the broader TMC process. Formal evaluation was limited to source upload, preparation, market-view derivation, adjustment, and selected split and resplit outputs.
     \item The validation was based on the 2024 calculation cycle, so the findings cannot yet be generalised to all years, source configurations, or annual workflow variations.
     \item Some SAP comparisons were affected by reference-data or calculation-basis differences, such as the reporter-list adjustment and the observed split-ratio discrepancy.
     \item The artefact supports stage-level traceability, but full row-level lineage across all transformations remains future work.

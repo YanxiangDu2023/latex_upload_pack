@@ -1,4 +1,4 @@
-% !TEX root = ../Thesis.tex
+﻿% !TEX root = ../Thesis.tex
 
 
 
@@ -7,31 +7,43 @@
 
 
 
-This chapter outlines the background needed to understand the thesis problem. It introduces the industry setting, explains why market share estimation becomes a complex enterprise workflow, summarises how that workflow is implemented in the Volvo CE case, and reviews related work relevant to transparency, traceability, and usability in enterprise analytics.
+This chapter provides the background for the thesis. It first introduces ERP systems and SAP as a general enterprise workflow environment, then presents the industry and Volvo CE case context, and finally reviews related work relevant to transparency, traceability, and usability in enterprise analytics.
+
+
+\section{ERP Systems, SAP, and Enterprise Workflows}
+
+Enterprise resource planning (ERP) systems are widely used to integrate and manage core business processes across large organizations \cite{davenport1998,klaus2000}. Rather than treating finance, operations, procurement, manufacturing, logistics, and sales as isolated activities, ERP systems provide a shared environment in which data and processes can be coordinated across functional boundaries \cite{sap_erp_guide}. In that sense, ERP should be understood not only as a transactional business system, but also as an enterprise workflow environment in which important reporting, planning, and calculation processes are executed.
+
+Prior literature also shows that ERP-based environments are routinely used beyond basic transaction processing. Integrated enterprise data is reused for managerial reporting, planning, performance monitoring, and domain-specific analytical routines, often across several organizational units \cite{monk2012erp,fan2006equipmentdw}. This suggests that complex business calculations embedded in enterprise systems should be understood as part of a broader enterprise workflow pattern rather than as an isolated practice in one company.
+
+SAP is one of the most widely used ERP platforms in this broader landscape. Within SAP-based environments, workflow execution is often distributed across data-loading mechanisms, storage structures, transformation logic, reporting layers, and user-facing interfaces. This makes SAP relevant to the present thesis not because it is unique to Volvo CE, but because it represents a common type of enterprise environment in which complex data-processing workflows are embedded.
+
+Within the SAP landscape, transactional processing and analytical processing are typically separated. Operational data is generated in ERP systems, while SAP Business Warehouse (BW) provides an analytical layer for reporting, modeling, and transformation \cite{sap_bw_guide}. SAP also supports structured data loading, multidimensional storage, sequential rule execution, and spreadsheet-based user interaction \cite{sap_bw_ip_overview,sap_analysis_office_guide}. These capabilities make SAP suitable for complex multi-step workflows, but they also contribute to technical complexity.
+
+This complexity is discussed in prior work. Research on SAP ERP process extraction shows that the amount of processes and data contained in SAP ERP is enormous, making the identification of relevant process structures and related tables a significant challenge \cite{weber2022sap}. ERP usability studies further show that users may experience difficulties related to navigation, task support, learnability, and presentation of outputs \cite{calisir2004erp,wong2016sap}. These observations support the idea that transparency, traceability, and usability problems are not unique to one company-specific workflow, but are relevant to ERP-based enterprise workflows more broadly.
 
 
 
 
-\section{Construction Equipment Industry Overview}
+\section{Construction Equipment Industry and Market Share Estimation}
 
 
 
 
 % The construction equipment industry is a global, capital-intensive sector supporting infrastructure development, mining, and urbanization. Leading manufacturers include Volvo Construction Equipment (Volvo CE), Caterpillar, Komatsu, Hitachi Construction Machinery, and Liebherr, all operating across multiple regions with diverse product portfolios \cite{offhighway2024report,statista2024construction}. These manufacturers maintain global distribution networks and sell equipment across a large number of countries, reflecting the highly international nature of the industry \cite{volvo2024annual}.
 
-% Construction equipment is typically organized into machine lines, which represent major categories of machinery based on functionality. Common machine lines include hydraulic excavators, wheel loaders, articulated haulers, rigid haulers, and road construction equipment. Within each machine line, products are further segmented into size classes, usually defined by operating weight ranges (e.g., <6 tons, 6–10 tons, >10 tons), reflecting different application scenarios and customer needs \cite{mordor2024construction}.
+% Construction equipment is typically organized into machine lines, which represent major categories of machinery based on functionality. Common machine lines include hydraulic excavators, wheel loaders, articulated haulers, rigid haulers, and road construction equipment. Within each machine line, products are further segmented into size classes, usually defined by operating weight ranges (e.g., <6 tons, 6â€“10 tons, >10 tons), reflecting different application scenarios and customer needs \cite{mordor2024construction}.
 
 % From a market analysis perspective, the industry is structured along dimensions including country, machine line, size class, and brand. Market size and share are therefore calculated at a granular level, allowing companies to evaluate performance in specific segments.
 
 % To support market analysis, companies integrate multiple data sources. Internal data consists of sales records from enterprise systems.Companies also participate in industry data exchange systems, where aggregated sales information is shared among manufacturers to estimate total market size, often coordinated by industry associations or specialized providers such as Off-Highway Research \cite{offhighway2024report,offhighway2018method}. External datasets from third-party providers, dealer networks, and national registration systems further complement these sources, improving market coverage where direct reporting is limited \cite{mordor2024construction,oxford2023equipment}. These datasets are standardized and integrated to ensure consistency across countries, machine lines, and brands.
-The construction equipment industry is global, capital-intensive, and analytically segmented by country, machine line, size class, and brand \cite{cece2025,volvo2024annual,mordor2024construction,offhighway2024sample}. For manufacturers, this means that market analysis depends on integrating heterogeneous sources and maintaining consistent classifications across many dimensions. This thesis focuses on that manufacturer perspective, specifically on how firms estimate total market size and market share across regions and product categories.
+This thesis is grounded in the case of Volvo Construction Equipment (Volvo CE), whose market-analysis work is situated in the construction equipment industry. The construction equipment industry is global and capital-intensive \cite{cece2025,mordor2024construction}. Manufacturers operate across countries, product categories, and customer segments, so market analysis depends on combining inputs across several business dimensions, including the estimation of total market size and market share across regions and product categories.
 
 
 
 
-\section{Market Share Estimation in the Construction Equipment Industry and Associated Challenges}
 
-% Market share is a widely used indicator to evaluate a firm’s competitive position within a defined market. It is typically defined as the ratio between a company’s sales and the total market size within a given segment \cite{kotler2016marketing}. In practice, business units within companies estimate both the total market size and their own share in order to assess competitive dynamics, benchmark performance against competitors, and support strategic planning and decision-making \cite{porter2008competitive}.
+% Market share is a widely used indicator to evaluate a firmâ€™s competitive position within a defined market. It is typically defined as the ratio between a companyâ€™s sales and the total market size within a given segment \cite{kotler2016marketing}. In practice, business units within companies estimate both the total market size and their own share in order to assess competitive dynamics, benchmark performance against competitors, and support strategic planning and decision-making \cite{porter2008competitive}.
 
 % In the construction equipment industry, estimating total market size requires integrating information from multiple sources. A common approach is based on the aggregation of sales data from different manufacturers. Industry intelligence providers such as Off-Highway Research collect and consolidate equipment sales data across regions and product categories, using inputs from manufacturers, dealers, and regional experts to construct a comprehensive view of the market \cite{offhighway2024report,offhighway2018method}. In practice, some manufacturers contribute aggregated sales data to industry research providers or participate in data exchange mechanisms, enabling the construction of comprehensive market statistics \cite{offhighway2018method,mordor2024construction}.
 
@@ -80,7 +92,7 @@ The construction equipment industry is global, capital-intensive, and analytical
 
 
 
-% Market share is a widely used indicator to evaluate a firm’s competitive position within a defined market. It is typically defined as the ratio between a company’s sales and the total market size within a given segment \cite{kotler2016marketing}. In practice, business units within companies estimate both the total market size and their own share in order to assess competitive dynamics, benchmark performance against competitors, and support strategic planning and decision-making \cite{porter2008competitive}.
+% Market share is a widely used indicator to evaluate a firmâ€™s competitive position within a defined market. It is typically defined as the ratio between a companyâ€™s sales and the total market size within a given segment \cite{kotler2016marketing}. In practice, business units within companies estimate both the total market size and their own share in order to assess competitive dynamics, benchmark performance against competitors, and support strategic planning and decision-making \cite{porter2008competitive}.
 
 
 
@@ -143,9 +155,9 @@ The construction equipment industry is global, capital-intensive, and analytical
 
 
 
-Given the competitive and international nature of the industry, market share is a key indicator for assessing position and supporting strategic decision-making \cite{porter1980competitive, kotler2016marketing}. Yet market size and market share are rarely derived from one standardized source, so firms must combine internal sales data, industry-level exchange or aggregated data, and external third-party inputs.
+In this industry setting, market share is a key indicator for assessing position and supporting strategic decision-making \cite{kotler2016marketing}. Yet market size and market share are rarely derived from one standardized source, so firms must combine internal sales data, industry-level exchange or aggregated data, and external third-party inputs.
 
-In practice, market share estimation relies on combining three main types of data: internal company sales data, industry-level aggregated or exchange data, and external third-party datasets. Industry intelligence providers, such as Off-Highway Research, aggregate data from manufacturers, dealers, and regional sources to construct market-level estimates \cite{offhighway2018method}. To address gaps in reporting coverage, additional external inputs—such as dealer estimates, registration data, and country-level statistics—are often incorporated \cite{mordor2024construction}.
+In practice, market share estimation relies on combining three main types of data: internal company sales data, industry-level aggregated or exchange data, and external third-party datasets. Industry intelligence providers, such as Off-Highway Research, aggregate data from manufacturers, dealers, and regional sources to construct market-level estimates \cite{offhighway2018method}. To address gaps in reporting coverage, additional external inputsâ€”such as dealer estimates, registration data, and country-level statisticsâ€”are often incorporated \cite{mordor2024construction}.
 
 While this multi-source approach improves market coverage, it also introduces key challenges:
 
@@ -179,7 +191,7 @@ These challenges motivate structured data-processing frameworks that can integra
 
 % \section{Market Share Calculation in SAP Systems}
 
-% % Enterprise resource planning (ERP) systems are widely used to manage and integrate business data across organizational functions, providing a foundation for analytical processes in industrial contexts \cite{davenport1998, klaus2000}. Among these systems, SAP is one of the most widely adopted platforms, offering a centralized infrastructure for storing and managing large volumes of structured business data \cite{monk2012erp}.
+% % Enterprise resource planning (ERP) systems are widely used to manage and integrate business data across organizational functions, providing a foundation for analytical processes in industrial contexts \\cite{davenport1998,klaus2000}. Among these systems, SAP is one of the most widely adopted platforms, offering a centralized infrastructure for storing and managing large volumes of structured business data \cite{monk2012erp}.
 
 % % Within SAP-based environments, analytical processes such as market share calculation are not implemented as single predefined functions, but rather as structured combinations of data integration, transformation, and aggregation. This reflects the broader characteristics of enterprise data processing, where analytical outcomes are derived through multi-step data pipelines rather than isolated functions \cite{vassiliadis2002etl}.
 
@@ -199,7 +211,7 @@ These challenges motivate structured data-processing frameworks that can integra
 
 % % 2.3 Market Share Calculation in SAP Systems
 
-% % As Davenport \cite{davenport1998} and Klaus et al. \cite{klaus2000} point out, enterprise resource planning (ERP) systems are designed to integrate core business processes and consolidate operational data across organizational functions. Among these systems, SAP is one of the most widely adopted enterprise platforms, supporting business operations while also providing real-time data visibility and analytical capabilities \cite{sap_erp_guide}. 
+% % As Davenport \cite{davenport1998} and Klaus et al. \cite{davenport1998,klaus2000} point out, enterprise resource planning (ERP) systems are designed to integrate core business processes and consolidate operational data across organizational functions. Among these systems, SAP is one of the most widely adopted enterprise platforms, supporting business operations while also providing real-time data visibility and analytical capabilities \cite{sap_erp_guide}. 
 
 % % In this sense, SAP should not be understood merely as a transactional system, but as a broader enterprise environment in which operational data can be loaded, structured, transformed, and reused for analytical purposes.
 
@@ -223,7 +235,7 @@ These challenges motivate structured data-processing frameworks that can integra
 
 % Within the broader SAP landscape, analytical processing is typically separated from transactional business processing. ERP systems generate and consolidate operational data, whereas SAP Business Warehouse (BW) structures and provides this data for analytical use, including reporting, modeling, and transformation \cite{sap_bw4hana_guide}. BW can therefore be understood as the analytical layer of the SAP ecosystem, on top of which more complex workflows, such as market share calculation, can be implemented.
 
-% % As Vassiliadis et al. \cite{vassiliadis2002etl} argue, complex analytical results are generally produced through multi-step transformation workflows rather than isolated functions. Market share calculation in SAP can therefore be understood as one such workflow, implemented on top of SAP’s analytical infrastructure.
+% % As Vassiliadis et al. \cite{vassiliadis2002etl} argue, complex analytical results are generally produced through multi-step transformation workflows rather than isolated functions. Market share calculation in SAP can therefore be understood as one such workflow, implemented on top of SAPâ€™s analytical infrastructure.
 
 % From a technical perspective, SAP provides several components relevant to this type of calculation, including data input and loading mechanisms, analytical storage objects, multidimensional modeling structures, processing logic, and reporting outputs \cite{sap_analysis_office_guide,sap_bw_ip_overview}. Data enters the system through controlled upload and loading mechanisms, is stored in analytical structures such as InfoProviders, and is then processed through planning logic before being exposed to reporting layers.
 
@@ -234,12 +246,12 @@ These challenges motivate structured data-processing frameworks that can integra
 
 
 
-% SAP BW supports market share calculation by organizing analytical data in a multidimensional structure rather than as flat records. In the classical BW model, an InfoCube is arranged according to SAP’s enhanced star schema, in which a central fact table stores key figures, while surrounding dimension tables store characteristics. The fact table contains only key figures, whereas the characteristics are kept in the dimensions, making it possible to analyze the same measures across multiple business perspectives.\cite{sap_enhanced_star_schema} For market share calculation, this is especially important because key figures such as sales volume, market volume, and market share must be consistently structured across dimensions such as country, machine line, brand, size class, and time. In this way, the enhanced star schema provides the technical storage model that enables multidimensional aggregation and comparison in SAP BW. \\
+% SAP BW supports market share calculation by organizing analytical data in a multidimensional structure rather than as flat records. In the classical BW model, an InfoCube is arranged according to SAPâ€™s enhanced star schema, in which a central fact table stores key figures, while surrounding dimension tables store characteristics. The fact table contains only key figures, whereas the characteristics are kept in the dimensions, making it possible to analyze the same measures across multiple business perspectives.\cite{sap_enhanced_star_schema} For market share calculation, this is especially important because key figures such as sales volume, market volume, and market share must be consistently structured across dimensions such as country, machine line, brand, size class, and time. In this way, the enhanced star schema provides the technical storage model that enables multidimensional aggregation and comparison in SAP BW. \\
 
 
 %   \textbf { Planning functions and processing sequences}\\
 
-% SAP states that planning functions allow “system-based processing or generation of data,” while planning sequences group multiple planning functions and execute them sequentially \cite{sap_bw_ip_overview,sap_planning_sequences}. Technically, this provides an execution layer on top of the multidimensional data model. Rather than calculating market share in a single static query, SAP enables the process to be broken down into ordered operations such as copying, recalculation, deletion, distribution, and formula-based transformation \cite{sap_bw_ip_overview,sap_planning_functions}. SAP’s Analysis for Office documentation also shows that these planning objects can be triggered through Excel-based planning front ends, where users work with input-ready analytical data and execute planning logic from a spreadsheet interface \cite{sap_analysis_office_guide}. This is particularly relevant for market share calculation, since such calculations typically require several dependent steps, including data preparation, reconciliation, redistribution, and final aggregation.
+% SAP states that planning functions allow â€œsystem-based processing or generation of data,â€ while planning sequences group multiple planning functions and execute them sequentially \cite{sap_bw_ip_overview,sap_planning_sequences}. Technically, this provides an execution layer on top of the multidimensional data model. Rather than calculating market share in a single static query, SAP enables the process to be broken down into ordered operations such as copying, recalculation, deletion, distribution, and formula-based transformation \cite{sap_bw_ip_overview,sap_planning_functions}. SAPâ€™s Analysis for Office documentation also shows that these planning objects can be triggered through Excel-based planning front ends, where users work with input-ready analytical data and execute planning logic from a spreadsheet interface \cite{sap_analysis_office_guide}. This is particularly relevant for market share calculation, since such calculations typically require several dependent steps, including data preparation, reconciliation, redistribution, and final aggregation.
 
 % % Taken together, these capabilities explain why SAP can support complex market share calculation workflows. The multidimensional storage model provides a structured analytical basis on which heterogeneous market-related data can be aligned and compared, while the planning layer provides a controlled rule-based mechanism for transforming that data st
 
@@ -403,7 +415,7 @@ These challenges motivate structured data-processing frameworks that can integra
 
 % \subsection{ERP Systems and SAP as the Analytical Environment}
 
-% Enterprise resource planning (ERP) systems are widely used to manage and integrate business data across organizational functions, thereby providing a foundation for analytical processes in industrial contexts \cite{davenport1998, klaus2000}. Rather than treating business data as isolated records in separate applications, ERP systems consolidate operational information into a shared enterprise environment, making it possible to coordinate processes and reuse data across multiple business functions.
+% Enterprise resource planning (ERP) systems are widely used to manage and integrate business data across organizational functions, thereby providing a foundation for analytical processes in industrial contexts \\cite{davenport1998,klaus2000}. Rather than treating business data as isolated records in separate applications, ERP systems consolidate operational information into a shared enterprise environment, making it possible to coordinate processes and reuse data across multiple business functions.
 
 % Within the broader SAP landscape, analytical processing is typically separated from transactional business processing. ERP systems generate and consolidate operational data, whereas SAP Business Warehouse (BW) structures and provides this data for analytical use, including reporting, modeling, and transformation \cite{sap_bw4hana_guide}. BW can therefore be understood as the analytical layer of the SAP ecosystem, on top of which more complex workflows, such as market share calculation, can be implemented.
 
@@ -419,9 +431,9 @@ These challenges motivate structured data-processing frameworks that can integra
 \section{Enterprise Implementation of Market Share Estimation at Volvo CE}
 \label{subsec:enterprise_tmc_volvo}
 
-Because market share estimation involves integrating heterogeneous data and applying repeatable rules across multiple business dimensions, it is typically implemented within enterprise systems rather than isolated spreadsheets or ad hoc scripts \cite{klaus2000}. In the Volvo CE case, this is realised through a Total Market Calculation (TMC) framework implemented in SAP for market reporting and market share analysis.
+Because market share estimation involves integrating heterogeneous data and applying repeatable rules across multiple business dimensions, firms may choose to implement such workflows in enterprise systems rather than rely only on isolated spreadsheets or ad hoc scripts. In the Volvo CE case, this is realized through a Total Market Calculation (TMC) framework implemented in SAP for market reporting and market share analysis.
 
-\subsection{ERP Systems and SAP as the Analytical Environment}
+\subsection{SAP as the Analytical Environment in the Volvo CE Case}
 
 % Within the SAP landscape, analytical processing is typically separated from transactional business processing. ERP systems generate and consolidate operational data, whereas SAP Business Warehouse (BW) structures and provides this data for analytical use, including reporting, modeling, and transformation \cite{sap_bw4hana_guide}. BW can therefore be understood as the analytical layer of the SAP ecosystem, on top of which more complex workflows, such as market share calculation, can be implemented.
 
@@ -439,7 +451,7 @@ Because market share estimation involves integrating heterogeneous data and appl
 % From a technical perspective, the implementation of market-related calculations in SAP relies on several key components:
 
 % \begin{itemize}
-%     \item \textbf{Data integration and storage:} Data is loaded through controlled upload interfaces and process chains, and stored in BW structures such as InfoProviders and planning cubes. These structures support multidimensional modeling based on SAP’s enhanced star schema, enabling consistent analysis across dimensions such as country, machine line, brand, and time \cite{sap_enhanced_star_schema}.
+%     \item \textbf{Data integration and storage:} Data is loaded through controlled upload interfaces and process chains, and stored in BW structures such as InfoProviders and planning cubes. These structures support multidimensional modeling based on SAPâ€™s enhanced star schema, enabling consistent analysis across dimensions such as country, machine line, brand, and time \cite{sap_enhanced_star_schema}.
 
 %     \item \textbf{Calculation and execution logic:} Business logic is implemented through planning functions and planning sequences, which execute ordered transformations such as copying, filtering, recalculation, and distribution \cite{sap_bw_ip_overview, sap_planning_sequences}. In practice, these operations are configured within SAP BW Integrated Planning and may involve underlying ABAP-based execution logic for system-level processing.
 
@@ -466,7 +478,7 @@ Because market share estimation involves integrating heterogeneous data and appl
 
 
 
-Within the SAP landscape, transactional processing and analytical processing are separated. Operational data is generated in ERP systems, while SAP Business Warehouse (BW) provides the analytical layer for reporting, modelling, and transformation \cite{sap_bw_guide}. For this thesis, the key point is not SAP internals in themselves, but that SAP combines structured data loading, multidimensional storage, sequential rule execution, and spreadsheet-based user interaction \cite{sap_enhanced_star_schema,sap_bw_ip_overview,sap_planning_sequences,sap_analysis_office_guide}. Together, these capabilities form the technical foundation for a controlled enterprise workflow, while also making the calculation logic difficult to inspect from a business-user perspective.
+In the Volvo CE setting, SAP provides the technical environment in which the TMC workflow is executed. Operational data is generated in enterprise systems, while SAP Business Warehouse (BW) provides the analytical layer for reporting, modeling, and transformation \cite{sap_bw_guide}. For this thesis, the key point is that SAP combines structured data loading, sequential rule execution, and spreadsheet-based user interaction \cite{sap_bw_ip_overview}. In the Volvo CE case, these capabilities form the technical foundation for a controlled enterprise workflow, while also making the calculation logic difficult to inspect from a business-user perspective.
 
 
 
@@ -518,7 +530,7 @@ For the purposes of this thesis, three aspects of that implementation are most i
 
 
 
-Overall, the SAP-based TMC framework can be understood as a structured enterprise workflow that integrates maintained rules, staged transformation, and reporting in one operational environment.
+Overall, the SAP-based TMC framework can be understood as one example of a broader class of ERP-based enterprise workflows that integrate maintained rules, staged transformation, and reporting in one operational environment.
 
 
 
@@ -554,7 +566,7 @@ Overall, the SAP-based TMC framework can be understood as a structured enterpris
 Although the existing SAP-based TMC framework provides a structured environment for market share calculation, it introduces several limitations:
 
 \begin{itemize}
-    \item \textbf{Technical complexity:} The calculation logic is implemented through SAP-specific objects such as planning functions, planning sequences, and ABAP-based processing, which require specialized technical knowledge and limit accessibility for business users \cite{klaus2000}.
+    \item \textbf{Technical complexity:} The calculation logic is implemented through SAP-specific objects such as planning functions, planning sequences, and ABAP-based processing, which require specialized technical knowledge and limit accessibility for business users \cite{weber2022sap}.
 
     \item \textbf{Limited transparency:} The calculation is executed across multiple system layers without a clear, consolidated representation of the full workflow, making intermediate transformations difficult to inspect and interpret.
 
@@ -574,13 +586,21 @@ These limitations motivate the need for a more transparent and traceable represe
 
 \section{Related Work}
 
-% \subsection{Previous Work}
-% \label{subsec:previous_work}
+Prior research relevant to this thesis can be grouped into three areas. First, data-warehouse and ETL literature describes enterprise analytics as staged workflows in which heterogeneous data is extracted, transformed, and prepared for reporting or decision support \cite{vassiliadis2009etl}. Related work on heterogeneous data integration and data-pipeline quality further shows that such workflows often involve inconsistent inputs, transformation errors, and data-quality challenges \cite{putrama2024heterogeneous,foidl2024pipeline}. This supports the need for explicit transformation stages and quality-control mechanisms in complex enterprise data-processing workflows.
 
-% \subsection{Previous Work}
-% \label{subsec:previous_work}
+Second, ERP and SAP-related research highlights the complexity and usability challenges of enterprise systems. ERP systems integrate business processes across organisational functions, but this integration can also introduce complex data structures, system-specific logic, and interfaces that require specialised knowledge \cite{davenport1998,klaus2000}. Research on SAP ERP process extraction shows that identifying relevant process structures and tables can be difficult in SAP environments \cite{weber2022sap}. ERP usability studies also show that navigation, task support, learnability, and output presentation affect end-user effectiveness \cite{calisir2004erp,wong2016sap}. These findings are relevant because the problem addressed in this thesis concerns not only workflow execution, but also whether business users can inspect and validate how outputs are produced.
+
+Third, decision-support and enterprise analytics literature suggests that analytical functionality can be supported through additional user-facing layers that help users review data and interpret outputs \cite{march2007dss}. Work in the construction domain similarly shows that data-warehouse and decision-support layers can support analytical tasks beyond transactional enterprise systems \cite{fan2006equipmentdw}. Such layers can complement existing enterprise systems by providing more accessible interfaces for inspection, comparison, and validation.
+
+Taken together, this literature supports the relevance of transparency, traceability, usability, and inspectability in enterprise data-processing workflows. However, the reviewed work does not provide a concrete design example of how selected ERP/SAP-embedded workflow logic can be re-expressed as a staged, browser-based inspection artefact for business users. This thesis addresses that gap through a Design Science Research study using Volvo CE's Total Market Calculation workflow as the empirical case setting, while framing the underlying problem as a broader enterprise workflow challenge.
 
 
-Prior research points in three directions relevant to this thesis. First, data-warehouse and ETL literature describes complex analytics as staged workflows that integrate heterogeneous data and therefore benefit from explicit transformation steps and quality control \cite{march2007dss,vassiliadis2009etl,souibgui2019etl}. Second, enterprise-system usability research shows that difficult interfaces and technically fragmented system structures reduce end-user effectiveness, especially for non-technical business users working with ERP-based analytics \cite{calisir2004erp,wong2016sap,balaha2025integration}. Third, work in the construction domain shows that analytical functionality can be delivered through separate decision-support layers rather than only through transactional enterprise systems \cite{fan2004webdw,fan2006equipmentdw}.
 
-Taken together, this literature supports the idea that enterprise data-processing workflows benefit from explicit stages, more accessible review interfaces, and clearer exposure of intermediate outputs. However, the reviewed work does not provide a domain-specific design for reconstructing SAP-embedded market-share logic into a transparent web-based inspection workflow. This thesis addresses that gap through the Volvo CE case.
+
+
+
+
+
+
+
+

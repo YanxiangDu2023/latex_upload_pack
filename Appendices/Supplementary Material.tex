@@ -1,17 +1,7 @@
-% !TEX root = ../Thesis.tex
+﻿% !TEX root = ../Thesis.tex
 
 \chapter{Supplementary Implementation and Evaluation Material}
 \label{app:supplementary-material}
-
-\section{Software Tools and the Use of AI Tools}
-
-Several software tools were used during the development of the artefact and the writing of the thesis.
-
-Codex was used as a supportive tool during development, mainly for exploring implementation alternatives, discussing frontend-backend interactions, and assisting with SQL, API logic, and debugging. While it helped improve efficiency, all system design decisions and final implementations were made by the author.
-
-ChatGPT was used during the writing process to refine language, improve clarity, and adjust phrasing to a more academic style. As English is not the author's first language, it was particularly useful for improving grammar and sentence structure. However, all ideas and conclusions were developed independently.
-
-Visual Studio Code served as the main development environment, draw.io was used for diagrams, and Overleaf was used for writing and formatting the thesis in \LaTeX. These tools supported the development and documentation process but did not influence the research direction or results.
 
 \section{Detailed Implementation Notes}
 
@@ -126,16 +116,16 @@ Stakeholder feedback was collected through weekly demo meetings and review discu
 FR1 Functional fulfilment & Can required source and matrix files be uploaded, shown, downloaded, and reused? & Yes. The required datasets in scope were uploaded and reused in workflow execution, including Source Matrix, Reporter List, Size Class, Brand Mapping, Group Country, Machine Line Mapping, OTH, CRP- and TMA-related data, and Volvo CE sales data. Upload pages supported \textit{Show Latest} and \textit{Download Latest}, enabling users to review and retrieve the latest uploaded files. \\
 \hline
 
-FR2 Functional fulfilment & Can backend logic generate staged workflow outputs for the selected TMC stages? & Yes. The backend generated staged outputs for OTH deletion and reporter-base processing, preparation, market view, adjustment, and split/resplit. These outputs were used for later inspection, comparison, and validation against expected workflow logic. \\
+FR2 Functional fulfilment & Can backend logic generate staged workflow outputs for the selected TMC stages? & Yes. The backend generated staged outputs for OTH deletion and reporter-base processing, preparation, market view, adjustment, and split and resplit. These outputs were used for later inspection, comparison, and validation against expected workflow logic. \\
 \hline
 
-FR3 Functional fulfilment & Does the artefact support a modular web-based frontend-backend workflow? & Yes. The prototype operated with separated frontend pages, backend report and processing routes, and relational storage for uploaded and derived records. Upload, processing, storage, workflow inspection, and visualisation were implemented as separate functions, supporting a modular workflow structure. \\
+FR3 Functional fulfilment & Does the artefact support a modular web-based frontend-backend workflow? & Yes. The prototype operated with separated frontend pages, backend report and processing routes, and relational storage for uploaded and derived records. Upload, processing, storage, workflow inspection, and visualization were implemented as separate functions, supporting a modular workflow structure. \\
 \hline
 
 FR4 Functional fulfilment & Are uploaded files, mappings, workflow records, and generated outputs stored in a structured way for repeated review? & Yes. Uploaded files, mapping data, intermediate records, and generated outputs were stored and reused across stages. Repeated save and reload cycles confirmed that users could return to generated results and continue review without rerunning the whole workflow. \\
 \hline
 
-FR5 Transparency and traceability support & Are intermediate stages and relevant source/rule context inspectable? & Partly to fully. Stage outputs were visible separately, including OTH deletion base, preparation, adjustment, market view, and split/resplit. Outputs retained key context fields, including source, country, machine line, artificial machine line, brand, reporter/deletion flags, split level, and split ratio. This enabled stage-level tracing, although full end-to-end row-level lineage remains future work. \\
+FR5 Transparency and traceability support & Are intermediate stages and relevant source/rule context inspectable? & Partly to fully. Stage outputs were visible separately, including OTH deletion base, preparation, adjustment, market view, and split and resplit. Outputs retained key context fields, including source, country, machine line, artificial machine line, brand, reporter/deletion flags, split level, and split ratio. This enabled stage-level tracing, although full end-to-end row-level lineage remains future work. \\
 \hline
 
 FR6 Usability and review support & Can users inspect outputs through frontend review functions? & Yes. Users reviewed outputs through filterable tables, summary cards, chart-based views, and CSV export. Stakeholder feedback indicated that the separated views and intermediate outputs made the selected TMC stages easier to inspect and discuss compared with the prior SAP-based representation. \\
@@ -147,7 +137,7 @@ Mostly yes.
     \item Manual Excel filtering was used to verify whether prototype-generated reporter flags and deletion flags followed the predefined rule requirements. The manually checked Excel results matched the prototype outputs.
     \item CRP reporter rows also matched the SAP reference result, with 338 rows identified.
     \item For OTH, the prototype classified 3,452 reporter rows, while SAP contained 3,467 rows with a net FID difference of 68. This was traced to a reporter-list version difference rather than a prototype error.
-    \item About 20\% of market-view rows and 10\% of split/resplit rows were spot-checked. The sampled records were consistent with expected calculations, split-case selection, redistribution logic, and before/after total preservation. One split-ratio discrepancy was recorded as a rule-clarification finding.
+    \item About 20\% of market-view rows and 10\% of split and resplit rows were spot-checked. The sampled records were consistent with expected calculations, split-case selection, redistribution logic, and before/after total preservation. One split-ratio discrepancy was recorded as a rule-clarification finding.
 \end{itemize}
 \\
 \hline
@@ -168,14 +158,17 @@ The total measured time was approximately \textbf{32--35 minutes}, including pro
 \\
 \hline
 
-PR2 Performance and stability & Is behaviour stable during repeated upload, run, filter, save, reload, and export cycles? & 
+PR2 Performance and stability & Is behavior stable during repeated upload, run, filter, save, reload, and export cycles? & 
 Yes. The prototype was tested through \textbf{five} repeated operation cycles using the selected 2024 dataset.
 \begin{itemize}[leftmargin=*, nosep]
     \item Each cycle covered matrix upload, OTH/CRP upload, preparation, adjustment, machine line split, filtering, manual correction, saving, reload, and CSV export.
     \item The average full workflow cycle was approximately \textbf{33 minutes}.
-    \item No crash, data loss, or inconsistent save/reload behaviour was observed.
+    \item No crash, data loss, or inconsistent save/reload behavior was observed.
 \end{itemize}
 \\
 \hline
 
 \end{longtable}
+
+
+
