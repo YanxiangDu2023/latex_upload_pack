@@ -24,11 +24,11 @@
 \contentsline {section}{\numberline {2.4}Related Work}{10}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Methodology}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Research Method}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Application of the Research Method}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Application of the Research Method}{16}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Explicate the Problem}{16}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Define Requirements}{16}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Design and Develop the Artefact}{16}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Demonstrate the Artefact}{17}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.3}Design and Develop the Artefact}{17}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Demonstrate the Artefact}{18}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Evaluate the Artefact}{18}{subsection.3.2.5}%
 \contentsline {section}{\numberline {3.3}Ethical Considerations}{19}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Problem and Requirements}{21}{chapter.4}%
