@@ -42,7 +42,7 @@
 
 % \subsection{Execution with Uploaded Workflow Data}
 
-% After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution followed the implemented workflow sequence from file upload and backend processing to preparation, adjustment, market-view generation, split/resplit processing, and output review.
+% After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution followed the implemented workflow sequence from file upload and backend processing to preparation, adjustment, market view generation, split/resplit processing, and output review.
 
 % The generated outputs were presented through filterable tables, summary views, charts, and CSV export functions. Table~\ref{tab:execution_outputs} summarises the execution steps and main outputs.
 
@@ -71,7 +71,7 @@
 % 4 & Run preparation-stage processing & Cleaned, mapped, and aggregated preparation outputs with mapped dimensions, reporter/deletion fields, and stage-level intermediate results. \\
 % \hline
 
-% 5 & Generate market-view and VCE / Non-VCE results & Market-view outputs showing Total Market, Volvo CE, Non-Volvo CE values, summary cards, and ratio-related values. \\
+% 5 & Generate market view and VCE / Non-VCE results & Market-view outputs showing Total Market, Volvo CE, Non-Volvo CE values, summary cards, and ratio-related values. \\
 % \hline
 
 % 6 & Run adjustment-stage processing & Adjustment-layer tables with grouped and derived values for intermediate workflow review. \\
@@ -99,7 +99,7 @@
 
 % % The generated prototype outputs were validated against the expected workflow logic and, where comparable, against 2024 SAP reference outputs. This validation focused on whether the SQL-based processing produced correct cleaned, mapped, aggregated, split, and resplit-related outputs within the implemented workflow scope.
 
-% % For the preparation stage, validation focused on row counts, mapped fields, reporter and deletion-related flags, aggregated values, and VCE / Non-VCE market-view calculations. For the split and resplit stages, validation focused on whether the prototype identified the correct split records, assigned the expected split levels and split ratios, redistributed values according to the defined business rules, and preserved before- and after-split totals. The detailed validation results are presented in the following subsections.
+% % For the preparation stage, validation focused on row counts, mapped fields, reporter and deletion-related flags, aggregated values, and VCE / Non-VCE market view calculations. For the split and resplit stages, validation focused on whether the prototype identified the correct split records, assigned the expected split levels and split ratios, redistributed values according to the defined business rules, and preserved before- and after-split totals. The detailed validation results are presented in the following subsections.
 
 
 
@@ -114,7 +114,7 @@
 
 % % % For OTH-related preparation, the evaluation focused on whether uploaded source rows were correctly aligned with the relevant mapping structures and then aggregated into the expected preparation-level outputs. In this stage, the mapped OTH values, including brand-related aggregated results, were displayed in the frontend tables and compared with the corresponding manually verified 2024 reference data. The comparison confirmed that the implemented OTH mapping and aggregation logic produced results consistent with the verified 2024 outputs.
 
-% % % The preparation-stage evaluation also included inspection of the frontend-based market-view representation. The VCE and Non-VCE chart was rendered correctly and displayed the expected percentage distribution between the two value categories. In addition, the chart and summary values responded correctly to frontend filtering, and the displayed percentages and totals remained consistent with the filtered result set.
+% % % The preparation-stage evaluation also included inspection of the frontend-based market view representation. The VCE and Non-VCE chart was rendered correctly and displayed the expected percentage distribution between the two value categories. In addition, the chart and summary values responded correctly to frontend filtering, and the displayed percentages and totals remained consistent with the filtered result set.
 
 
 % % % \subsection{Validation of Adjustment- and Split-Related Results}
@@ -149,11 +149,11 @@
 
 % % % The preparation-stage validation also included the generated VCE / Non-VCE market view. Approximately 20\% of the resulting rows were manually spot-checked to verify that, for each tested country and machine-line combination, the TMA value was correctly reduced by the corresponding Volvo sales value and that the resulting VCE / Non-VCE ratio was displayed correctly. The checked records were consistent with the expected calculations, confirming that the prototype produced the intended market-share representation for the tested 2024 data.
 
-% % % Overall, the preparation-stage validation showed that the prototype produced cleaned, mapped, and aggregated outputs consistent with the 2024 SAP reference data. The row counts, control flags, key mapped fields, and market-view calculations all matched the expected values, indicating that the implemented preparation logic behaved correctly within the scope of the evaluation.
+% % % Overall, the preparation-stage validation showed that the prototype produced cleaned, mapped, and aggregated outputs consistent with the 2024 SAP reference data. The row counts, control flags, key mapped fields, and market view calculations all matched the expected values, indicating that the implemented preparation logic behaved correctly within the scope of the evaluation.
 
 % % \subsection{Preparation-Stage Validation}
 
-% % The preparation stage was evaluated through data comparison and output inspection. The purpose of this validation was to assess whether the prototype generated preparation outputs that were consistent with the expected workflow logic and the corresponding 2024 SAP reference data. The evaluation parameters included row-count consistency, correctness of mapped fields, correctness of workflow control flags, and correctness of the VCE / Non-VCE market-view calculation.
+% % The preparation stage was evaluated through data comparison and output inspection. The purpose of this validation was to assess whether the prototype generated preparation outputs that were consistent with the expected workflow logic and the corresponding 2024 SAP reference data. The evaluation parameters included row-count consistency, correctness of mapped fields, correctness of workflow control flags, and correctness of the VCE / Non-VCE market view calculation.
 
 % % For the CRP-related preparation output, the prototype result was compared with the expected reporter classification and grouped preparation structure from the SAP reference data. In the tested 2024 data, the number of CRP rows identified as reporter rows was 338, which matched the corresponding SAP reference result. The deletion-related logic was also checked to verify that rows flagged for exclusion were treated consistently with the SAP output.
 
@@ -204,7 +204,7 @@
 %     \item mapped-field consistency;
 %     \item workflow control-flag correctness;
 %     \item aggregated-value consistency;
-%     \item correctness of the VCE / Non-VCE market-view calculation.
+%     \item correctness of the VCE / Non-VCE market view calculation.
 % \end{itemize}
 
 % For the split and resplit stages, the validation parameters were:
@@ -431,7 +431,7 @@
 
 % \subsection{Execution with Uploaded Workflow Data}
 
-% After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution followed the implemented workflow sequence from file upload and backend processing to preparation, adjustment, market-view generation, split/resplit processing, and output review.
+% After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution followed the implemented workflow sequence from file upload and backend processing to preparation, adjustment, market view generation, split/resplit processing, and output review.
 
 % The generated outputs were presented through filterable tables, summary views, charts, and CSV export functions. Table~\ref{tab:execution_outputs} summarises the execution steps and main outputs.
 
@@ -460,7 +460,7 @@
 % 4 & Run preparation-stage processing & Cleaned, mapped, and aggregated preparation outputs with mapped dimensions, reporter/deletion fields, and stage-level intermediate results. \\
 % \hline
 
-% 5 & Generate market-view and VCE / Non-VCE results & Market-view outputs showing Total Market, Volvo CE, Non-Volvo CE values, summary cards, and ratio-related values. \\
+% 5 & Generate market view and VCE / Non-VCE results & Market-view outputs showing Total Market, Volvo CE, Non-Volvo CE values, summary cards, and ratio-related values. \\
 % \hline
 
 % 6 & Run adjustment-stage processing & Adjustment-layer tables with grouped and derived values for intermediate workflow review. \\
@@ -488,7 +488,7 @@
 %     \item mapped-field consistency;
 %     \item workflow control-flag correctness;
 %     \item aggregated-value consistency;
-%     \item correctness of the VCE / Non-VCE market-view calculation.
+%     \item correctness of the VCE / Non-VCE market view calculation.
 % \end{itemize}
 
 % For the split and resplit stages, the validation parameters were:
@@ -563,7 +563,7 @@
 % SR2 & Structural fit & Structured storage of uploaded files, mappings, workflow records, and generated outputs. & Structured persistence supported repeated review, save/reload behaviour, and extension to later workflow stages. \\
 % \hline
 
-% PR1 & Performance & Successful completion of stage and report execution for the selected 2024 dataset. & Demonstration runs completed successfully across preparation, market-view, adjustment, and split/resplit flows. Observed execution time was typically within a few seconds and up to around one minute depending on stage complexity and row volume; formal production benchmarking was outside scope. \\
+% PR1 & Performance & Successful completion of stage and report execution for the selected 2024 dataset. & Demonstration runs completed successfully across preparation, market view, adjustment, and split/resplit flows. Observed execution time was typically within a few seconds and up to around one minute depending on stage complexity and row volume; formal production benchmarking was outside scope. \\
 % \hline
 
 % PR2 & Performance / stability & Absence of crashes, data loss, or inconsistent save/reload behaviour during repeated operations. & Repeated upload/run/filter/save/export cycles were executed during demonstration and validation, and no crash, data-loss event, or inconsistent save/reload behaviour was observed in the tested 2024 scope. \\
@@ -636,19 +636,19 @@
 
 % \section{Demonstration of the Artefact}
 
-% The artefact was demonstrated using real workflow data from Volvo CE's 2024 TMC calculation cycle. The purpose of the demonstration was to show how the implemented prototype could be used to execute selected workflow stages, generate inspectable outputs, and support later validation and evaluation. The demonstration covered the prototype environment, workflow execution through the web interface, and generation of staged outputs for preparation, adjustment, market-view, split, and resplit-related processing.
+% The artefact was demonstrated using real workflow data from Volvo CE's 2024 TMC calculation cycle. The purpose of the demonstration was to show how the implemented prototype could be used to execute selected workflow stages, generate inspectable outputs, and support later validation and evaluation. The demonstration covered the prototype environment, workflow execution through the web interface, and generation of staged outputs for preparation, adjustment, market view, split, and resplit-related processing.
 
 % \subsection{Setup of the Test Environment}
 
 % For the demonstration, the artefact was operated as a browser-accessible prototype in a controlled web-based environment. The frontend, backend service, and relational database were run together as one integrated system, allowing the workflow to be accessed through the implemented interface rather than through local development views alone.
 
-% The evaluation dataset consisted of real workflow data from the 2024 TMC calculation cycle. This included OTH data, CRP/TMA-related data, Volvo CE sales data, and matrix-based business inputs such as Source Matrix, Reporter List, Size Class, Brand Mapping, Group Country, and Machine Line Mapping. These files were used as the input basis for demonstrating and evaluating the implemented preparation, adjustment, market-view, split, and resplit-related logic.
+% The evaluation dataset consisted of real workflow data from the 2024 TMC calculation cycle. This included OTH data, CRP/TMA-related data, Volvo CE sales data, and matrix-based business inputs such as Source Matrix, Reporter List, Size Class, Brand Mapping, Group Country, and Machine Line Mapping. These files were used as the input basis for demonstrating and evaluating the implemented preparation, adjustment, market view, split, and resplit-related logic.
 
 % The demonstration and evaluation were limited to the implemented prototype scope. The purpose was to assess whether the prototype could support inspectable execution and validation of selected TMC workflow stages, rather than to conduct full production deployment testing or replace the SAP-based workflow.
 
 % \subsection{Execution with Uploaded Workflow Data}
 
-% After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution followed the implemented workflow sequence from file upload and backend processing to preparation, adjustment, market-view generation, split/resplit processing, and output review.
+% After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution followed the implemented workflow sequence from file upload and backend processing to preparation, adjustment, market view generation, split/resplit processing, and output review.
 
 % The generated outputs were presented through filterable tables, summary views, charts, and CSV export functions. Table~\ref{tab:execution_outputs} summarises the execution steps and main outputs.
 
@@ -677,7 +677,7 @@
 % 4 & Run preparation-stage processing & Cleaned, mapped, and aggregated preparation outputs with mapped dimensions, reporter/deletion fields, and stage-level intermediate results. \\
 % \hline
 
-% 5 & Generate market-view and VCE / Non-VCE results & Market-view outputs showing Total Market, Volvo CE, Non-Volvo CE values, summary cards, and ratio-related values. \\
+% 5 & Generate market view and VCE / Non-VCE results & Market-view outputs showing Total Market, Volvo CE, Non-Volvo CE values, summary cards, and ratio-related values. \\
 % \hline
 
 % 6 & Run adjustment-stage processing & Adjustment-layer tables with grouped and derived values for intermediate workflow review. \\
@@ -707,7 +707,7 @@
 %     \item mapped-field consistency;
 %     \item workflow control-flag correctness;
 %     \item aggregated-value consistency;
-%     \item correctness of the VCE / Non-VCE market-view calculation.
+%     \item correctness of the VCE / Non-VCE market view calculation.
 % \end{itemize}
 
 % For the split and resplit stages, the output validation parameters were:
@@ -816,7 +816,7 @@
 % SR2 & Structural fit & Structured storage of uploaded files, mappings, workflow records, and generated outputs. & Structured persistence supported repeated review, save/reload behaviour, and extension to later workflow stages. \\
 % \hline
 
-% PR1 & Performance & Successful completion of stage and report execution for the selected 2024 dataset. & Demonstration runs completed successfully across preparation, market-view, adjustment, and split/resplit flows. Observed execution time was typically within a few seconds and up to around one minute depending on stage complexity and row volume; formal production benchmarking was outside the thesis scope. \\
+% PR1 & Performance & Successful completion of stage and report execution for the selected 2024 dataset. & Demonstration runs completed successfully across preparation, market view, adjustment, and split/resplit flows. Observed execution time was typically within a few seconds and up to around one minute depending on stage complexity and row volume; formal production benchmarking was outside the thesis scope. \\
 % \hline
 
 % PR2 & Performance / stability & Absence of crashes, data loss, or inconsistent save/reload behaviour during repeated operations. & Repeated upload, run, filter, save/reload, and export cycles were executed during demonstration and validation. No crash, data-loss event, or inconsistent save/reload behaviour was observed in the tested 2024 scope. \\
@@ -897,13 +897,13 @@ The artefact was demonstrated using real workflow data from Volvo CE's 2024 TMC 
 
 For the demonstration, the artefact was operated as a browser-accessible prototype in a controlled web-based environment. The frontend, backend service, and relational database were run together as one integrated system, allowing the workflow to be accessed through the implemented interface.
 
-The evaluation used real workflow data from the 2024 TMC calculation cycle, including OTH data, CRP/TMA-related data, Volvo CE sales data, and matrix-based inputs such as Source Matrix, Reporter List, Size Class, Brand Mapping, Group Country, and Machine Line Mapping. Sensitive values, identifiers, and company-specific details were anonymised or masked in the thesis presentation. These files were used to demonstrate and evaluate the implemented preparation, adjustment, market-view, split, and resplit-related logic. The evaluation was limited to the implemented prototype scope and did not aim to replace the SAP-based workflow or conduct production-level deployment testing.
+The evaluation used real workflow data from the 2024 TMC calculation cycle, including OTH data, CRP/TMA-related data, Volvo CE sales data, and matrix-based inputs such as Source Matrix, Reporter List, Size Class, Brand Mapping, Group Country, and Machine Line Mapping. Sensitive values, identifiers, and company-specific details were anonymised or masked in the thesis presentation. These files were used to demonstrate and evaluate the implemented preparation, adjustment, market view, split, and resplit-related logic. The evaluation was limited to the implemented prototype scope and did not aim to replace the SAP-based workflow or conduct production-level deployment testing.
 
 
 
 \subsection{Execution with Uploaded Workflow Data}
 
-After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution moved from file upload and backend processing to preparation, market-view generation, adjustment, split and resplit processing, and output review.
+After the test environment had been prepared, the prototype was executed with the selected 2024 TMC workflow data. The execution moved from file upload and backend processing to preparation, market view generation, adjustment, split and resplit processing, and output review.
 
 The generated outputs were available through filterable tables, summary views, charts, and CSV export. Within the selected scope, the execution demonstrated that the prototype could transform uploaded source and matrix files into inspectable staged workflow outputs, which were then used as the basis for validation and requirement-based evaluation.
 
@@ -926,7 +926,7 @@ The artefact was evaluated against the requirements defined in Section~\ref{sec:
 %     \item mapped-field consistency;
 %     \item workflow control-flag correctness;
 %     \item aggregated-value consistency;
-%     \item correctness of the VCE / Non-VCE market-view calculation.
+%     \item correctness of the VCE / Non-VCE market view calculation.
 % \end{itemize}
 
 % For the split and resplit stages, the output validation parameters were:
@@ -943,14 +943,14 @@ The artefact was evaluated against the requirements defined in Section~\ref{sec:
 
 \subsection{Validation of Prototype Outputs}
 
-The generated prototype outputs were validated against expected workflow logic and, where comparable, against 2024 SAP reference outputs. The focus was on whether the implemented processing produced correct preparation, market-view, split, and resplit-related results within the selected scope.
+The generated prototype outputs were validated against expected workflow logic and, where comparable, against 2024 SAP reference outputs. The focus was on whether the implemented processing produced correct preparation, market view, split, and resplit-related results within the selected scope.
 
 
 \subsection{Preparation-Stage Validation}
 
 The preparation stage was validated through manual Excel-based checks, comparison with 2024 SAP reference data, and stakeholder clarification. For CRP-related preparation, the reporter classification and grouped output matched the SAP reference result, including the identification of 338 reporter rows. For OTH-related preparation, mapped fields such as country, market area, machine line, brand code, and size class were manually checked and found to follow the intended rules.
 
-The main discrepancy concerned OTH reporter-row counts: the prototype identified 3,452 rows, while the SAP reference output contained 3,467 rows, with a net difference of 68 FID. Manual checking and later stakeholder clarification showed that this difference came from a reporter-list version adjustment rather than from incorrect prototype execution. Selected VCE / Non-VCE market-view records were also spot-checked in Excel and were consistent with the expected calculations. Overall, the preparation-stage results were considered correct within the tested scope.
+The main discrepancy concerned OTH reporter-row counts: the prototype identified 3,452 rows, while the SAP reference output contained 3,467 rows, with a net difference of 68 FID. Manual checking and later stakeholder clarification showed that this difference came from a reporter-list version adjustment rather than from incorrect prototype execution. Selected VCE / Non-VCE market view records were also spot-checked in Excel and were consistent with the expected calculations. Overall, the preparation-stage results were considered correct within the tested scope.
 
 
 \begin{figure}[H]
@@ -1011,7 +1011,7 @@ Approximately 10\% of split output rows and 10\% of resplit output rows were the
 % Split and resplit outputs & Split-row selection and approximately 20\% of split/resplit rows sampled. & Split levels, split ratios, redistributed values, and before/after totals were consistent with expected rules in the sampled cases. \\
 % \hline
 
-% Runtime observation & Demonstration runs across preparation, market-view, adjustment, and split/resplit stages. & The prototype completed the tested runs within practical review time for prototype-level evaluation. \\
+% Runtime observation & Demonstration runs across preparation, market view, adjustment, and split/resplit stages. & The prototype completed the tested runs within practical review time for prototype-level evaluation. \\
 % \hline
 
 % Stability observation & Repeated upload, run, filter, save/reload, and export cycles. & No crash, data loss, or inconsistent save/reload behaviour was observed in the tested scope. \\
@@ -1055,7 +1055,7 @@ Approximately 10\% of split output rows and 10\% of resplit output rows were the
 % SR2 & Structural fit & Structured storage of uploaded files, mappings, workflow records, and generated outputs. & Structured persistence supported repeated review, save/reload behaviour, and extension to later workflow stages. \\
 % \hline
 
-% PR1 & Performance & Successful completion of stage and report execution for the selected 2024 dataset. & Demonstration runs completed successfully across preparation, market-view, adjustment, and split/resplit flows. Observed execution time was typically within a few seconds and up to around one minute depending on stage complexity and row volume; formal production benchmarking was outside the thesis scope. \\
+% PR1 & Performance & Successful completion of stage and report execution for the selected 2024 dataset. & Demonstration runs completed successfully across preparation, market view, adjustment, and split/resplit flows. Observed execution time was typically within a few seconds and up to around one minute depending on stage complexity and row volume; formal production benchmarking was outside the thesis scope. \\
 % \hline
 
 % PR2 & Performance / stability & Absence of crashes, data loss, or inconsistent save/reload behaviour during repeated operations. & Repeated upload, run, filter, save/reload, and export cycles were executed during demonstration and validation. No crash, data-loss event, or inconsistent save/reload behaviour was observed in the tested 2024 scope. \\
@@ -1112,7 +1112,7 @@ Approximately 10\% of split output rows and 10\% of resplit output rows were the
 % FR1 Functional fulfilment & Can required source and matrix files be uploaded, shown, downloaded, and reused? & Yes. The required datasets in scope were uploaded and reused in workflow execution, including Source Matrix, Reporter List, Size Class, Brand Mapping, Group Country, Machine Line Mapping, OTH, CRP- and TMA-related data, and Volvo CE sales data. Upload pages supported \textit{Show Latest} and \textit{Download Latest}. \\
 % \hline
 
-% FR2 Functional fulfilment & Can backend logic generate staged workflow outputs? & Yes. The backend generated OTH deletion and reporter base outputs, preparation outputs, market-view outputs, adjustment outputs, and split/resplit outputs used in later validation. \\
+% FR2 Functional fulfilment & Can backend logic generate staged workflow outputs? & Yes. The backend generated OTH deletion and reporter base outputs, preparation outputs, market view outputs, adjustment outputs, and split/resplit outputs used in later validation. \\
 % \hline
 
 % FR3 Functional fulfilment / usability & Can users inspect outputs through frontend review functions? & Yes. Users reviewed outputs through filterable tables, summary cards, chart-based views, and CSV export. These functions were used in demonstration and validation tasks. \\
@@ -1144,7 +1144,7 @@ Approximately 10\% of split output rows and 10\% of resplit output rows were the
 % \begin{itemize}[leftmargin=*]
 %     \item Manual Excel checks confirmed that the prototype applied the predefined rules correctly before comparison with SAP reference data. CRP reporter rows matched the SAP result, with 338 rows identified.
 %     \item For OTH, the prototype classified 3,452 reporter rows, while SAP contained 3,467 rows with a net FID difference of 68. This was traced to a reporter-list version difference rather than a prototype error.
-%     \item About 20\% of market-view rows and 10\% of split/resplit rows were spot-checked. The sampled records were consistent with expected calculations, split-case selection, redistribution logic, and before/after total preservation. One split-ratio discrepancy was recorded as a rule-clarification finding.
+%     \item About 20\% of market view rows and 10\% of split/resplit rows were spot-checked. The sampled records were consistent with expected calculations, split-case selection, redistribution logic, and before/after total preservation. One split-ratio discrepancy was recorded as a rule-clarification finding.
 % \end{itemize}
 % \\
 % \hline
@@ -1164,9 +1164,29 @@ Approximately 10\% of split output rows and 10\% of resplit output rows were the
 
 The artefact was evaluated against the functional and performance requirements defined in Section~\ref{sec:requirements}. The assessment combined generated workflow outputs, SAP reference comparisons where applicable, manual Excel checks, runtime observations, repeated stability testing, and stakeholder feedback from weekly review discussions.
 
-Overall, the results indicate that the main requirements were met within the prototype scope. The system supported upload and reuse of the required datasets, generated staged outputs for the selected workflow layers, and provided structured inspection through filters, summaries, charts, and CSV export. Validation support was also largely confirmed: manually checked rule behavior matched the prototype outputs, CRP reporter rows matched the SAP reference result, and sampled market-view and split and resplit records followed the expected calculation logic. The main observed exception was an OTH reporter-row difference that was traced to a reporter-list version difference rather than a prototype error.
+Overall, the results indicate that the main requirements were met within the prototype scope. The system supported upload and reuse of the required datasets, generated staged outputs for the selected workflow layers, and provided structured inspection through filters, summaries, charts, and CSV export. Validation support was also largely confirmed: manually checked rule behavior matched the prototype outputs, CRP reporter rows matched the SAP reference result, and sampled market view and split and resplit records followed the expected calculation logic. The main observed exception was an OTH reporter-row difference that was traced to a reporter-list version difference rather than a prototype error.
 
-Performance and stability results were also acceptable for the evaluated setting. Repeated workflow cycles remained within the defined review window, and no crash, data loss, or inconsistent save/reload behaviour was observed during the repeated test runs. A more detailed requirement-by-requirement table is provided in Appendix~\ref{app:supplementary-material}.
+Performance and stability results were also acceptable for the evaluated setting. Repeated workflow cycles remained within the defined review window, and no crash, data loss, or inconsistent save/reload behaviour was observed during the repeated test runs. In summary, the functional support for upload, staged processing, and browser-based inspection was largely achieved, and transparency, usability, and stage-level traceability were strongly supported within the implemented scope. At the same time, full end-to-end row-level lineage, full TMC coverage, and production-level integration were only partly addressed or left for future work.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Condensed evaluation summary for the implemented scope.}
+    \begin{tabular}{|p{4.0cm}|p{2.6cm}|p{6.1cm}|}
+        \hline
+        \textbf{Evaluation area} & \textbf{Outcome} & \textbf{Summary} \\
+        \hline
+        Functional support & Largely met & Upload, staged processing, and browser-based inspection were implemented and used successfully in the evaluated workflow scope. \\
+        \hline
+        Transparency and usability & Strongly supported & Intermediate outputs, filters, summaries, charts, and CSV export made selected stages easier to inspect and discuss. \\
+        \hline
+        Traceability and validation & Partly to strongly supported & Stage-level traceability and rule checking were supported well, but full end-to-end row-level lineage was not implemented. \\
+        \hline
+        Scope and deployment readiness & Partly addressed & The prototype worked well for the selected stages, but full TMC coverage and production-level integration remain future work. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+A more detailed requirement-by-requirement table is provided in Appendix~\ref{app:supplementary-material}.
 
 
 
@@ -1263,15 +1283,18 @@ Compared with the SAP-based representation, the prototype made four differences 
 
 \section{Summary and Limitations}
 
-The evaluation showed that the artefact fulfilled its core purpose as a web-based prototype for the selected TMC workflow stages. Within the implemented scope, it supported structured CSV upload, staged backend processing, intermediate output inspection, and rule-based validation against 2024 SAP reference outputs where comparison was possible. The results indicate that the prototype improved transparency and stage-level traceability by making preparation, market-view, adjustment, and split and resplit outputs easier to inspect and verify.
+The evaluation showed that the artefact fulfilled its core purpose as a web-based prototype for the selected TMC workflow stages. Within the implemented scope, it supported structured CSV upload, staged backend processing, intermediate output inspection, and rule-based validation against 2024 SAP reference outputs where comparison was possible. The results indicate that the prototype improved transparency and stage-level traceability by making preparation, market view, adjustment, and split and resplit outputs easier to inspect and verify.
 
 The validation results were largely consistent with the expected business rules. CRP preparation matched the SAP reference output, while the observed OTH reporter-flag difference was traced to a reporter-list version difference rather than a prototype error. For split and resplit, Excel-based checks showed that totals were preserved and sampled records followed the expected split-case, redistribution, and size-class flag rules. One split-ratio difference was identified as a rule-clarification issue.
 
 Several limitations nonetheless apply:
 \begin{itemize}
-    \item The prototype covers only selected stages of the broader TMC process. Formal evaluation was limited to source upload, preparation, market-view derivation, adjustment, and selected split and resplit outputs.
+    \item The prototype covers only selected stages of the broader TMC process. Formal evaluation was limited to source upload, preparation, market view, adjustment, and selected split and resplit outputs.
     \item The validation was based on the 2024 calculation cycle, so the findings cannot yet be generalised to all years, source configurations, or annual workflow variations.
     \item Some SAP comparisons were affected by reference-data or calculation-basis differences, such as the reporter-list adjustment and the observed split-ratio discrepancy.
     \item The artefact supports stage-level traceability, but full row-level lineage across all transformations remains future work.
     \item The current deployment and storage setup is adequate for prototype demonstration, but broader internal use would require more robust infrastructure, access control, and integration with enterprise systems.
 \end{itemize}
+
+
+

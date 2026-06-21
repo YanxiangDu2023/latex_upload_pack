@@ -464,14 +464,11 @@ OUTPUT Chapters\Extended Background.aux
 INPUT .\Chapters\Extended Background.tex
 INPUT .\Chapters\Extended Background.tex
 INPUT Chapters\Extended Background.tex
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8t.tfm
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8c.tfm
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putr8t.vf
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8r.tfm
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putr8c.vf
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm

@@ -3,10 +3,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.2}{\ignorespaces Requirements for the TMC workflow inspection prototype}}{24}{table.4.2}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Requirements for the TMC process inspection prototype}}{24}{table.4.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{Concise comparison between SAP-based representation and prototype}}{40}{table.6.1}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Condensed evaluation summary for the implemented scope.}}{40}{table.6.1}%
+\contentsline {table}{\numberline {6.2}{Concise comparison between SAP-based representation and prototype}}{41}{table.6.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {A.1}{Evaluation against functional and performance requirements}}{66}{table.A.1}%

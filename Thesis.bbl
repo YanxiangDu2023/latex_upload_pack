@@ -19,126 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{putrama2024heterogeneous}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=38c30788cfb38f6ffe2274354ee20a17}{%
-           family={Putrama},
-           familyi={P\bibinitperiod},
-           given={I\bibnamedelima Made},
-           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=b614a77d6102ca6f19d64e9f98ba7905}{%
-           family={Martinek},
-           familyi={M\bibinitperiod},
-           given={Péter},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{b2ee229cb488bea52cc95935fdd0de18}
-      \strng{fullhash}{b2ee229cb488bea52cc95935fdd0de18}
-      \strng{fullhashraw}{b2ee229cb488bea52cc95935fdd0de18}
-      \strng{bibnamehash}{b2ee229cb488bea52cc95935fdd0de18}
-      \strng{authorbibnamehash}{b2ee229cb488bea52cc95935fdd0de18}
-      \strng{authornamehash}{b2ee229cb488bea52cc95935fdd0de18}
-      \strng{authorfullhash}{b2ee229cb488bea52cc95935fdd0de18}
-      \strng{authorfullhashraw}{b2ee229cb488bea52cc95935fdd0de18}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Data in Brief}
-      \field{title}{Heterogeneous data integration: Challenges and opportunities}
-      \field{volume}{56}
-      \field{year}{2024}
-      \field{pages}{110853}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.dib.2024.110853
-      \endverb
-    \endentry
-    \entry{cheng2024harmonization}{article}{}{}
-      \name{author}{10}{}{%
-        {{hash=9f534327a5e2fbb96d7eb835339121dc}{%
-           family={Cheng},
-           familyi={C\bibinitperiod},
-           given={Cindy},
-           giveni={C\bibinitperiod}}}%
-        {{hash=05788941471d2a963d28d474fdf4845c}{%
-           family={Messerschmidt},
-           familyi={M\bibinitperiod},
-           given={Luca},
-           giveni={L\bibinitperiod}}}%
-        {{hash=c6132e617e05135f8f9facbe4e3909e9}{%
-           family={Bravo},
-           familyi={B\bibinitperiod},
-           given={Isaac},
-           giveni={I\bibinitperiod}}}%
-        {{hash=ee2c97d99877e26d04fc604a362b5956}{%
-           family={Waldbauer},
-           familyi={W\bibinitperiod},
-           given={Marco},
-           giveni={M\bibinitperiod}}}%
-        {{hash=a24dd4189585c6f06bbc1576bef88100}{%
-           family={Bhavikatti},
-           familyi={B\bibinitperiod},
-           given={Rohan},
-           giveni={R\bibinitperiod}}}%
-        {{hash=aa18f9f91394d9752b4fd5096efbcf44}{%
-           family={Schenk},
-           familyi={S\bibinitperiod},
-           given={Caress},
-           giveni={C\bibinitperiod}}}%
-        {{hash=ca828f3521b22e029517e3e78f200b43}{%
-           family={Grujic},
-           familyi={G\bibinitperiod},
-           given={Vanja},
-           giveni={V\bibinitperiod}}}%
-        {{hash=9cf8c35dda11a50d202a9dcf46e6d190}{%
-           family={Model},
-           familyi={M\bibinitperiod},
-           given={Tim},
-           giveni={T\bibinitperiod}}}%
-        {{hash=fa7dd5c15198d2c97c90ba01907458cc}{%
-           family={Kubinec},
-           familyi={K\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-        {{hash=3a3119334bfa21ddb0350190575805c7}{%
-           family={Barceló},
-           familyi={B\bibinitperiod},
-           given={Joan},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{3aad7c9bd353017967792df599a388af}
-      \strng{fullhash}{2e3381a19e5f93f26aac2301bf8b59b3}
-      \strng{fullhashraw}{2e3381a19e5f93f26aac2301bf8b59b3}
-      \strng{bibnamehash}{3aad7c9bd353017967792df599a388af}
-      \strng{authorbibnamehash}{3aad7c9bd353017967792df599a388af}
-      \strng{authornamehash}{3aad7c9bd353017967792df599a388af}
-      \strng{authorfullhash}{2e3381a19e5f93f26aac2301bf8b59b3}
-      \strng{authorfullhashraw}{2e3381a19e5f93f26aac2301bf8b59b3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Scientific Data}
-      \field{number}{1}
-      \field{title}{A General Primer for Data Harmonization}
-      \field{volume}{11}
-      \field{year}{2024}
-      \field{pages}{152}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1038/s41597-024-02956-3
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s41597-024-02956-3
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s41597-024-02956-3
-      \endverb
-    \endentry
     \entry{davenport1998}{article}{}{}
       \name{author}{1}{}{%
         {{hash=418715aadaf08f606ff3e5575fa44f4f}{%
@@ -155,8 +35,8 @@
       \strng{authornamehash}{418715aadaf08f606ff3e5575fa44f4f}
       \strng{authorfullhash}{418715aadaf08f606ff3e5575fa44f4f}
       \strng{authorfullhashraw}{418715aadaf08f606ff3e5575fa44f4f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Harvard Business Review}
@@ -200,8 +80,8 @@
       \strng{authornamehash}{dffab4cac4652bd6b9c97389e0dcb3a5}
       \strng{authorfullhash}{dffab4cac4652bd6b9c97389e0dcb3a5}
       \strng{authorfullhashraw}{dffab4cac4652bd6b9c97389e0dcb3a5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Information Systems Frontiers}
@@ -236,8 +116,8 @@
       \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
       \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 2026-04-06.}
@@ -281,8 +161,8 @@
       \strng{authornamehash}{c534a030eb90164ba01fa1104d0b4a9c}
       \strng{authorfullhash}{a57ae261bcd95a0d2d83e798026babbc}
       \strng{authorfullhashraw}{a57ae261bcd95a0d2d83e798026babbc}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Systems and Software}
@@ -339,8 +219,8 @@
       \strng{authornamehash}{1431b60c5735051649e33ba76fda2163}
       \strng{authorfullhash}{e5aefb512d3b8150381cfb2ddbb100c1}
       \strng{authorfullhashraw}{e5aefb512d3b8150381cfb2ddbb100c1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv}
@@ -383,8 +263,8 @@
       \strng{authornamehash}{ced54fd2fcf605155ff20f87975ff038}
       \strng{authorfullhash}{ced54fd2fcf605155ff20f87975ff038}
       \strng{authorfullhashraw}{ced54fd2fcf605155ff20f87975ff038}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Information Development}
@@ -416,8 +296,8 @@
       \strng{authornamehash}{53f0b5d188616de4b6bda38ea2165d7f}
       \strng{authorfullhash}{53f0b5d188616de4b6bda38ea2165d7f}
       \strng{authorfullhashraw}{53f0b5d188616de4b6bda38ea2165d7f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{3}
@@ -448,8 +328,8 @@
       \strng{authornamehash}{bed88ffefb47aac601ec95157a59baa3}
       \strng{authorfullhash}{bed88ffefb47aac601ec95157a59baa3}
       \strng{authorfullhashraw}{bed88ffefb47aac601ec95157a59baa3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Official market report page; accessed 2026-04-05.}
@@ -486,8 +366,8 @@
       \strng{authornamehash}{74940d1216bc63166e68653137dc3129}
       \strng{authorfullhash}{74940d1216bc63166e68653137dc3129}
       \strng{authorfullhashraw}{74940d1216bc63166e68653137dc3129}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{4th}
@@ -526,8 +406,8 @@
       \strng{authornamehash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
       \strng{authorfullhash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
       \strng{authorfullhashraw}{0d69bc14cecd0ca4a3e761ef1e71fc98}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Canadian Journal of Civil Engineering}
@@ -556,8 +436,8 @@
       \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
       \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 2026-04-06.}
@@ -759,6 +639,44 @@
       \verb 10.4018/jdwm.2009070101
       \endverb
     \endentry
+    \entry{putrama2024heterogeneous}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=38c30788cfb38f6ffe2274354ee20a17}{%
+           family={Putrama},
+           familyi={P\bibinitperiod},
+           given={I\bibnamedelima Made},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b614a77d6102ca6f19d64e9f98ba7905}{%
+           family={Martinek},
+           familyi={M\bibinitperiod},
+           given={Péter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{fullhash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{fullhashraw}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{bibnamehash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{authorbibnamehash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{authornamehash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{authorfullhash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{authorfullhashraw}{b2ee229cb488bea52cc95935fdd0de18}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data in Brief}
+      \field{title}{Heterogeneous data integration: Challenges and opportunities}
+      \field{volume}{56}
+      \field{year}{2024}
+      \field{pages}{110853}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.dib.2024.110853
+      \endverb
+    \endentry
     \entry{march2007dss}{article}{}{}
       \name{author}{2}{}{%
         {{hash=5aec260b5b1381edc4b8ff6755f2d543}{%
@@ -901,8 +819,8 @@
       \strng{authornamehash}{bf7eb9dbb747f641a5083488354145d6}
       \strng{authorfullhash}{bf7eb9dbb747f641a5083488354145d6}
       \strng{authorfullhashraw}{bf7eb9dbb747f641a5083488354145d6}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{6}
@@ -1072,8 +990,8 @@
       \strng{authornamehash}{21a7a0960f34b591036204b46c117799}
       \strng{authorfullhash}{21a7a0960f34b591036204b46c117799}
       \strng{authorfullhashraw}{21a7a0960f34b591036204b46c117799}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Approved 2021-01-14; accessed 2026-04-07.}
@@ -1103,8 +1021,8 @@
       \strng{authornamehash}{7bb63cf7eaf322fa9a07d25426639ae9}
       \strng{authorfullhash}{7bb63cf7eaf322fa9a07d25426639ae9}
       \strng{authorfullhashraw}{7bb63cf7eaf322fa9a07d25426639ae9}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 2026-04-07.}
@@ -1174,8 +1092,8 @@
       \strng{authornamehash}{0b141d27215d904929ea2a66aadc2fb3}
       \strng{authorfullhash}{0b141d27215d904929ea2a66aadc2fb3}
       \strng{authorfullhashraw}{0b141d27215d904929ea2a66aadc2fb3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Medical Informatics Association}
@@ -1205,8 +1123,8 @@
       \strng{authornamehash}{6c04b6b094e0b92dcfd729c30320db6c}
       \strng{authorfullhash}{6c04b6b094e0b92dcfd729c30320db6c}
       \strng{authorfullhashraw}{6c04b6b094e0b92dcfd729c30320db6c}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Business Ethics}

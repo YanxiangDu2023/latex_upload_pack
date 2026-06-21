@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.17)  21 JUN 2026 00:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.17)  21 JUN 2026 22:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -978,7 +978,7 @@ Overfull \hbox (22.9269pt too wide) in paragraph at lines 65--67
 \T1/phv/b/n/24.88 tion Pro-to-type for ERP-Based En-
  []
 
-<SUloggaeng.png, id=298, 426.8748pt x 407.6028pt>
+<SUloggaeng.png, id=286, 426.8748pt x 407.6028pt>
 File: SUloggaeng.png Graphic file (type png)
 <use SUloggaeng.png>
 Package pdftex.def Info: SUloggaeng.png  used on input line 95.
@@ -1001,13 +1001,13 @@ Overfull \hbox (4.29411pt too wide) in paragraph at lines 21--22
  []
 
 
-Overfull \hbox (11.41122pt too wide) in paragraph at lines 25--26
-\T1/put/m/n/10.95 act, Python/FastAPI ser-vices, SQL-backed pro-cess-ing, and workflow-oriented
+Overfull \hbox (32.00279pt too wide) in paragraph at lines 25--26
+\T1/put/m/n/10.95 mented as a web-based frontend-backend pro-to-type us-ing Re-act, Python/FastAPI
  []
 
 
-Overfull \hbox (2.2359pt too wide) in paragraph at lines 25--26
-\T1/put/m/n/10.95 views for file up-load, ma-trix sub-mis-sion, layer-based in-spec-tion, and staged
+Overfull \hbox (3.49895pt too wide) in paragraph at lines 27--28
+\T1/put/m/n/10.95 con-sis-tent within the eval-u-ated pro-to-type scope, while ob-served dif-fer-ences
  []
 
 [3
@@ -1091,17 +1091,17 @@ Overfull \hbox (13.1165pt too wide) in paragraph at lines 20--20
  []
 
 [13]
-Overfull \hbox (19.85957pt too wide) in paragraph at lines 66--66
+Overfull \hbox (19.85957pt too wide) in paragraph at lines 63--63
  \T1/put/m/n/10.95 ment of het-ero-ge-neous work-flow in-puts, in-clud-ing source 
  []
 
 [14]
-Overfull \hbox (3.28378pt too wide) in paragraph at lines 67--67
+Overfull \hbox (3.28378pt too wide) in paragraph at lines 64--64
  \T1/put/m/n/10.95 ac-tiv-i-ties be re-expressed in a web-based en-vi-ron-ment 
  []
 
 
-Overfull \hbox (6.87088pt too wide) in paragraph at lines 68--68
+Overfull \hbox (6.87088pt too wide) in paragraph at lines 65--65
  \T1/put/m/n/10.95 mented pro-to-type im-prove trans-parency, us-abil-ity, and 
  []
 
@@ -1117,41 +1117,21 @@ Overfull \hbox (6.87088pt too wide) in paragraph at lines 68--68
  (Chapters/Introduction.tex
  1.
 
-Overfull \hbox (3.55228pt too wide) in paragraph at lines 53--54
-\T1/put/m/n/10.95 busi-ness pro-cesses across func-tions such as op-er-a-tions, sales, pro-cure-ment,
+Overfull \hbox (2.60378pt too wide) in paragraph at lines 57--58
+\T1/put/m/n/10.95 ma-tion de-pends on a To-tal Mar-ket Cal-cu-la-tion (TMC) pro-cess im-ple-mented
  []
 
 
-Overfull \hbox (5.62085pt too wide) in paragraph at lines 55--56
-[]\T1/put/m/n/10.95 These chal-lenges are not unique to one or-ga-ni-za-tion or one named work-
- []
-
-
-Overfull \hbox (2.4289pt too wide) in paragraph at lines 55--56
-\T1/put/m/n/10.95 in-dus-try pro-vides a suit-able case con-text be-cause man-u-fac-tur-ers of-ten work
+Overfull \hbox (3.00706pt too wide) in paragraph at lines 57--58
+\T1/put/m/n/10.95 ments con-nect to the in-ter-me-di-ate and fi-nal out-puts. In prac-tice, this makes
  []
 
 [1
 
 
 ]
-Overfull \hbox (24.37115pt too wide) in paragraph at lines 70--71
-\T1/put/m/n/10.95 flows of-ten pri-or-i-tize ex-e-cu-tion cor-rect-ness over in-spectabil-ity for non-technical
- []
-
-
-Overfull \hbox (20.82285pt too wide) in paragraph at lines 70--71
-\T1/put/m/n/10.95 one spe-cific work-flow, but in ex-plor-ing how such work-flows can be re-expressed
- []
-
-
-Overfull \hbox (14.76485pt too wide) in paragraph at lines 104--106
-\T1/put/m/n/10.95 processing work-flows with het-ero-ge-neous in-puts, em-bed-ded rules, and staged
- []
-
-
-Overfull \hbox (2.73329pt too wide) in paragraph at lines 104--106
-\T1/put/m/n/10.95 trans-for-ma-tions can be rep-re-sented in a way that is more trans-par-ent, trace-
+Overfull \hbox (1.17401pt too wide) in paragraph at lines 66--67
+\T1/put/m/n/10.95 BW-based en-vi-ron-ment where up-loads, map-pings, staged cal-cu-la-tions, and
  []
 
 [2]
@@ -1174,11 +1154,6 @@ Overfull \hbox (3.38148pt too wide) in paragraph at lines 118--119
 \T1/put/m/n/10.95 strates how se-lected en-ter-prise work-flow logic can be re-expressed in a more
  []
 
-
-Overfull \hbox (13.96312pt too wide) in paragraph at lines 155--156
-\T1/put/m/n/10.95 scope cov-ers source-data up-load, ma-trix in-put han-dling, prepa-ra-tion, market-
- []
-
 [3]
 Overfull \hbox (0.4136pt too wide) in paragraph at lines 168--169
 \T1/put/m/n/10.95 ters. The back-ground chap-ter in-tro-duces en-ter-prise work-flow trans-parency
@@ -1191,12 +1166,7 @@ Overfull \hbox (0.4136pt too wide) in paragraph at lines 168--169
  2.
 
 Overfull \hbox (5.79922pt too wide) in paragraph at lines 15--16
-\T1/put/m/n/10.95 and man-age core busi-ness pro-cesses across large or-ga-ni-za-tions [[]3[], []4[]]. Rather
- []
-
-
-Overfull \hbox (8.27327pt too wide) in paragraph at lines 17--18
-\T1/put/m/n/10.95 domain-specific an-a-lyt-i-cal rou-tines, of-ten across sev-eral or-ga-ni-za-tional units
+\T1/put/m/n/10.95 and man-age core busi-ness pro-cesses across large or-ga-ni-za-tions [[]1[], []2[]]. Rather
  []
 
 [5
@@ -1209,33 +1179,9 @@ Overfull \hbox (16.41872pt too wide) in paragraph at lines 28--28
 |[]\T1/phv/b/n/14.4 Construction Equip-ment In-dus-try and Mar-ket Share
  []
 
-
-Overfull \hbox (12.86305pt too wide) in paragraph at lines 40--41
-\T1/put/m/n/10.95 in-dus-try. The con-struc-tion equip-ment in-dus-try is global and capital-intensive
- []
-
-
-Overfull \hbox (6.1063pt too wide) in paragraph at lines 40--41
-\T1/put/m/n/10.95 cus-tomer seg-ments, so mar-ket anal-y-sis de-pends on com-bin-ing in-puts across
- []
-
 [6]
-LaTeX Font Info:    Faking \texteuro for font family put
-(Font)              in TS1 encoding on input line 160.
-LaTeX Font Info:    Faking \texteuro for font family put
-(Font)              in TS1 encoding on input line 160.
-
-Overfull \hbox (17.12056pt too wide) in paragraph at lines 160--161
-\T1/put/m/n/10.95 change data, and ex-ter-nal third-party datasets. In-dus-try in-tel-li-gence providers,
- []
-
-
-Overfull \hbox (8.84317pt too wide) in paragraph at lines 160--161
-\T1/put/m/n/10.95 dress gaps in re-port-ing cov-er-age, ad-di-tional ex-ter-nal inputsâ[][]^^Qsuch as dealer
- []
-
 LaTeX Font Info:    Trying to load font information for TS1+put on input line 165.
-(C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1put.fd
+ (C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1put.fd
 File: ts1put.fd 2001/06/04 font definitions for TS1/put.
 )
 Overfull \hbox (1.04935pt too wide) in paragraph at lines 434--435
@@ -1243,16 +1189,12 @@ Overfull \hbox (1.04935pt too wide) in paragraph at lines 434--435
  []
 
 [7]
-Overfull \hbox (2.62653pt too wide) in paragraph at lines 519--520
-\T1/put/m/n/10.95 At Volvo CE, mar-ket share es-ti-ma-tion is im-ple-mented through an SAP-based
- []
-
-<tmc.png, id=596, 703.87968pt x 502.12593pt>
+<tmc.png, id=579, 703.87968pt x 502.12593pt>
 File: tmc.png Graphic file (type png)
 <use tmc.png>
 Package pdftex.def Info: tmc.png  used on input line 526.
 (pdftex.def)             Requested size: 329.61647pt x 235.13344pt.
-[8]
+ [8]
 Overfull \hbox (11.25256pt too wide) in paragraph at lines 569--570
 \T1/put/m/n/10.95 and ABAP-based pro-cess-ing, which re-quire spe-cial-ized tech-ni-cal knowl-
  []
@@ -1268,13 +1210,8 @@ Overfull \hbox (0.3292pt too wide) in paragraph at lines 593--594
  []
 
 [10]
-Overfull \hbox (4.52574pt too wide) in paragraph at lines 595--596
-\T1/put/m/n/10.95 trace-abil-ity, us-abil-ity, and in-spectabil-ity in en-ter-prise data-processing work-
- []
-
-
-Overfull \hbox (0.41199pt too wide) in paragraph at lines 595--596
-\T1/put/m/n/10.95 expressed as a staged, browser-based in-spec-tion arte-fact for busi-ness users.
+Overfull \hbox (4.26782pt too wide) in paragraph at lines 595--596
+\T1/put/m/n/10.95 this the-sis: en-ter-prise work-flows can be tech-ni-cally ro-bust and op-er-a-tionally
  []
 
 ) [11]
@@ -1288,112 +1225,122 @@ Overfull \hbox (0.41199pt too wide) in paragraph at lines 595--596
 ]
  3.
 [13]
-Overfull \hbox (16.93503pt too wide) in paragraph at lines 108--109
-\T1/put/m/n/10.95 stand-ing of the ex-ist-ing work-flow and tech-ni-cal ma-te-rial for de-sign-ing, demon-
+Overfull \hbox (2.12859pt too wide) in paragraph at lines 47--48
+\T1/put/m/n/10.95 trace-abil-ity, and us-abil-ity in ERP-based en-ter-prise work-flows, but that prob-
+ []
+
+
+Overfull \hbox (0.29132pt too wide) in paragraph at lines 67--68
+\T1/put/m/n/10.95 TMC work-flow and the im-ple-mented stages, es-pe-cially doc-u-ments and files
+ []
+
+
+Overfull \hbox (1.02243pt too wide) in paragraph at lines 67--68
+\T1/put/m/n/10.95 with stake-holder ex-pla-na-tions, source struc-tures, and ob-served sys-tem out-
+ []
+
+
+Overfull \hbox (1.94455pt too wide) in paragraph at lines 75--76
+\T1/put/m/n/10.95 type out-puts, and com-par-ing im-ple-mented re-sults with ex-pected be-haviour
  []
 
 [14]
-Overfull \hbox (2.42094pt too wide) in paragraph at lines 151--152
-[]\T1/put/m/n/10.95 During prob-lem ex-pli-ca-tion and re-quire-ments def-i-ni-tion, work-flow doc-
+Overfull \hbox (8.78767pt too wide) in paragraph at lines 77--78
+\T1/put/m/n/10.95 reference-data ver-sion dif-fer-ences, and stage-specific in-spec-tion needs. Dur-
  []
 
 
-Overfull \hbox (7.58638pt too wide) in paragraph at lines 160--161
+Overfull \hbox (24.23828pt too wide) in paragraph at lines 77--78
+\T1/put/m/n/10.95 holder feed-back was re-viewed qual-i-ta-tively, es-pe-cially com-ments about whether
+ []
+
+
+Overfull \hbox (7.58638pt too wide) in paragraph at lines 87--88
 \T1/put/m/n/10.95 This sec-tion sum-ma-rizes how the se-lected data col-lec-tion and anal-y-sis meth-
  []
 
 
-Overfull \hbox (6.6396pt too wide) in paragraph at lines 160--161
+Overfull \hbox (6.6396pt too wide) in paragraph at lines 87--88
 \T1/put/m/n/10.95 im-ple-men-ta-tion, demon-stra-tion, and eval-u-a-tion are pre-sented in later chap-
  []
 
 [15]
-Overfull \hbox (2.79555pt too wide) in paragraph at lines 454--455
+Overfull \hbox (2.79555pt too wide) in paragraph at lines 99--100
 []\T1/put/m/n/10.95 The col-lected ma-te-rial was anal-ysed through re-quire-ments anal-y-sis. The
  []
 
 
-Overfull \hbox (2.96461pt too wide) in paragraph at lines 454--455
+Overfull \hbox (2.96461pt too wide) in paragraph at lines 99--100
 \T1/put/m/n/10.95 re-quire-ments were grouped into func-tional and per-for-mance re-quire-ments.
  []
 
 
-Overfull \hbox (1.3347pt too wide) in paragraph at lines 456--457
+Overfull \hbox (1.3347pt too wide) in paragraph at lines 101--102
 \T1/put/m/n/10.95 trans-parency, trace-abil-ity, us-abil-ity, val-i-da-tion sup-port, and prototype-level
  []
 
-
-Overfull \hbox (0.40038pt too wide) in paragraph at lines 516--517
+[16]
+Overfull \hbox (0.40038pt too wide) in paragraph at lines 161--162
 \T1/put/m/n/10.95 work-flow de-scrip-tions, and gen-er-ated in-ter-me-di-ate out-puts were in-spected
  []
 
 
-Overfull \hbox (2.94003pt too wide) in paragraph at lines 518--519
+Overfull \hbox (2.94003pt too wide) in paragraph at lines 163--164
 \T1/put/m/n/10.95 rule in-ter-pre-ta-tion, and it-er-a-tive out-put in-spec-tion. This anal-y-sis sup-ported
  []
 
-[16]
-Overfull \hbox (4.74773pt too wide) in paragraph at lines 520--521
+
+Overfull \hbox (4.74773pt too wide) in paragraph at lines 165--166
 \T1/put/m/n/10.95 mary val-ues, and ex-port func-tions. These ideas were grad-u-ally im-ple-mented
  []
 
 
-Overfull \hbox (6.32234pt too wide) in paragraph at lines 520--521
-\T1/put/m/n/10.95 mented scope cov-ered source data up-load, prepa-ra-tion, market-view deriva-
- []
-
-
-Overfull \hbox (0.3912pt too wide) in paragraph at lines 568--569
+Overfull \hbox (0.3912pt too wide) in paragraph at lines 213--214
 \T1/put/m/n/10.95 The fourth DSR ac-tiv-ity was to demon-strate the arte-fact. This ac-tiv-ity shows
  []
 
-
-Overfull \hbox (10.69946pt too wide) in paragraph at lines 570--571
-\T1/put/m/n/10.95 view deriva-tion, ad-just-ment, ma-chine line split, and re-split pro-cess-ing. These
- []
-
 [17]
-Overfull \hbox (11.47914pt too wide) in paragraph at lines 612--613
+Overfull \hbox (11.47914pt too wide) in paragraph at lines 257--258
 []\T1/put/m/n/10.95 The gen-er-ated out-puts were in-spected to as-sess whether the im-ple-mented
  []
 
 
-Overfull \hbox (9.55473pt too wide) in paragraph at lines 612--613
+Overfull \hbox (9.55473pt too wide) in paragraph at lines 257--258
 \T1/put/m/n/10.95 pected work-flow logic. Where com-pa-ra-ble, se-lected re-sults were also checked
  []
 
 
-Overfull \hbox (8.98003pt too wide) in paragraph at lines 614--615
+Overfull \hbox (8.98003pt too wide) in paragraph at lines 259--260
 \T1/put/m/n/10.95 arte-fact sup-ported trans-parency, trace-abil-ity, us-abil-ity, and val-i-da-tion. Stake-
  []
 
-
-Overfull \hbox (1.18016pt too wide) in paragraph at lines 630--631
+[18]
+Overfull \hbox (1.18016pt too wide) in paragraph at lines 275--276
 \T1/put/m/n/10.95 This study was con-ducted in col-lab-o-ra-tion with Volvo CE and re-quired care-
  []
 
 
-Overfull \hbox (12.0487pt too wide) in paragraph at lines 632--633
+Overfull \hbox (12.0487pt too wide) in paragraph at lines 277--278
 \T1/put/m/n/10.95 re-view, pro-to-type de-vel-op-ment, and in-for-mal dis-cus-sions with rel-e-vant stake-
  []
 
-[18]
-Overfull \hbox (1.24086pt too wide) in paragraph at lines 634--635
+
+Overfull \hbox (1.24086pt too wide) in paragraph at lines 279--280
 []\T1/put/m/n/10.95 The pur-pose of these in-ter-ac-tions was solely to un-der-stand cur-rent work
  []
 
 
-Overfull \hbox (7.21935pt too wide) in paragraph at lines 636--637
+Overfull \hbox (7.21935pt too wide) in paragraph at lines 281--282
 []\T1/put/m/n/10.95 Special con-sid-er-a-tion was also given to the han-dling of company-internal
  []
 
 
-Overfull \hbox (6.12979pt too wide) in paragraph at lines 636--637
+Overfull \hbox (6.12979pt too wide) in paragraph at lines 281--282
 \T1/put/m/n/10.95 trolled set-ting and was not used as a pro-duc-tion re-place-ment. Where screen-
  []
 
 
-Overfull \hbox (1.25487pt too wide) in paragraph at lines 636--637
+Overfull \hbox (1.25487pt too wide) in paragraph at lines 281--282
 \T1/put/m/n/10.95 nal sys-tems were in-cluded for ex-plana-tory pur-poses, they were anonymised
  []
 
@@ -1418,16 +1365,21 @@ Overfull \hbox (6.97604pt too wide) in paragraph at lines 12--13
  []
 
 [21]
-Overfull \hbox (14.63531pt too wide) in paragraph at lines 16--17
-\T1/put/m/n/10.95 users have lim-ited abil-ity to un-der-stand how val-ues are de-rived, ver-ify whether
- []
-
-
 Overfull \hbox (2.59334pt too wide) in paragraph at lines 22--23
 []\T1/put/m/n/10.95 Multiple source datasets and matrix-based rules are dis-tributed across
  []
 
-[22]) [23] [24]
+
+Overfull \hbox (20.78645pt too wide) in paragraph at lines 26--27
+\T1/put/m/n/10.95 ground-ing, arte-fact demon-stra-tion, and eval-u-a-tion. The pro-to-type re-expresses
+ []
+
+[22]
+Overfull \hbox (4.7764pt too wide) in paragraph at lines 45--46
+\T1/put/m/n/10.95 the cur-rent ex-e-cu-tion model, data de-pen-den-cies, work-flow stages, and prac-
+ []
+
+) [23] [24]
 \openout2 = `"Chapters/The Artefact.aux"'.
 
  (Chapters/The Artefact.tex
@@ -1437,24 +1389,19 @@ Overfull \hbox (14.94563pt too wide) in paragraph at lines 41--42
 []\T1/put/m/n/10.95 The arte-fact com-bines a fron-tend ap-pli-ca-tion, back-end ser-vices, workflow-
  []
 
-
-Overfull \hbox (1.32799pt too wide) in paragraph at lines 41--42
-\T1/put/m/n/10.95 oriented in-spec-tion views, and in-ter-ac-tive re-view func-tions. To-gether, these
- []
-
 [25
 
 
 
 
 ]
-<5.1.png, id=724, 1541.76pt x 1027.84pt>
+<5.1.png, id=706, 1541.76pt x 1027.84pt>
 File: 5.1.png Graphic file (type png)
 <use 5.1.png>
 Package pdftex.def Info: 5.1.png  used on input line 92.
 (pdftex.def)             Requested size: 366.24301pt x 244.16159pt.
  [26 <./5.1.png (PNG copy)>]
-<5.2.1.png, id=729, 1633.10126pt x 970.62625pt>
+<5.2.1.png, id=711, 1633.10126pt x 970.62625pt>
 File: 5.2.1.png Graphic file (type png)
 <use 5.2.1.png>
 Package pdftex.def Info: 5.2.1.png  used on input line 247.
@@ -1509,14 +1456,14 @@ Overfull \hbox (8.22514pt too wide) in paragraph at lines 417--419
 \T1/put/m/n/10.95 group-ing, joins, and ag-gre-ga-tion. Coun-try map-ping, ar-ti-fi-cial machine-
  []
 
-
-Overfull \hbox (3.50981pt too wide) in paragraph at lines 454--455
-\T1/put/m/n/10.95 After prepa-ra-tion, the arte-fact con-tin-ues with adjustment-oriented and split
+[29]
+Overfull \hbox (7.80211pt too wide) in paragraph at lines 454--455
+\T1/put/m/n/10.95 After prepa-ra-tion, the arte-fact con-tin-ues with adjustment-oriented and split-
  []
 
-[29]
-Overfull \hbox (5.47316pt too wide) in paragraph at lines 470--471
-\T1/put/m/n/10.95 the im-ple-mented ad-just-ment and split and re-split stages are both ex-e-cutable
+
+Overfull \hbox (10.31267pt too wide) in paragraph at lines 470--471
+\T1/put/m/n/10.95 the im-ple-mented ad-just-ment and split-and-resplit stages are both ex-e-cutable
  []
 
 
@@ -1534,7 +1481,7 @@ Overfull \hbox (0.29767pt too wide) in paragraph at lines 727--728
 \T1/put/m/n/10.95 layer, while the back-end per-forms data in-ges-tion, work-flow pro-cess-ing, and
  []
 
-<5.3.1.png, id=747, 925.20656pt x 544.28343pt>
+<5.3.1.png, id=729, 925.20656pt x 544.28343pt>
 File: 5.3.1.png Graphic file (type png)
 <use 5.3.1.png>
 Package pdftex.def Info: 5.3.1.png  used on input line 731.
@@ -1549,7 +1496,7 @@ Overfull \hbox (7.32877pt too wide) in paragraph at lines 736--737
 []\T1/put/m/n/10.95 The im-ple-men-ta-tion also es-tab-lished a clear upload-to-processing chain.
  []
 
-<5.4.png, id=752, 713.66624pt x 458.46281pt>
+<5.4.png, id=734, 713.66624pt x 458.46281pt>
 File: 5.4.png Graphic file (type png)
 <use 5.4.png>
 Package pdftex.def Info: 5.4.png  used on input line 740.
@@ -1560,7 +1507,7 @@ Overfull \hbox (18.31326pt too wide) in paragraph at lines 740--741
  []
 
 [32 <./5.3.1.png>]
-<5.6.1.1.png, id=758, 907.89188pt x 499.11469pt>
+<5.6.1.1.png, id=740, 907.89188pt x 499.11469pt>
 File: 5.6.1.1.png Graphic file (type png)
 <use 5.6.1.1.png>
 Package pdftex.def Info: 5.6.1.1.png  used on input line 749.
@@ -1606,12 +1553,12 @@ Overfull \hbox (2.65874pt too wide) in paragraph at lines 946--947
  []
 
 
-Overfull \hbox (24.11774pt too wide) in paragraph at lines 953--954
-\T1/put/m/n/10.95 cel and were con-sis-tent with the ex-pected cal-cu-la-tions. Over-all, the preparation-
+Overfull \hbox (8.1309pt too wide) in paragraph at lines 953--954
+\T1/put/m/n/10.95 and were con-sis-tent with the ex-pected cal-cu-la-tions. Over-all, the preparation-
  []
 
 [36]
-<6.1.png, id=780, 1005.7575pt x 564.60938pt>
+<6.1.png, id=762, 1005.7575pt x 564.60938pt>
 File: 6.1.png Graphic file (type png)
 <use 6.1.png>
 Package pdftex.def Info: 6.1.png  used on input line 958.
@@ -1621,7 +1568,7 @@ Overfull \hbox (36.62653pt too wide) in paragraph at lines 958--959
  [][] 
  []
 
-<6.2.png, id=781, 1011.02719pt x 551.81157pt>
+<6.2.png, id=763, 1011.02719pt x 551.81157pt>
 File: 6.2.png Graphic file (type png)
 <use 6.2.png>
 Package pdftex.def Info: 6.2.png  used on input line 965.
@@ -1636,7 +1583,7 @@ Overfull \hbox (0.1949pt too wide) in paragraph at lines 974--975
 \T1/put/m/n/10.95 The split- and resplit-related out-puts were val-i-dated through man-ual Excel-
  []
 
-<6.3.png, id=787, 1062.97125pt x 562.35094pt>
+<6.3.png, id=769, 1062.97125pt x 562.35094pt>
 File: 6.3.png Graphic file (type png)
 <use 6.3.png>
 Package pdftex.def Info: 6.3.png  used on input line 980.
@@ -1657,36 +1604,86 @@ Overfull \hbox (0.43924pt too wide) in paragraph at lines 1167--1168
  []
 
 [39 <./6.3.png>]
-Overfull \hbox (70.71458pt too wide) in alignment at lines 1215--1221
+Underfull \hbox (badness 5133) in paragraph at lines 1178--1179
+[]|\T1/put/m/n/10.95 Upload, staged pro-cess-ing, and
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 1180--1180
+[]|\T1/put/m/n/10.95 Transparency and us-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+[]|\T1/put/m/n/10.95 Strongly sup-
+ []
+
+
+Underfull \hbox (badness 3713) in paragraph at lines 1180--1181
+\T1/put/m/n/10.95 maries, charts, and CSV ex-port
+ []
+
+
+Underfull \hbox (badness 4181) in paragraph at lines 1182--1182
+[]|\T1/put/m/n/10.95 Traceability and val-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+[]|\T1/put/m/n/10.95 Partly to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\T1/put/m/n/10.95 strongly sup-
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 1182--1183
+[]|\T1/put/m/n/10.95 Stage-level trace-abil-ity and rule
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 1182--1183
+\T1/put/m/n/10.95 full end-to-end row-level lin-eage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
+[]|\T1/put/m/n/10.95 Partly ad-
+ []
+
+
+Overfull \hbox (32.70729pt too wide) in paragraph at lines 1174--1187
+ [][] 
+ []
+
+
+Overfull \hbox (70.71458pt too wide) in alignment at lines 1235--1241
  [] [] [] [] 
  []
 
 
-Overfull \hbox (70.71458pt too wide) in alignment at lines 1221--1226
+Overfull \hbox (70.71458pt too wide) in alignment at lines 1241--1246
  [] [] [] [] 
  []
 
 
-Overfull \hbox (70.71458pt too wide) in alignment at lines 1226--1240
+Overfull \hbox (70.71458pt too wide) in alignment at lines 1246--1260
  [] [] [] [] 
- []
-
-
-Overfull \hbox (1.94415pt too wide) in paragraph at lines 1242--1243
-\T1/put/m/n/10.95 dif-fer-ences vis-i-ble within the eval-u-ated scope. First, trans-parency im-proved
  []
 
 [40]
-Overfull \hbox (4.20906pt too wide) in paragraph at lines 1272--1273
-\T1/put/m/n/10.95 market-view deriva-tion, ad-just-ment, and se-lected split and re-split out-
+Overfull \hbox (1.94415pt too wide) in paragraph at lines 1262--1263
+\T1/put/m/n/10.95 dif-fer-ences vis-i-ble within the eval-u-ated scope. First, trans-parency im-proved
  []
 
-
-Overfull \hbox (5.33005pt too wide) in paragraph at lines 1274--1275
+[41]
+Overfull \hbox (5.33005pt too wide) in paragraph at lines 1294--1295
 []\T1/put/m/n/10.95 Some SAP com-par-isons were af-fected by reference-data or calculation-
  []
 
-[41]) [42]
+) [42]
 \openout2 = `Chapters/Discussion.aux'.
 
  (Chapters/Discussion.tex
@@ -1697,42 +1694,37 @@ Overfull \hbox (5.33005pt too wide) in paragraph at lines 1274--1275
 
 
 ] [44]
-Overfull \hbox (5.84854pt too wide) in paragraph at lines 80--81
-[]\T1/put/m/n/10.95 In the SAP-based rep-re-sen-ta-tion, the TMC work-flow is or-ga-nized through
+Overfull \hbox (10.316pt too wide) in paragraph at lines 71--72
+[]\T1/put/m/n/10.95 In the SAP-based TMC im-ple-men-ta-tion, the pro-cess is car-ried out through
  []
 
 
-Overfull \hbox (1.77791pt too wide) in paragraph at lines 84--85
-[]\T1/put/m/n/10.95 The im-prove-ment was as-sessed through demon-stra-tion with 2024 work-
- []
-
-
-Overfull \hbox (4.44284pt too wide) in paragraph at lines 242--243
-\T1/put/m/n/10.95 and com-mu-ni-ca-tion with-out re-plac-ing the un-der-ly-ing op-er-a-tional plat-form.
+Overfull \hbox (9.57817pt too wide) in paragraph at lines 73--74
+\T1/put/m/n/10.95 into one inspection-oriented en-vi-ron-ment. Up-load and matrix-management
  []
 
 [45]
-Overfull \hbox (27.92046pt too wide) in paragraph at lines 249--250
-\T1/put/m/n/10.95 plex en-ter-prise data-processing work-flows can be ad-dressed through a workflow-
+Overfull \hbox (3.16283pt too wide) in paragraph at lines 227--228
+\T1/put/m/n/10.95 prise data-processing work-flows can be ad-dressed through an im-ple-mented
  []
 
 
-Overfull \hbox (3.84056pt too wide) in paragraph at lines 249--250
-\T1/put/m/n/10.95 oriented web-based arte-fact. While the im-ple-mented pro-to-type is grounded
+Overfull \hbox (1.82187pt too wide) in paragraph at lines 227--228
+\T1/put/m/n/10.95 on het-ero-ge-neous in-puts, staged trans-for-ma-tions, and em-bed-ded rules that
  []
 
 
-Overfull \hbox (4.02502pt too wide) in paragraph at lines 253--254
-\T1/put/m/n/10.95 a new al-go-rithm, but de-sign knowl-edge about how se-lected en-ter-prise work-
+Overfull \hbox (6.34354pt too wide) in paragraph at lines 229--230
+[]\T1/put/m/n/10.95 The aca-demic con-tri-bu-tion is there-fore best un-der-stood as de-sign knowl-
  []
 
-[46]
-Overfull \hbox (4.23259pt too wide) in paragraph at lines 255--256
-\T1/put/m/n/10.95 work-flow prob-lem into de-sign re-quire-ments, it-er-a-tive arte-fact de-vel-op-ment,
+
+Overfull \hbox (24.45232pt too wide) in paragraph at lines 231--232
+[]\T1/put/m/n/10.95 Methodologically, the the-sis also shows how a DSR project can stay grounded
  []
 
-[47]
-Overfull \hbox (10.44742pt too wide) in paragraph at lines 288--289
+[46] [47]
+Overfull \hbox (10.44742pt too wide) in paragraph at lines 261--262
 []\T1/put/m/n/10.95 Visual Stu-dio Code served as the main de-vel-op-ment en-vi-ron-ment, draw.io
  []
 
@@ -1741,11 +1733,6 @@ Overfull \hbox (10.44742pt too wide) in paragraph at lines 288--289
 
 
 ]
-Overfull \hbox (21.83302pt too wide) in paragraph at lines 176--176
-\T1/put/m/n/10.95 tion: Chal-lenges and op-por-tu-ni-ties^^Q. In: \T1/put/m/it/10.95 Data in Brief \T1/put/m/n/10.95 56 (2024), p. 110853.
- []
-
-
 Overfull \hbox (29.01419pt too wide) in paragraph at lines 176--176
 \T1/cmtt/m/n/10.95 1023 / A : 1026543906354$[]\T1/put/m/n/10.95 . \T1/put/m/sc/10.95 url\T1/put/m/n/10.95 : []$\T1/cmtt/m/n/10.95 h t t p s  : / / d o i  . o r g  / 10 . 1023 / A : 1026543906354$[]\T1/put/m/n/10.95 . 
  []
@@ -1767,14 +1754,19 @@ Overfull \hbox (4.89536pt too wide) in paragraph at lines 176--176
 []\T1/put/m/n/10.95 Fethi Cal-isir and Ferah Cal-isir. ^^P  The re-la-tion of in-ter-face us-abil-ity char-
  []
 
-[52]
+
 Overfull \hbox (9.95787pt too wide) in paragraph at lines 176--176
 []\T1/put/m/n/10.95 Off-Highway Re-search. \T1/put/m/it/10.95 Fre-quently Asked Ques-tions\T1/put/m/n/10.95 . Method-ol-ogy page;
  []
 
-
+[52]
 Overfull \hbox (0.74594pt too wide) in paragraph at lines 176--176
 []\T1/put/m/n/10.95 Panos Vas-sil-iadis. ^^P  A Sur-vey of Extract--Transform--Load Tech-nol-ogy^^Q.
+ []
+
+
+Overfull \hbox (21.83302pt too wide) in paragraph at lines 176--176
+\T1/put/m/n/10.95 tion: Chal-lenges and op-por-tu-ni-ties^^Q. In: \T1/put/m/it/10.95 Data in Brief \T1/put/m/n/10.95 56 (2024), p. 110853.
  []
 
 
@@ -1843,7 +1835,7 @@ Overfull \hbox (36.62653pt too wide) in paragraph at lines 27--28
  [][] 
  []
 
-<5.4.1.png, id=955, 887.56593pt x 463.7325pt>
+<5.4.1.png, id=934, 887.56593pt x 463.7325pt>
 File: 5.4.1.png Graphic file (type png)
 <use 5.4.1.png>
 Package pdftex.def Info: 5.4.1.png  used on input line 34.
@@ -1873,7 +1865,7 @@ Overfull \hbox (36.62653pt too wide) in paragraph at lines 45--46
  []
 
 [60 <./5.4.1.png>]
-<5.6.1.1.1.png, id=965, 645.16031pt x 672.26157pt>
+<5.6.1.1.1.png, id=944, 645.16031pt x 672.26157pt>
 File: 5.6.1.1.1.png Graphic file (type png)
 <use 5.6.1.1.1.png>
 Package pdftex.def Info: 5.6.1.1.1.png  used on input line 52.
@@ -1898,7 +1890,7 @@ Overfull \hbox (1.38591pt too wide) in paragraph at lines 72--73
 \T1/put/m/n/10.95 ra-tios, and before-after dif-fer-ence val-ues. These out-puts can ei-ther be saved
  []
 
-<5.6.1.2.png, id=975, 816.80156pt x 572.89032pt>
+<5.6.1.2.png, id=954, 816.80156pt x 572.89032pt>
 File: 5.6.1.2.png Graphic file (type png)
 <use 5.6.1.2.png>
 Package pdftex.def Info: 5.6.1.2.png  used on input line 76.
@@ -1908,7 +1900,7 @@ Overfull \hbox (36.62653pt too wide) in paragraph at lines 76--77
  [][] 
  []
 
-<5.6.1.3.png, id=976, 1004.25188pt x 556.32843pt>
+<5.6.1.3.png, id=955, 1004.25188pt x 556.32843pt>
 File: 5.6.1.3.png Graphic file (type png)
 <use 5.6.1.3.png>
 Package pdftex.def Info: 5.6.1.3.png  used on input line 83.
@@ -1919,7 +1911,7 @@ Overfull \hbox (36.62653pt too wide) in paragraph at lines 83--84
  []
 
 [63 <./5.6.1.2.png>]
-<5.10.png, id=989, 657.2053pt x 505.13719pt>
+<5.10.png, id=968, 657.2053pt x 505.13719pt>
 File: 5.10.png Graphic file (type png)
 <use 5.10.png>
 Package pdftex.def Info: 5.10.png  used on input line 90.
@@ -1964,23 +1956,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0020C5F39F0621D7077AE9F4A1A8478B;17458.
+(rerunfilecheck)             Checksum: DA988F2019AD0330751621CA5F7D18E6;16954.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33885 strings out of 467871
- 664719 string characters out of 5417408
- 1537352 words of memory out of 5000000
- 61965 multiletter control sequences out of 15000+600000
- 737373 words of font info for 93 fonts, out of 8000000 for 9000
+ 33875 strings out of 467871
+ 664462 string characters out of 5417408
+ 1537280 words of memory out of 5000000
+ 61959 multiletter control sequences out of 15000+600000
+ 730652 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,104p,1518b,2292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,104p,1678b,2292s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\A547484\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on Thesis.pdf (86 pages, 6023808 bytes).
+Output written on Thesis.pdf (86 pages, 6021673 bytes).
 PDF statistics:
- 1184 PDF objects out of 1200 (max. 8388607)
- 224 named destinations out of 1000 (max. 500000)
- 672 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1162 PDF objects out of 1200 (max. 8388607)
+ 221 named destinations out of 1000 (max. 500000)
+ 648 words of extra memory for PDF output out of 10000 (max. 10000000)
 
