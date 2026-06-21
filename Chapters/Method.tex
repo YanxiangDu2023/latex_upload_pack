@@ -6,11 +6,11 @@
 
 
 % \
-% This thesis adopts Design Science Research (DSR) as its overall research framework. Design Science Research (DSR) is a research framework concerned with the design and evaluation of artefacts intended to address practical problems \cite{johannesson2021}. In information systems research, DSR is particularly relevant when the aim is not only to solve a real-world problem, but also to generate design knowledge through the artefact development process \cite{gregor2013}. 
+% This thesis adopts Design Science Research (DSR) as its overall research framework. Design Science Research (DSR) is a research framework concerned with the design and evaluation of artefacts intended to address practical problems \cite{johannesson2021,hevner2004design}. In information systems research, DSR is particularly relevant when the aim is not only to solve a real-world problem, but also to generate design knowledge through the artefact development process \cite{gregor2013}. 
 
-% This research fits that orientation well. Rather than only analyzing the limitations of the existing SAP-based TMC workflow at Volvo CE, the thesis aims to design and implement a web-based prototype that improves transparency, usability, and traceability in the preparation and adjustment stages. The study therefore focuses on creating an artefact that addresses a concrete industrial problem and examining its usefulness in practice.
+% This research fits that orientation well. Rather than only analyzing the limitations of the existing SAP-based TMC implementation at Volvo CE, the thesis aims to design and implement a web-based prototype that improves transparency, usability, and traceability in the preparation and adjustment stages. The study therefore focuses on creating an artefact that addresses a concrete industrial problem and examining its usefulness in practice.
 
-% To structure the research process, the thesis follows the five core DSR activities proposed by Johannesson and Perjons: explicate the problem, define requirements, design and develop the artefact, demonstrate the artefact, and evaluate the artefact \cite{johannesson2021}. In this thesis, these activities provide a systematic structure for moving from problem understanding to requirement definition, prototype development, and formative evaluation in the Volvo CE context.
+% To structure the research process, the thesis follows the five core DSR activities proposed by Johannesson and Perjons: explicate the problem, define requirements, design and develop the artefact, demonstrate the artefact, and evaluate the artefact \cite{johannesson2021,hevner2004design}. In this thesis, these activities provide a systematic structure for moving from problem understanding to requirement definition, prototype development, and formative evaluation in the Volvo CE context.
 
 % The five activities applied in this thesis are summarized as follows:
 
@@ -27,104 +27,44 @@
 
 % \subsection{Choice of Research Framework}
 
-% Design Science Research (DSR) is a research strategy concerned with the design and evaluation of artefacts intended to address practical problems in real-world contexts \cite{johannesson2021}. This thesis adopts DSR as its overall research framework, as the study aims not only to examine limitations in the existing SAP-based Total Market Calculation (TMC) workflow at Volvo CE, but also to design and evaluate a prototype that improves its transparency, usability, and traceability.
+% Design Science Research (DSR) is a research strategy concerned with the design and evaluation of artefacts intended to address practical problems in real-world contexts \cite{johannesson2021,hevner2004design}. This thesis adopts DSR as its overall research framework, as the study aims not only to examine limitations in the existing SAP-based Total Market Calculation (TMC) workflow at Volvo CE, but also to design and evaluate a prototype that improves its transparency, usability, and traceability.
 
-% DSR is particularly suitable for this thesis because the main contribution is an artefact rather than a purely descriptive account of the current workflow. While approaches such as case study are useful for understanding organizational settings and existing practices, they do not by themselves provide a structured process for developing and evaluating a technical solution. In contrast, DSR offers a systematic way to move from problem identification to requirement definition, artefact design, demonstration, and evaluation \cite{johannesson2021}.
+% DSR is particularly suitable for this thesis because the main contribution is an artefact rather than a purely descriptive account of the current workflow. While approaches such as case study are useful for understanding organizational settings and existing practices, they do not by themselves provide a structured process for developing and evaluating a technical solution. In contrast, DSR offers a systematic way to move from problem identification to requirement definition, artefact design, demonstration, and evaluation \cite{johannesson2021,hevner2004design}.
 
 % In this thesis, the artefact is a web-based prototype that reconstructs and visualizes selected preparation and adjustment stages of the TMC workflow outside the original SAP environment. The purpose of the prototype is to make key transformations, data dependencies, and intermediate outputs easier to inspect and understand. In this way, the artefact addresses a practical industrial problem while also providing knowledge about how workflow transparency can be improved in enterprise data-processing systems.
 
-% To structure the research process, the thesis follows the five core DSR activities proposed by Johannesson and Perjons: explicate the problem, define requirements, design and develop the artefact, demonstrate the artefact, and evaluate the artefact \cite{johannesson2021}. In the present study, these activities provide a clear methodological structure for moving from understanding the limitations of the current TMC process to developing and assessing a prototype in the Volvo CE context.
+% To structure the research process, the thesis follows the five core DSR activities proposed by Johannesson and Perjons: explicate the problem, define requirements, design and develop the artefact, demonstrate the artefact, and evaluate the artefact \cite{johannesson2021,hevner2004design}. In the present study, these activities provide a clear methodological structure for moving from understanding the limitations of the current TMC process to developing and assessing a prototype in the Volvo CE context.
 
 
 % \section{Research Strategy}
 
-% Design Science Research (DSR) is a research strategy concerned with the design and evaluation of artefacts intended to address practical problems in real-world contexts \cite{johannesson2021}. This thesis adopts DSR as its overall research framework, as the study aims not only to examine limitations in the existing SAP-based Total Market Calculation (TMC) workflow at Volvo CE, but also to design and evaluate a prototype that improves its transparency, usability, and traceability.
+Design Science Research (DSR) was selected because this thesis was not limited to describing the existing SAP-based TMC implementation. The main task was to build an artefact, use it on realistic case material, and evaluate whether it made the selected process stages easier to inspect \cite{johannesson2021,hevner2004design}. In DSR terms, the artefact is the proposed inspection-oriented solution, while the implemented prototype is its concrete instantiation in this thesis. For that reason, DSR matched the project better than a purely descriptive research strategy.
 
-% DSR is particularly suitable for this thesis because the main contribution is an artefact rather than a purely descriptive account of the current workflow. The thesis aims to construct a web-based prototype that re-expresses selected parts of the TMC process in a more inspectable form. In contrast to approaches that mainly describe or explain existing practices, DSR provides a systematic structure for moving from problem identification to requirement definition, artefact design, demonstration, and evaluation \cite{johannesson2021}.
+The work followed the five DSR activities described by Johannesson and Perjons \cite{johannesson2021}, but not as a rigid linear sequence. Early problem understanding, requirement clarification, implementation, and evaluation informed each other during the project. Some parts of the workflow could be understood from documents and source structures, but other rule details had to be clarified with stakeholders before the prototype behaviour could be implemented with confidence.
 
-% In this thesis, the artefact is a web-based prototype that reconstructs and visualises selected early stages of the TMC workflow outside the original SAP environment, including source data upload, preparation, adjustment, and machine line split. The purpose of the prototype is to make key transformations, data dependencies, business rules, and intermediate outputs easier to inspect and understand. In this way, the artefact addresses a practical industrial problem while also providing knowledge about how workflow transparency can be improved in enterprise data-processing systems.
+DSR was more suitable than a stand-alone case study because the thesis was not only about describing how the existing process works, but also about designing and evaluating an alternative representation of selected stages \cite{yin2018}. It was also more suitable than action research, since the project did not aim to intervene directly in Volvo CE's live production process or run an organizational change initiative \cite{susman1978}. More measurement-oriented approaches, such as surveys or controlled experiments, were likewise less suitable because the work depended on a small group of knowledgeable stakeholders and on detailed interpretation of workflow logic rather than on broad population-level comparison.
 
-% To structure the research process, the thesis follows the five core DSR activities proposed by Johannesson and Perjons \cite{johannesson2021}:
-
-% \begin{itemize}
-%     \item \textbf{Explicate the Problem}: identify and clarify the practical problem addressed by the research.
-%     \item \textbf{Define Requirements}: translate the identified problem into requirements for the artefact.
-%     \item \textbf{Design and Develop the Artefact}: create the artefact based on the defined requirements.
-%     \item \textbf{Demonstrate the Artefact}: show how the artefact can be applied in a relevant context.
-%     \item \textbf{Evaluate the Artefact}: assess whether the artefact fulfils its intended purpose and addresses the identified problem.
-% \end{itemize}
-
-% Alternative research strategies were also considered. A case study strategy would have been suitable for investigating the existing SAP-based TMC workflow in depth, since case study research is commonly used to study a contemporary phenomenon within its real-world context \cite{yin2018}. However, a case study would mainly support the description and interpretation of the current process, while the aim of this thesis is also to design, develop, and evaluate a new technical artefact. Therefore, a case study alone was considered insufficient.
-
-% Action research was also considered because it supports close collaboration with practitioners and intervention in organisational practice \cite{susman1978}. However, this thesis does not aim to introduce changes into the production TMC process or manage an organisational change initiative. Instead, the prototype is developed and assessed in a test setting as a research artefact. Therefore, action research was considered less suitable than DSR as the main research strategy.
-
-\section{Research Strategy}
-
-Design Science Research (DSR) was selected as the research strategy because the study aims to design and evaluate an artefact that addresses a practical problem while also generating design knowledge \cite{johannesson2021}. In this thesis, the artefact is a web-based prototype that re-expresses selected stages of an enterprise data-processing workflow in a more inspectable form.
-
-To structure the research process, the thesis follows the five core DSR activities proposed by Johannesson and Perjons \cite{johannesson2021}:
-
-\begin{itemize}
-    \item \textbf{Explicate the Problem}: identify and clarify the practical problem addressed by the research.
-    \item \textbf{Define Requirements}: translate the identified problem into requirements for the artefact.
-    \item \textbf{Design and Develop the Artefact}: create the artefact based on the defined requirements.
-    \item \textbf{Demonstrate the Artefact}: show how the artefact can be applied in a relevant context.
-    \item \textbf{Evaluate the Artefact}: assess whether the artefact fulfils its intended purpose and addresses the identified problem.
-\end{itemize}
-
-DSR was considered more suitable than a pure case-study or action-research approach because the thesis does not only analyse an existing situation, but also develops and evaluates a technical artefact in a controlled research setting.
+At the same time, the research clearly used the Volvo CE case as its empirical grounding. The broader design problem concerns transparency, traceability, and usability in ERP-based enterprise workflows, but that problem was studied through one concrete setting: the TMC process at Volvo CE. Within the overall DSR design, the Volvo CE setting functioned as an exploratory single-case setting with descriptive and evaluative elements. It was used to understand the workflow problem in context, guide artefact design, and assess the implemented prototype in a real organizational environment rather than to test causal explanations across multiple cases. In this thesis, DSR provides the overall research logic, while the case setting provides the practical context in which the problem, artefact, and evaluation can be understood.
 
 
 
 % \section{Application of the Design Science Research Framework}
-
 \section{Research Method}
 
 
 % This thesis used a combination of qualitative and technical data collection methods across the five DSR activities. DSR supports the development and evaluation of artefacts in response to practical problems, while allowing different empirical methods to be used depending on the purpose of each activity \cite{johannesson2014introduction,hevner2004design}. Since the study was conducted in a specialised organisational context, document review, workflow inspection, stakeholder discussions, and prototype-based feedback were used as the main data collection methods. These methods are suitable for small-scale qualitative research where the aim is to obtain contextual and practice-oriented understanding rather than broad statistical generalisation \cite{denscombe2017good}.
 
-% In the problem explication stage, data were collected through review of TMC-related documentation, inspection of the existing SAP-based workflow, and informal discussions with stakeholders in Volvo CE Global Business Intelligence. These sources were used to understand the limitations of the current workflow, particularly the lack of transparency, traceability, and inspectability in intermediate calculation steps. In the requirements definition stage, additional data were collected from workflow documentation, source data structures, matrix files, example outputs, and stakeholder input. This helped translate the identified problem into functional, structural, and environmental requirements for the artefact.
+% In the problem explication stage, data were collected through review of TMC-related documentation, inspection of the existing SAP-based implementation, and informal discussions with stakeholders in Volvo CE Global Business Intelligence. These sources were used to understand the limitations of the current workflow, particularly the lack of transparency, traceability, and inspectability in intermediate calculation steps. In the requirements definition stage, additional data were collected from workflow documentation, source data structures, matrix files, example outputs, and stakeholder input. This helped translate the identified problem into functional, structural, and environmental requirements for the artefact.
 
-% During the design and development stage, data collection focused on technical material needed to reconstruct selected parts of the TMC workflow. This included CSV-based source files, matrix tables, mapping rules, and selected SAP-related workflow descriptions. Clarifications were also collected through stakeholder discussions when calculation rules or data dependencies required further interpretation. In the demonstration stage, the artefact was applied to a realistic TMC workflow scenario using 2024 source data and matrix files. The generated preparation, adjustment, and machine line split outputs were used to demonstrate how the prototype could make intermediate workflow layers more inspectable. Finally, in the evaluation stage, data were collected through prototype-based stakeholder feedback, semi-structured discussion, output inspection, and requirement-based review.
+% During the design and development stage, data collection focused on technical material needed to reconstruct selected parts of the TMC workflow. This included CSV-based source files, matrix tables, mapping rules, and selected SAP-related workflow descriptions. Clarifications were also collected through stakeholder discussions when calculation rules or data dependencies required further interpretation. In the demonstration stage, the artefact was applied to a realistic TMC workflow scenario using 2024 source data and matrix files. The generated preparation, market view, adjustment, machine line split, and resplit outputs were used to demonstrate how the prototype could make intermediate workflow layers more inspectable. Finally, in the evaluation stage, data were collected through prototype-based stakeholder feedback, semi-structured discussion, output inspection, and requirement-based review.
 
 % Alternative data collection methods were also considered. Large-scale surveys, focus groups, formal requirements workshops, direct SAP backend extraction, production-system integration, and full operational pilot deployment could have been used. However, these methods were less suitable for the scope of this thesis. The TMC workflow is a specialised internal process involving a limited number of knowledgeable users, and the artefact was developed as a research prototype outside the production SAP environment. Therefore, qualitative and technical data collection methods were considered more appropriate than broad survey-based or production-level methods.
 
 % \subsection{Data Collection Methods}
 
-% This thesis used a combination of qualitative and technical data collection methods across the DSR process. The main data sources were internal workflow documentation, stakeholder discussions, source and matrix files, prototype outputs, and stakeholder feedback. Document analysis was applied to TMC and SAP-related process materials because it provides contextual evidence about organisational practices \cite{bowen2009document}. Semi-structured stakeholder discussions were used to clarify business rules, user needs, and validation expectations, as this format supports focused but flexible knowledge elicitation \cite{kallio2016systematic}.
+This thesis used three main sources of empirical material: \textbf{document analysis}, \textbf{stakeholder discussions}, and \textbf{prototype-based material}. The choice was driven by the nature of the case. To understand the TMC process, it was necessary to review workflow descriptions, source files, and matrix structures, but that was not enough on its own because some rule interpretations still depended on business context.
 
-% In the early DSR activities (problem explication and requirements definition), data collection focused on understanding the existing SAP-based TMC workflow and translating identified limitations into artefact requirements. Workflow documents, source structures, matrix files, and stakeholder input were used to define key issues related to transparency, traceability, and inspectability.
-
-% During design and development, data collection became implementation-oriented. CSV inputs, mapping tables, matrix rules, and intermediate outputs were inspected to reconstruct selected workflow stages in the prototype, with additional stakeholder clarification when rule interpretation was uncertain.
-
-% In the demonstration and evaluation activities, data were collected through a realistic TMC scenario based on the 2024 market data and matrix files used by Volvo CE for the yearly TMC calculation. This included uploaded source and matrix files, generated prototype outputs, structured output inspection, and stakeholder feedback on the usefulness and clarity of the prototype. This multi-source strategy is consistent with software-oriented case research in organisational settings \cite{runeson2009guidelines}.
-
-
-% Alternative methods were considered but not prioritised. Large-scale surveys, focus groups, and questionnaire-based ranking could provide broader perception data, but this study involved a small specialised user group and required detailed process-level understanding. Direct SAP backend log extraction or a live pilot in the yearly TMC process could have provided additional operational evidence, but these options were outside the scope of this thesis. The prototype was therefore developed and assessed outside the SAP environment, using Volvo CE's 2024 market data and matrix files.
-
-
-\subsection{Data Collection Methods}
-
-This thesis used three main data collection methods: \textbf{document analysis}, \textbf{stakeholder discussions}, and \textbf{prototype-based data collection}. These methods were selected because the study required both contextual understanding of the existing workflow and technical material for designing, demonstrating, and evaluating the prototype.
-
-Document analysis was used to examine process materials, workflow descriptions, source data structures, and matrix files \cite{bowen2009document}. Stakeholder discussions and weekly review meetings were used to clarify business rules, user needs, and validation expectations in a semi-structured format \cite{kallio2016systematic}. Prototype-based data collection was used during design, demonstration, and evaluation, where uploaded inputs, intermediate outputs, and stakeholder feedback were inspected to assess whether the prototype improved workflow inspectability. Using multiple sources of evidence is suitable in software-oriented organisational research \cite{runeson2009guidelines}.
-
-
-
-
-% \subsection{Data Analysis Method}
-
-
-% % \subsubsection{Data Analysis Methods}
-
-% This thesis used combined qualitative and technical analysis methods across the DSR process. Qualitative analysis was applied to stakeholder input and workflow documentation, while technical analysis was applied to workflow structures, matrix-based rules, data dependencies, and intermediate outputs. This combination supports both problem understanding and artefact development/evaluation in DSR \cite{johannesson2021,hevner2004design}.
-
-% In the early DSR activities (problem explication and requirements definition), the analysis focused on identifying limitations in the SAP-based TMC workflow and translating them into artefact requirements. Document review, workflow inspection, and stakeholder input were analysed to identify recurring issues in transparency, traceability, and inspectability. These findings were then structured into functional, structural, and environmental requirements \cite{johannesson2014introduction}. Statistical survey analysis and hypothesis testing were not prioritised, since the objective was contextual understanding rather than population-level inference.
-
-% During design and development, analysis became implementation-oriented. Source files, matrix rules, and mapping logic were analysed to reformulate selected SAP workflow logic into explicit backend processing steps. Iterative inspection of intermediate outputs was used to verify rule behaviour and data flow across stages. This multi-source analytical approach is consistent with software engineering case research in organisational settings \cite{runeson2009guidelines}.
-
-% In demonstration and evaluation, analysis focused on output inspection, comparison with expected workflow logic, and requirement-based assessment. Stakeholder feedback was analysed qualitatively to identify recurring themes related to transparency, usability, and inspectability \cite{braun2006using}. This supported assessment of artefact utility and requirement fulfilment \cite{hevner2004design}. More extensive quantitative approaches (e.g., controlled experiments or longitudinal usage analysis) were considered but not selected due to prototype scope and the small specialised stakeholder group.
-
+Document analysis was therefore used to examine process materials, workflow descriptions, source data structures, and matrix files \cite{bowen2009document}. The document set was limited to materials directly relevant to the studied 2024 TMC workflow and the implemented stages, especially documents and files used operationally to describe source formats, matrix logic, workflow steps, and existing outputs. Outdated versions, unrelated SAP reports, and partial notes that could not be connected to the selected workflow scope were not treated as primary analytical material. Document credibility was judged through source authority, operational relevance, recency, and consistency with stakeholder explanations, source structures, and observed system outputs. When documents conflicted with each other or left rule details unclear, stakeholder clarification and output comparison were used to resolve the interpretation. Stakeholder discussions and weekly review meetings were used to clarify business rules, expected outputs, and places where the available documentation was incomplete or difficult to interpret \cite{kallio2016systematic}. Prototype-based material was then collected during design, demonstration, and evaluation in the form of uploaded inputs, generated intermediate outputs, result comparisons, and stakeholder comments on the behaviour of the prototype. This combination fits a DSR study in a real organizational setting and is also consistent with case-based software research \cite{runeson2009guidelines}.
 
 
 
@@ -132,23 +72,10 @@ Document analysis was used to examine process materials, workflow descriptions, 
 
 % \subsection{Data Analysis Method}
 
-% The collected material was analysed through a combination of \textbf{qualitative analysis} and \textbf{technical analysis}. More specifically, the analysis involved \textbf{workflow decomposition}, \textbf{requirements analysis}, \textbf{rule interpretation}, \textbf{structured output inspection}, and \textbf{requirement-based evaluation}. This combination was suitable because the thesis needed to interpret stakeholder input and workflow documentation, while also examining data structures, matrix-based rules, workflow dependencies, and prototype outputs. In DSR, analysis supports both the understanding of a practical problem and the development and evaluation of an artefact \cite{johannesson2021,hevner2004design}.
+The collected material was analysed through a combination of \textbf{qualitative interpretation} and \textbf{technical inspection}. In practice, this meant breaking the workflow into stages, interpreting rules from documents and stakeholder explanations, checking how those rules appeared in the prototype outputs, and comparing implemented results with expected behaviour \cite{johannesson2021,hevner2004design}. The study was not conducted as a formal line-by-line content analysis. Instead, the main unit of analysis was the \textit{workflow stage} together with its associated inputs, rules, transformations, and generated outputs. This was appropriate because the research problem concerns how visibility is gained or lost across staged enterprise processing rather than how isolated statements should be coded.
 
-% In the problem explication and requirements definition activities, documentation, workflow observations, and stakeholder input were analysed to identify recurring issues related to transparency, traceability, usability, and intermediate result validation. These findings were then translated into functional, structural, and environmental requirements for the artefact, following the requirement-oriented logic of the DSR framework \cite{johannesson2021}.
+The analytical categories were mainly deductive. Transparency, traceability, usability, validation support, and requirement fulfilment were derived from the research problem, related work, and the DSR purpose of the study. At the same time, the analysis remained open to case-specific issues that emerged during interpretation, such as unclear rule ownership, reference-data version differences, and stage-specific inspection needs. Accordingly, the analysis should be understood as structured workflow analysis in a DSR case setting rather than as an inductive code-to-theme thematic analysis. During problem explication and requirements definition, the analysis focused on understanding where business users lost visibility in the existing process and which functions would be most useful in an inspection-oriented prototype. During design and development, the analysis became more concrete: source files, mapping tables, matrix rules, and workflow descriptions were examined to determine how selected SAP-based logic could be reconstructed as explicit processing steps. During demonstration and evaluation, the generated outputs were inspected stage by stage and compared with expected workflow behaviour and selected reference outputs. Stakeholder feedback was reviewed qualitatively, especially comments about whether the prototype made it easier to understand a stage, inspect an intermediate result, or discuss an unexpected value.
 
-% During design and development, source files, mapping tables, matrix rules, and selected SAP-related workflow descriptions were examined to understand how parts of the TMC workflow could be reformulated into explicit backend processing steps. The analysis focused on decomposing workflow logic, interpreting rules, and inspecting intermediate outputs to check data flow and transformation behaviour.
-
-% For demonstration and evaluation, the generated outputs were analysed through output inspection, comparison with expected workflow logic, and requirement-based assessment. Stakeholder feedback was reviewed in a qualitative and descriptive way to identify recurring comments related to transparency, usability, and inspectability. This supported the assessment of whether the artefact fulfilled its intended purpose and provided practical utility in the Volvo CE context, which is central to DSR evaluation \cite{hevner2004design}.
-
-% Alternative methods such as \textbf{statistical survey analysis} and \textbf{controlled experiments} were considered. However, they were less suitable because the artefact was evaluated as a prototype with a small group of specialised stakeholders. The analysis therefore focused on workflow understanding, output inspection, stakeholder feedback, and requirement-based evaluation.
-
-
-
-\subsection{Data Analysis Method}
-
-The collected material was analysed through a combination of \textbf{qualitative analysis} and \textbf{technical analysis}. The analysis included \textbf{workflow decomposition}, \textbf{requirements analysis}, \textbf{rule interpretation}, \textbf{structured output inspection}, and \textbf{requirement-based evaluation} \cite{johannesson2021,hevner2004design}.
-
-During problem explication and requirements definition, workflow documentation and stakeholder input were analysed to identify issues related to transparency, traceability, usability, validation support, and prototype performance. During design and development, source files, mapping tables, matrix rules, and workflow descriptions were examined to reformulate selected logic into explicit processing steps. During demonstration and evaluation, generated outputs were analysed through output inspection, comparison with expected workflow logic, and requirement-based assessment, while stakeholder feedback was reviewed qualitatively to identify recurring comments related to inspectability and usability.
 
 
 
@@ -157,305 +84,21 @@ During problem explication and requirements definition, workflow documentation a
 
 \section{Application of the Research Method}
 
-This section briefly explains how the selected data collection and data analysis methods were applied across the five DSR activities. Detailed artefact design, implementation, demonstration, and evaluation are presented in the following chapters.
-
-
-% \subsection{Define Requirements}
-
-
-% \subsection{Explicate the Problem}
-
-% The first activity in the DSR process is to explicate the problem. In this thesis, the problem was identified through technical documentation, observation of the existing TMC workflow, and discussions with stakeholders in Volvo CE Global Business Intelligence, particularly users involved in market research and market-related analysis.
-
-% An initial issue observed was that the SAP-based TMC workflow was difficult for users to interpret and validate. Although the system produced the required outputs, users had limited visibility into how values were generated across the workflow, especially in the preparation and adjustment stages.
-
-% Through further analysis and stakeholder discussions, the problem was defined more precisely as a lack of transparency, traceability, and usability in the current representation of the TMC workflow. In practice, users found it difficult to understand how source data, matrix-based rules, and intermediate transformations contributed to the final results.
-
-% Several factors contribute to this problem. The workflow logic is distributed across multiple data sources, matrix files, and backend rules, while the SAP environment is primarily designed to execute calculations rather than explain them. In addition, business rules may change over time, which further reduces the visibility of the workflow.
-
-% This problem explication forms the basis for the requirements defined in the following section.
-
-
-
-
-
-% \subsection{Explicate the Problem}
-
-% The first activity in the DSR process is to explicate the problem. In this thesis, the problem was identified through a case-based understanding of the existing Volvo CE TMC workflow, supported by analysis of technical documentation, observation of the current calculation structure, and continuous discussion with stakeholders in the working context. The purpose of this activity was to move from a general perception of process complexity to a clearly defined design problem.
-
-% The study found that the current TMC workflow is based on a complex SAP-driven calculation process involving multiple data sources, matrix-based rules, and several sequential stages. Although the system supports the required business calculations, much of the logic is embedded in backend rules, technical tables, and SAP-specific structures. As a result, important transformation steps and intermediate results are difficult for users to inspect, interpret, and validate.
-
-% The problem can therefore be defined as a lack of transparency, traceability, and usability in the current representation of the TMC workflow. In particular, users cannot easily understand how values are derived across the preparation and adjustment stages, where inputs such as TMA, SAL, CRP, OTH, and matrix configurations are combined through rule-based transformations.
-
-% Several root causes contribute to this problem. First, the logic is distributed across multiple data sources, matrices, and backend processing rules rather than presented in one coherent interface. Second, the current SAP-based structure is primarily designed to execute calculations rather than explain them. Third, business rules may change over time, which further increases the difficulty of maintaining a transparent and understandable workflow.
-
-% Based on this problem explication, the thesis proceeds to define the requirements for a prototype that can make selected stages of the TMC workflow more visible, interactive, and easier to understand.
-
-% \paragraph{Alternative strategy}
-% An alternative approach would have been to conduct a broader survey-based study or a formal quantitative usability assessment at the beginning of the research. However, this was not chosen because the problem was initially not sufficiently structured and required a deeper contextual understanding of the workflow, system logic, and data dependencies. A case-based problem explication was therefore more suitable for identifying the practical limitations that the artefact should address.
-
-
-% \subsection{Explicate the Problem}
-
-% The first DSR activity was to explicate the problem addressed by the thesis. In this activity, data were collected through document analysis, inspection of the existing SAP-based TMC workflow, and stakeholder discussions within the Volvo CE working context. The purpose was to move from a general understanding of process complexity to a clearly defined design problem.
-
-% The collected material was analysed through qualitative problem analysis and workflow decomposition. This analysis showed that the current TMC workflow is based on a complex SAP-driven calculation process involving multiple data sources, matrix-based rules, and sequential processing stages. Although the existing system supports the required business calculations, much of the workflow logic is embedded in backend rules, technical tables, and SAP-specific structures. As a result, users have limited visibility into how values are transformed across the workflow.
-
-% The problem was therefore defined as a lack of transparency, traceability, and usability in the current representation of the TMC workflow. In particular, users cannot easily inspect how source data, such as TMA, SAL, CRP, and OTH, together with matrix configurations and business rules, contribute to intermediate and final outputs. This problem explication provided the basis for defining artefact requirements in the next DSR activity. The broader workflow context and problem background are described in more detail in the background and artefact chapters.
-
+This section summarizes how the selected data collection and analysis methods were applied across the five DSR activities. Detailed artefact design, implementation, demonstration, and evaluation are presented in later chapters.
 
 \subsection{Explicate the Problem}
 
-The first DSR activity was to explicate the problem addressed by the thesis. Data were collected through document analysis, inspection of the existing SAP-based TMC workflow, and stakeholder discussions within the Volvo CE working context. The collected material was analysed through qualitative problem analysis and workflow decomposition.
+The first DSR activity was to explicate the problem. This was done by reviewing workflow descriptions, source structures, matrix files, existing SAP-based outputs, and stakeholder explanations in order to understand where business users lost visibility in the current TMC process. The goal was not only to describe how the workflow runs, but to identify where input dependencies, transformation logic, and intermediate results became difficult to inspect.
 
-This activity showed that the current TMC workflow is difficult to inspect because important logic is distributed across SAP-specific structures, backend rules, matrix files, and sequential processing stages. As a result, users have limited visibility into how source data, matrix configurations, and business rules contribute to intermediate and final outputs. The problem was therefore defined as a lack of transparency, traceability, and usability in the current workflow representation. This problem explication provided the basis for defining artefact requirements in the next DSR activity.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% The first activity in the DSR process is to explicate the problem. The problem was identified through analysis of technical documentation, observation of the existing calculation structure, and continuous discussion with stakeholders in the working context.
-
-% The current TMC workflow involves multiple data sources, matrix-based rules, and several sequential calculation stages implemented in SAP. Although the system produces the required outputs, much of the underlying logic is embedded in backend structures that users cannot easily inspect or validate. Intermediate transformation results are largely invisible, and it is difficult to trace how a specific output value was derived from its inputs.
-
-% The core problem is therefore a lack of transparency, traceability, and usability in the current TMC workflow representation. Several factors contribute to this: the logic is spread across multiple data sources, matrices, and backend rules with no coherent user-facing view; the SAP environment is designed for execution rather than explanation; and business rules evolve over time, making the workflow increasingly opaque.
-
-% This problem explication forms the basis for the requirements defined in the following section.
-
-% \paragraph{Alternative strategy}
-% A survey-based or formal usability study was not pursued at this stage, as the problem first required deeper contextual understanding of the workflow and data dependencies. A case-based approach was more appropriate given this constraint.
-
-
-
-
-
-
-
-
-% \paragraph{Alternative strategy}
-% A broader survey-based or formal usability study was not pursued at this stage, as the problem first required a contextual understanding of the workflow and its data dependencies. A case-based approach was therefore more appropriate.
-
-
-
-
-
-
-
-
-
-
-
-
-
-% \subsection{Define Requirements}
-
-% The second activity in the DSR process is to define the requirements for the artefact. In this thesis, the requirements were derived from the previously explicated problem, analysis of the existing SAP-based TMC workflow, technical documentation of the current calculation process, and the intended purpose of the prototype in the Volvo CE context. The purpose of this activity was to translate the identified problem into a set of concrete requirements that could guide the design and implementation of the artefact.
-
-% Based on this process, the artefact was defined as a web-based data processing and visualization prototype for the Volvo CE TMC workflow, with a primary focus on the preparation and adjustment stages. The prototype was intended to improve transparency, usability, and interpretability by presenting data inputs, intermediate layers, and calculation results in a clearer and more interactive way than the current SAP-based representation.
-
-% The identified requirements can be grouped into functional requirements, usability requirements, and technical requirements.
-
-% \paragraph{Functional Requirements}
-% The artefact should support the upload and handling of key workflow inputs, including source data and matrix-based configuration files used in the TMC process. It should allow users to inspect selected workflow stages, especially preparation and adjustment, in a structured way that makes intermediate transformations easier to follow. This includes the ability to display relevant data layers, derived values, and rule-driven changes across the workflow. The artefact should also support interactive table-based analysis, including filtering, comparison, and dynamically updated summaries, in order to facilitate validation and anomaly detection.
-
-% \paragraph{Usability Requirements}
-% The artefact should improve the visibility of intermediate calculation logic compared with the current SAP-based workflow representation. It should make the workflow easier to interpret for validation, communication, and demonstration purposes, and support faster identification of incorrect values, missing mappings, or unexpected calculation outcomes. In addition, the prototype should provide a more user-friendly interaction model for exploring TMC-related data and transformations.
-
-% \paragraph{Technical Requirements}
-% From a technical perspective, the artefact should support a modular structure that separates data upload, backend processing, and frontend visualization. It should be able to process uploaded workflow inputs into structured intermediate layers that can be queried and displayed independently. The system should also support navigation across different workflow stages so that users can inspect the logic step by step rather than only reviewing final outputs. Furthermore, the prototype should be implemented in a way that allows future extension to additional workflow stages, such as split and restatement, and possible integration with Volvo CE internal infrastructure if further development is pursued.
-
-% These requirements provided the basis for the subsequent design and development of the prototype.
-
-% \paragraph{Alternative strategy}
-% An alternative approach would have been to conduct a formal requirements engineering workshop with a broader group of stakeholders. However, this was not chosen because the thesis developed iteratively in parallel with an increasing understanding of the workflow and the existing system. A lightweight requirement definition process based on documentation, workflow analysis, and contextual understanding was therefore more suitable for the scope of this study.
-
-
-
-
-% The second activity in the DSR process is to define the requirements for the artefact. In this thesis, the requirements were derived from the previously explicated problem, analysis of the current SAP-based TMC workflow, review of technical documentation, and the intended role of the prototype in the Volvo CE context. The purpose of this activity was to translate the identified problem into a set of concrete requirements that could guide the design and development of the artefact.
-
-% Based on this process, the artefact was defined as a web-based prototype for data processing and workflow visualization, with primary focus on the preparation and adjustment stages of the TMC workflow. The prototype was intended to improve transparency, usability, and interpretability by presenting workflow inputs, intermediate transformations, and selected results in a more accessible and inspectable form than the current system representation.
-
-% The identified requirements can be grouped into functional requirements, usability requirements, and technical requirements.
-
-% \paragraph{Functional Requirements}
-% The artefact should support the handling of key workflow inputs used in the TMC process, including source data and matrix-based configuration files. It should enable users to inspect selected workflow stages in a structured way, especially the preparation and adjustment stages, where multiple source inputs and rule-based transformations interact. The artefact should also support layer-based navigation and interactive analysis so that users can review workflow data through filtering, comparison, and dynamically updated summaries.
-
-% \paragraph{Usability Requirements}
-% The artefact should make the workflow easier to understand for validation, explanation, and communication purposes. In particular, it should improve the visibility of intermediate calculation logic compared with the existing SAP-based workflow representation. It should also support faster identification of incorrect values, missing mappings, and unexpected calculation outcomes by allowing users to explore intermediate results rather than relying only on final outputs.
-
-% \paragraph{Technical Requirements}
-% From a technical perspective, the artefact should support a clear separation between user interaction, backend processing, and data storage. It should be able to transform uploaded workflow inputs into structured intermediate layers that can be queried and inspected separately. In addition, the artefact should support a local relational data structure that allows workflow records, mappings, and derived outputs to be stored and reviewed across multiple steps. This requirement is particularly important because selected logic from the existing SAP-based workflow needs to be re-expressed in a more transparent form, where SQL-based processing can be used to externalize parts of the rule-driven logic that are otherwise embedded in planning functions and other backend execution structures. The artefact should also be modular enough to support future extension to additional workflow stages if further development is pursued.
-
-% These requirements provided the basis for the subsequent design and development of the prototype.
-
-% \paragraph{Alternative strategy}
-% An alternative approach would have been to conduct a formal requirements engineering workshop with a broader group of stakeholders. However, this was not chosen because the thesis developed iteratively in parallel with an increasing understanding of the workflow, system logic, and data dependencies. A lightweight requirement definition process based on documentation, workflow analysis, and contextual understanding was therefore more suitable for the scope of this study.
-
-
-
-
-
-
-% \subsection{Define Requirements}
-% Requirements were derived from the explicated problem, analysis of the existing SAP-based TMC workflow, and review of technical documentation. The artefact was defined as a web-based prototype focused on the preparation and adjustment stages of the TMC workflow.
-
-% \paragraph{Functional Requirements}
-% The prototype should support upload and handling of source data and matrix-based configuration files. Users should be able to inspect the preparation and adjustment stages in a structured, step-by-step manner, with support for filtering, comparison, and dynamically updated summaries to aid validation.
-
-% \paragraph{Usability Requirements}
-% The prototype should make intermediate calculation logic more visible and interpretable than in the current SAP-based workflow. Users should be able to identify incorrect values, missing mappings, and unexpected outcomes by exploring intermediate results rather than only reviewing final outputs.
-
-% \paragraph{Technical Requirements}
-% The prototype should maintain a clear separation between frontend interaction, backend processing, and data storage. Uploaded inputs should be transformed into structured intermediate layers that can be queried independently. A local relational database should store workflow records, mappings, and derived outputs across steps, allowing selected SAP logic to be re-expressed through SQL-based processing in a more transparent form. The design should be modular enough to accommodate future extension to additional workflow stages.
-
-% \paragraph{Alternative strategy}
-% A formal requirements workshop with a broader stakeholder group was not conducted, as the thesis developed iteratively alongside a growing understanding of the workflow. A lightweight, documentation-based approach was more appropriate for the scope of this study.
-
-
-
-
-% The second activity in the DSR process is to define the requirements for the artefact. In this thesis, the requirements were derived from the explicated problem, analysis of the existing SAP-based TMC workflow, review of technical documentation, and discussions with stakeholders in the Volvo CE Global Business Intelligence context. Following Johannesson and Perjons, the artefact requirements were structured as functional, structural, and environmental requirements \cite{johannesson2021}. The artefact was defined as a web-based prototype focused on the preparation and adjustment stages of the TMC workflow.
-
-% \paragraph{Functional Requirements}
-% The artefact should support the upload and handling of source data and matrix-based configuration files used in the TMC workflow. It should allow users to inspect the preparation and adjustment stages in a structured, step-by-step manner and support filtering, comparison, and dynamically updated summaries to aid validation and review of intermediate results.
-
-% \paragraph{Structural Requirements}
-% The artefact should support a modular architecture that separates user interaction, backend processing, and data storage. Uploaded inputs should be transformed into structured intermediate layers that can be queried and inspected independently. The artefact should also support a relational data structure for storing workflow records, mappings, and derived outputs across multiple steps, and it should be extensible enough to accommodate future development of additional workflow stages.
-
-% \paragraph{Environmental Requirements}
-% The artefact should provide a more transparent and interpretable representation of the workflow than the current SAP-based environment. Users should be able to identify incorrect values, missing mappings, and unexpected outcomes by exploring intermediate results rather than relying only on final outputs. In addition, the prototype should fit the practical context of market-related analysis and validation work within Volvo CE and support communication of workflow logic to relevant stakeholders.
-
-% These requirements provided the basis for the subsequent design and development of the prototype.
-
-% \paragraph{Alternative strategy}
-% A formal requirements workshop with a broader stakeholder group was not conducted, as the thesis developed iteratively alongside a growing understanding of the workflow. A lightweight, documentation-based approach was therefore more appropriate for the scope of this study.
-
-% \subsubsection{Define Requirements}
-
-% The second activity in the DSR process is to define the requirements for the artefact. In this thesis, the requirements were derived from the explicated problem, analysis of the existing SAP-based TMC workflow, technical documentation, and discussions with stakeholders in Volvo CE Global Business Intelligence. Following Johannesson and Perjons, the requirements were structured as functional, structural, and environmental requirements \cite{johannesson2021}. The artefact was defined as a web-based prototype focused on the preparation and adjustment stages of the TMC workflow.
-
-% \paragraph{Functional Requirements}
-% The artefact should support the upload and handling of source data and matrix-based configuration files used in the TMC workflow. It should allow users to inspect the preparation and adjustment stages step by step and support filtering, comparison, and dynamically updated summaries for validation.
-
-% \paragraph{Structural Requirements}
-% The artefact should separate user interaction, backend processing, and data storage. Uploaded inputs should be transformed into structured intermediate layers that can be queried independently. It should also support a local relational data structure for workflow records, mappings, and derived outputs, while remaining extensible for future workflow stages.
-
-% \paragraph{Environmental Requirements}
-% The artefact should provide a more transparent and interpretable workflow representation than the current SAP-based environment. Users should be able to identify incorrect values, missing mappings, and unexpected outcomes by exploring intermediate results rather than relying only on final outputs. The prototype should also support market-related analysis and validation work within Volvo CE.
-
-% These requirements provided the basis for the subsequent design and development of the prototype.
-
-% \paragraph{Alternative strategy}
-% A formal requirements workshop was not conducted, as the thesis developed iteratively alongside a growing understanding of the workflow. A lightweight, documentation-based approach was therefore more suitable for the scope of this study.
-
-
-
-
-% The second activity of the DSR framework is to define requirements. The purpose of this activity is to translate the explicated problem into an artefact that can address it in a structured and practical way. In this thesis, the requirements were derived from analysis of the existing SAP-based TMC workflow at Volvo CE, technical documentation, and discussions with relevant stakeholders.
-
-% The artefact was defined as a web-based data processing and visualization prototype for the TMC workflow, with focus on source data upload, preparation, adjustment, and machine line split. It was intended as a more transparent and inspectable alternative to the corresponding part of the current SAP-based process.Following Johannesson and Perjons, the requirements were grouped into functional, structural, and environmental requirements \cite{johannesson2021}.
-
-% \paragraph{Functional Requirements}
-% \begin{itemize}
-%     \item The artefact shall support upload and management of CSV-based source data and matrix files used in the TMC workflow.
-%     \item The artefact shall support backend processing of uploaded data through Python-based services and SQL-backed storage and querying in order to re-express selected parts of the SAP-based workflow logic.
-%     \item The artefact shall represent the preparation and adjustment stages through inspectable intermediate data and calculation-related views.
-%     \item The artefact shall support workflow coverage up to the machine line split stage.
-%     \item The artefact shall provide interactive frontend views for filtering, comparison, summary calculation, and CSV export.
-% \end{itemize}
-
-
-% \paragraph{Structural Requirements}
-% \begin{itemize}
-%     \item The artefact shall use a web-based frontend-backend architecture.
-%     \item The artefact shall separate data upload, backend processing, and frontend visualization into modular components.
-%     \item The artefact shall support structured storage of workflow records, mappings, and derived outputs.
-%     \item The artefact shall be extensible to later workflow stages in future development.
-% \end{itemize}
-
-% \paragraph{Environmental Requirements}
-% \begin{itemize}
-%     \item The artefact shall improve transparency and usability compared with the current SAP-based workflow representation.
-%     \item The artefact shall support validation by making intermediate results, totals, and data issues easier to inspect.
-%     \item The artefact shall be suitable for users involved in market-related analysis without requiring deep knowledge of the SAP implementation.
-%     \item The artefact shall allow future integration with Volvo CE internal infrastructure.
-% \end{itemize}
-
-% These requirements provided the basis for the subsequent design and development of the prototype.
-
-% \paragraph{Alternative strategy}
-% A formal requirements workshop was not conducted, as the thesis developed iteratively alongside a growing understanding of the workflow. A lighter documentation- and discussion-based approach was therefore more suitable for the scope of this study.
-
-
-% \subsection{Define Requirements}
-
-% The second activity of the DSR framework is to define requirements. The purpose of this activity is to translate the explicated problem into an artefact that can address it in a structured and practical way. In this thesis, the requirements were derived from analysis of the existing SAP-based TMC workflow at Volvo CE, technical documentation, and discussions with relevant stakeholders.
-
-% The artefact was defined as a web-based data processing and visualization prototype for the TMC workflow, with focus on source data upload, preparation, adjustment, and machine line split. It was intended as a more transparent and inspectable alternative to the corresponding part of the current SAP-based process.Following Johannesson and Perjons, the requirements were grouped into functional, structural, and environmental requirements \cite{johannesson2021}.
-
-% \paragraph{Functional Requirements}
-% \begin{itemize}
-%     \item The artefact shall support upload and management of CSV-based source data and matrix files used in the TMC workflow.
-%     \item The artefact shall support backend processing of uploaded data in order to re-express selected parts of the SAP-based workflow logic.
-%     \item The artefact shall represent the preparation and adjustment stages through inspectable intermediate data and calculation-related views, with workflow coverage up to the machine line split stage.
-%     \item The artefact shall provide interactive frontend views for filtering, comparison, summary calculation, and CSV export.
-% \end{itemize}
-
-% \paragraph{Structural Requirements}
-% \begin{itemize}
-%     \item The artefact shall use a web-based frontend-backend architecture.
-%     \item The artefact shall separate data upload, backend processing, and frontend visualization into modular components.
-%     \item The artefact shall support structured storage of workflow records, mappings, and derived outputs, while remaining extensible to later workflow stages.
-% \end{itemize}
-
-% \paragraph{Environmental Requirements}
-% \begin{itemize}
-%     \item The artefact shall improve transparency and usability compared with the current SAP-based workflow representation.
-%     \item The artefact shall support validation by making intermediate results, totals, and data issues easier to inspect.
-%     \item The artefact shall be suitable for users involved in market-related analysis and allow future integration with Volvo CE internal infrastructure.
-% \end{itemize}
-
-% These requirements provided the basis for the subsequent design and development of the prototype.
-
-% \paragraph{Alternative strategy}
-% A formal requirements workshop was not conducted, as the thesis developed iteratively alongside a growing understanding of the workflow. A lighter documentation- and discussion-based approach was therefore more suitable for the scope of this study.
-
-
-
-
-% \subsection{Define Requirements}
-
-% The second DSR activity was to define requirements for the artefact. In this activity, workflow documentation, source data structures, matrix files, existing output examples, and stakeholder input were used to clarify what the prototype needed to support. The purpose was to translate the problems identified in the SAP-based TMC workflow into concrete requirements for a web-based artefact.
-
-% The collected material was analysed through requirements analysis. The requirements were grouped into functional, structural, performance, and environmental requirements. Functional requirements described the main capabilities of the prototype, such as source and matrix file upload, backend processing, intermediate output inspection, filtering, and export. Structural requirements described the architecture and modular separation of upload, processing, storage, and visualisation. Performance requirements were included to address prototype-level responsiveness and stability. Environmental requirements were used to operationalise the broader goals of transparency, traceability, usability, and validation support.
-
-% The resulting requirements guided the design and development of the prototype and are presented in detail in Section 4.2. They also provided the basis for the requirement-based evaluation in Chapter 6, where transparency, traceability, usability, and prototype-level performance are assessed through defined evaluation parameters.
-
-
-
-
-
-
+The collected material was analysed through qualitative interpretation of the workflow steps and technical inspection of how data and rules were distributed across the existing implementation. This made it possible to frame the problem more precisely as one of transparency, traceability, and usability in a staged enterprise workflow rather than as a single isolated system defect.
 
 \subsection{Define Requirements}
 
-The second DSR activity was to define requirements for the artefact. In this activity, workflow documentation, source data structures, matrix files, existing output examples, and stakeholder input were used to clarify what the prototype needed to support. The purpose was to translate the problems identified in the SAP-based TMC workflow into concrete requirements for a web-based artefact.
+The second DSR activity was to define requirements for the artefact. Workflow documentation, source data structures, matrix files, existing output examples, and stakeholder input were used to clarify what the prototype needed to support. The purpose was to translate the identified workflow problems into concrete requirements for a web-based artefact.
 
-The collected material was analysed through requirements analysis. The requirements were grouped into functional and performance requirements. Functional requirements described the main capabilities of the prototype, including source and matrix file upload, backend processing, structured storage, intermediate output inspection, filtering, traceability support, validation support, and export. Performance requirements addressed prototype-level execution time, stability, and reliability during demonstration and evaluation.
+The collected material was analysed through requirements analysis. The requirements were grouped into functional and performance requirements. Functional requirements described capabilities such as file upload, backend processing, structured storage, intermediate output inspection, filtering, validation support, and export. Performance requirements addressed prototype-level execution time, stability, and reliability during demonstration and evaluation.
 
-The resulting requirements guided the design and development of the prototype and are presented in detail in Section 4.2. They also provided the basis for the requirement-based evaluation in Chapter 6, where the prototype is assessed in terms of functional coverage, transparency, traceability, usability, validation support, and prototype-level performance.
-
-
+The resulting requirements guided the design and development of the prototype and provided the basis for the requirement-based evaluation in Chapter 6, where the artefact is assessed in terms of functional coverage, transparency, traceability, usability, validation support, and prototype-level performance.
 
 
 
@@ -471,7 +114,9 @@ The resulting requirements guided the design and development of the prototype an
 
 
 
-% The third activity of the DSR framework is to design and develop the artefact. This activity takes the outlined artefact and the elicited requirements as input and transforms them into a concrete implementation. According to Johannesson and Perjons, this activity can be understood through four sub-activities: imagine and brainstorm, assess and select, sketch and build, and justify and reflect \cite{johannesson2021}. In this thesis, the activity was carried out through a combination of iterative prototyping, workflow analysis, and discussions with relevant stakeholders in the Volvo CE context.
+
+
+% The third activity of the DSR framework is to design and develop the artefact. This activity takes the outlined artefact and the elicited requirements as input and transforms them into a concrete implementation. According to Johannesson and Perjons, this activity can be understood through four sub-activities: imagine and brainstorm, assess and select, sketch and build, and justify and reflect \cite{johannesson2021,hevner2004design}. In this thesis, the activity was carried out through a combination of iterative prototyping, workflow analysis, and discussions with relevant stakeholders in the Volvo CE context.
 
 % The first sub-activity, \textit{imagine and brainstorm}, involved exploring how the TMC workflow could be represented in a more transparent and user-friendly way outside the current SAP-based environment. Early ideas focused on how source data upload, workflow navigation, intermediate layer inspection, and calculation-related views could be presented through a web-based interface. These ideas were developed through technical analysis of the workflow and informal discussions with stakeholders involved in business intelligence and market-related analysis.
 
@@ -481,7 +126,7 @@ The resulting requirements guided the design and development of the prototype an
 
 % The fourth sub-activity, \textit{justify and reflect}, involved reviewing the design decisions against the defined requirements. During development, features such as workflow-layer navigation, interactive filtering, summary calculation, and CSV export were assessed not only as interface functions, but also as responses to the identified lack of transparency, traceability, and usability in the original workflow. This reflection also helped identify possible directions for future development, including support for additional workflow stages and tighter integration with Volvo CE internal infrastructure.
 
-% A key design decision in this thesis was to represent selected parts of the TMC workflow through a modular web-based prototype rather than attempt to replicate the SAP environment directly. Another important decision was to externalize selected workflow logic through backend services and SQL-based data handling, instead of relying on SAP-specific execution structures. This made the preparation, adjustment, and split-related logic easier to inspect and explain, while remaining manageable within the scope of the thesis.
+% A key design decision in this thesis was to represent selected parts of the TMC workflow through a modular web-based prototype rather than attempt to replicate the SAP environment directly. Another important decision was to externalize selected workflow logic through backend services and SQL-based data handling, instead of relying on SAP-specific execution structures. This made the preparation, market view, adjustment, machine line split, and resplit-related logic easier to inspect and explain, while remaining manageable within the scope of the thesis.
 
 % One challenge encountered during development was how to represent the complexity of the TMC workflow in a simplified but still meaningful way. The original SAP-based process involves multiple data sources, matrix-based business rules, and staged transformations. To make the artefact feasible within the thesis, the implementation was limited to workflow coverage from source data upload to machine line split, while preserving the essential logic needed to demonstrate the value of a more transparent and user-oriented representation.
 
@@ -490,7 +135,7 @@ The resulting requirements guided the design and development of the prototype an
 
 % \subsection{Design and develop artifact}
 
-% The third activity of the DSR framework is to design and develop the artefact, transforming the outlined artefact and elicited requirements into a concrete implementation. According to Johannesson and Perjons, this activity can be understood through four sub-activities: imagine and brainstorm, assess and select, sketch and build, and justify and reflect \cite{johannesson2021}.
+% The third activity of the DSR framework is to design and develop the artefact, transforming the outlined artefact and elicited requirements into a concrete implementation. According to Johannesson and Perjons, this activity can be understood through four sub-activities: imagine and brainstorm, assess and select, sketch and build, and justify and reflect \cite{johannesson2021,hevner2004design}.
 
 % The first sub-activity, \textit{imagine and brainstorm}, concerned how the TMC workflow could be represented in a more transparent and user-friendly way outside the SAP-based environment. Early ideas focused on data upload, workflow navigation, intermediate layer inspection, and calculation-related views.
 
@@ -511,15 +156,15 @@ The resulting requirements guided the design and development of the prototype an
 
 \subsection{Design and Develop the Artefact}
 
-The third DSR activity was to design and develop the artefact based on the requirements defined in the previous activity. Since the main contribution of this thesis is a working prototype, this activity formed a central part of the research process. Following Johannesson and Perjons, the activity involved imagining possible designs, selecting an appropriate design direction, building the artefact, and reflecting on the design decisions \cite{johannesson2021}.
+The third DSR activity was to design and develop the artefact based on the requirements defined in the previous activity. Since the main contribution of this thesis is a working prototype, this activity formed a central part of the research process. Following Johannesson and Perjons, the activity involved imagining possible designs, selecting an appropriate direction, building the artefact, and reflecting on the design decisions \cite{johannesson2021,hevner2004design}.
 
-In this stage, the selected data collection methods were applied in a more technical way. CSV-based source files, matrix tables, mapping rules, SAP-related workflow descriptions, and generated intermediate outputs were inspected to understand how selected parts of the TMC workflow could be reconstructed outside the SAP environment. Stakeholder clarification was also used when business rules, machine line mappings, or data dependencies were unclear.
+In this stage, the selected data collection methods were applied in a more technical way. CSV-based source files, matrix tables, mapping rules, workflow descriptions, and generated intermediate outputs were inspected to understand how selected parts of the workflow could be reconstructed outside the SAP environment. Stakeholder clarification was used when business rules, machine-line mappings, or data dependencies were unclear.
 
-The collected material was analysed through workflow decomposition, rule interpretation, and iterative output inspection. This analysis supported the translation of selected SAP-based workflow logic into explicit Python- and SQL-based backend processing steps. Instead of attempting to replicate the SAP environment directly, the artefact was designed as a modular web-based prototype with separate components for data upload, backend processing, structured storage, and frontend visualisation.
+The collected material was analysed through workflow decomposition, rule interpretation, and iterative output inspection. This analysis supported the translation of selected workflow logic into explicit Python- and SQL-based backend processing steps. Rather than replicating the SAP environment directly, the artefact was designed as a modular web-based prototype with separate components for data upload, backend processing, structured storage, and frontend visualization.
 
-The development followed an iterative prototyping approach. Early design ideas focused on making the workflow more inspectable through staged outputs, workflow navigation, filtering, summary values, and export functions. These ideas were gradually implemented and refined as the understanding of the TMC workflow improved. The implementation scope was limited to source data upload, preparation, market-view derivation, adjustment, and selected machine line split/resplit-related processing, which represented the selected parts of the TMC workflow implemented in the prototype.
+The development followed an iterative prototyping approach. Early design ideas focused on staged outputs, workflow navigation, filtering, summary values, and export functions. These ideas were gradually implemented and refined as the understanding of the workflow improved. The implemented scope covered source data upload, preparation, market view, adjustment, machine line split, and resplit.
 
-A key challenge in this activity was that important workflow logic in the original SAP-based process is embedded in planning functions, planning sequences, matrix-based structures, and staged transformations. These elements do not map directly onto reusable program code. They therefore had to be interpreted, decomposed, and reformulated into backend processing logic. The detailed system architecture, implementation logic, and interface design are presented in the artefact design and implementation chapters.
+A key challenge in this activity was that important workflow logic in the original SAP-based process is embedded in planning functions, planning sequences, matrix-based structures, and staged transformations. These elements do not map directly onto reusable program code, so they had to be interpreted and reformulated into backend processing logic. The detailed system architecture and interface design are presented in the artefact chapter.
 
 
 
@@ -530,7 +175,7 @@ A key challenge in this activity was that important workflow logic in the origin
 
 
 
-% The fourth activity of the DSR framework is to demonstrate the artefact. This activity shows how the artefact can be applied in a relevant case to address the previously explicated problem. In this sense, the demonstration serves as a proof of feasibility for the artefact \cite{johannesson2021}.
+% The fourth activity of the DSR framework is to demonstrate the artefact. This activity shows how the artefact can be applied in a relevant case to address the previously explicated problem. In this sense, the demonstration serves as a proof of feasibility for the artefact \cite{johannesson2021,hevner2004design}.
 
 % The first sub-activity was to choose a case on which to apply the artefact. In this thesis, the demonstration was based on a realistic TMC workflow scenario using 2024 TMC source data and matrix files. The case focused on how users could upload workflow-related input data, process it through the implemented stages, and inspect the resulting preparation-, adjustment-, and split-related outputs in the prototype.
 
@@ -543,9 +188,9 @@ A key challenge in this activity was that important workflow logic in the origin
 
 % \subsection{Demonstrate the Artefact}
 
-% The fourth DSR activity was to demonstrate the artefact. This activity shows how the artefact can be applied in a relevant case and can serve as a proof of feasibility for the proposed solution \cite{johannesson2021}. In this thesis, the demonstration was based on a realistic TMC scenario using Volvo CE's 2024 market data and matrix files used for the yearly TMC calculation.
+% The fourth DSR activity was to demonstrate the artefact. This activity shows how the artefact can be applied in a relevant case and can serve as a proof of feasibility for the proposed solution \cite{johannesson2021,hevner2004design}. In this thesis, the demonstration was based on a realistic TMC scenario using Volvo CE's 2024 market data and matrix files used for the yearly TMC calculation.
 
-% The selected data collection methods were applied by using the prototype to upload source and matrix files, process them through the implemented backend stages, and generate outputs for preparation, adjustment, and machine line split. These outputs were then made available through the web interface using layer-based views, interactive tables, summary values, charts, and CSV export functions.
+% The selected data collection methods were applied by using the prototype to upload source and matrix files, process them through the implemented backend stages, and generate outputs for preparation, market view, adjustment, machine line split, and resplit. These outputs were then made available through the web interface using layer-based views, interactive tables, summary values, charts, and CSV export functions.
 
 % The demonstration focused on showing how users could follow selected workflow stages step by step, inspect intermediate outputs, and review results through the prototype interface. In this way, the activity demonstrated the feasibility of representing selected parts of the TMC workflow outside the SAP environment in a more transparent and inspectable form.
 
@@ -554,22 +199,22 @@ A key challenge in this activity was that important workflow logic in the origin
 
 % \subsection{Demonstrate the Artefact}
 
-% The fourth DSR activity was to demonstrate the artefact. This activity shows how the artefact can be applied in a relevant case and can serve as a proof of feasibility for the proposed solution \cite{johannesson2021}. In this thesis, the demonstration was based on a realistic TMC scenario using Volvo CE's 2024 market data and matrix files used for the yearly TMC calculation.
+% The fourth DSR activity was to demonstrate the artefact. This activity shows how the artefact can be applied in a relevant case and can serve as a proof of feasibility for the proposed solution \cite{johannesson2021,hevner2004design}. In this thesis, the demonstration was based on a realistic TMC scenario using Volvo CE's 2024 market data and matrix files used for the yearly TMC calculation.
 
-% The selected data collection methods were applied by using the prototype to upload source and matrix files, process them through the implemented backend stages, and generate preparation, adjustment, and machine line split outputs. These outputs were then made available through the web interface using layer-based views, interactive tables, summary values, and CSV export functions.
+% The selected data collection methods were applied by using the prototype to upload source and matrix files, process them through the implemented backend stages, and generate preparation, market view, adjustment, machine line split, and resplit outputs. These outputs were then made available through the web interface using layer-based views, interactive tables, summary values, and CSV export functions.
 
-% The generated outputs were analysed through structured output inspection and comparison with the expected workflow logic. In particular, the results were checked against the defined business rules, expected intermediate outputs, and, where comparable, the results produced by the existing SAP-based TMC workflow. This helped assess whether the reformulated backend logic behaved consistently with the intended TMC process within the implemented scope.
+% The generated outputs were analysed through structured output inspection and comparison with the expected workflow logic. In particular, the results were checked against the defined business rules, expected intermediate outputs, and, where comparable, the results produced by the existing SAP-based TMC implementation. This helped assess whether the reformulated backend logic behaved consistently with the intended TMC process within the implemented scope.
 
 % This activity served as a proof of feasibility for the artefact within the selected scope, from source data upload to machine line split. The detailed demonstration, output inspection, and comparison results are presented in the results and evaluation chapters.
 
 
 \subsection{Demonstrate the Artefact}
 
-The fourth DSR activity was to demonstrate the artefact. This activity shows how the artefact can be applied in a relevant case and can serve as a proof of feasibility for the proposed solution \cite{johannesson2021}. In this thesis, the demonstration was based on a realistic TMC scenario using Volvo CE's 2024 market data and matrix files used for the yearly TMC calculation.
+The fourth DSR activity was to demonstrate the artefact. This activity shows how the artefact can be applied in a relevant case and can serve as a proof of feasibility for the proposed solution \cite{johannesson2021,hevner2004design}. In this thesis, the demonstration was based on a realistic TMC scenario using Volvo CE's 2024 market data and matrix files used for the yearly TMC calculation.
 
-The selected data collection methods were applied by using the prototype to upload source and matrix files, process them through the implemented backend stages, and generate outputs for preparation, adjustment, and selected machine line split/resplit-related processing. These outputs were then made available through the web interface using layer-based views, interactive tables, summary values, charts, and CSV export functions.
+The selected data collection methods were applied by using the prototype to upload source and matrix files, process them through the implemented backend stages, and generate outputs for preparation, market view, adjustment, machine line split, and resplit processing. These outputs were then made available through the web interface using layer-based views, interactive tables, summary values, charts, and CSV export functions.
 
-The demonstration focused on showing how users could follow selected workflow stages step by step, inspect intermediate outputs, and review results through the prototype interface. In this way, the activity demonstrated the feasibility of representing selected parts of the TMC workflow outside the SAP environment in a more transparent and inspectable form.
+The demonstration focused on showing how users could follow selected workflow stages, inspect intermediate outputs, and review results through the prototype interface. In this way, the activity demonstrated the feasibility of representing selected parts of the workflow outside the SAP environment in a more transparent and inspectable form.
 
 The detailed demonstration of the prototype and its generated workflow outputs is presented in the results chapter.
 
@@ -580,7 +225,7 @@ The detailed demonstration of the prototype and its generated workflow outputs i
 
 % The first sub-activity was to analyse the evaluation context. The evaluation was carried out using the deployed web-based prototype, which was made accessible to stakeholders through a test deployment. Representative 2024 TMC source data and matrix files were used as input. The setting was realistic in terms of data and workflow context, but still limited to the current prototype scope.
 
-% The second sub-activity was to select evaluation goals and strategy. The main goals were to assess whether the artefact improved transparency, usability, and inspectability compared with the SAP-based workflow representation, and whether it fulfilled the defined requirements. Since the artefact had not yet been introduced into broader internal use, the evaluation was formative and qualitative in nature.
+% The second sub-activity was to select evaluation goals and strategy. The main goals were to assess whether the artefact improved transparency, usability, and inspectability compared with the SAP-based TMC implementation, and whether it fulfilled the defined requirements. Since the artefact had not yet been introduced into broader internal use, the evaluation was formative and qualitative in nature.
 
 % The third sub-activity was to design and carry out the evaluation. A feedback session was conducted with a small group of two to three stakeholders from Volvo CE, including personnel from the Strategy and Business Intelligence team responsible for market research and the yearly TMC cycle. Stakeholders accessed the deployed prototype directly through a test environment and interacted with the system using real workflow data. Feedback was collected through semi-structured discussion following the session.
 
@@ -593,7 +238,7 @@ The detailed demonstration of the prototype and its generated workflow outputs i
 
 % \subsection{Evaluate the Artefact}
 
-% The final DSR activity was to evaluate the artefact. This activity aimed to determine whether the prototype fulfilled its intended purpose and satisfied the requirements defined earlier in the research process \cite{johannesson2021}. Since the artefact was developed as a research prototype, the evaluation was formative and qualitative rather than a full production assessment.
+% The final DSR activity was to evaluate the artefact. This activity aimed to determine whether the prototype fulfilled its intended purpose and satisfied the requirements defined earlier in the research process \cite{johannesson2021,hevner2004design}. Since the artefact was developed as a research prototype, the evaluation was formative and qualitative rather than a full production assessment.
 
 % In this activity, data were collected through prototype use, structured output inspection, and stakeholder feedback. The prototype was evaluated in a test setting using Volvo CE's 2024 market data and matrix files. The generated outputs were inspected to assess whether the implemented workflow stages behaved according to the defined business rules and expected workflow logic. Where comparable, selected results were also checked against the existing SAP-based TMC process.
 
@@ -605,13 +250,13 @@ The detailed demonstration of the prototype and its generated workflow outputs i
 
 \subsection{Evaluate the Artefact}
 
-The final DSR activity was to evaluate the artefact. This activity aimed to determine whether the prototype fulfilled its intended purpose and satisfied the requirements defined earlier in the research process \cite{johannesson2021}. Since the artefact was developed as a research prototype, the evaluation was formative and qualitative rather than a full production-level assessment.
+The final DSR activity was to evaluate the artefact. This activity aimed to determine whether the prototype fulfilled its intended purpose and satisfied the requirements defined earlier in the research process \cite{johannesson2021,hevner2004design}. Since the artefact was developed as a research prototype, the evaluation was formative and qualitative rather than a full production-level assessment.
 
-In this activity, data were collected through prototype use, structured output inspection, and stakeholder feedback. The prototype was evaluated in a test setting using Volvo CE's 2024 market data and matrix files used for the yearly TMC calculation. The evaluation focused on the implemented workflow scope, from source data upload to preparation, market-view derivation, adjustment, and selected machine line split/resplit-related processing.
+In this activity, data were collected through prototype use, structured output inspection, and stakeholder feedback. The prototype was evaluated in a test setting using Volvo CE's 2024 market data and matrix files used for the yearly TMC calculation. The evaluation focused on the implemented workflow scope, from source data upload to preparation, market view, adjustment, machine line split, and resplit.
 
-The generated outputs were inspected to assess whether the implemented workflow stages behaved according to the defined business rules and expected workflow logic. Where comparable, selected results were also checked against outputs from the existing SAP-based TMC process. This helped assess whether the reformulated backend logic was consistent with the intended TMC workflow within the implemented scope.
+The generated outputs were inspected to assess whether the implemented workflow stages behaved according to the defined business rules and expected workflow logic. Where comparable, selected results were also checked against outputs from the existing SAP-based TMC process. This helped assess whether the reformulated backend logic was consistent with the intended workflow within the implemented scope.
 
-The collected material was analysed through requirement-based evaluation and qualitative feedback analysis. The evaluation considered functional fulfilment, prototype-level performance, and the extent to which the artefact supported transparency, traceability, usability, and validation. Stakeholder feedback was used to understand whether the prototype made intermediate workflow stages clearer and easier to review from a user perspective.
+The collected material was analysed through requirement-based evaluation and qualitative feedback analysis. The evaluation considered functional fulfilment, prototype-level performance, and the extent to which the artefact supported transparency, traceability, usability, and validation. Stakeholder feedback was used to understand whether the prototype made intermediate workflow stages clearer and easier to review.
 
 The detailed evaluation parameters, results, and limitations are presented in the evaluation chapter.
 
@@ -631,8 +276,30 @@ This study was conducted in collaboration with Volvo CE and required careful att
 
 The empirical part of the thesis involved workflow analysis, document review, prototype development, and informal discussions with relevant stakeholders. No sensitive personal data was collected or processed, and the study did not involve any physical intervention or any attempt to influence participants physically or mentally. Stakeholders who contributed contextual information were informed about the purpose of the study, and participation in discussions was voluntary \cite{etikprovningsmyndigheten_act}.
 
-The purpose of these interactions was solely to understand current work practices and support the design and assessment of the artefact, not to evaluate or report individual performance or behavior. In this way, the study sought to respect participants’ autonomy while limiting the use of collected material to what was necessary for the research purpose \cite{vr_good_research_2024}.
+The purpose of these interactions was solely to understand current work practices and support the design and assessment of the artefact, not to evaluate or report individual performance or behaviour. In this way, the study sought to respect participants' autonomy while limiting the use of collected material to what was necessary for the research purpose \cite{vr_good_research_2024}.
 
-Special consideration was also given to the handling of company-internal information. The prototype was developed and demonstrated in a controlled setting and was not used as a production replacement. Where screenshots, figures, code fragments, system outputs, or data samples from internal systems were included for explanatory purposes, they were anonymized or masked to remove company-specific identifiers and potentially sensitive information. The thesis does not disclose Volvo CE trade secrets, confidential business data, or complete proprietary calculation logic, and the handling of company-related material followed Volvo CE's internal requirements for confidentiality and responsible information handling \cite{su_ethics_policy}.
+Special consideration was also given to the handling of company-internal information. The prototype was developed and demonstrated in a controlled setting and was not used as a production replacement. Where screenshots, figures, code fragments, system outputs, or data samples from internal systems were included for explanatory purposes, they were anonymised or masked to remove company-specific identifiers and potentially sensitive information. The thesis does not disclose Volvo CE trade secrets, confidential business data, or complete proprietary calculation logic, and the handling of company-related material followed Volvo CE's internal requirements for confidentiality and responsible information handling \cite{su_ethics_policy}.
 
-Overall, the study was conducted in accordance with Stockholm University’s ethical framework, Swedish principles for good research practice, and Volvo CE's internal requirements for confidentiality and responsible information handling, with particular attention to confidentiality, responsible data handling, and respect for the individuals involved in the research context \cite{vr_good_research_2024}.
+Overall, the study was conducted in accordance with Stockholm University's ethical framework, Swedish principles for good research practice, and Volvo CE's internal requirements for confidentiality and responsible information handling, with particular attention to confidentiality, responsible data handling, and respect for the individuals involved in the research context \cite{vr_good_research_2024}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
