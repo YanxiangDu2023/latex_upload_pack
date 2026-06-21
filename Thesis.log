@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.17)  21 JUN 2026 22:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.17)  21 JUN 2026 23:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1245,13 +1245,8 @@ Overfull \hbox (1.94455pt too wide) in paragraph at lines 75--76
  []
 
 [14]
-Overfull \hbox (8.78767pt too wide) in paragraph at lines 77--78
-\T1/put/m/n/10.95 reference-data ver-sion dif-fer-ences, and stage-specific in-spec-tion needs. Dur-
- []
-
-
-Overfull \hbox (24.23828pt too wide) in paragraph at lines 77--78
-\T1/put/m/n/10.95 holder feed-back was re-viewed qual-i-ta-tively, es-pe-cially com-ments about whether
+Overfull \hbox (1.96599pt too wide) in paragraph at lines 77--78
+\T1/put/m/n/10.95 reference-data ver-sion dif-fer-ences, and stage-specific in-spec-tion needs. Ac-
  []
 
 
@@ -1970,7 +1965,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,10n,104p,1678b,2292s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\A547484\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on Thesis.pdf (86 pages, 6021673 bytes).
+Output written on Thesis.pdf (86 pages, 6021790 bytes).
 PDF statistics:
  1162 PDF objects out of 1200 (max. 8388607)
  221 named destinations out of 1000 (max. 500000)
