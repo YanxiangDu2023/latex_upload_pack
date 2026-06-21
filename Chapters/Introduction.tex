@@ -50,9 +50,9 @@
 
 \section{Background}
 \pagestyle{plain}
-Enterprise data-processing workflows are often more difficult to inspect than they are to run. In many large organizations, important analytical outputs depend on several source files, maintained mapping tables, and stepwise transformations that are executed inside enterprise systems such as SAP \cite{davenport1998,klaus2000,sap_erp_guide}. This is useful for operational control, but it can also make it hard for business users to see how a reported value was produced, which input was used, or where an inconsistency first appeared \cite{foidl2024pipeline}.
+Enterprise data-processing workflows are often more difficult to inspect than they are to run. In many large organizations, important analytical outputs depend on several source files, maintained mapping tables, and stepwise transformations carried out in enterprise systems \cite{klaus2000}. In SAP-based environments, this supports operational control, but it can also make it hard for business users to see how a reported value was produced, which input was used, or where an inconsistency first appeared \cite{sap_erp_guide,foidl2024pipeline}.
 
-This kind of problem can also be found outside one specific company. Prior studies suggest that ERP- and SAP-based environments may become difficult to inspect when process logic is distributed across technical structures, transformation steps, and user-facing reporting layers \cite{weber2022sap,wong2016sap}. The construction equipment industry provides a relevant context because market analysis typically combines internal sales figures, external market data, and classification rules across countries, product categories, and machine segments \cite{cece2025,mordor2024construction}.
+This kind of problem can also be found outside one specific company. Prior studies suggest that ERP- and SAP-based environments may become difficult to inspect when process logic is distributed across technical structures, transformation steps, and user-facing reporting layers \cite{weber2022sap}. The construction equipment industry provides a relevant context because market analysis typically combines internal sales figures, external market data, and classification rules across countries, product categories, and machine segments \cite{cece2025}.
 
 This thesis studies that broader issue through the case of Volvo Construction Equipment (Volvo CE). In the Volvo CE setting, market share estimation depends on a Total Market Calculation (TMC) process implemented in SAP. The process uses uploaded source data, maintained matrices, and staged calculations, but business users do not easily see how those elements connect to the intermediate and final outputs. In practice, this makes validation slower and makes discussions about unexpected results more dependent on technical specialists.
 
@@ -63,7 +63,7 @@ The thesis therefore focuses on how selected parts of such a process can be show
 
 
 \section{Problem and Motivation}
-In the studied Volvo CE setting, the TMC process is carried out in an SAP BW-based environment where uploads, mappings, staged calculations, and reporting are distributed across several technical objects \cite{weber2022sap,wong2016sap}. The process can produce the required outputs, but it does not give business users one place where they can follow the logic step by step. When a value looks wrong, it is not easy to tell whether the problem comes from the uploaded data, a matrix rule, a transformation step, or the way the result is shown later.
+In the studied Volvo CE setting, the TMC process is carried out in an SAP BW-based environment where uploads, mappings, staged calculations, and reporting are distributed across several technical objects \cite{weber2022sap}. From a business-user perspective, this kind of arrangement can also create usability and inspectability difficulties \cite{wong2016sap}. The process can produce the required outputs, but it does not give business users one place where they can follow the logic step by step. When a value looks wrong, it is not easy to tell whether the problem comes from the uploaded data, a matrix rule, a transformation step, or the way the result is shown later.
 
 This became especially important in the stages covered by the prototype, namely preparation, market view, adjustment, machine line split, and resplit. These stages combine CRP, SAL, OTH, and matrix-based rules, and they also contain several intermediate results that matter during validation. Without explicit views of those intermediate results, checking the process becomes slower and more dependent on technical assistance.
 
@@ -166,6 +166,8 @@ The thesis does not aim to replace the existing SAP system or implement the full
 \section{Thesis Structure}
 
 Following this introduction, the thesis is structured into six further chapters. The background chapter introduces enterprise workflow transparency issues and the Volvo CE case context. The methodology chapter describes the Design Science Research approach used in the study. The problem and requirements chapter defines the design problem and presents the requirements for the prototype. The artefact chapter explains the design and implementation of the web-based prototype. The evaluation chapter presents the demonstration and assessment of the prototype using the case setting. Finally, the discussion chapter answers the research questions, discusses contributions and limitations, and suggests future work.
+
+
 
 
 

@@ -36,7 +36,7 @@
 
 
 
-To address the identified gap in transparency, inspectability, and usability in the SAP-based TMC implementation, this thesis develops a web-based artefact for Volvo CE that re-expresses selected parts of the TMC process in a browser-accessible environment. The implemented system covers authentication, CSV-based data upload, backend processing, workflow inspection, and review of intermediate and derived outputs for the preparation, adjustment, and machine-line split stages.
+To address the identified gap in transparency, inspectability, and usability in the SAP-based TMC implementation, this thesis develops a web-based artefact for Volvo CE that re-expresses selected parts of the TMC process in a browser-accessible environment. The implemented system covers authentication, CSV-based data upload, backend processing, workflow inspection, and review of intermediate and derived outputs for the preparation, market view, adjustment, machine line split, and resplit stages.
 
 The artefact combines a frontend application, backend services, workflow-oriented inspection views, and interactive review functions. Rather than acting only as a reporting interface, it supports a workflow-oriented process in which users can upload data, trigger processing, inspect intermediate results, and review derived outputs within one environment. Together, these elements form a coherent web application for representing and reviewing selected parts of the TMC process in a more transparent and inspectable way.
 
@@ -274,7 +274,7 @@ The execution flow of the artefact begins with browser-based upload of the datas
     \item \textbf{Split processing.}  
     The split stage redistributes grouped OTH values into more detailed categories. The market view output is used as a reference basis, and split ratios are derived from the non-Volvo CE distribution. When detailed reference data is unavailable at country level, fallback logic based on higher-level aggregation is applied.
 
-    \item \textbf{Final outputs and presentation.}  
+    \item \textbf{Staged outputs and presentation.}  
     The artefact produces multiple staged outputs, including cleaned data, preparation-stage outputs, adjustment results, and split results. These are presented in the frontend as workflow views, filterable tables, summary metrics, and downloadable files.
 \end{itemize}
 
@@ -724,7 +724,7 @@ The component also supports CSV export of selected results. This allows workflow
 
 The prototype was implemented as a full-stack web application in which frontend actions trigger backend workflow execution through API-based processing. The implementation followed an incremental structure: authentication, routing, CSV upload, database persistence, and intermediate report generation were established first, after which workflow-specific calculation stages were added. This made it possible to validate each part of the execution chain separately before integrating them into the broader workflow.
 
-At a high level, the frontend acts as the orchestration and inspection layer, while the backend performs data ingestion, workflow processing, and persistence. CSV uploads are normalized into structured relational tables, after which SQL-based transformations and Python-based processing generate preparation, adjustment, machine line split, and resplit outputs. The resulting rows are returned to the frontend as structured JSON and rendered in workflow-specific views for inspection, filtering, aggregation, and export.
+At a high level, the frontend acts as the orchestration and inspection layer, while the backend performs data ingestion, workflow processing, and persistence. CSV uploads are normalized into structured relational tables, after which SQL-based transformations and Python-based processing generate preparation, market view, adjustment, machine line split, and resplit outputs. The resulting rows are returned to the frontend as structured JSON and rendered in workflow-specific views for inspection, filtering, aggregation, and export.
 
 \begin{figure}[H]
     \centering
@@ -752,6 +752,7 @@ Once the upload layer was established, the implementation was extended with work
 \end{figure}
 
 This implementation structure is important because it turns previously embedded workflow logic into explicit and reviewable processing steps. Instead of discussing each technical component in detail in the main body, the thesis focuses here on the design logic and its relation to transparency and inspectability. More detailed implementation notes, example interface views, and supplementary processing fragments are provided in Appendix~\ref{app:supplementary-material}.
+
 
 
 

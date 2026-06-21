@@ -9,7 +9,7 @@ Complex enterprise data-processing workflows often combine heterogeneous source 
 
 The yearly TMC process depends on multiple data sources and matrix-based business rules, including Volvo CE sales data, industry-related reference data, external market data, source mapping, reporter logic, country grouping, and size-class handling. These inputs are processed through staged processing steps such as source data upload, preparation, market view, adjustment, machine line split, and resplit.
 
-Although the Volvo CE case is specific, the underlying problem is broader. ERP systems such as SAP are commonly used to support integrated business processes and related analytical work \cite{davenport1998,klaus2000}. In SAP environments, workflow logic may be distributed across technical structures, embedded rules, and staged transformations, which can make intermediate processing difficult for business users to inspect \cite{weber2022sap,wong2016sap}. In the Volvo CE case, this appears in the TMC process, where users often see processed results without being able to easily follow the intermediate transformations that produced them.
+Although the Volvo CE case is specific, the underlying problem is broader. ERP systems such as SAP are commonly used to support integrated business processes and related analytical work \cite{klaus2000}. In SAP environments, workflow logic may be distributed across technical structures, embedded rules, and staged transformations, which can make intermediate processing difficult for business users to inspect \cite{weber2022sap}. Similar usability concerns have also been reported in ERP-related user settings \cite{wong2016sap}. In the Volvo CE case, this appears in the TMC process, where users often see processed results without being able to easily follow the intermediate transformations that produced them.
 
 \subsection{Root Cause Analysis and Design Objective}
 
@@ -57,13 +57,13 @@ The requirements are grouped into two categories: functional requirements, cover
 \hline
 FR1 & Functional & The artefact shall support upload and management of CSV-based source data and matrix files used in the selected TMC process stages. \\
 \hline
-FR2 & Functional & The artefact shall execute backend processing that re-expresses selected SAP-based TMC implementation logic, including preparation, market view, adjustment, machine line split, and resplit-related processing. \\
+FR2 & Functional & The artefact shall execute backend processing that re-expresses selected SAP-based TMC implementation logic, including preparation, market view, adjustment, machine line split, and resplit processing. \\
 \hline
 FR3 & Functional & The artefact shall provide a modular web-based frontend-backend architecture with separate functions for upload, processing, storage, workflow inspection, and visualization. \\
 \hline
 FR4 & Functional & The artefact shall store uploaded files, mappings, workflow records, and generated outputs in a structured way so that intermediate results can be reviewed and reused during the prototype process. \\
 \hline
-FR5 & Functional & The artefact shall expose preparation, market view, adjustment, machine line split, and resplit-related outputs as separate inspectable stages, including row-level outputs, stage summaries, and relevant rule-context fields such as country, machine line, source, brand, flags, and rule decisions. \\
+FR5 & Functional & The artefact shall expose preparation, market view, adjustment, machine line split, and resplit outputs as separate inspectable stages, including row-level outputs, stage summaries, and relevant rule-context fields such as country, machine line, source, brand, flags, and rule decisions. \\
 \hline
 FR6 & Functional & The artefact shall provide frontend functions for business-user review, including filtering, summary values, chart-based review, and CSV export. \\
 \hline
@@ -79,6 +79,7 @@ PR2 & Performance & The artefact shall remain stable during repeated prototype t
 \caption{Requirements for the TMC process inspection prototype}
 \label{tab:tmc_requirements}
 \end{table}
+
 
 
 

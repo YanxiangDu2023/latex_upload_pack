@@ -224,7 +224,7 @@ The main practical contribution of this thesis is the development of a working p
 Its originality lies in how the selected stages were re-expressed for inspection. Preparation, market view, adjustment, machine line split, and resplit are shown as explicit reviewable stages, and users can work with filterable tables, summaries, charts, and CSV export instead of relying only on final aggregated outputs or technical SAP structures. The contribution is therefore not a new algorithm. It is a concrete design contribution that shows one way to make an enterprise workflow more inspectable when it depends on heterogeneous inputs, maintained rules, and sequential transformations.
 
 \subsection{Academic Contributions}
-On the academic side, the thesis contributes a concrete example of how transparency, traceability, usability, and inspectability problems in enterprise data-processing workflows can be addressed through an implemented artefact rather than only discussed conceptually. The Volvo CE case is specific, but the underlying issue is wider: many enterprise workflows depend on heterogeneous inputs, staged transformations, and embedded rules that are difficult for business users to inspect \cite{foidl2024pipeline,putrama2024heterogeneous,vassiliadis2009etl,weber2022sap,calisir2004erp}.
+On the academic side, the thesis contributes a concrete example of how transparency, traceability, usability, and inspectability problems in enterprise data-processing workflows can be addressed through an implemented artefact rather than only discussed conceptually. The Volvo CE case is specific, but the underlying issue is wider. Prior work on enterprise data pipelines and ETL shows that many such workflows depend on heterogeneous inputs and staged transformations \cite{vassiliadis2009etl}. Research on heterogeneous data integration points in the same direction by showing that such workflows often depend on combining different input structures before later processing can take place \cite{putrama2024heterogeneous}. In SAP-related settings, embedded rules and system-specific structures can then make these workflows difficult for business users to inspect \cite{weber2022sap}. Similar usability concerns have also been reported in ERP user environments \cite{calisir2004erp}.
 
 The academic contribution is therefore best understood as design knowledge, not as a new algorithm. In this case, the study shows that structured input management, explicit intermediate outputs, and stage-oriented inspection views can support validation, explanation, and error investigation in workflows that would otherwise be difficult to follow from a business-user perspective. The transferable value lies in that design approach, even though the present evidence still comes from one case.
 
@@ -241,7 +241,7 @@ Third, some rule changes are still dependent on backend development. Certain map
 
 Fourth, the prototype supports stage-level traceability, but not full end-to-end row-level lineage. Key context fields are preserved in the outputs, but the system does not yet provide a complete audit trail from every output row back to the original input rows and rule applications.
 
-Finally, the prototype has not yet been evaluated for production-level deployment or large-scale multi-user use. Broader internal use would require authentication, monitoring, backup and recovery, process orchestration, and deployment within Volvo CE's internal infrastructure.
+Finally, the prototype has not yet been evaluated for production-level deployment or large-scale multi-user use. Broader internal use would require enterprise-grade authentication, role-based access control, monitoring, backup and recovery, process orchestration, and deployment within Volvo CE's internal infrastructure.
 
 
 \section{Ethical and Societal Implications}
@@ -266,36 +266,13 @@ Visual Studio Code served as the main development environment, draw.io was used 
 
 \section{Future Work}
 
-Future work should address both system scope and research scope. On the system side, the artefact could be extended to later workflow stages such as full Total Market Calculation, Restatement, and Reporting, so that a larger part of the workflow can be inspected in one environment. Another important step would be to move more mappings, workflow conditions, and calculation rules out of backend code and into configurable structures, which would make the system easier to maintain as rules change over time.
+Future work should address both system scope and research scope. On the system side, the artefact could first be extended to later workflow stages such as full Total Market Calculation, Restatement, and Reporting, so that a larger part of the workflow can be inspected in one environment. This would make it easier to follow how early preparation and rule-based redistribution affect later market-share results rather than stopping at intermediate stages only.
 
-Further work is also needed on traceability. The current prototype exposes intermediate stages, but it does not yet provide full end-to-end row-level lineage. A useful continuation would therefore be to strengthen drill-down from final outputs to original inputs, make rule applications more explicit, and support comparison between workflow runs. This would improve the artefact not only as a review tool, but also as a support tool for investigation and explanation.
+A second direction concerns configurability and deployment readiness. More mappings, workflow conditions, and calculation rules could be moved out of backend code and into configurable structures, which would make the system easier to maintain as rules change over time. In addition, broader internal use would require stronger operational capabilities such as enterprise-grade authentication, role-based access control, workflow orchestration, monitoring, backup and recovery, and deployment within Volvo CE's internal infrastructure.
 
-Finally, the artefact should be studied over a longer period in regular organizational use. This would make it possible to assess its effects on validation work, communication between business and IT, and user confidence in workflow outputs. It would also allow further examination of whether the same inspection-oriented design approach can be transferred to other enterprise data-processing workflows beyond the Volvo CE case. A further research step would therefore be to apply the same design approach in another organizational setting in order to distinguish more clearly between case-specific findings and more transferable design principles.
+Further work is also needed on traceability and analytical support. The current prototype exposes intermediate stages, but it does not yet provide full end-to-end row-level lineage. A useful continuation would therefore be to strengthen drill-down from outputs to original inputs, make rule applications more explicit, preserve clearer version history for source and matrix changes, and support comparison between workflow runs or yearly cycles. This would improve the artefact not only as a review tool, but also as a support tool for investigation, explanation, and change analysis.
 
+A fourth direction concerns evaluation over time. The artefact should be studied over a longer period in regular organizational use and with additional yearly datasets. This would make it possible to assess its effects on validation work, communication between business and IT, user confidence in workflow outputs, and the practical value of stage-level inspection in recurring workflow cycles.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Finally, future research should examine transferability beyond the Volvo CE case. One useful step would be to apply the same inspection-oriented design approach in another organizational setting or another enterprise workflow with similar characteristics, such as heterogeneous inputs, maintained rules, and staged transformations. This would help distinguish more clearly between findings that are specific to the Volvo CE TMC setting and design principles that are transferable to ERP-based enterprise data-processing workflows more generally.
 
