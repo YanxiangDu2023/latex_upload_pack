@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.17)  21 JUN 2026 23:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.17)  21 JUN 2026 23:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1239,12 +1239,12 @@ Overfull \hbox (1.02243pt too wide) in paragraph at lines 67--68
 \T1/put/m/n/10.95 with stake-holder ex-pla-na-tions, source struc-tures, and ob-served sys-tem out-
  []
 
-
+[14]
 Overfull \hbox (1.94455pt too wide) in paragraph at lines 75--76
 \T1/put/m/n/10.95 type out-puts, and com-par-ing im-ple-mented re-sults with ex-pected be-haviour
  []
 
-[14]
+
 Overfull \hbox (1.96599pt too wide) in paragraph at lines 77--78
 \T1/put/m/n/10.95 reference-data ver-sion dif-fer-ences, and stage-specific in-spec-tion needs. Ac-
  []
@@ -1304,12 +1304,12 @@ Overfull \hbox (9.55473pt too wide) in paragraph at lines 257--258
 \T1/put/m/n/10.95 pected work-flow logic. Where com-pa-ra-ble, se-lected re-sults were also checked
  []
 
-
+[18]
 Overfull \hbox (8.98003pt too wide) in paragraph at lines 259--260
 \T1/put/m/n/10.95 arte-fact sup-ported trans-parency, trace-abil-ity, us-abil-ity, and val-i-da-tion. Stake-
  []
 
-[18]
+
 Overfull \hbox (1.18016pt too wide) in paragraph at lines 275--276
 \T1/put/m/n/10.95 This study was con-ducted in col-lab-o-ra-tion with Volvo CE and re-quired care-
  []
@@ -1339,15 +1339,10 @@ Overfull \hbox (1.25487pt too wide) in paragraph at lines 281--282
 \T1/put/m/n/10.95 nal sys-tems were in-cluded for ex-plana-tory pur-poses, they were anonymised
  []
 
-) [19]
+[19]) [20]
 \openout2 = `"Chapters/Problem and Requirements.aux"'.
 
- (Chapters/Problem and Requirements.tex [20
-
-
-
-
-]
+ (Chapters/Problem and Requirements.tex
  4.
 
 Overfull \hbox (0.17934pt too wide) in paragraph at lines 8--9
@@ -1359,7 +1354,12 @@ Overfull \hbox (6.97604pt too wide) in paragraph at lines 12--13
 []\T1/put/m/n/10.95 Although the Volvo CE case is spe-cific, the un-der-ly-ing prob-lem is broader.
  []
 
-[21]
+[21
+
+
+
+
+]
 Overfull \hbox (2.59334pt too wide) in paragraph at lines 22--23
 []\T1/put/m/n/10.95 Multiple source datasets and matrix-based rules are dis-tributed across
  []
@@ -1965,7 +1965,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,10n,104p,1678b,2292s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\A547484\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on Thesis.pdf (86 pages, 6021790 bytes).
+Output written on Thesis.pdf (86 pages, 6022115 bytes).
 PDF statistics:
  1162 PDF objects out of 1200 (max. 8388607)
  221 named destinations out of 1000 (max. 500000)
