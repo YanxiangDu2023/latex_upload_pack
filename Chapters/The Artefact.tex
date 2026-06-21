@@ -6,7 +6,7 @@
 
 % The artefact developed in this thesis is a web-based prototype for the Volvo CE Total Market Calculation (TMC) workflow. It is designed to support the workflow from CSV-based upload of source data and matrix files to the execution and inspection of preparation-, adjustment-, and split-related results. In this way, the artefact provides a more transparent and inspectable representation of selected parts of the current SAP-based TMC process.
 
-% The prototype combines three main capabilities. First, it supports structured upload and management of workflow-related input data, including source data and matrix files required for the TMC process. Second, it re-expresses selected parts of the original SAP-based workflow logic through backend processing implemented with Python-based services and SQL-backed data handling. Third, it provides a web-based user interface for reviewing workflow layers, filtering and comparing table data, inspecting updated summary values, and exporting results in CSV format.
+% The prototype combines three main capabilities. First, it supports structured upload and management of workflow-related input data, including source data and matrix files required for the TMC process. Second, it re-expresses selected parts of the original SAP-based implementation logic through backend processing implemented with Python-based services and SQL-backed data handling. Third, it provides a web-based user interface for reviewing workflow layers, filtering and comparing table data, inspecting updated summary values, and exporting results in CSV format.
 
 % The artefact is implemented as a modular frontend-backend system. The frontend supports navigation, interaction, and result inspection, while the backend handles data ingestion, storage, and workflow-related processing. Through this structure, the prototype does not merely display outputs, but supports a complete workflow-oriented process in which users can upload data, trigger processing, inspect intermediate results, and review derived outputs in a more user-oriented environment than the corresponding SAP-based representation.
 
@@ -18,9 +18,9 @@
 % The prototype supports several core functions. It allows users to upload CSV-based source data and matrix files, process selected workflow logic in the backend, and inspect intermediate and derived outputs through a web interface. In addition, the artefact supports interactive table review, filtering, summary calculation, and CSV export, making it easier for users to validate results and understand how workflow outputs are produced.
 
 % \
-% To address the identified gap in transparency, inspectability, and usability in the SAP-based TMC workflow, this thesis develops a web-based data processing and visualization artefact for Volvo CE. The artefact supports key workflow stages from source data upload to preparation, adjustment, and machine line split, while providing a more transparent and user-oriented representation compared to the existing SAP-based environment.
+% To address the identified gap in transparency, inspectability, and usability in the SAP-based TMC implementation, this thesis develops a web-based data processing and visualization artefact for Volvo CE. The artefact supports key workflow stages from source data upload to preparation, adjustment, and machine line split, while providing a more transparent and user-oriented representation compared to the existing SAP-based environment.
 
-% As illustrated in Figure 5.1, the artefact is implemented as a web-based prototype that integrates CSV-based data upload, backend workflow processing, and interactive frontend inspection. The architecture enables ingestion of source data and matrix files, re-expression of selected SAP-based workflow logic using Python and SQL, and presentation of intermediate and derived outputs through a web interface.
+% As illustrated in Figure 5.1, the artefact is implemented as a web-based prototype that integrates CSV-based data upload, backend workflow processing, and interactive frontend inspection. The architecture enables ingestion of source data and matrix files, re-expression of selected SAP-based implementation logic using Python and SQL, and presentation of intermediate and derived outputs through a web interface.
 
 % \begin{figure}[H]
 %     \centering
@@ -30,15 +30,15 @@
 % \end{figure}
 
 
-% The artefact consists of several core elements: (1) support for source data and matrix inputs required in the TMC workflow, (2) backend services that execute workflow logic and organize intermediate and derived outputs, (3) workflow-oriented frontend views for inspecting preparation, adjustment, and split results, and (4) interactive functions such as filtering, summary calculation, and CSV export. Together, these elements form a coherent prototype environment for representing and reviewing selected parts of the TMC workflow in a more transparent and inspectable way.
+% The artefact consists of several core elements: (1) support for source data and matrix inputs required in the TMC process, (2) backend services that execute workflow logic and organize intermediate and derived outputs, (3) workflow-oriented frontend views for inspecting preparation, adjustment, and split results, and (4) interactive functions such as filtering, summary calculation, and CSV export. Together, these elements form a coherent prototype environment for representing and reviewing selected parts of the TMC workflow in a more transparent and inspectable way.
 
 % In the context of this thesis, the artefact serves as the central design contribution. It demonstrates how parts of a complex enterprise calculation workflow can be transformed into a web-based prototype that improves workflow visibility and user interaction while remaining extensible for future internal use within Volvo CE.
 
 
 
-To address the identified gap in transparency, inspectability, and usability in the SAP-based TMC workflow, this thesis develops a web-based artefact for Volvo CE that re-expresses selected parts of the workflow in a browser-accessible environment. The implemented system covers user authentication, CSV-based data upload, backend processing, workflow inspection, and review of intermediate and derived outputs for the preparation, adjustment, and machine line split stages.
+To address the identified gap in transparency, inspectability, and usability in the SAP-based TMC implementation, this thesis develops a web-based artefact for Volvo CE that re-expresses selected parts of the TMC process in a browser-accessible environment. The implemented system covers authentication, CSV-based data upload, backend processing, workflow inspection, and review of intermediate and derived outputs for the preparation, adjustment, and machine-line split stages.
 
-The artefact consists of several core elements: (1) a frontend application for navigation, login, upload, and result inspection, (2) backend services that handle file ingestion, persistence, and SQL-backed workflow processing, (3) dedicated views such as the pipeline overview and layer detail pages for inspecting workflow status and outputs, and (4) interactive functions such as filtering, summary calculation, editing of uploaded rows, and snapshot-based output handling. Together, these elements form a coherent web application for representing and reviewing selected parts of the TMC workflow in a more transparent and inspectable way.
+The artefact combines a frontend application, backend services, workflow-oriented inspection views, and interactive review functions. Rather than acting only as a reporting interface, it supports a workflow-oriented process in which users can upload data, trigger processing, inspect intermediate results, and review derived outputs within one environment. Together, these elements form a coherent web application for representing and reviewing selected parts of the TMC process in a more transparent and inspectable way.
 
 
 
@@ -76,7 +76,7 @@ The artefact consists of several core elements: (1) a frontend application for n
 
 % On the frontend side, the artefact provides the user interface for navigation, data upload, and inspection of workflow results. This includes views for authentication, homepage-based workflow access, upload of workflow-related CSV files, and layer-based inspection of preparation-, adjustment-, and split-related outputs. The frontend is therefore responsible not only for displaying results, but also for supporting interaction with the workflow in a more transparent and user-oriented way.
 
-% On the backend side, the artefact is implemented through Python-based services that handle file upload, data ingestion, workflow processing, and access to derived outputs. Uploaded files are stored and organized in a structured way, and selected parts of the original SAP-based workflow logic are re-expressed through backend processing supported by SQL-backed storage and querying. This makes it possible to handle workflow-related transformations in a prototype environment that is more inspectable than the original SAP-based representation.
+% On the backend side, the artefact is implemented through Python-based services that handle file upload, data ingestion, workflow processing, and access to derived outputs. Uploaded files are stored and organized in a structured way, and selected parts of the original SAP-based implementation logic are re-expressed through backend processing supported by SQL-backed storage and querying. This makes it possible to handle workflow-related transformations in a prototype environment that is more inspectable than the original SAP-based representation.
 
 % Between the frontend and backend, the artefact uses API-based communication to transfer uploaded files, request workflow data, and retrieve processed outputs for presentation in the interface. The architecture also includes structured storage for workflow records, mappings, and intermediate outputs, allowing the different workflow stages to be represented in a coherent and modular way.
 
@@ -95,14 +95,11 @@ The system architecture of the artefact is shown in Figure 5.1. It is organized 
 \end{figure}
 
 
-The frontend is implemented as a single-page application using React and Vite. It uses client-side routing to move between the home page, matrix submission page, upload pages, pipeline viewer, and layer detail pages. This allows users to move through the workflow without reloading the application and supports a more interactive review experience.
+The frontend is implemented as a single-page application using React and Vite. It uses client-side routing to move between the home page, matrix submission page, upload pages, Pipeline Viewer, and Layer Detail pages. This supports a more interactive review experience.
 
-The backend is implemented with FastAPI and exposes the API endpoints used by the frontend. It also contains the processing logic for the implemented TMC workflow, including file validation, structured storage, and retrieval of intermediate and final outputs. In this way, the backend acts both as the processing layer and as the interface to the persisted workflow data.
+The backend is implemented with FastAPI and exposes the API endpoints used by the frontend. It also contains the processing logic for the implemented workflow, including file validation, structured storage, and retrieval of intermediate and final outputs.
 
-The data layer is configured through environment variables and supports both SQLite and PostgreSQL. Authentication data is stored separately from the business workflow data, which keeps session management isolated from the calculation data. Communication between the frontend and backend is API-based, so uploaded files, workflow requests, and processed outputs can be exchanged in a structured way. 
-
-
-Communication between the frontend and backend is API-based. Uploaded files are sent from the browser to the backend, where they are validated, stored, and processed. The resulting workflow data is then retrieved by the frontend and displayed in structured views such as tables, summaries, and pipeline status cards. 
+The data layer is configured through environment variables and supports both SQLite and PostgreSQL. Authentication data is stored separately from the business workflow data, which keeps session management isolated from the calculation data. Communication between the frontend and backend is API-based, so uploaded files, workflow requests, and processed outputs can be exchanged and displayed in structured views such as tables, summaries, and pipeline status cards.
 
 
 
@@ -200,7 +197,7 @@ Communication between the frontend and backend is API-based. Uploaded files are 
 % The final outputs of the artefact therefore include not only uploaded and cleaned datasets, but also staged workflow reports such as the
 
 
-% The execution flow of the artefact begins with CSV-based upload of the datasets required for the TMC workflow and continues through backend cleaning, preparation, adjustment, and split-related processing until the resulting outputs are made available in the frontend.
+% The execution flow of the artefact begins with CSV-based upload of the datasets required for the TMC process and continues through backend cleaning, preparation, adjustment, and split-related processing until the resulting outputs are made available in the frontend.
 
 % The main execution logic can be summarized as follows:
 
@@ -225,24 +222,24 @@ Communication between the frontend and backend is API-based. Uploaded files are 
 %         \item a combined review output that brings together TMA, SAL, and OTH-related rows in one inspectable structure.
 %     \end{itemize}
 
-%     \item \textbf{Prepared market-view output.}  
+%     \item \textbf{Prepared market view output.}  
 %     After preparation, the prototype derives a more compact market-oriented output in which the main workflow measures are summarized. At this stage, the system presents total market, Volvo CE-related values, and non-Volvo CE-related values in a form suitable for review.
 
 %     \item \textbf{Adjustment-stage processing.}  
 %     The adjustment stage reorganizes the prepared results into a reviewable adjustment-oriented structure. In the current implementation, this stage makes it possible to inspect both source-detail rows and the derived result rows for the same workflow group.
 
 %     \item \textbf{Split-related processing.}  
-%     The split stage redistributes grouped OTH values into more detailed output structures. In the implemented split cases, the starting point is an OTH row whose machine-line category is broader than the intended final output. The prototype therefore uses the prepared market-view result as a reference basis for split.
+%     The split stage redistributes grouped OTH values into more detailed output structures. In the implemented split cases, the starting point is an OTH row whose machine-line category is broader than the intended final output. The prototype therefore uses the prepared market view result as a reference basis for split.
 
 %     \item \textbf{How split ratios are determined.}  
 %     The split ratio is derived from the non-Volvo CE distribution in the prepared output. For a broader grouped value, the system identifies the relevant smaller target buckets and calculates each ratio as the reference value of that bucket divided by the sum of the relevant reference values. The original OTH value is then multiplied by these ratios in order to obtain the split results. When detailed reference data is not available at country level, the current implementation applies a fallback logic through broader aggregation levels.
 
 %     \item \textbf{Final outputs.}  
-%     The final outputs are not limited to one single result table. Instead, the artefact produces a sequence of staged outputs, including cleaned source-level outputs, preparation-layer outputs, combined review outputs, prepared market-view results, adjustment-stage results, and split-related results. These are displayed in the frontend as workflow-layer views, filterable tables, summary values, and downloadable results.
+%     The final outputs are not limited to one single result table. Instead, the artefact produces a sequence of staged outputs, including cleaned source-level outputs, preparation-stage outputs, combined review outputs, market view outputs, adjustment-stage results, and split-related results. These are displayed in the frontend as workflow-layer views, filterable tables, summary values, and downloadable results.
 % \end{itemize}
 
 
-The execution flow of the artefact begins with browser-based upload of the datasets required for the TMC workflow and continues through backend validation, cleaning, persistence, processing, and frontend inspection. Users provide the relevant source and matrix files through the web interface, and each upload is registered as a separate upload run together with metadata such as file name, upload time, status, and row count. This makes it possible to identify the latest valid input for each data type and to trace how the workflow was executed.
+The execution flow of the artefact begins with browser-based upload of the datasets required for the TMC process and continues through backend validation, cleaning, persistence, processing, and frontend inspection. Each upload is registered together with metadata such as file name, upload time, status, and row count. This makes it possible to identify the latest valid input for each data type and to trace how the workflow was executed.
 
 
 \begin{figure}[H]
@@ -260,13 +257,13 @@ The execution flow of the artefact begins with browser-based upload of the datas
 
 \begin{itemize}
     \item \textbf{CSV upload and validation.}  
-    The workflow starts with users uploading required CSV files through the web interface, including source matrix, reporter list, size class input, brand mapping, group country, machine line mapping, OTH data, Volvo sales data, and TMA data. The backend validates file structure and performs dataset-specific cleaning, such as removing header rows, normalizing textual values, and standardizing key fields.
+    The workflow starts with users uploading the required source and matrix files through the web interface. The backend validates file structure and performs dataset-specific cleaning, such as removing header rows, normalising textual values, and standardising key fields.
 
     \item \textbf{Source-level data preparation.}  
-    The cleaned inputs are transformed into structured source-level data. OTH data is combined with mapping tables (country, machine line, and brand), while TMA and Volvo sales data are prepared for alignment in subsequent stages.
+    The cleaned inputs are transformed into structured source-level data. OTH data is combined with mapping tables, while TMA and Volvo sales data are prepared for alignment in subsequent stages.
 
     \item \textbf{Preparation stage.}  
-    In this stage, datasets are aligned within a shared workflow structure. Country mapping, artificial machine-line mapping, source logic, and reporter determination are applied to produce inspectable preparation-layer outputs. These outputs enable joint inspection of TMA, Volvo sales, and OTH data with consistent dimensions and workflow flags.
+    In this stage, datasets are aligned within a shared workflow structure. Country mapping, artificial machine-line mapping, source logic, and reporter determination are applied to produce inspectable preparation-stage outputs that bring TMA, Volvo sales, and OTH data into consistent dimensions.
 
     \item \textbf{Market-view derivation.}  
     A summarized market-oriented output is derived from the preparation results, presenting total market, Volvo CE values, and non-Volvo CE values in a compact and reviewable form.
@@ -275,10 +272,10 @@ The execution flow of the artefact begins with browser-based upload of the datas
     The adjustment stage reorganizes the prepared data into a structure that allows inspection of both source-level records and derived results within the same workflow context.
 
     \item \textbf{Split processing.}  
-    The split stage redistributes grouped OTH values into more detailed categories. The prepared market-view output is used as a reference basis. Split ratios are derived from the non-Volvo CE distribution, where each ratio is calculated as the share of a target bucket relative to the total reference. When detailed reference data is unavailable at country level, fallback logic based on higher-level aggregation is applied.
+    The split stage redistributes grouped OTH values into more detailed categories. The market view output is used as a reference basis, and split ratios are derived from the non-Volvo CE distribution. When detailed reference data is unavailable at country level, fallback logic based on higher-level aggregation is applied.
 
     \item \textbf{Final outputs and presentation.}  
-    The artefact produces multiple staged outputs, including cleaned data, preparation-layer outputs, adjustment results, and split results. These are presented in the frontend as workflow views, filterable tables, summary metrics, and downloadable files.
+    The artefact produces multiple staged outputs, including cleaned data, preparation-stage outputs, adjustment results, and split results. These are presented in the frontend as workflow views, filterable tables, summary metrics, and downloadable files.
 \end{itemize}
 
 
@@ -323,25 +320,14 @@ The execution flow of the artefact begins with browser-based upload of the datas
 
 \subsection{CSV Upload and Input Handling}
 
-A central function of the artefact is to support structured upload of workflow-related CSV files through the web interface. The upload and input-handling component provides the data foundation for the later workflow stages and is accessed through dedicated frontend entry points such as the matrix submission page, the upload pages, the pipeline viewer, and the layer detail views.
+A central function of the artefact is to support structured upload of workflow-related CSV files through the web interface. This component provides the data foundation for the later workflow stages and is accessed through dedicated frontend entry points such as the matrix submission page, upload pages, the Pipeline Viewer, and Layer Detail views.
 
-The uploaded inputs in the current prototype can be grouped into the following categories:
+The uploaded inputs in the current prototype can be grouped into market data, sales data, reference market data, source-definition matrices, and mapping-related inputs such as reporter, country, machine-line, and size-class definitions.
 
-\begin{itemize}
-    \item market-related source data CSV,
-    \item sales-related source data CSV,
-    \item reference market data CSV,
-    \item source-definition matrices CSV,
-    \item reporter and mapping inputs CSV,
-    \item country and grouping definitions CSV,
-    \item machine-line and size-class-related mapping data CSV.
-\end{itemize}
+After upload, each file is registered with metadata such as upload type, file name, upload time, status, and row count. This allows the prototype to identify the latest successful version of each required input and use it as the basis for later workflow execution and inspection.
 
-These inputs have different roles in the workflow. Some provide the market and sales values that are processed in later stages, while others define how the source records should be aligned, grouped, interpreted, and redistributed.
+The uploaded data is then reflected in upload views, result views, and workflow-stage views.
 
-After upload, each file is registered together with metadata such as upload type, file name, upload time, status, and row count. This allows the prototype to identify the latest successful version of each required input and use it as the basis for later workflow execution and inspection.
-
-The uploaded data is then reflected in the artefact through upload views, result views, and workflow-layer views. These views show whether the required input categories are available, provide basic upload status information, and present the processed outputs of the preparation, adjustment, and split-related stages.
 
 
 
@@ -391,15 +377,15 @@ The uploaded data is then reflected in the artefact through upload views, result
 
 % For TMA- and sales-related records, the preparation stage produces a comparable workflow representation in which different source categories can be reviewed together. This makes it possible to inspect the data in a shared structure instead of as isolated uploaded files.
 
-% The outputs of this stage are reflected in the artefact through preparation-layer views and combined review-oriented results. These outputs provide the first inspectable representation of how uploaded input data is transformed inside the prototype and serve as the basis for the later market-view, adjustment, and split-related stages.
+% The outputs of this stage are reflected in the artefact through preparation-layer views and combined review-oriented results. These outputs provide the first inspectable representation of how uploaded input data is transformed inside the prototype and serve as the basis for the later market view, adjustment, and split-related stages.
 
 
 
 \subsection{Preparation Stage}
 
-% The preparation stage is the first workflow-oriented processing stage in the artefact. Its purpose is to transform uploaded source data and mapping input into structured results that can be reviewed before later adjustment and split-related processing.
+% The preparation stage is the first workflow-oriented processing stage in the artefact. Its purpose is to transform uploaded source data and mapping input into structured results that can be reviewed before later adjustment and split-and-resplit processing.
 
-% The preparation stage in the current prototype consists of the following main steps:
+% The preparation stage in the current prototype consists of the following main steps. Together, these steps make early workflow transformations visible before later market view, adjustment, and split-related processing is applied:
 
 % \begin{itemize}
 %     \item \textbf{OTH-oriented preparation.}  
@@ -415,31 +401,25 @@ The uploaded data is then reflected in the artefact through upload views, result
 %     After the OTH-oriented and CRP/TMA/SAL-oriented preparation outputs have been generated, the artefact produces a combined review-oriented result in which TMA, SAL, and OTH-related rows can be inspected within a shared workflow view. This gives the user an early overview of how the uploaded input data has been transformed before later stages are applied.
 % \end{itemize}
 
-% The outputs of this stage are reflected in the artefact through preparation-layer views and review-oriented tables. These outputs provide the basis for the later market-view, adjustment, and split-related stages, while also allowing users to inspect the preparation logic in a more explicit and transparent way than in the original SAP-based environment.
+% The outputs of this stage are reflected in the artefact through preparation-layer views and review-oriented tables. These outputs provide the basis for the later market view, adjustment, and split-related stages, while also allowing users to inspect the preparation logic in a more explicit and transparent way than in the original SAP-based environment.
 
 
 
 
-The preparation stage is the first workflow-oriented processing stage in the artefact. In the current prototype, this stage is implemented through React-based frontend views, FastAPI endpoints, Python-based backend logic, and SQL-backed data processing. Its purpose is to transform uploaded source data and mapping input into structured results that can be reviewed before later adjustment and split-related processing.
+The preparation stage is the first workflow-oriented processing stage in the artefact. Its purpose is to transform uploaded source data and mapping input into structured results that can be reviewed before later adjustment and split-and-resplit processing.
 
-The preparation stage in the current prototype consists of the following main steps:
+The preparation stage in the current prototype consists of the following main steps. Together, these steps make early workflow transformations visible before later market view, adjustment, and split-related processing is applied:
 
 \begin{itemize}
     \item \textbf{OTH-oriented preparation.}  
-    Uploaded OTH rows are first retrieved from structured database storage and aligned with country-related grouping input, machine-line mapping, brand mapping, source matrix, and reporter-related input. During this step, backend logic assigns preparation control fields such as deletion flag, Pri/Sec, and reporter flag. Rows that belong to the same mapped workflow combination are then aggregated through SQL-backed processing and transformed into a structured OTH-oriented preparation output.
+    Uploaded OTH rows are aligned with country-related grouping input, machine-line mapping, brand mapping, source matrix, and reporter-related input. During this step, backend logic assigns preparation control fields such as deletion flag, Pri/Sec, and reporter flag. Rows that belong to the same mapped workflow combination are then aggregated into a structured OTH-oriented preparation output.
 
     \item \textbf{CRP/TMA/SAL-oriented preparation.}  
-    TMA and sales-related records are reorganized into a shared workflow structure through SQL-based grouping, joins, and aggregation. At this stage, the artefact applies country mapping, artificial machine-line mapping, source-matrix-related logic, and reporter-related matching in order to produce preparation-level records. The resulting output makes it possible to review TMA- and sales-related source categories together within one comparable structure.
-
-    \item \textbf{Assignment of workflow control logic.}  
-    A central function of the preparation stage is to make workflow logic explicit in the artefact. In the current implementation, this includes preparation-related fields such as deletion flag and reporter flag, together with source-related classification logic used for later workflow interpretation. These fields are generated in the backend and returned to the frontend as part of the preparation results.
+    TMA and sales-related records are reorganized into a shared workflow structure through SQL-based grouping, joins, and aggregation. Country mapping, artificial machine-line mapping, source-matrix logic, and reporter-related matching are applied to produce preparation-level records that can be reviewed together.
 
     \item \textbf{Combined preparation review output.}  
-    After the OTH-oriented and CRP/TMA/SAL-oriented preparation outputs have been generated, the artefact exposes them through backend APIs and renders them in React-based workflow views. This produces a combined review-oriented result in which TMA, SAL, and OTH-related rows can be inspected within a shared workflow view before later stages are applied.
+    After the OTH-oriented and CRP/TMA/SAL-oriented preparation outputs have been generated, the artefact exposes them through backend APIs and renders them in workflow views. This produces a combined review-oriented result in which TMA, SAL, and OTH-related rows can be inspected before later stages are applied.
 \end{itemize}
-
-
-
 
 
 
@@ -463,7 +443,7 @@ The preparation stage in the current prototype consists of the following main st
 
 % In the adjustment stage, the backend groups the prepared workflow data along shared workflow dimensions and generates an output that includes SAL detail rows, TMA detail rows, and one derived result row for each matched workflow group. This makes it possible to inspect how the adjusted result is formed from the prepared records rather than only showing a final aggregated value.
 
-% In the split-related stage, the backend combines prepared OTH-oriented data with the prepared market-view output. Grouped OTH values are filtered, Volvo-related values are deducted, and split ratios are derived from the prepared non-Volvo CE distribution in order to redistribute the remaining value into more detailed result structures.
+% In the split-related stage, the backend combines prepared OTH-oriented data with the market view output. Grouped OTH values are filtered, Volvo-related values are deducted, and split ratios are derived from the prepared non-Volvo CE distribution in order to redistribute the remaining value into more detailed result structures.
 
 % The resulting outputs are returned through backend APIs and rendered in the frontend as workflow-layer views and filterable tables. In this way, the artefact makes the later workflow stages both executable in the backend and inspectable in the frontend.
 
@@ -471,23 +451,23 @@ The preparation stage in the current prototype consists of the following main st
 
 \subsection{Adjustment and Split Stage}
 
-After preparation, the artefact continues with adjustment-oriented and split-related processing through React-based frontend views, FastAPI endpoints, and SQL-backed backend logic.
+After preparation, the artefact continues with adjustment-oriented and split-and-resplit processing.
 
 The main functions of this component are:
 \begin{itemize}
     \item regrouping prepared TMA and SAL rows into adjustment outputs,
     \item splitting grouped OTH values into more detailed machine-line and size-class buckets,
     \item calculating split ratios from the prepared non-Volvo CE distribution,
-    \item supporting re-split and manual correction for selected split cases.
+    \item supporting resplit and manual correction for selected split cases.
 \end{itemize}
 
-The adjustment stage produces an intermediate review result organised around shared workflow keys such as country and machine line. In this output, TMA and SAL rows for the same country and machine line are brought together, making it easier to compare Volvo CE values with the total market reference and inspect how the adjusted result is formed.
+The adjustment stage produces an intermediate review result organised around shared workflow keys such as country and machine line. In this output, TMA and SAL rows for the same country and machine line are brought together, making it easier to inspect how the adjusted result is formed.
 
-The split stage is needed because uploaded OTH data is not always available at the granularity required by the workflow. In this stage, aggregated OTH values are redistributed into smaller target buckets using split ratios derived from a non-Volvo CE reference distribution. The backend uses the prepared market-view output as the reference basis, where Volvo CE sales are excluded from the total market reference before proportional split ratios are calculated. For example, if a machine line needs to be represented as $<6T$ and $6<10T$, but the OTH input is only available as a broader $<10T$ value, the prototype splits the OTH value according to the corresponding non-Volvo CE size-class proportions. If 10 units of OTH data for Sweden wheel loaders are provided at $<10T$, the system distributes this amount into the finer buckets based on the corresponding Sweden wheel loader non-Volvo CE distribution.
+The split stage is needed because uploaded OTH data is not always available at the granularity required by the workflow. In this stage, aggregated OTH values are redistributed into smaller target buckets using split ratios derived from a non-Volvo CE reference distribution. The market view output provides the reference basis, with Volvo CE sales excluded before proportional ratios are calculated.
 
-For selected cases, the prototype also supports a re-split step that recalculates the split using source-matrix and size-class mappings before the resulting rows are saved. This step is needed because some brands may be active in a country and machine line, but not in all size classes within that market. For example, a brand may have 10 units in Sweden wheel loaders with the broader $<10T$ category, but may not sell the $6<10T$ size class. In such cases, the prototype uses the source matrix and size-class matrix to determine valid size classes and reallocate values from invalid brand--machine-line--size-class combinations to valid target buckets.
+For selected cases, the prototype also supports a resplit step that recalculates the split using source-matrix and size-class mappings before the resulting rows are saved. This step is needed because some brands may be active in a country and machine line, but not in all size classes within that market. In such cases, the prototype uses the source matrix and size-class matrix to determine valid size classes and reallocate values from invalid brand--machine-line--size-class combinations to valid target buckets.
 
-The resulting outputs are returned through backend APIs and rendered in the frontend as workflow-layer views and filterable tables. In this way, the implemented adjustment and split-related stages are both executable in the backend and inspectable in the frontend.
+The resulting outputs are returned through backend APIs and rendered in the frontend as workflow-stage views and filterable tables. In this way, the implemented adjustment and split-and-resplit stages are both executable in the backend and inspectable in the frontend.
 
 
 
@@ -514,9 +494,9 @@ The resulting outputs are returned through backend APIs and rendered in the fron
 
 \subsection{Visualization and Interaction}
 
-The visualization and interaction layer presents uploaded data and workflow results through the React-based frontend. In the current prototype, backend-generated outputs and uploaded inputs are shown through workflow-specific views such as the pipeline viewer, layer detail pages, upload result pages, and table-based inspection views.
+The visualization and interaction layer presents uploaded data and workflow results through the React-based frontend. In the current prototype, backend-generated outputs and uploaded inputs are shown through workflow-specific views such as the Pipeline Viewer, Layer Detail pages, upload result pages, and table-based inspection views.
 
-This layer supports both overview and detailed inspection. The pipeline viewer provides a compact view of the overall workflow status, while the layer detail pages allow users to inspect the underlying rows in a way that is closer to spreadsheet-based work. Users can filter the displayed data, review grouped values, and inspect summary calculations directly in the interface. In addition, uploaded data can be edited directly on the page and saved for later workflow steps, which allows small corrections to be made without returning to the original CSV files.
+This layer supports both overview and detailed inspection. The Pipeline Viewer provides a compact view of the overall workflow status, while the Layer Detail pages allow users to inspect the underlying rows in a way that is closer to spreadsheet-based work. Users can filter the displayed data, review grouped values, and inspect summary calculations directly in the interface. In addition, uploaded data can be edited directly on the page and saved for later workflow steps, which allows small corrections to be made without returning to the original CSV files.
 
 The component also supports CSV export of selected results. This allows workflow outputs to be downloaded for further review and analysis outside the artefact. In this way, the visualization and interaction layer combines workflow overview, row-level inspection, editable uploaded data, dynamic summary feedback, and export functionality in one web-based environment.
 
@@ -559,7 +539,7 @@ The component also supports CSV export of selected results. This allows workflow
 
 % % After preparation had been established, the backend was extended with prepared and adjustment-oriented result generation. SQL-based grouped queries were used to regroup preparation results into more compact and reviewable report structures. A key implementation decision at this stage was that the API should not return only one final value table. Instead, the adjustment-oriented output was designed to include both source-detail rows and derived result rows for the same workflow group, so that the frontend could expose how the resulting values are formed.
 
-% % The next implementation step was split-related processing. In the current prototype, this stage combines prepared OTH-oriented outputs with prepared market-view outputs. Python-based backend logic coordinates the execution flow, while SQL-derived grouped reference values are used to determine redistribution ratios. The resulting output includes summary rows, detailed split rows, and supporting reference information, allowing the split logic to be inspected in the frontend rather than remaining hidden as a backend-only calculation.
+% % The next implementation step was split-related processing. In the current prototype, this stage combines prepared OTH-oriented outputs with market view outputs. Python-based backend logic coordinates the execution flow, while SQL-derived grouped reference values are used to determine redistribution ratios. The resulting output includes summary rows, detailed split rows, and supporting reference information, allowing the split logic to be inspected in the frontend rather than remaining hidden as a backend-only calculation.
 
 % % \begin{figure}[h]
 % %     \centering
@@ -618,7 +598,7 @@ The component also supports CSV export of selected results. This allows workflow
 
 % Subsequently, adjustment and prepared result layers were introduced through grouped SQL queries. A key design decision was to return both source-detail rows and derived results within the same output, allowing the frontend to expose how final values are constructed.
 
-% The split stage was implemented by combining prepared OTH data with market-view outputs. Backend logic coordinates the execution, while SQL-derived reference values are used to calculate redistribution ratios. The resulting outputs include summary rows, detailed split results, and supporting reference values, enabling the split logic to be inspected rather than hidden.
+% The split stage was implemented by combining prepared OTH data with market view outputs. Backend logic coordinates the execution, while SQL-derived reference values are used to calculate redistribution ratios. The resulting outputs include summary rows, detailed split results, and supporting reference values, enabling the split logic to be inspected rather than hidden.
 
 
 
@@ -700,7 +680,7 @@ The component also supports CSV export of selected results. This allows workflow
 
 % Subsequently, adjustment and prepared result layers were introduced through grouped SQL queries. A key design decision was to return both source-detail rows and derived results within the same output, allowing the frontend to expose how final values are constructed.
 
-% The split stage was implemented by combining prepared OTH data with market-view outputs. Backend logic coordinates the execution, while SQL-derived reference values are used to calculate redistribution ratios. The resulting outputs include summary rows, detailed split results, and supporting reference values, enabling the split logic to be inspected rather than hidden.
+% The split stage was implemented by combining prepared OTH data with market view outputs. Backend logic coordinates the execution, while SQL-derived reference values are used to calculate redistribution ratios. The resulting outputs include summary rows, detailed split results, and supporting reference values, enabling the split logic to be inspected rather than hidden.
 
 % \begin{figure}[H]
 %     \centering
@@ -744,6 +724,40 @@ The component also supports CSV export of selected results. This allows workflow
 
 The prototype was implemented as a full-stack web application in which frontend actions trigger backend workflow execution through API-based processing. The implementation followed an incremental structure: authentication, routing, CSV upload, database persistence, and intermediate report generation were established first, after which workflow-specific calculation stages were added. This made it possible to validate each part of the execution chain separately before integrating them into the broader workflow.
 
-At a high level, the frontend acts as the orchestration and inspection layer, while the backend performs data ingestion, workflow processing, and persistence. CSV uploads are normalized into structured relational tables, after which SQL-based transformations and Python-based processing generate preparation, adjustment, and split-related outputs. The resulting rows are returned to the frontend as structured JSON and rendered in workflow-specific views for inspection, filtering, aggregation, and export.
+At a high level, the frontend acts as the orchestration and inspection layer, while the backend performs data ingestion, workflow processing, and persistence. CSV uploads are normalized into structured relational tables, after which SQL-based transformations and Python-based processing generate preparation, adjustment, machine line split, and resplit outputs. The resulting rows are returned to the frontend as structured JSON and rendered in workflow-specific views for inspection, filtering, aggregation, and export.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.05\linewidth]{5.3.1.png}
+    \caption{Selected frontend views developed during the implementation of the prototype}
+    \label{fig:5.3-main}
+\end{figure}
+
+The implementation also established a clear upload-to-processing chain. Files are submitted from the frontend together with dataset type information, processed by dataset-specific handlers, and stored together with upload metadata so that the latest successful input for each dataset can be reused in later workflow steps.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.05\linewidth]{5.4.png}
+    \caption{Implementation of CSV upload and preparation-stage processing}
+    \label{fig:5.4-main}
+\end{figure}
+
+Once the upload layer was established, the implementation was extended with workflow-specific result layers. In particular, the adjustment and split-and-resplit views were designed to expose intermediate rows and derived outputs in a form that business users could review directly in the browser.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.05\linewidth]{5.6.1.1.png}
+    \caption{Adjustment-layer result view}
+    \label{fig:adjustment-layer-main}
+\end{figure}
 
 This implementation structure is important because it turns previously embedded workflow logic into explicit and reviewable processing steps. Instead of discussing each technical component in detail in the main body, the thesis focuses here on the design logic and its relation to transparency and inspectability. More detailed implementation notes, example interface views, and supplementary processing fragments are provided in Appendix~\ref{app:supplementary-material}.
+
+
+
+
+
+
+
+
+

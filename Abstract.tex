@@ -18,16 +18,20 @@
 \addcontentsline{toc}{chapter}{Abstract}
 \pagestyle{plain}
 
-\paragraph{Introduction} This thesis addresses transparency, traceability, and usability challenges in Volvo CE's Total Market Calculation (TMC) workflow, which is currently executed in an SAP-based enterprise software environment. Although the existing process supports the required calculations, business users have limited visibility into intermediate transformations, making validation, error investigation, and communication with IT more difficult.
+\paragraph{Introduction} This thesis addresses transparency, traceability, and usability challenges in complex enterprise workflows implemented in ERP systems such as SAP. Large industrial and manufacturing firms often use such systems for multi-step reporting, planning, and calculation processes, yet business users may have limited visibility into intermediate transformations, which makes validation, error investigation, and communication with IT more difficult. The general problem is investigated through the case of Volvo CE's Total Market Calculation (TMC) workflow.
 
-\paragraph{Research Question} The study investigates the following question: \textit{How can an interactive data processing and visualization prototype be designed and evaluated to enhance transparency, traceability, and usability in the Volvo CE TMC workflow?}
+\paragraph{Research Question} The study investigates the following question: \textit{How can an interactive data processing and visualization prototype be designed and evaluated to enhance transparency, traceability, and usability in complex enterprise data-processing workflows?}
 
-\paragraph{Method} The thesis applies Design Science Research (DSR), following the activities of problem explication, requirement definition, artefact design and development, demonstration, and evaluation. The artefact was implemented as a web-based frontend-backend prototype using React, Python/FastAPI services, SQL-backed processing, and workflow-oriented views for file upload, matrix submission, layer-based inspection, and staged result review.
+\paragraph{Method} The thesis combines Design Science Research (DSR) with a case setting. DSR structures the artefact design, development, demonstration, and evaluation, while the Volvo CE case provides the empirical context in which the broader workflow problem is examined. The artefact was implemented as a web-based frontend-backend prototype using React, Python/FastAPI services, SQL-backed processing, and workflow-oriented views for file upload, matrix submission, layer-based inspection, and staged result review.
 
-\paragraph{Results} The prototype was demonstrated using real workflow data from the 2024 TMC calculation cycle. Uploaded source and matrix files were processed successfully, and the generated preparation, market-view, adjustment, and split/resplit-related outputs were compared with manually verified reference results and selected SAP reference outputs. The comparison indicated that the implemented outputs were largely consistent within the evaluated prototype scope, while observed differences were traced to reference-data version differences or rule-clarification issues.
+\paragraph{Results} The prototype was demonstrated using real workflow data from the 2024 TMC calculation cycle at Volvo CE. Uploaded source and matrix files were processed successfully, and the generated preparation, market view, adjustment, machine line split, and resplit outputs were compared with manually verified reference results and selected SAP reference outputs. The comparison indicated that the implemented outputs were largely consistent within the evaluated prototype scope, while observed differences were traced to reference-data version differences or rule-clarification issues.
 
-\paragraph{Discussion} The artefact shows that selected SAP-embedded workflow logic can be re-expressed in a more transparent and inspectable web-based environment. By exposing staged outputs, rule-related fields, and intermediate calculations, the prototype supports business users in reviewing and validating selected TMC workflow stages. The main limitations include the partial workflow scope, the controlled evaluation setting, dependency on input data quality, limited end-to-end row-level lineage, and the need for stronger infrastructure before broader internal use.
+\paragraph{Discussion} The artefact shows that selected SAP-embedded workflow logic can be re-expressed in a more transparent and inspectable web-based environment. By exposing staged outputs, rule-related fields, and intermediate calculations, the prototype supports business users in reviewing and validating selected workflow stages. The main limitations include the partial workflow scope, the controlled evaluation setting, dependency on input data quality, limited end-to-end row-level lineage, and the need for stronger infrastructure before broader internal use.
 
 
 \paragraph{Keywords} Total Market Calculation, Enterprise Data Workflow, Workflow Transparency, Web-Based Data Processing System, Construction Equipment Market Analysis\href{}{}
+
+
+
+
 

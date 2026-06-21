@@ -5,25 +5,25 @@
 
 \subsection{Problem Context}
 
-The case context of this thesis is the Total Market Calculation (TMC) workflow at Volvo Construction Equipment (Volvo CE). The workflow is currently executed in SAP and is used to calculate total market and market share values across dimensions such as country, machine line, size class, source, and brand.
+Complex enterprise data-processing workflows often combine heterogeneous source data, maintained rule structures, and staged transformations. In ERP-based environments such as SAP, these workflows may be executed correctly while still remaining difficult for business users to inspect, validate, and explain. The case context of this thesis is the Total Market Calculation (TMC) process at Volvo Construction Equipment (Volvo CE). The process is carried out through an SAP-based implementation and is used to calculate total market and market share values across dimensions such as country, machine line, size class, source, and brand.
 
-The yearly TMC process depends on multiple data sources and matrix-based business rules, including Volvo CE sales data, industry-related reference data, external market data, source mapping, reporter logic, country grouping, and size-class handling. These inputs are processed through staged workflow steps such as source data upload, preparation, adjustment, and machine line split.
+The yearly TMC process depends on multiple data sources and matrix-based business rules, including Volvo CE sales data, industry-related reference data, external market data, source mapping, reporter logic, country grouping, and size-class handling. These inputs are processed through staged processing steps such as source data upload, preparation, market view, adjustment, machine line split, and resplit.
 
-Although the SAP-based framework supports the required calculations, the process is difficult for business users to inspect and validate because intermediate preparation, adjustment, and split outputs are not exposed in a single review-oriented interface. Much of the workflow logic is embedded in SAP-specific technical structures, such as planning functions, planning sequences, BW objects, and matrix-driven rule configurations. As a result, users often see processed results without being able to easily follow the intermediate transformations that produced them.
+Although the Volvo CE case is specific, the underlying problem is broader. ERP systems such as SAP are commonly used to support integrated business processes and related analytical work \cite{davenport1998,klaus2000}. In SAP environments, workflow logic may be distributed across technical structures, embedded rules, and staged transformations, which can make intermediate processing difficult for business users to inspect \cite{weber2022sap,wong2016sap}. In the Volvo CE case, this appears in the TMC process, where users often see processed results without being able to easily follow the intermediate transformations that produced them.
 
 \subsection{Root Cause Analysis and Design Objective}
 
-The problem is particularly visible in the preparation, adjustment, and split stages, where TMA, SAL, CRP, OTH, and matrix-based rules are combined. Because intermediate outputs and rule applications are not presented in one coherent interface, users have limited ability to understand how values are derived, verify whether rules have been applied correctly, or identify where inconsistencies originate. In practice, this also increases dependency on Volvo internal IT for executing the workflow, interpreting SAP-specific logic, exporting intermediate results, and applying rule adjustments.
+The problem is particularly visible in the preparation, market view, adjustment, machine line split, and resplit stages, where TMA, SAL, CRP, OTH, and matrix-based rules are combined. Because intermediate outputs and rule applications are not presented in one coherent interface, users have limited ability to understand how values are derived, verify whether rules have been applied correctly, or identify where inconsistencies originate. In practice, this also increases dependency on Volvo internal IT for executing the workflow, interpreting SAP-specific logic, exporting intermediate results, and applying rule adjustments.
 
 A root cause analysis identified four primary issues:
 \begin{itemize}
     \item The workflow logic is embedded in SAP-specific planning functions, planning sequences, BW objects, and matrix-driven rule configurations, making it difficult to inspect outside the SAP environment.
-    \item Intermediate stages such as preparation, adjustment, and split are not presented in a single coherent interface, which reduces transparency and traceability.
+    \item Intermediate stages such as preparation, market view, adjustment, machine line split, and resplit are not presented in a single coherent interface, which reduces transparency and traceability.
     \item Multiple source datasets and matrix-based rules are distributed across separate technical structures, making the relationship between inputs, rules, and outputs difficult to interpret.
     \item The yearly execution and validation of the workflow depend strongly on IT support, which increases communication effort and reduces direct control for business users.
 \end{itemize}
 
-This thesis therefore addresses the problem by designing a web-based TMC workflow inspection prototype. The prototype re-expresses selected workflow logic outside the SAP environment using SQL-backed processing and presents intermediate results through a browser-based interface. The aim is not to replace SAP, but to explore how selected stages of the TMC workflow can be made more transparent, traceable, and usable by exposing staged outputs, showing relevant rule and context fields, and supporting filtering, summary calculation, and export.
+This thesis therefore addresses the broader problem through a DSR process that uses the Volvo CE TMC process as the case setting for problem grounding, artefact demonstration, and evaluation. The prototype re-expresses selected workflow logic outside the SAP environment using SQL-backed processing and presents intermediate results through a browser-based interface. The aim is not to replace SAP, but to explore how selected stages of an enterprise workflow implemented in an ERP system such as SAP can be made more transparent, traceable, and usable by exposing staged outputs, showing relevant rule and context fields, and supporting filtering, summary calculation, and export.
 
 
 
@@ -40,9 +40,9 @@ This thesis therefore addresses the problem by designing a web-based TMC workflo
 \label{sec:requirements}
 
 
-Based on the problem identified in the SAP-based TMC workflow, this thesis defines requirements for a web-based data processing and visualisation artefact. The artefact is intended to support the selected workflow scope from source data upload to preparation, adjustment, and machine line split, and to guide the later evaluation of transparency, traceability, usability, validation support, and prototype performance.
+Based on the problem identified in the SAP-based TMC implementation, this thesis defines requirements for a web-based data processing and visualization artefact. The artefact is intended to support the selected process scope from source data upload to preparation, market view, adjustment, machine line split, and resplit, and to guide the later evaluation of transparency, traceability, usability, validation support, and prototype performance.
 
-The requirements were derived from analysis of the existing SAP-based workflow, available technical documentation, and discussions with stakeholders from Volvo CE Strategy and Business Intelligence. They reflect the current execution model, data dependencies, workflow stages, and practical needs related to intermediate result inspection, rule validation, and reduced dependency on SAP-specific technical knowledge.
+The requirements were derived from analysis of the existing SAP-based implementation, available technical documentation, and discussions with stakeholders from Volvo CE Strategy and Business Intelligence. They reflect the current execution model, data dependencies, workflow stages, and practical needs related to intermediate result inspection, rule validation, and reduced dependency on SAP-specific technical knowledge.
 
 The requirements are grouped into two categories: functional requirements, covering upload, processing, storage, inspection, traceability, validation support, and user interaction; and performance requirements, covering prototype-level execution time, stability, and reliability.
 
@@ -55,15 +55,15 @@ The requirements are grouped into two categories: functional requirements, cover
 \hline
 \textbf{ID} & \textbf{Category} & \textbf{Description} \\
 \hline
-FR1 & Functional & The artefact shall support upload and management of CSV-based source data and matrix files used in the selected TMC workflow stages. \\
+FR1 & Functional & The artefact shall support upload and management of CSV-based source data and matrix files used in the selected TMC process stages. \\
 \hline
-FR2 & Functional & The artefact shall execute backend processing that re-expresses selected SAP-based TMC workflow logic, including preparation, adjustment, and split-related processing. \\
+FR2 & Functional & The artefact shall execute backend processing that re-expresses selected SAP-based TMC implementation logic, including preparation, market view, adjustment, machine line split, and resplit-related processing. \\
 \hline
-FR3 & Functional & The artefact shall provide a modular web-based frontend-backend architecture with separate functions for upload, processing, storage, workflow inspection, and visualisation. \\
+FR3 & Functional & The artefact shall provide a modular web-based frontend-backend architecture with separate functions for upload, processing, storage, workflow inspection, and visualization. \\
 \hline
-FR4 & Functional & The artefact shall store uploaded files, mappings, workflow records, and generated outputs in a structured way so that intermediate results can be reviewed and reused during the prototype workflow. \\
+FR4 & Functional & The artefact shall store uploaded files, mappings, workflow records, and generated outputs in a structured way so that intermediate results can be reviewed and reused during the prototype process. \\
 \hline
-FR5 & Functional & The artefact shall expose preparation, adjustment, and split-related outputs as separate inspectable stages, including row-level outputs, stage summaries, and relevant rule-context fields such as country, machine line, source, brand, flags, and rule decisions. \\
+FR5 & Functional & The artefact shall expose preparation, market view, adjustment, machine line split, and resplit-related outputs as separate inspectable stages, including row-level outputs, stage summaries, and relevant rule-context fields such as country, machine line, source, brand, flags, and rule decisions. \\
 \hline
 FR6 & Functional & The artefact shall provide frontend functions for business-user review, including filtering, summary values, chart-based review, and CSV export. \\
 \hline
@@ -71,11 +71,22 @@ FR7 & Functional & The artefact shall support validation by enabling users to co
 \hline
 FR8 & Functional & The artefact shall be usable through a browser-based interface in a controlled prototype environment and should remain adaptable to future deployment on cloud or Volvo CE internal infrastructure. \\
 \hline
-PR1 & Performance & For the selected 2024 dataset, the implemented prototype workflow, including stage execution, result inspection, manual correction, and saving of outputs, shall be completed within approximately \textbf{40 minutes} during demonstration runs. \\
+PR1 & Performance & For the selected 2024 dataset, the implemented prototype process, including stage execution, result inspection, manual correction, and saving of outputs, shall be completed within approximately \textbf{40 minutes} during demonstration runs. \\
 \hline
 PR2 & Performance & The artefact shall remain stable during repeated prototype testing, including at least \textbf{five} upload, run, filter, save, and export cycles, without observed crashes, data loss, or inconsistent save/reload behaviour. \\
 \hline
 \end{tabularx}
-\caption{Requirements for the TMC workflow inspection prototype}
+\caption{Requirements for the TMC process inspection prototype}
 \label{tab:tmc_requirements}
 \end{table}
+
+
+
+
+
+
+
+
+
+
+

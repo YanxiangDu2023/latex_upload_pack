@@ -131,8 +131,6 @@ INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\tocbibind\tocbibind.sty
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\tocbibind\tocbibind.sty
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
@@ -298,6 +296,45 @@ INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8t.tfm
+INPUT .\Thesis.aux
+INPUT .\Thesis.aux
+INPUT Thesis.aux
+INPUT .\Title.aux
+INPUT .\Title.aux
+INPUT Title.aux
+INPUT .\Abstract.aux
+INPUT .\Abstract.aux
+INPUT Abstract.aux
+INPUT .\Acknowledgements.aux
+INPUT .\Acknowledgements.aux
+INPUT Acknowledgements.aux
+INPUT .\Abbreviations.aux
+INPUT .\Abbreviations.aux
+INPUT Abbreviations.aux
+INPUT .\Chapters\Introduction.aux
+INPUT .\Chapters\Introduction.aux
+INPUT Chapters\Introduction.aux
+INPUT .\Chapters\Extended Background.aux
+INPUT .\Chapters\Extended Background.aux
+INPUT Chapters\Extended Background.aux
+INPUT .\Chapters\Method.aux
+INPUT .\Chapters\Method.aux
+INPUT Chapters\Method.aux
+INPUT .\Chapters\Problem and Requirements.aux
+INPUT .\Chapters\Problem and Requirements.aux
+INPUT Chapters\Problem and Requirements.aux
+INPUT .\Chapters\The Artefact.aux
+INPUT .\Chapters\The Artefact.aux
+INPUT Chapters\The Artefact.aux
+INPUT .\Chapters\Evaluation.aux
+INPUT .\Chapters\Evaluation.aux
+INPUT Chapters\Evaluation.aux
+INPUT .\Chapters\Discussion.aux
+INPUT .\Chapters\Discussion.aux
+INPUT Chapters\Discussion.aux
+INPUT .\Appendices\Supplementary Material.aux
+INPUT .\Appendices\Supplementary Material.aux
+INPUT Appendices\Supplementary Material.aux
 OUTPUT Thesis.aux
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
@@ -308,8 +345,14 @@ INPUT .\Thesis.bbl
 INPUT .\Thesis.bbl
 INPUT .\Thesis.bbl
 INPUT Thesis.bbl
-OUTPUT Thesis.out
+INPUT .\Thesis.out
+INPUT .\Thesis.out
+INPUT Thesis.out
+INPUT Thesis.out
 OUTPUT Thesis.pdf
+INPUT .\Thesis.out
+INPUT .\Thesis.out
+OUTPUT Thesis.out
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -390,9 +433,22 @@ INPUT .\Abbreviations.tex
 INPUT Abbreviations.tex
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putb8t.vf
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putb8r.tfm
+INPUT .\Thesis.lof
+INPUT .\Thesis.lof
+INPUT Thesis.lof
 OUTPUT Thesis.lof
+INPUT .\Thesis.lot
+INPUT .\Thesis.lot
+INPUT Thesis.lot
 OUTPUT Thesis.lot
+INPUT .\Thesis.toc
+INPUT .\Thesis.toc
+INPUT Thesis.toc
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8t.tfm
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putb8t.tfm
 OUTPUT Thesis.toc
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putb8t.vf
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putb8r.tfm
 INPUT .\Chapters\Introduction.tex
 INPUT .\Chapters\Introduction.tex
 OUTPUT Chapters\Introduction.aux
@@ -412,10 +468,8 @@ INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1put.fd
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8c.tfm
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putr8c.vf
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8t.tfm
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putb8t.tfm
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putr8c.vf
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT .\tmc.png
@@ -462,6 +516,27 @@ INPUT .\5.2.1.png
 INPUT .\5.2.1.png
 INPUT .\5.2.1.png
 INPUT .\5.2.1.png
+INPUT .\5.3.1.png
+INPUT .\5.3.1.png
+INPUT .\5.3.1.png
+INPUT .\5.3.1.png
+INPUT .\5.3.1.png
+INPUT .\5.3.1.png
+INPUT .\5.3.1.png
+INPUT .\5.4.png
+INPUT .\5.4.png
+INPUT .\5.4.png
+INPUT .\5.4.png
+INPUT .\5.4.png
+INPUT .\5.4.png
+INPUT .\5.4.png
+INPUT .\5.6.1.1.png
+INPUT .\5.6.1.1.png
+INPUT .\5.6.1.1.png
+INPUT .\5.6.1.1.png
+INPUT .\5.6.1.1.png
+INPUT .\5.6.1.1.png
+INPUT .\5.6.1.1.png
 INPUT .\Chapters\Evaluation.tex
 INPUT .\Chapters\Evaluation.tex
 OUTPUT Chapters\Evaluation.aux
@@ -495,29 +570,24 @@ OUTPUT Chapters\Discussion.aux
 INPUT .\Chapters\Discussion.tex
 INPUT .\Chapters\Discussion.tex
 INPUT Chapters\Discussion.tex
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8t.tfm
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putr8t.vf
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8r.tfm
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putrc8t.tfm
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putrc8t.vf
 INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8r.tfm
+INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putb8t.tfm
 INPUT .\Appendices\Supplementary Material.tex
 INPUT .\Appendices\Supplementary Material.tex
 OUTPUT Appendices\Supplementary Material.aux
 INPUT .\Appendices\Supplementary Material.tex
 INPUT .\Appendices\Supplementary Material.tex
 INPUT Appendices\Supplementary Material.tex
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8t.tfm
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\utopia\putr8t.vf
-INPUT C:\Users\A547484\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\utopia\putr8r.tfm
 INPUT .\5.3.1.png
 INPUT .\5.3.1.png
 INPUT .\5.3.1.png
 INPUT .\5.3.1.png
-INPUT .\5.3.1.png
-INPUT .\5.3.1.png
-INPUT .\5.3.1.png
-INPUT .\5.4.png
-INPUT .\5.4.png
-INPUT .\5.4.png
 INPUT .\5.4.png
 INPUT .\5.4.png
 INPUT .\5.4.png
@@ -529,9 +599,6 @@ INPUT .\5.4.1.png
 INPUT .\5.4.1.png
 INPUT .\5.4.1.png
 INPUT .\5.4.1.png
-INPUT .\5.6.1.1.png
-INPUT .\5.6.1.1.png
-INPUT .\5.6.1.1.png
 INPUT .\5.6.1.1.png
 INPUT .\5.6.1.1.png
 INPUT .\5.6.1.1.png
@@ -604,6 +671,7 @@ INPUT .\Appendices\Supplementary Material.aux
 INPUT Appendices\Supplementary Material.aux
 INPUT .\Thesis.out
 INPUT .\Thesis.out
+INPUT Thesis.run.xml
 OUTPUT Thesis.run.xml
 INPUT C:\Users\A547484\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\A547484\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
