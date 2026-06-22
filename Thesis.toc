@@ -11,17 +11,17 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem and Motivation}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Research Objective and Research Question}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Scope and Delimitation}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.3}Research Objective and Research Question}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Scope and Delimitation}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Thesis Structure}{4}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Extended Background}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}ERP Systems, SAP, and Enterprise Workflows}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Construction Equipment Industry and Market Share Estimation}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Enterprise Implementation of Market Share Estimation at Volvo CE}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}SAP as the Analytical Environment in the Volvo CE Case}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}SAP as the Analytical Environment in the Volvo CE Case}{8}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}The Existing TMC Process and Its SAP-based Implementation}{8}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Limitations of the Current SAP-based Implementation}{9}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Related Work}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.4}General Challenges in SAP-Based Enterprise Workflow Implementations}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Related Work}{10}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Methodology}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Research Method}{14}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Application of the Research Method}{16}{section.3.2}%
@@ -55,23 +55,23 @@
 \contentsline {subsection}{\numberline {6.2.1}Validation of Prototype Outputs}{36}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Preparation-Stage Validation}{36}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Split- and Resplit-Related Validation}{38}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Evaluation Against Requirements}{39}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.4}Evaluation Against Requirements}{38}{subsection.6.2.4}%
 \contentsline {section}{\numberline {6.3}Comparison with the SAP-Based Workflow}{40}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Summary and Limitations}{42}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Summary and Limitations}{41}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Conclusions and Discussion}{43}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Answer to the Research Questions}{43}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}Answer to Sub-RQ1: How can the architecture and data handling of a web-based prototype be designed to support structured upload, storage, and management of heterogeneous workflow inputs, including source datasets and matrix-based business rules?}{43}{subsection.7.1.1}%
 \contentsline {subsection}{\numberline {7.1.2}Answer to Sub-RQ2: How can staged data-processing activities be re-expressed in a web-based environment so that intermediate transformations and derived results become inspectable and traceable for business users?}{44}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Answer to Sub-RQ3: To what extent does the implemented prototype improve transparency, usability, and traceability compared to an existing SAP-based TMC implementation, as assessed through demonstration and stakeholder feedback?}{45}{subsection.7.1.3}%
-\contentsline {section}{\numberline {7.2}Contributions and Originality}{46}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Practical Contributions and Originality}{46}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Academic Contributions}{46}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Limitations}{47}{section.7.3}%
+\contentsline {subsection}{\numberline {7.1.3}Answer to Sub-RQ3: To what extent does the implemented prototype improve transparency, usability, and traceability compared to an existing SAP-based TMC implementation, as assessed through demonstration and stakeholder feedback?}{44}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}Contributions and Originality}{45}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Practical Contributions and Originality}{45}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Academic Contributions}{45}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Limitations}{46}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Ethical and Societal Implications}{47}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Software Tools and the Use of AI Tools}{48}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Future Work}{48}{section.7.6}%
-\contentsline {chapter}{Bibliography}{51}{chapter*.13}%
-\contentsline {part}{Appendices}{55}{section*.14}%
-\contentsline {chapter}{\numberline {A}Supplementary Implementation and Evaluation Material}{57}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Detailed Implementation Notes}{57}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Detailed Requirement Evaluation}{65}{section.A.2}%
+\contentsline {section}{\numberline {7.5}Software Tools and the Use of AI Tools}{47}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Future Work}{47}{section.7.6}%
+\contentsline {chapter}{Bibliography}{49}{chapter*.13}%
+\contentsline {part}{Appendices}{53}{section*.14}%
+\contentsline {chapter}{\numberline {A}Supplementary Implementation and Evaluation Material}{55}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Detailed Implementation Notes}{55}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Detailed Requirement Evaluation}{62}{section.A.2}%

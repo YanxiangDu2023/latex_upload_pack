@@ -1168,6 +1168,7 @@ Overall, the results indicate that the main requirements were met within the pro
 
 Performance and stability results were also acceptable for the evaluated setting. Repeated workflow cycles remained within the defined review window, and no crash, data loss, or inconsistent save/reload behaviour was observed during the repeated test runs. In summary, the functional support for upload, staged processing, and browser-based inspection was largely achieved, and transparency, usability, and stage-level traceability were strongly supported within the implemented scope. At the same time, full end-to-end row-level lineage, full TMC coverage, and production-level integration were only partly addressed or left for future work.
 
+\setcounter{table}{0}
 \begin{table}[htbp]
     \centering
     \caption{Condensed evaluation summary for the implemented scope.}
@@ -1234,9 +1235,10 @@ A more detailed requirement-by-requirement table is provided in Appendix~\ref{ap
 
 To further clarify transparency, traceability, usability, and validation support, the prototype was compared with the SAP-based workflow from a business-user perspective. The comparison does not claim that SAP lacks these capabilities technically, but assesses whether they are directly available and inspectable for business users within the reviewed workflow.
 
+\setcounter{table}{1}
 \setlength{\tabcolsep}{4pt}
 \small
-\begin{ltablex}{\textwidth}{|>{\raggedright\arraybackslash}p{2.4cm}|>{\raggedright\arraybackslash}p{2.0cm}|>{\raggedright\arraybackslash}p{2.0cm}|X|}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{2.1cm}|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{5.2cm}|}
 \caption{Concise comparison between SAP-based representation and prototype}
 \label{tab:sap_prototype_comparison} \\
 \hline
@@ -1261,7 +1263,7 @@ Usability & Requires more SAP-specific navigation & Supported & Browser-based fi
 Validation support & Often requires extra extraction or IT support & Supported & Intermediate values and rule-relevant fields were directly inspectable and comparable with expected business rules and SAP references. \\
 \hline
 
-\end{ltablex}
+\end{longtable}
 
 Compared with the SAP-based representation, the prototype made four differences visible within the evaluated scope. First, transparency improved because preparation, market view, adjustment, machine line split, and resplit outputs were exposed as separate inspectable stages rather than being dispersed across technical SAP artefacts. Second, traceability improved at stage level because outputs retained source and rule context such as country, machine line, source, brand, flags, split level, and split ratio. Third, usability improved because business users could review results through browser-based filtering, summaries, charts, and CSV export rather than SAP-specific navigation. Fourth, validation became more direct because intermediate values and rule-relevant fields could be inspected without additional extraction or IT-supported investigation.
 

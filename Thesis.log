@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.17)  21 JUN 2026 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.17)  22 JUN 2026 22:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -996,13 +996,13 @@ Overfull \hbox (7.88568pt too wide) in paragraph at lines 83--98
 \openout2 = `Abstract.aux'.
 
  (Abstract.tex
-Overfull \hbox (4.29411pt too wide) in paragraph at lines 21--22
-\T1/put/m/n/10.95 tions, which makes val-i-da-tion, er-ror in-ves-ti-ga-tion, and com-mu-ni-ca-tion with
+Overfull \hbox (1.11476pt too wide) in paragraph at lines 21--22
+\T1/put/m/n/10.95 ity chal-lenges in ERP-based en-ter-prise data pro-cess-ing im-ple-mented in sys-
  []
 
 
-Overfull \hbox (32.00279pt too wide) in paragraph at lines 25--26
-\T1/put/m/n/10.95 mented as a web-based frontend-backend pro-to-type us-ing Re-act, Python/FastAPI
+Overfull \hbox (4.29411pt too wide) in paragraph at lines 21--22
+\T1/put/m/n/10.95 tions, which makes val-i-da-tion, er-ror in-ves-ti-ga-tion, and com-mu-ni-ca-tion with
  []
 
 
@@ -1024,8 +1024,8 @@ Overfull \hbox (9.9991pt too wide) in paragraph at lines 29--30
 Package hyperref Warning: Suppressing empty link on input line 32.
 
 
-Overfull \hbox (6.53056pt too wide) in paragraph at lines 32--33
-\T1/put/m/n/10.95 Trans-parency, Web-Based Data Pro-cess-ing Sys-tem, Con-struc-tion Equip-ment
+Overfull \hbox (7.29454pt too wide) in paragraph at lines 32--33
+\T1/put/m/n/10.95 ing, SAP, Work-flow Trans-parency, Trace-abil-ity, Con-struc-tion Equip-ment Mar-
  []
 
 ) [4]
@@ -1077,13 +1077,13 @@ Overfull \hbox (42.07875pt too wide) in paragraph at lines 26--26
 
 
 
-] [10
-
-] (Thesis.lot)
+] [10] (Thesis.lot)
 \tf@lot=\write7
 \openout7 = `Thesis.lot'.
 
- [11] [12
+ [11
+
+] [12
 
 ] (Thesis.toc
 Overfull \hbox (13.1165pt too wide) in paragraph at lines 20--20
@@ -1121,22 +1121,22 @@ Overfull \hbox (2.60378pt too wide) in paragraph at lines 57--58
 \T1/put/m/n/10.95 ma-tion de-pends on a To-tal Mar-ket Cal-cu-la-tion (TMC) pro-cess im-ple-mented
  []
 
-
-Overfull \hbox (3.00706pt too wide) in paragraph at lines 57--58
-\T1/put/m/n/10.95 ments con-nect to the in-ter-me-di-ate and fi-nal out-puts. In prac-tice, this makes
- []
-
 [1
 
 
 ]
-Overfull \hbox (1.17401pt too wide) in paragraph at lines 66--67
+Overfull \hbox (1.17401pt too wide) in paragraph at lines 68--69
 \T1/put/m/n/10.95 BW-based en-vi-ron-ment where up-loads, map-pings, staged cal-cu-la-tions, and
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
+Overfull \hbox (12.84172pt too wide) in paragraph at lines 68--69
+\T1/put/m/n/10.95 re-port-ing are dis-tributed across sev-eral tech-ni-cal ob-jects [[]4[]]. From a business-
+ []
+
+[2]
+Overfull \hbox (7.09947pt too wide) in paragraph at lines 106--108
+\T1/put/m/n/10.95 ero-ge-neous in-puts, main-tained rules, and staged trans-for-ma-tions. The Volvo
  []
 
 
@@ -1150,23 +1150,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
  []
 
 
-Overfull \hbox (3.38148pt too wide) in paragraph at lines 118--119
-\T1/put/m/n/10.95 strates how se-lected en-ter-prise work-flow logic can be re-expressed in a more
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
  []
 
-[3]
-Overfull \hbox (0.4136pt too wide) in paragraph at lines 168--169
-\T1/put/m/n/10.95 ters. The back-ground chap-ter in-tro-duces en-ter-prise work-flow trans-parency
- []
-
-) [4]
+[3]) [4]
 \openout2 = `"Chapters/Extended Background.aux"'.
 
  (Chapters/Extended Background.tex
  2.
 
 Overfull \hbox (5.79922pt too wide) in paragraph at lines 15--16
-\T1/put/m/n/10.95 and man-age core busi-ness pro-cesses across large or-ga-ni-za-tions [[]1[], []2[]]. Rather
+\T1/put/m/n/10.95 and man-age core busi-ness pro-cesses across large or-ga-ni-za-tions [[]7[], []1[]]. Rather
  []
 
 [5
@@ -1183,38 +1178,33 @@ Overfull \hbox (16.41872pt too wide) in paragraph at lines 28--28
 LaTeX Font Info:    Trying to load font information for TS1+put on input line 165.
  (C:\Users\A547484\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1put.fd
 File: ts1put.fd 2001/06/04 font definitions for TS1/put.
-)
-Overfull \hbox (1.04935pt too wide) in paragraph at lines 434--435
-\T1/put/m/n/10.95 may choose to im-ple-ment such work-flows in en-ter-prise sys-tems rather than
- []
-
-[7]
-<tmc.png, id=579, 703.87968pt x 502.12593pt>
+) [7]
+<tmc.png, id=583, 703.87968pt x 502.12593pt>
 File: tmc.png Graphic file (type png)
 <use tmc.png>
 Package pdftex.def Info: tmc.png  used on input line 526.
 (pdftex.def)             Requested size: 329.61647pt x 235.13344pt.
  [8]
-Overfull \hbox (11.25256pt too wide) in paragraph at lines 569--570
-\T1/put/m/n/10.95 and ABAP-based pro-cess-ing, which re-quire spe-cial-ized tech-ni-cal knowl-
+Overfull \hbox (15.59738pt too wide) in paragraph at lines 533--533
+|[]\T1/phv/b/n/14.4 General Chal-lenges in SAP-Based En-ter-prise Work-
  []
 
 [9 <./tmc.png>]
-Overfull \hbox (9.6946pt too wide) in paragraph at lines 589--590
-\T1/put/m/n/10.95 work-flows of-ten in-volve in-con-sis-tent in-puts, trans-for-ma-tion er-rors, and data-
+Overfull \hbox (13.79488pt too wide) in paragraph at lines 545--546
+\T1/put/m/n/10.95 flow be-hav-ior may re-quire tech-ni-cal sup-port rather than di-rect business-
  []
 
 
-Overfull \hbox (0.3292pt too wide) in paragraph at lines 593--594
+Overfull \hbox (3.58952pt too wide) in paragraph at lines 563--564
+\T1/put/m/n/10.95 user set-tings [[]6[]]. These find-ings are rel-e-vant be-cause the prob-lem ad-dressed
+ []
+
+
+Overfull \hbox (0.3292pt too wide) in paragraph at lines 565--566
 []\T1/put/m/n/10.95 Third, decision-support and en-ter-prise an-a-lyt-ics lit-er-a-ture sug-gests that
  []
 
-[10]
-Overfull \hbox (4.26782pt too wide) in paragraph at lines 595--596
-\T1/put/m/n/10.95 this the-sis: en-ter-prise work-flows can be tech-ni-cally ro-bust and op-er-a-tionally
- []
-
-) [11]
+[10]) [11]
 \openout2 = `Chapters/Method.aux'.
 
  (Chapters/Method.tex [12
@@ -1224,12 +1214,12 @@ Overfull \hbox (4.26782pt too wide) in paragraph at lines 595--596
 
 ]
  3.
-[13]
-Overfull \hbox (2.12859pt too wide) in paragraph at lines 47--48
-\T1/put/m/n/10.95 trace-abil-ity, and us-abil-ity in ERP-based en-ter-prise work-flows, but that prob-
+
+Overfull \hbox (2.48967pt too wide) in paragraph at lines 45--46
+\T1/put/m/n/10.95 oriented ap-proaches, such as \T1/put/b/n/10.95 sur-veys \T1/put/m/n/10.95 or \T1/put/b/n/10.95 con-trolled ex-per-i-ments\T1/put/m/n/10.95 , were like-
  []
 
-
+[13]
 Overfull \hbox (0.29132pt too wide) in paragraph at lines 67--68
 \T1/put/m/n/10.95 TMC work-flow and the im-ple-mented stages, es-pe-cially doc-u-ments and files
  []
@@ -1239,103 +1229,113 @@ Overfull \hbox (1.02243pt too wide) in paragraph at lines 67--68
 \T1/put/m/n/10.95 with stake-holder ex-pla-na-tions, source struc-tures, and ob-served sys-tem out-
  []
 
+
+Overfull \hbox (3.74881pt too wide) in paragraph at lines 69--70
+\T1/put/m/n/10.95 in the form of up-loaded in-puts, gen-er-ated in-ter-me-di-ate out-puts, re-sult com-
+ []
+
 [14]
-Overfull \hbox (1.94455pt too wide) in paragraph at lines 75--76
+Overfull \hbox (1.94455pt too wide) in paragraph at lines 77--78
 \T1/put/m/n/10.95 type out-puts, and com-par-ing im-ple-mented re-sults with ex-pected be-haviour
  []
 
 
-Overfull \hbox (1.96599pt too wide) in paragraph at lines 77--78
+Overfull \hbox (1.96599pt too wide) in paragraph at lines 79--80
 \T1/put/m/n/10.95 reference-data ver-sion dif-fer-ences, and stage-specific in-spec-tion needs. Ac-
  []
 
 
-Overfull \hbox (7.58638pt too wide) in paragraph at lines 87--88
+Overfull \hbox (7.58638pt too wide) in paragraph at lines 91--92
 \T1/put/m/n/10.95 This sec-tion sum-ma-rizes how the se-lected data col-lec-tion and anal-y-sis meth-
  []
 
 
-Overfull \hbox (6.6396pt too wide) in paragraph at lines 87--88
+Overfull \hbox (6.6396pt too wide) in paragraph at lines 91--92
 \T1/put/m/n/10.95 im-ple-men-ta-tion, demon-stra-tion, and eval-u-a-tion are pre-sented in later chap-
  []
 
 [15]
-Overfull \hbox (2.79555pt too wide) in paragraph at lines 99--100
+Overfull \hbox (2.79555pt too wide) in paragraph at lines 103--104
 []\T1/put/m/n/10.95 The col-lected ma-te-rial was anal-ysed through re-quire-ments anal-y-sis. The
  []
 
 
-Overfull \hbox (2.96461pt too wide) in paragraph at lines 99--100
+Overfull \hbox (2.96461pt too wide) in paragraph at lines 103--104
 \T1/put/m/n/10.95 re-quire-ments were grouped into func-tional and per-for-mance re-quire-ments.
  []
 
 
-Overfull \hbox (1.3347pt too wide) in paragraph at lines 101--102
+Overfull \hbox (1.3347pt too wide) in paragraph at lines 105--106
 \T1/put/m/n/10.95 trans-parency, trace-abil-ity, us-abil-ity, val-i-da-tion sup-port, and prototype-level
  []
 
 [16]
-Overfull \hbox (0.40038pt too wide) in paragraph at lines 161--162
+Overfull \hbox (0.40038pt too wide) in paragraph at lines 165--166
 \T1/put/m/n/10.95 work-flow de-scrip-tions, and gen-er-ated in-ter-me-di-ate out-puts were in-spected
  []
 
 
-Overfull \hbox (2.94003pt too wide) in paragraph at lines 163--164
+Overfull \hbox (2.94003pt too wide) in paragraph at lines 167--168
 \T1/put/m/n/10.95 rule in-ter-pre-ta-tion, and it-er-a-tive out-put in-spec-tion. This anal-y-sis sup-ported
  []
 
 
-Overfull \hbox (4.74773pt too wide) in paragraph at lines 165--166
+Overfull \hbox (4.74773pt too wide) in paragraph at lines 169--170
 \T1/put/m/n/10.95 mary val-ues, and ex-port func-tions. These ideas were grad-u-ally im-ple-mented
  []
 
 
-Overfull \hbox (0.3912pt too wide) in paragraph at lines 213--214
+Overfull \hbox (0.3912pt too wide) in paragraph at lines 217--218
 \T1/put/m/n/10.95 The fourth DSR ac-tiv-ity was to demon-strate the arte-fact. This ac-tiv-ity shows
  []
 
 [17]
-Overfull \hbox (11.47914pt too wide) in paragraph at lines 257--258
+Overfull \hbox (11.05699pt too wide) in paragraph at lines 221--222
+\T1/put/m/n/10.95 work-flow out-side the SAP en-vi-ron-ment in a more trans-par-ent and in-spectable
+ []
+
+
+Overfull \hbox (11.47914pt too wide) in paragraph at lines 261--262
 []\T1/put/m/n/10.95 The gen-er-ated out-puts were in-spected to as-sess whether the im-ple-mented
  []
 
 
-Overfull \hbox (9.55473pt too wide) in paragraph at lines 257--258
+Overfull \hbox (9.55473pt too wide) in paragraph at lines 261--262
 \T1/put/m/n/10.95 pected work-flow logic. Where com-pa-ra-ble, se-lected re-sults were also checked
  []
 
 [18]
-Overfull \hbox (8.98003pt too wide) in paragraph at lines 259--260
+Overfull \hbox (8.98003pt too wide) in paragraph at lines 263--264
 \T1/put/m/n/10.95 arte-fact sup-ported trans-parency, trace-abil-ity, us-abil-ity, and val-i-da-tion. Stake-
  []
 
 
-Overfull \hbox (1.18016pt too wide) in paragraph at lines 275--276
+Overfull \hbox (1.18016pt too wide) in paragraph at lines 279--280
 \T1/put/m/n/10.95 This study was con-ducted in col-lab-o-ra-tion with Volvo CE and re-quired care-
  []
 
 
-Overfull \hbox (12.0487pt too wide) in paragraph at lines 277--278
+Overfull \hbox (12.0487pt too wide) in paragraph at lines 281--282
 \T1/put/m/n/10.95 re-view, pro-to-type de-vel-op-ment, and in-for-mal dis-cus-sions with rel-e-vant stake-
  []
 
 
-Overfull \hbox (1.24086pt too wide) in paragraph at lines 279--280
+Overfull \hbox (1.24086pt too wide) in paragraph at lines 283--284
 []\T1/put/m/n/10.95 The pur-pose of these in-ter-ac-tions was solely to un-der-stand cur-rent work
  []
 
 
-Overfull \hbox (7.21935pt too wide) in paragraph at lines 281--282
+Overfull \hbox (7.21935pt too wide) in paragraph at lines 285--286
 []\T1/put/m/n/10.95 Special con-sid-er-a-tion was also given to the han-dling of company-internal
  []
 
 
-Overfull \hbox (6.12979pt too wide) in paragraph at lines 281--282
+Overfull \hbox (6.12979pt too wide) in paragraph at lines 285--286
 \T1/put/m/n/10.95 trolled set-ting and was not used as a pro-duc-tion re-place-ment. Where screen-
  []
 
 
-Overfull \hbox (1.25487pt too wide) in paragraph at lines 281--282
+Overfull \hbox (1.25487pt too wide) in paragraph at lines 285--286
 \T1/put/m/n/10.95 nal sys-tems were in-cluded for ex-plana-tory pur-poses, they were anonymised
  []
 
@@ -1345,8 +1345,18 @@ Overfull \hbox (1.25487pt too wide) in paragraph at lines 281--282
  (Chapters/Problem and Requirements.tex
  4.
 
-Overfull \hbox (0.17934pt too wide) in paragraph at lines 8--9
-\T1/put/m/n/10.95 neous source data, main-tained rule struc-tures, and staged trans-for-ma-tions.
+Overfull \hbox (7.27933pt too wide) in paragraph at lines 8--9
+\T1/put/m/n/10.95 ERP-based en-ter-prise data pro-cess-ing of-ten com-bines het-ero-ge-neous source
+ []
+
+
+Overfull \hbox (1.94254pt too wide) in paragraph at lines 8--9
+\T1/put/m/n/10.95 data, main-tained rule struc-tures, and staged trans-for-ma-tions. In ERP-based
+ []
+
+
+Overfull \hbox (1.57492pt too wide) in paragraph at lines 8--9
+\T1/put/m/n/10.95 en-vi-ron-ments such as SAP, these work-flows may be ex-e-cuted cor-rectly while
  []
 
 
@@ -1390,22 +1400,17 @@ Overfull \hbox (14.94563pt too wide) in paragraph at lines 41--42
 
 
 ]
-<5.1.png, id=706, 1541.76pt x 1027.84pt>
+<5.1.png, id=711, 1541.76pt x 1027.84pt>
 File: 5.1.png Graphic file (type png)
 <use 5.1.png>
 Package pdftex.def Info: 5.1.png  used on input line 92.
 (pdftex.def)             Requested size: 366.24301pt x 244.16159pt.
  [26 <./5.1.png (PNG copy)>]
-<5.2.1.png, id=711, 1633.10126pt x 970.62625pt>
+<5.2.1.png, id=716, 1633.10126pt x 970.62625pt>
 File: 5.2.1.png Graphic file (type png)
 <use 5.2.1.png>
 Package pdftex.def Info: 5.2.1.png  used on input line 247.
-(pdftex.def)             Requested size: 439.4905pt x 261.19876pt.
-
-Overfull \hbox (73.24748pt too wide) in paragraph at lines 247--248
- [][] 
- []
-
+(pdftex.def)             Requested size: 366.24301pt x 217.67058pt.
 
 Overfull \hbox (15.49231pt too wide) in paragraph at lines 259--261
 \T1/put/m/n/10.95 The back-end val-i-dates file struc-ture and per-forms dataset-specific clean-
@@ -1417,8 +1422,8 @@ Overfull \hbox (5.67007pt too wide) in paragraph at lines 271--273
  []
 
 
-Overfull \hbox (8.16595pt too wide) in paragraph at lines 277--279
-[]\T1/put/b/n/10.95 Final out-puts and pre-sen-ta-tion. \T1/put/m/n/10.95 The arte-fact pro-duces mul-ti-ple staged
+Overfull \hbox (2.58696pt too wide) in paragraph at lines 277--279
+\T1/put/m/n/10.95 tend as work-flow views, fil-ter-able ta-bles, sum-mary met-rics, and down-
  []
 
 
@@ -1476,43 +1481,28 @@ Overfull \hbox (0.29767pt too wide) in paragraph at lines 727--728
 \T1/put/m/n/10.95 layer, while the back-end per-forms data in-ges-tion, work-flow pro-cess-ing, and
  []
 
-<5.3.1.png, id=729, 925.20656pt x 544.28343pt>
+<5.3.1.png, id=734, 925.20656pt x 544.28343pt>
 File: 5.3.1.png Graphic file (type png)
 <use 5.3.1.png>
 Package pdftex.def Info: 5.3.1.png  used on input line 731.
-(pdftex.def)             Requested size: 384.55627pt x 226.23053pt.
-
-Overfull \hbox (18.31326pt too wide) in paragraph at lines 731--732
- [][] 
- []
-
+(pdftex.def)             Requested size: 366.24301pt x 215.45053pt.
 [31]
 Overfull \hbox (7.32877pt too wide) in paragraph at lines 736--737
 []\T1/put/m/n/10.95 The im-ple-men-ta-tion also es-tab-lished a clear upload-to-processing chain.
  []
 
-<5.4.png, id=734, 713.66624pt x 458.46281pt>
+<5.4.png, id=739, 713.66624pt x 458.46281pt>
 File: 5.4.png Graphic file (type png)
 <use 5.4.png>
 Package pdftex.def Info: 5.4.png  used on input line 740.
-(pdftex.def)             Requested size: 384.55627pt x 247.04155pt.
-
-Overfull \hbox (18.31326pt too wide) in paragraph at lines 740--741
- [][] 
- []
-
+(pdftex.def)             Requested size: 366.24301pt x 235.27501pt.
 [32 <./5.3.1.png>]
-<5.6.1.1.png, id=740, 907.89188pt x 499.11469pt>
+<5.6.1.1.png, id=745, 907.89188pt x 499.11469pt>
 File: 5.6.1.1.png Graphic file (type png)
 <use 5.6.1.1.png>
 Package pdftex.def Info: 5.6.1.1.png  used on input line 749.
-(pdftex.def)             Requested size: 384.55627pt x 211.40884pt.
-
-Overfull \hbox (18.31326pt too wide) in paragraph at lines 749--750
- [][] 
- []
-
-[33 <./5.4.png>]) [34 <./5.6.1.1.png>]
+(pdftex.def)             Requested size: 366.24301pt x 201.34067pt.
+ [33 <./5.4.png> <./5.6.1.1.png>]) [34]
 \openout2 = `Chapters/Evaluation.aux'.
 
  (Chapters/Evaluation.tex
@@ -1553,181 +1543,118 @@ Overfull \hbox (8.1309pt too wide) in paragraph at lines 953--954
  []
 
 [36]
-<6.1.png, id=762, 1005.7575pt x 564.60938pt>
+<6.1.png, id=767, 1005.7575pt x 564.60938pt>
 File: 6.1.png Graphic file (type png)
 <use 6.1.png>
 Package pdftex.def Info: 6.1.png  used on input line 958.
-(pdftex.def)             Requested size: 402.86954pt x 226.15851pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 958--959
- [][] 
- []
-
-<6.2.png, id=763, 1011.02719pt x 551.81157pt>
+(pdftex.def)             Requested size: 366.24301pt x 205.59393pt.
+<6.2.png, id=768, 1011.02719pt x 551.81157pt>
 File: 6.2.png Graphic file (type png)
 <use 6.2.png>
 Package pdftex.def Info: 6.2.png  used on input line 965.
-(pdftex.def)             Requested size: 402.86954pt x 219.88715pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 965--966
- [][] 
- []
-
-[37 <./6.1.png>]
-Overfull \hbox (0.1949pt too wide) in paragraph at lines 974--975
-\T1/put/m/n/10.95 The split- and resplit-related out-puts were val-i-dated through man-ual Excel-
- []
-
-<6.3.png, id=769, 1062.97125pt x 562.35094pt>
+(pdftex.def)             Requested size: 366.24301pt x 199.88974pt.
+ [37 <./6.1.png> <./6.2.png>]
+<6.3.png, id=775, 1062.97125pt x 562.35094pt>
 File: 6.3.png Graphic file (type png)
 <use 6.3.png>
 Package pdftex.def Info: 6.3.png  used on input line 980.
-(pdftex.def)             Requested size: 402.86954pt x 213.13782pt.
+(pdftex.def)             Requested size: 366.24301pt x 193.75386pt.
 
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 980--981
- [][] 
- []
-
-[38 <./6.2.png>]
 Overfull \hbox (0.9502pt too wide) in paragraph at lines 1165--1166
 \T1/put/m/n/10.95 The arte-fact was eval-u-ated against the func-tional and per-for-mance re-quire-
  []
 
-
+[38 <./6.3.png>]
 Overfull \hbox (0.43924pt too wide) in paragraph at lines 1167--1168
 []\T1/put/m/n/10.95 Overall, the re-sults in-di-cate that the main re-quire-ments were met within
  []
 
-[39 <./6.3.png>]
-Underfull \hbox (badness 5133) in paragraph at lines 1178--1179
-[]|\T1/put/m/n/10.95 Upload, staged pro-cess-ing, and
+
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+[]|\T1/put/m/n/10 Upload, staged pro-cess-ing, and
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1180--1180
-[]|\T1/put/m/n/10.95 Transparency and us-
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+\T1/put/m/n/10 browser-based in-spec-tion were im-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
-[]|\T1/put/m/n/10.95 Strongly sup-
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+[]|\T1/put/m/n/10 Intermediate out-puts, fil-ters, sum-
  []
 
 
-Underfull \hbox (badness 3713) in paragraph at lines 1180--1181
-\T1/put/m/n/10.95 maries, charts, and CSV ex-port
+Underfull \hbox (badness 1371) in paragraph at lines 1189--1189
+\T1/put/m/n/10 se-lected stages eas-ier to in-spect and
+ []
+
+[39]
+Overfull \hbox (1.55841pt too wide) in paragraph at lines 1254--1254
+[]|\T1/put/m/n/10 Transparency|  
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 1182--1182
-[]|\T1/put/m/n/10.95 Traceability and val-i-
+pdfTeX warning (ext4): destination with the same identifier (name{table.6.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1266 \end{longtable}
+                       [40]
+Overfull \hbox (5.2704pt too wide) in paragraph at lines 1292--1293
+\T1/put/m/n/10 put in-spec-tion, and rule-based val-i-da-tion against 2024 SAP ref-er-ence out-puts where
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
-[]|\T1/put/m/n/10.95 Partly to
+Overfull \hbox (16.75946pt too wide) in paragraph at lines 1294--1295
+\T1/put/m/n/10 CRP prepa-ra-tion matched the SAP ref-er-ence out-put, while the ob-served OTH reporter-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
-\T1/put/m/n/10.95 strongly sup-
+Overfull \hbox (2.75587pt too wide) in paragraph at lines 1301--1302
+[]\T1/put/m/n/10 The arte-fact sup-ports stage-level trace-abil-ity, but full row-level lin-eage across
  []
 
 
-Underfull \hbox (badness 6825) in paragraph at lines 1182--1183
-[]|\T1/put/m/n/10.95 Stage-level trace-abil-ity and rule
+Overfull \hbox (2.03862pt too wide) in paragraph at lines 1302--1303
+[]\T1/put/m/n/10 The cur-rent de-ploy-ment and stor-age setup is ad-e-quate for pro-to-type demon-
  []
 
-
-Underfull \hbox (badness 1946) in paragraph at lines 1182--1183
-\T1/put/m/n/10.95 full end-to-end row-level lin-eage
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
-[]|\T1/put/m/n/10.95 Partly ad-
- []
-
-
-Overfull \hbox (32.70729pt too wide) in paragraph at lines 1174--1187
- [][] 
- []
-
-
-Overfull \hbox (70.71458pt too wide) in alignment at lines 1235--1241
- [] [] [] [] 
- []
-
-
-Overfull \hbox (70.71458pt too wide) in alignment at lines 1241--1246
- [] [] [] [] 
- []
-
-
-Overfull \hbox (70.71458pt too wide) in alignment at lines 1246--1260
- [] [] [] [] 
- []
-
-[40]
-Overfull \hbox (1.94415pt too wide) in paragraph at lines 1262--1263
-\T1/put/m/n/10.95 dif-fer-ences vis-i-ble within the eval-u-ated scope. First, trans-parency im-proved
- []
-
-[41]
-Overfull \hbox (5.33005pt too wide) in paragraph at lines 1294--1295
-[]\T1/put/m/n/10.95 Some SAP com-par-isons were af-fected by reference-data or calculation-
- []
-
-) [42]
+) [41]
 \openout2 = `Chapters/Discussion.aux'.
 
- (Chapters/Discussion.tex
- 7.
-[43
+ (Chapters/Discussion.tex [42
 
-
-
-
-] [44]
-Overfull \hbox (10.316pt too wide) in paragraph at lines 71--72
-[]\T1/put/m/n/10.95 In the SAP-based TMC im-ple-men-ta-tion, the pro-cess is car-ried out through
- []
-
-
-Overfull \hbox (9.57817pt too wide) in paragraph at lines 73--74
-\T1/put/m/n/10.95 into one inspection-oriented en-vi-ron-ment. Up-load and matrix-management
- []
-
-[45]
-Overfull \hbox (3.16283pt too wide) in paragraph at lines 227--228
-\T1/put/m/n/10.95 prise data-processing work-flows can be ad-dressed through an im-ple-mented
- []
-
-
-Overfull \hbox (1.82187pt too wide) in paragraph at lines 227--228
-\T1/put/m/n/10.95 on het-ero-ge-neous in-puts, staged trans-for-ma-tions, and em-bed-ded rules that
- []
-
-
-Overfull \hbox (6.34354pt too wide) in paragraph at lines 229--230
-[]\T1/put/m/n/10.95 The aca-demic con-tri-bu-tion is there-fore best un-der-stood as de-sign knowl-
- []
-
-
-Overfull \hbox (24.45232pt too wide) in paragraph at lines 231--232
-[]\T1/put/m/n/10.95 Methodologically, the the-sis also shows how a DSR project can stay grounded
- []
-
-[46] [47]
-Overfull \hbox (10.44742pt too wide) in paragraph at lines 261--262
-[]\T1/put/m/n/10.95 Visual Stu-dio Code served as the main de-vel-op-ment en-vi-ron-ment, draw.io
- []
-
-[48]) [49] [50
 
 
 
 ]
+ 7.
+
+Overfull \hbox (8.12427pt too wide) in paragraph at lines 24--25
+\T1/put/m/n/10 cor-rectly across up-load, stor-age, re-trieval, down-load, and re-save op-er-a-tions. Within
+ []
+
+[43] [44]
+Overfull \hbox (0.64316pt too wide) in paragraph at lines 75--76
+[]\T1/put/m/n/10 Stakeholder feed-back pointed in the same di-rec-tion. The sep-a-rated stage views
+ []
+
+
+Overfull \hbox (0.85127pt too wide) in paragraph at lines 75--76
+\T1/put/m/n/10 im-ple-mented stages, while still leav-ing open how far the same im-prove-ment would
+ []
+
+[45] [46] [47]
+Overfull \hbox (0.50958pt too wide) in paragraph at lines 271--272
+\T1/put/m/n/10 map-pings, work-flow con-di-tions, and cal-cu-la-tion rules could be moved out of back-
+ []
+
+
+Overfull \hbox (6.93854pt too wide) in paragraph at lines 277--278
+\T1/put/m/n/10 set-ting with sim-i-lar char-ac-ter-is-tics, such as het-ero-ge-neous in-puts, main-tained rules,
+ []
+
+) [48]
 Overfull \hbox (29.01419pt too wide) in paragraph at lines 176--176
 \T1/cmtt/m/n/10.95 1023 / A : 1026543906354$[]\T1/put/m/n/10.95 . \T1/put/m/sc/10.95 url\T1/put/m/n/10.95 : []$\T1/cmtt/m/n/10.95 h t t p s  : / / d o i  . o r g  / 10 . 1023 / A : 1026543906354$[]\T1/put/m/n/10.95 . 
  []
@@ -1737,7 +1664,10 @@ Overfull \hbox (0.61116pt too wide) in paragraph at lines 176--176
 \T1/put/m/n/10.95 the com-plex-ity of iden-ti-fy-ing pro-cesses and re-lated ta-bles in SAP ERP.
  []
 
-[51
+[49
+
+
+
 
 ]
 Overfull \hbox (9.61841pt too wide) in paragraph at lines 176--176
@@ -1754,12 +1684,12 @@ Overfull \hbox (9.95787pt too wide) in paragraph at lines 176--176
 []\T1/put/m/n/10.95 Off-Highway Re-search. \T1/put/m/it/10.95 Fre-quently Asked Ques-tions\T1/put/m/n/10.95 . Method-ol-ogy page;
  []
 
-[52]
+
 Overfull \hbox (0.74594pt too wide) in paragraph at lines 176--176
 []\T1/put/m/n/10.95 Panos Vas-sil-iadis. ^^P  A Sur-vey of Extract--Transform--Load Tech-nol-ogy^^Q.
  []
 
-
+[50]
 Overfull \hbox (21.83302pt too wide) in paragraph at lines 176--176
 \T1/put/m/n/10.95 tion: Chal-lenges and op-por-tu-ni-ties^^Q. In: \T1/put/m/it/10.95 Data in Brief \T1/put/m/n/10.95 56 (2024), p. 110853.
  []
@@ -1779,15 +1709,15 @@ Overfull \hbox (18.30048pt too wide) in paragraph at lines 176--176
 []\T1/put/m/n/10.95 Glenn A. Bowen. ^^P  Doc-u-ment Anal-y-sis as a Qual-i-ta-tive Re-search Method^^Q.
  []
 
-[53]
+[51]
 Overfull \hbox (14.48763pt too wide) in paragraph at lines 176--176
 []\T1/put/m/n/10.95 Kirsten Mar-tin. ^^P  Eth-i-cal Im-pli-ca-tions and Ac-count-abil-ity of Al-go-rithms^^Q.
  []
 
-[54] [55
+[52] [53
 
 
-] [56]
+] [54]
 \openout2 = `"Appendices/Supplementary Material.aux"'.
 
  (Appendices/Supplementary Material.tex
@@ -1798,115 +1728,52 @@ Overfull \hbox (2.87292pt too wide) in paragraph at lines 3--3
  []
 
 
-Overfull \hbox (0.76387pt too wide) in paragraph at lines 8--9
-\T1/put/m/n/10.95 of the ex-e-cu-tion chain sep-a-rately be-fore in-te-grat-ing them into the full work-
+Overfull \hbox (2.65721pt too wide) in paragraph at lines 10--11
+[]\T1/put/m/n/10 The fron-tend was im-ple-mented us-ing Re-act, Type-Script, Vite, and Re-act Router.
  []
 
 File: 5.3.1.png Graphic file (type png)
 <use 5.3.1.png>
 Package pdftex.def Info: 5.3.1.png  used on input line 14.
-(pdftex.def)             Requested size: 402.86954pt x 237.00223pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 14--15
- [][] 
- []
-
-[57
+(pdftex.def)             Requested size: 366.24301pt x 215.45053pt.
+[55
 
 
 
 ]
-Overfull \hbox (26.84079pt too wide) in paragraph at lines 23--24
-\T1/put/m/n/10.95 and con-trol ta-bles, such as country-group map-pings, brand map-pings, machine-
- []
-
-[58]
 File: 5.4.png Graphic file (type png)
 <use 5.4.png>
 Package pdftex.def Info: 5.4.png  used on input line 27.
-(pdftex.def)             Requested size: 402.86954pt x 258.8081pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 27--28
- [][] 
- []
-
-<5.4.1.png, id=934, 887.56593pt x 463.7325pt>
+(pdftex.def)             Requested size: 366.24301pt x 235.27501pt.
+ [56]
+<5.4.1.png, id=930, 887.56593pt x 463.7325pt>
 File: 5.4.1.png Graphic file (type png)
 <use 5.4.1.png>
 Package pdftex.def Info: 5.4.1.png  used on input line 34.
-(pdftex.def)             Requested size: 402.86954pt x 210.48914pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 34--35
- [][] 
- []
-
-[59]
-Overfull \hbox (11.85101pt too wide) in paragraph at lines 39--40
-[]\T1/put/m/n/10.95 The prepa-ra-tion stage fol-lows the gen-eral ex-e-cu-tion pat-tern used through-
- []
-
-
-Overfull \hbox (0.85992pt too wide) in paragraph at lines 39--40
-\T1/put/m/n/10.95 which re-solves the lat-est suc-cess-ful up-loads, ex-e-cutes SQL trans-for-ma-tions,
- []
-
+(pdftex.def)             Requested size: 366.24301pt x 191.34862pt.
+ [57 <./5.4.1.png>]
 File: 5.6.1.1.png Graphic file (type png)
 <use 5.6.1.1.png>
 Package pdftex.def Info: 5.6.1.1.png  used on input line 45.
-(pdftex.def)             Requested size: 402.86954pt x 221.47702pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 45--46
- [][] 
- []
-
-[60 <./5.4.1.png>]
-<5.6.1.1.1.png, id=944, 645.16031pt x 672.26157pt>
+(pdftex.def)             Requested size: 366.24301pt x 201.34067pt.
+<5.6.1.1.1.png, id=937, 645.16031pt x 672.26157pt>
 File: 5.6.1.1.1.png Graphic file (type png)
 <use 5.6.1.1.1.png>
 Package pdftex.def Info: 5.6.1.1.1.png  used on input line 52.
-(pdftex.def)             Requested size: 402.86954pt x 419.79315pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 52--53
- [][] 
- []
-
-[61] [62 <./5.6.1.1.1.png>]
-Overfull \hbox (2.85902pt too wide) in paragraph at lines 70--71
-[]\T1/put/m/n/10.95 where $\OML/cmm/m/it/10.95 FID[]$ \T1/put/m/n/10.95 is the orig-i-nal OTH value to be re-dis-tributed, $\OML/cmm/m/it/10.95 TM[]$
- []
-
-
-Overfull \hbox (31.22394pt too wide) in paragraph at lines 70--71
-\T1/put/m/n/10.95 is the ref-er-ence non-VCE value for tar-get des-ti-na-tion $\OML/cmm/m/it/10.95 i$\T1/put/m/n/10.95 , and $[][] \OML/cmm/m/it/10.95 TM[]$
- []
-
-
-Overfull \hbox (1.38591pt too wide) in paragraph at lines 72--73
-\T1/put/m/n/10.95 ra-tios, and before-after dif-fer-ence val-ues. These out-puts can ei-ther be saved
- []
-
-<5.6.1.2.png, id=954, 816.80156pt x 572.89032pt>
+(pdftex.def)             Requested size: 366.24301pt x 381.62361pt.
+ [58] [59 <./5.6.1.1.1.png>]
+<5.6.1.2.png, id=947, 816.80156pt x 572.89032pt>
 File: 5.6.1.2.png Graphic file (type png)
 <use 5.6.1.2.png>
 Package pdftex.def Info: 5.6.1.2.png  used on input line 76.
-(pdftex.def)             Requested size: 402.86954pt x 282.57193pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 76--77
- [][] 
- []
-
-<5.6.1.3.png, id=955, 1004.25188pt x 556.32843pt>
+(pdftex.def)             Requested size: 366.24301pt x 256.88039pt.
+<5.6.1.3.png, id=948, 1004.25188pt x 556.32843pt>
 File: 5.6.1.3.png Graphic file (type png)
 <use 5.6.1.3.png>
 Package pdftex.def Info: 5.6.1.3.png  used on input line 83.
-(pdftex.def)             Requested size: 402.86954pt x 223.18108pt.
-
-Overfull \hbox (36.62653pt too wide) in paragraph at lines 83--84
- [][] 
- []
-
-[63 <./5.6.1.2.png>]
-<5.10.png, id=968, 657.2053pt x 505.13719pt>
+(pdftex.def)             Requested size: 366.24301pt x 202.89265pt.
+ [60 <./5.6.1.2.png>]
+<5.10.png, id=960, 657.2053pt x 505.13719pt>
 File: 5.10.png Graphic file (type png)
 <use 5.10.png>
 Package pdftex.def Info: 5.10.png  used on input line 90.
@@ -1916,58 +1783,37 @@ Underfull \hbox (badness 1968) in paragraph at lines 91--91
 []\T1/put/m/n/10.95 Figure A.8: []Anonymised SQL and backend-processing frag-ments for
  []
 
-[64 <./5.6.1.3.png> <./5.10.png>]
-Overfull \hbox (0.9502pt too wide) in paragraph at lines 99--100
-\T1/put/m/n/10.95 The arte-fact was eval-u-ated against the func-tional and per-for-mance re-quire-
+[61 <./5.6.1.3.png> <./5.10.png>]
+Overfull \hbox (5.57077pt too wide) in paragraph at lines 101--102
+\T1/put/m/n/10 ing these meet-ings, pro-to-type re-sults and in-ter-me-di-ate out-puts were demon-strated,
  []
 
-
-Overfull \hbox (0.2775pt too wide) in paragraph at lines 101--102
-[]\T1/put/m/n/10.95 Stakeholder feed-back was col-lected through weekly demo meet-ings and
- []
-
-
-Overfull \hbox (64.00507pt too wide) in alignment at lines 103--109
- [] [] [] 
- []
-
-
-Overfull \hbox (64.00507pt too wide) in alignment at lines 109--114
- [] [] [] 
- []
-
-
-Overfull \hbox (64.00507pt too wide) in alignment at lines 114--171
- [] [] [] 
- []
-
-[65]
-Appendices/Supplementary Material.tex:171: ignored error: Infinite glue shrinkage found in box being split [66]
-Appendices/Supplementary Material.tex:171: ignored error: Infinite glue shrinkage found in box being split [67]
-Appendices/Supplementary Material.tex:171: ignored error: Infinite glue shrinkage found in box being split [68]
-Appendices/Supplementary Material.tex:171: ignored error: Infinite glue shrinkage found in box being split [69]) [70] (Thesis.aux (Title.aux) (Abstract.aux) (Acknowledgements.aux) (Abbreviations.aux) (Chapters/Introduction.aux) (Chapters/Extended Background.aux) (Chapters/Method.aux) (Chapters/Problem and Requirements.aux) (Chapters/The Artefact.aux) (Chapters/Evaluation.aux) (Chapters/Discussion.aux) (Appendices/Supplementary Material.aux))
+Appendices/Supplementary Material.tex:173: ignored error: Infinite glue shrinkage found in box being split [62]
+Appendices/Supplementary Material.tex:173: ignored error: Infinite glue shrinkage found in box being split [63]
+Appendices/Supplementary Material.tex:173: ignored error: Infinite glue shrinkage found in box being split [64]
+Appendices/Supplementary Material.tex:173: ignored error: Infinite glue shrinkage found in box being split [65]) [66] (Thesis.aux (Title.aux) (Abstract.aux) (Acknowledgements.aux) (Abbreviations.aux) (Chapters/Introduction.aux) (Chapters/Extended Background.aux) (Chapters/Method.aux) (Chapters/Problem and Requirements.aux) (Chapters/The Artefact.aux) (Chapters/Evaluation.aux) (Chapters/Discussion.aux) (Appendices/Supplementary Material.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DA988F2019AD0330751621CA5F7D18E6;16954.
+(rerunfilecheck)             Checksum: D1EB70896AF65AC651FF09AFC4A7F918;17030.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  33875 strings out of 467871
- 664462 string characters out of 5417408
- 1537280 words of memory out of 5000000
- 61959 multiletter control sequences out of 15000+600000
- 730652 words of font info for 91 fonts, out of 8000000 for 9000
+ 664431 string characters out of 5417408
+ 1539536 words of memory out of 5000000
+ 61961 multiletter control sequences out of 15000+600000
+ 737912 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,104p,1678b,2292s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\A547484\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on Thesis.pdf (86 pages, 6022115 bytes).
+ 84i,10n,104p,1518b,2292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\A547484\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\A547484\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb><C:/Users/A547484/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on Thesis.pdf (82 pages, 6025453 bytes).
 PDF statistics:
- 1162 PDF objects out of 1200 (max. 8388607)
- 221 named destinations out of 1000 (max. 500000)
+ 1158 PDF objects out of 1200 (max. 8388607)
+ 217 named destinations out of 1000 (max. 500000)
  648 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,41 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{davenport1998}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=418715aadaf08f606ff3e5575fa44f4f}{%
-           family={Davenport},
-           familyi={D\bibinitperiod},
-           given={Thomas\bibnamedelima H.},
-           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{418715aadaf08f606ff3e5575fa44f4f}
-      \strng{fullhash}{418715aadaf08f606ff3e5575fa44f4f}
-      \strng{fullhashraw}{418715aadaf08f606ff3e5575fa44f4f}
-      \strng{bibnamehash}{418715aadaf08f606ff3e5575fa44f4f}
-      \strng{authorbibnamehash}{418715aadaf08f606ff3e5575fa44f4f}
-      \strng{authornamehash}{418715aadaf08f606ff3e5575fa44f4f}
-      \strng{authorfullhash}{418715aadaf08f606ff3e5575fa44f4f}
-      \strng{authorfullhashraw}{418715aadaf08f606ff3e5575fa44f4f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Harvard Business Review}
-      \field{note}{Official HBR page}
-      \field{number}{4}
-      \field{title}{Putting the Enterprise into the Enterprise System}
-      \field{volume}{76}
-      \field{year}{1998}
-      \field{pages}{121\bibrangedash 131}
-      \range{pages}{11}
-      \verb{urlraw}
-      \verb https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system
-      \endverb
-      \verb{url}
-      \verb https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system
-      \endverb
-    \endentry
     \entry{klaus2000}{article}{}{}
       \name{author}{3}{}{%
         {{hash=e3088d19c5ab2bb007567c6823aa28c7}{%
@@ -116,8 +81,8 @@
       \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
       \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 2026-04-06.}
@@ -237,48 +202,6 @@
       \verb https://arxiv.org/abs/2212.06514
       \endverb
     \endentry
-    \entry{wong2016sap}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=758adab0b37c7125f442669533e1c7eb}{%
-           family={Wong},
-           familyi={W\bibinitperiod},
-           given={Wai-Peng},
-           giveni={W\bibinithyphendelim P\bibinitperiod}}}%
-        {{hash=93f3934fb1f5d19857e4e4509f2810b7}{%
-           family={Veneziano},
-           familyi={V\bibinitperiod},
-           given={Vito},
-           giveni={V\bibinitperiod}}}%
-        {{hash=37c5dafcba90da5958cf906187908773}{%
-           family={Mahmud},
-           familyi={M\bibinitperiod},
-           given={Imran},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ced54fd2fcf605155ff20f87975ff038}
-      \strng{fullhash}{ced54fd2fcf605155ff20f87975ff038}
-      \strng{fullhashraw}{ced54fd2fcf605155ff20f87975ff038}
-      \strng{bibnamehash}{ced54fd2fcf605155ff20f87975ff038}
-      \strng{authorbibnamehash}{ced54fd2fcf605155ff20f87975ff038}
-      \strng{authornamehash}{ced54fd2fcf605155ff20f87975ff038}
-      \strng{authorfullhash}{ced54fd2fcf605155ff20f87975ff038}
-      \strng{authorfullhashraw}{ced54fd2fcf605155ff20f87975ff038}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Information Development}
-      \field{month}{9}
-      \field{number}{4}
-      \field{title}{Usability of enterprise resource planning software systems: an evaluative analysis of the use of {SAP} in the textile industry in Bangladesh}
-      \field{volume}{32}
-      \field{year}{2016}
-      \field{pages}{1027\bibrangedash 1041}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1177/0266666915585364
-      \endverb
-    \endentry
     \entry{cece2025}{report}{}{}
       \name{author}{1}{}{%
         {{hash=53f0b5d188616de4b6bda38ea2165d7f}{%
@@ -311,35 +234,81 @@
       \verb https://www.cece.eu/stream/cece-annual-economic-report-2025
       \endverb
     \endentry
-    \entry{mordor2024construction}{report}{}{}
-      \name{author}{1}{}{%
-        {{hash=bed88ffefb47aac601ec95157a59baa3}{%
-           family={{Mordor Intelligence}},
-           familyi={M\bibinitperiod}}}%
+    \entry{wong2016sap}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=758adab0b37c7125f442669533e1c7eb}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Wai-Peng},
+           giveni={W\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=93f3934fb1f5d19857e4e4509f2810b7}{%
+           family={Veneziano},
+           familyi={V\bibinitperiod},
+           given={Vito},
+           giveni={V\bibinitperiod}}}%
+        {{hash=37c5dafcba90da5958cf906187908773}{%
+           family={Mahmud},
+           familyi={M\bibinitperiod},
+           given={Imran},
+           giveni={I\bibinitperiod}}}%
       }
-      \list{institution}{1}{%
-        {Mordor Intelligence}%
-      }
-      \strng{namehash}{bed88ffefb47aac601ec95157a59baa3}
-      \strng{fullhash}{bed88ffefb47aac601ec95157a59baa3}
-      \strng{fullhashraw}{bed88ffefb47aac601ec95157a59baa3}
-      \strng{bibnamehash}{bed88ffefb47aac601ec95157a59baa3}
-      \strng{authorbibnamehash}{bed88ffefb47aac601ec95157a59baa3}
-      \strng{authornamehash}{bed88ffefb47aac601ec95157a59baa3}
-      \strng{authorfullhash}{bed88ffefb47aac601ec95157a59baa3}
-      \strng{authorfullhashraw}{bed88ffefb47aac601ec95157a59baa3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \strng{namehash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{fullhash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{fullhashraw}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{bibnamehash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{authorbibnamehash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{authornamehash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{authorfullhash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{authorfullhashraw}{ced54fd2fcf605155ff20f87975ff038}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Official market report page; accessed 2026-04-05.}
-      \field{title}{Construction Equipment Market Size \& Industry Trends, 2031}
-      \field{year}{2024}
+      \field{journaltitle}{Information Development}
+      \field{month}{9}
+      \field{number}{4}
+      \field{title}{Usability of enterprise resource planning software systems: an evaluative analysis of the use of {SAP} in the textile industry in Bangladesh}
+      \field{volume}{32}
+      \field{year}{2016}
+      \field{pages}{1027\bibrangedash 1041}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1177/0266666915585364
+      \endverb
+    \endentry
+    \entry{davenport1998}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=418715aadaf08f606ff3e5575fa44f4f}{%
+           family={Davenport},
+           familyi={D\bibinitperiod},
+           given={Thomas\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{fullhash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{fullhashraw}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{bibnamehash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{authorbibnamehash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{authornamehash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{authorfullhash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{authorfullhashraw}{418715aadaf08f606ff3e5575fa44f4f}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Harvard Business Review}
+      \field{note}{Official HBR page}
+      \field{number}{4}
+      \field{title}{Putting the Enterprise into the Enterprise System}
+      \field{volume}{76}
+      \field{year}{1998}
+      \field{pages}{121\bibrangedash 131}
+      \range{pages}{11}
       \verb{urlraw}
-      \verb https://www.mordorintelligence.com/industry-reports/construction-equipment-market
+      \verb https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system
       \endverb
       \verb{url}
-      \verb https://www.mordorintelligence.com/industry-reports/construction-equipment-market
+      \verb https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system
       \endverb
     \endentry
     \entry{monk2012erp}{book}{}{}
@@ -366,8 +335,8 @@
       \strng{authornamehash}{74940d1216bc63166e68653137dc3129}
       \strng{authorfullhash}{74940d1216bc63166e68653137dc3129}
       \strng{authorfullhashraw}{74940d1216bc63166e68653137dc3129}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{4th}
@@ -406,8 +375,8 @@
       \strng{authornamehash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
       \strng{authorfullhash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
       \strng{authorfullhashraw}{0d69bc14cecd0ca4a3e761ef1e71fc98}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Canadian Journal of Civil Engineering}
@@ -436,8 +405,8 @@
       \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
       \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 2026-04-06.}
@@ -543,6 +512,37 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1016/j.chb.2003.10.004
+      \endverb
+    \endentry
+    \entry{mordor2024construction}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=bed88ffefb47aac601ec95157a59baa3}{%
+           family={{Mordor Intelligence}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Mordor Intelligence}%
+      }
+      \strng{namehash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{fullhash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{fullhashraw}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{bibnamehash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{authorbibnamehash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{authornamehash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{authorfullhash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{authorfullhashraw}{bed88ffefb47aac601ec95157a59baa3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official market report page; accessed 2026-04-05.}
+      \field{title}{Construction Equipment Market Size \& Industry Trends, 2031}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.mordorintelligence.com/industry-reports/construction-equipment-market
+      \endverb
+      \verb{url}
+      \verb https://www.mordorintelligence.com/industry-reports/construction-equipment-market
       \endverb
     \endentry
     \entry{kotler2016marketing}{book}{}{}
@@ -698,8 +698,8 @@
       \strng{authornamehash}{a1dc8c7c3c6db2d832f9919218d3e82e}
       \strng{authorfullhash}{a1dc8c7c3c6db2d832f9919218d3e82e}
       \strng{authorfullhashraw}{a1dc8c7c3c6db2d832f9919218d3e82e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Decision Support Systems}
@@ -740,8 +740,8 @@
       \strng{authornamehash}{761a6a099c1d307d74864e60982d1956}
       \strng{authorfullhash}{761a6a099c1d307d74864e60982d1956}
       \strng{authorfullhashraw}{761a6a099c1d307d74864e60982d1956}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -788,8 +788,8 @@
       \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
       \strng{authorfullhash}{b163bef761d9a2c79a3d232595321775}
       \strng{authorfullhashraw}{b163bef761d9a2c79a3d232595321775}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{MIS Quarterly}
@@ -819,8 +819,8 @@
       \strng{authornamehash}{bf7eb9dbb747f641a5083488354145d6}
       \strng{authorfullhash}{bf7eb9dbb747f641a5083488354145d6}
       \strng{authorfullhashraw}{bf7eb9dbb747f641a5083488354145d6}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{6}
@@ -990,8 +990,8 @@
       \strng{authornamehash}{21a7a0960f34b591036204b46c117799}
       \strng{authorfullhash}{21a7a0960f34b591036204b46c117799}
       \strng{authorfullhashraw}{21a7a0960f34b591036204b46c117799}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Approved 2021-01-14; accessed 2026-04-07.}
@@ -1021,8 +1021,8 @@
       \strng{authornamehash}{7bb63cf7eaf322fa9a07d25426639ae9}
       \strng{authorfullhash}{7bb63cf7eaf322fa9a07d25426639ae9}
       \strng{authorfullhashraw}{7bb63cf7eaf322fa9a07d25426639ae9}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 2026-04-07.}
@@ -1092,8 +1092,8 @@
       \strng{authornamehash}{0b141d27215d904929ea2a66aadc2fb3}
       \strng{authorfullhash}{0b141d27215d904929ea2a66aadc2fb3}
       \strng{authorfullhashraw}{0b141d27215d904929ea2a66aadc2fb3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Medical Informatics Association}
@@ -1123,8 +1123,8 @@
       \strng{authornamehash}{6c04b6b094e0b92dcfd729c30320db6c}
       \strng{authorfullhash}{6c04b6b094e0b92dcfd729c30320db6c}
       \strng{authorfullhashraw}{6c04b6b094e0b92dcfd729c30320db6c}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Business Ethics}

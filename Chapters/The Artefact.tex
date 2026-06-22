@@ -97,7 +97,7 @@ The system architecture of the artefact is shown in Figure 5.1. It is organized 
 
 The frontend is implemented as a single-page application using React and Vite. It uses client-side routing to move between the home page, matrix submission page, upload pages, Pipeline Viewer, and Layer Detail pages. This supports a more interactive review experience.
 
-The backend is implemented with FastAPI and exposes the API endpoints used by the frontend. It also contains the processing logic for the implemented workflow, including file validation, structured storage, and retrieval of intermediate and final outputs.
+The backend is implemented with FastAPI and exposes the API endpoints used by the frontend. It also contains the processing logic for the implemented workflow, including file validation, structured storage, and retrieval of intermediate and staged outputs.
 
 The data layer is configured through environment variables and supports both SQLite and PostgreSQL. Authentication data is stored separately from the business workflow data, which keeps session management isolated from the calculation data. Communication between the frontend and backend is API-based, so uploaded files, workflow requests, and processed outputs can be exchanged and displayed in structured views such as tables, summaries, and pipeline status cards.
 
@@ -245,7 +245,7 @@ The execution flow of the artefact begins with browser-based upload of the datas
 \begin{figure}[H]
     \centering
 \includegraphics[width=\linewidth]{5.2.1.png}
-    \caption{Data Flow and Processing Stages of the TMC Artefact}
+    \caption{Data flow and processing stages of the TMC artefact. The figure includes the broader TMC workflow context, while the implemented and evaluated scope of this thesis is limited to preparation, market view, adjustment, machine line split, and resplit.}
     \label{fig:5.2}
 \end{figure}
 
