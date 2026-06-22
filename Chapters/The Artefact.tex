@@ -38,7 +38,7 @@
 
 To address the identified gap in transparency, inspectability, and usability in SAP-based enterprise data processing, this thesis uses Volvo CE as a case study and develops a web-based artefact that re-expresses selected parts of the TMC process in a browser-accessible environment. The implemented system covers authentication, CSV-based data upload, backend processing, workflow inspection, and review of intermediate and derived outputs for the preparation, market view, adjustment, machine line split, and resplit stages.
 
-The artefact combines a frontend application, backend services, workflow-oriented inspection views, and interactive review functions. Rather than acting only as a reporting interface, it supports a workflow-oriented process in which users can upload data, trigger processing, inspect intermediate results, and review derived outputs within one environment. Together, these elements form a coherent web application for representing and reviewing selected parts of the TMC process in a more transparent and inspectable way.
+The artefact combines a frontend application, backend services, workflow-oriented inspection views, and interactive review functions. Rather than acting only as a reporting interface, it lets users upload data, trigger processing, inspect intermediate results, and review derived outputs within one environment. This is important for the thesis argument, because the intended value of the artefact is not only that it can reproduce selected outputs, but that it can make the path from uploaded input to reviewable stage output easier to follow.
 
 
 
@@ -85,7 +85,7 @@ The artefact combines a frontend application, backend services, workflow-oriente
 
 \subsection{System Architecture}
 
-The system architecture of the artefact is shown in Figure 5.1. It is organized as a split frontend-backend web application with a persistent data layer, where the frontend provides the user interface, the backend handles authentication and workflow processing, and the database stores uploaded data, session information, and generated outputs. This structure supports browser-based interaction while keeping the implementation modular and easier to maintain.
+The system architecture of the artefact is shown in Figure 5.1. It is organized as a split frontend-backend web application with a persistent data layer. The frontend provides the user interface, the backend handles authentication and workflow processing, and the database stores uploaded data, session information, and generated outputs. This separation was chosen to keep file handling, processing logic, and result inspection understandable as separate responsibilities instead of merging them into one tightly coupled script or interface.
 
 \begin{figure}[H]
     \centering
@@ -95,11 +95,7 @@ The system architecture of the artefact is shown in Figure 5.1. It is organized 
 \end{figure}
 
 
-The frontend is implemented as a single-page application using React and Vite. It uses client-side routing to move between the home page, matrix submission page, upload pages, Pipeline Viewer, and Layer Detail pages. This supports a more interactive review experience.
-
-The backend is implemented with FastAPI and exposes the API endpoints used by the frontend. It also contains the processing logic for the implemented workflow, including file validation, structured storage, and retrieval of intermediate and staged outputs.
-
-The data layer is configured through environment variables and supports both SQLite and PostgreSQL. Authentication data is stored separately from the business workflow data, which keeps session management isolated from the calculation data. Communication between the frontend and backend is API-based, so uploaded files, workflow requests, and processed outputs can be exchanged and displayed in structured views such as tables, summaries, and pipeline status cards.
+The frontend is implemented as a single-page application using React and Vite, with client-side routing between the home page, matrix submission page, upload pages, Pipeline Viewer, and Layer Detail pages. The backend is implemented with FastAPI and contains the API endpoints, file validation, structured storage, and processing logic for the implemented workflow. The data layer supports both SQLite and PostgreSQL. Authentication data is stored separately from business workflow data, and communication between frontend and backend is API-based. In the prototype, this also made it easier to test, inspect, and revise individual parts of the workflow without having to rerun or redesign the whole system each time one rule or upload path changed.
 
 
 
@@ -239,7 +235,7 @@ The data layer is configured through environment variables and supports both SQL
 % \end{itemize}
 
 
-The execution flow of the artefact begins with browser-based upload of the datasets required for the TMC process and continues through backend validation, cleaning, persistence, processing, and frontend inspection. Each upload is registered together with metadata such as file name, upload time, status, and row count. This makes it possible to identify the latest valid input for each data type and to trace how the workflow was executed.
+The execution flow of the artefact begins with browser-based upload of the datasets required for the TMC process and continues through backend validation, cleaning, persistence, processing, and frontend inspection. Each upload is registered with metadata such as file name, upload time, status, and row count, which makes it possible to identify the latest valid input for each data type and trace how the workflow was executed.
 
 
 \begin{figure}[H]
@@ -257,25 +253,25 @@ The execution flow of the artefact begins with browser-based upload of the datas
 
 \begin{itemize}
     \item \textbf{CSV upload and validation.}  
-    The workflow starts with users uploading the required source and matrix files through the web interface. The backend validates file structure and performs dataset-specific cleaning, such as removing header rows, normalising textual values, and standardising key fields.
+    The workflow starts with upload of the required source and matrix files. The backend validates file structure and performs dataset-specific cleaning.
 
     \item \textbf{Source-level data preparation.}  
-    The cleaned inputs are transformed into structured source-level data. OTH data is combined with mapping tables, while TMA and Volvo sales data are prepared for alignment in subsequent stages.
+    The cleaned inputs are transformed into structured source-level data. OTH data is combined with mapping tables, while TMA and Volvo sales data are prepared for later alignment.
 
     \item \textbf{Preparation stage.}  
-    In this stage, datasets are aligned within a shared workflow structure. Country mapping, artificial machine-line mapping, source logic, and reporter determination are applied to produce inspectable preparation-stage outputs that bring TMA, Volvo sales, and OTH data into consistent dimensions.
+    Datasets are aligned within a shared workflow structure. Country mapping, artificial machine-line mapping, source logic, and reporter determination produce inspectable outputs in consistent dimensions.
 
     \item \textbf{Market-view derivation.}  
     A summarized market-oriented output is derived from the preparation results, presenting total market, Volvo CE values, and non-Volvo CE values in a compact and reviewable form.
 
     \item \textbf{Adjustment stage.}  
-    The adjustment stage reorganizes the prepared data into a structure that allows inspection of both source-level records and derived results within the same workflow context.
+    The adjustment stage reorganizes the prepared data so that both source-level records and derived results can be inspected in the same workflow context.
 
     \item \textbf{Split processing.}  
-    The split stage redistributes grouped OTH values into more detailed categories. The market view output is used as a reference basis, and split ratios are derived from the non-Volvo CE distribution. When detailed reference data is unavailable at country level, fallback logic based on higher-level aggregation is applied.
+    The split stage redistributes grouped OTH values into more detailed categories. The market view output is used as the reference basis, and fallback logic is applied when detailed country-level reference data is unavailable.
 
     \item \textbf{Staged outputs and presentation.}  
-    The artefact produces multiple staged outputs, including cleaned data, preparation-stage outputs, adjustment results, and split results. These are presented in the frontend as workflow views, filterable tables, summary metrics, and downloadable files.
+    The artefact produces multiple staged outputs that are presented in the frontend as workflow views, filterable tables, summary metrics, and downloadable files.
 \end{itemize}
 
 

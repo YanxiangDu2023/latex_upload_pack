@@ -914,7 +914,7 @@ The generated outputs were available through filterable tables, summary views, c
 
 \section{Evaluation of the Artefact}
 
-The artefact was evaluated against the requirements defined in Section~\ref{sec:requirements}. The evaluation combined output validation and requirement-based assessment. Output validation checked whether generated results were consistent with expected business rules and, where comparable, with 2024 SAP reference outputs. Requirement-based assessment focused on transparency, traceability, usability, validation support, and prototype-level performance.
+The artefact was evaluated against the requirements defined in Section~\ref{sec:requirements}. The evaluation combined output validation with requirement-based assessment, focusing on whether generated results followed expected business rules and whether the prototype supported transparency, traceability, usability, validation support, and prototype-level performance.
 
 % \subsection{Evaluation Parameters}
 
@@ -943,14 +943,14 @@ The artefact was evaluated against the requirements defined in Section~\ref{sec:
 
 \subsection{Validation of Prototype Outputs}
 
-The generated prototype outputs were validated against expected workflow logic and, where comparable, against 2024 SAP reference outputs. The focus was on whether the implemented processing produced correct preparation, market view, split, and resplit-related results within the selected scope.
+The generated prototype outputs were validated against expected workflow logic and, where comparable, against 2024 SAP reference outputs. The focus was on whether the implemented processing produced correct results within the selected scope.
 
 
 \subsection{Preparation-Stage Validation}
 
-The preparation stage was validated through manual Excel-based checks, comparison with 2024 SAP reference data, and stakeholder clarification. For CRP-related preparation, the reporter classification and grouped output matched the SAP reference result, including the identification of 338 reporter rows. For OTH-related preparation, mapped fields such as country, market area, machine line, brand code, and size class were manually checked and found to follow the intended rules.
+The preparation stage was validated through manual Excel-based checks, comparison with 2024 SAP reference data, and stakeholder clarification. CRP-related preparation matched the SAP reference result, including the identification of 338 reporter rows. For OTH-related preparation, mapped fields such as country, market area, machine line, brand code, and size class were manually checked and found to follow the intended rules.
 
-The main discrepancy concerned OTH reporter-row counts: the prototype identified 3,452 reporter rows, while the SAP reference output contained 3,467 reporter rows. This corresponds to a row-count difference of 15 rows and a net FID difference of 68. Manual checking and later stakeholder clarification showed that this difference came from a reporter-list version adjustment rather than from incorrect prototype execution. Selected VCE / Non-VCE market view records were also spot-checked in Excel and were consistent with the expected calculations. Overall, the preparation-stage results were considered correct within the tested scope.
+The main discrepancy concerned OTH reporter-row counts: the prototype identified 3,452 reporter rows, while the SAP reference output contained 3,467 reporter rows. This corresponds to a row-count difference of 15 rows and a net FID difference of 68. Manual checking and later stakeholder clarification showed that the difference came from a reporter-list version adjustment rather than from incorrect prototype execution. Selected VCE / Non-VCE market view records were also spot-checked in Excel and were consistent with the expected calculations.
 
 
 \begin{figure}[H]
@@ -971,9 +971,9 @@ The main discrepancy concerned OTH reporter-row counts: the prototype identified
 
 \subsection{Split- and Resplit-Related Validation}
 
-The split- and resplit outputs were validated through manual Excel-based checks, SAP reference comparison, and output inspection. For split validation, records that should enter the split process were manually filtered in Excel and compared with the prototype's split input totals. The totals were consistent for the tested Excavators and Wheel Loaders split cases, indicating correct record selection.
+The split- and resplit outputs were validated through manual Excel-based checks, SAP reference comparison, and output inspection. Records that should enter the split process were manually filtered in Excel and compared with the prototype's split input totals. The totals were consistent for the tested Excavators and Wheel Loaders split cases, indicating correct record selection.
 
-Approximately 10\% of split output rows and 10\% of resplit output rows were then spot-checked across selected country, source, machine-line, and size-class combinations. The sampled records followed the intended split and resplit logic, and the before/after totals remained consistent. Some differences from SAP outputs were nevertheless observed. Part of that difference was again related to reporter-list version differences, while one reviewed case suggested a different split-ratio basis in SAP than in the prototype. These findings were treated as reference-data and rule-clarification issues rather than direct prototype failures. Overall, the split and resplit logic behaved correctly within the tested scope.
+Approximately 10\% of split output rows and 10\% of resplit output rows were then spot-checked across selected country, source, machine-line, and size-class combinations. The sampled records followed the intended split and resplit logic, and the before/after totals remained consistent. Some differences from SAP outputs were observed, but these were treated as reference-data and rule-clarification issues rather than direct prototype failures.
 
 \begin{figure}[H]
     \centering
@@ -1164,14 +1164,12 @@ Approximately 10\% of split output rows and 10\% of resplit output rows were the
 
 The artefact was evaluated against the functional and performance requirements defined in Section~\ref{sec:requirements}. The assessment combined generated workflow outputs, SAP reference comparisons where applicable, manual Excel checks, runtime observations, repeated stability testing, and stakeholder feedback from weekly review discussions.
 
-Overall, the results indicate that the main requirements were met within the prototype scope. The system supported upload and reuse of the required datasets, generated staged outputs for the selected workflow layers, and provided structured inspection through filters, summaries, charts, and CSV export. Validation support was also largely confirmed: manually checked rule behavior matched the prototype outputs, CRP reporter rows matched the SAP reference result, and sampled market view and split and resplit records followed the expected calculation logic. The main observed exception was an OTH reporter-row difference that was traced to a reporter-list version difference rather than a prototype error.
+Overall, the main requirements were met within the prototype scope. The system supported upload and reuse of the required datasets, generated staged outputs for the selected workflow layers, and provided structured inspection through filters, summaries, charts, and CSV export. Validation support was also largely confirmed: manually checked rule behavior matched the prototype outputs, CRP reporter rows matched the SAP reference result, and sampled market view and split and resplit records followed the expected calculation logic. The main observed exception was an OTH reporter-row difference that was traced to a reporter-list version difference rather than a prototype error. Repeated workflow cycles remained within the defined review window, and no crash, data loss, or inconsistent save/reload behaviour was observed during the repeated test runs.
 
-Performance and stability results were also acceptable for the evaluated setting. Repeated workflow cycles remained within the defined review window, and no crash, data loss, or inconsistent save/reload behaviour was observed during the repeated test runs. In summary, the functional support for upload, staged processing, and browser-based inspection was largely achieved, and transparency, usability, and stage-level traceability were strongly supported within the implemented scope. At the same time, full end-to-end row-level lineage, full TMC coverage, and production-level integration were only partly addressed or left for future work.
-
-\setcounter{table}{0}
 \begin{table}[htbp]
     \centering
     \caption{Condensed evaluation summary for the implemented scope.}
+    \label{tab:condensed_evaluation_summary}
     \setlength{\tabcolsep}{4pt}
     \small
     \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{3.4cm}|>{\raggedright\arraybackslash}p{2.3cm}|X|}
@@ -1235,37 +1233,28 @@ A more detailed requirement-by-requirement table is provided in Appendix~\ref{ap
 
 To further clarify transparency, traceability, usability, and validation support, the prototype was compared with the SAP-based workflow from a business-user perspective. The comparison does not claim that SAP lacks these capabilities technically, but assesses whether they are directly available and inspectable for business users within the reviewed workflow.
 
-\setcounter{table}{1}
-\setlength{\tabcolsep}{4pt}
-\small
-\begin{longtable}{|>{\raggedright\arraybackslash}p{2.1cm}|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{5.2cm}|}
-\caption{Concise comparison between SAP-based representation and prototype}
-\label{tab:sap_prototype_comparison} \\
-\hline
-\textbf{Dimension} & \textbf{SAP-based Workflow} & \textbf{Prototype} & \textbf{Evidence in this thesis} \\
-\hline
-\endfirsthead
+\begin{table}[htbp]
+    \centering
+    \caption{Concise comparison between SAP-based representation and prototype}
+    \label{tab:sap_prototype_comparison}
+    \setlength{\tabcolsep}{4pt}
+    \small
+    \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{2.1cm}|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{1.8cm}|X|}
+        \hline
+        \textbf{Dimension} & \textbf{SAP-based Workflow} & \textbf{Prototype} & \textbf{Evidence in this thesis} \\
+        \hline
+        Transparency & Limited for business-user inspection & Supported & Preparation, market view, adjustment, machine line split, and resplit outputs are exposed as separate inspectable stages with row-level and summary views. \\
+        \hline
+        Traceability & Limited and dispersed across technical structures & Partly supported & Stage outputs preserve source and rule context fields, including country, machine line, source, brand, flags, split level, and split ratio, enabling stage-level tracing. \\
+        \hline
+        Usability & Requires more SAP-specific navigation & Supported & Browser-based filtering, summaries, charts, and CSV export supported practical BI review tasks. \\
+        \hline
+        Validation support & Often requires extra extraction or IT support & Supported & Intermediate values and rule-relevant fields were directly inspectable and comparable with expected business rules and SAP references. \\
+        \hline
+    \end{tabularx}
+\end{table}
 
-\hline
-\textbf{Dimension} & \textbf{SAP-based Workflow} & \textbf{Prototype} & \textbf{Evidence in this thesis} \\
-\hline
-\endhead
-
-Transparency & Limited for business-user inspection & Supported & Preparation, market view, adjustment, machine line split, and resplit outputs are exposed as separate inspectable stages with row-level and summary views. \\
-\hline
-
-Traceability & Limited and dispersed across technical structures & Partly supported & Stage outputs preserve source and rule context fields, including country, machine line, source, brand, flags, split level, and split ratio, enabling stage-level tracing. \\
-\hline
-
-Usability & Requires more SAP-specific navigation & Supported & Browser-based filtering, summaries, charts, and CSV export supported practical BI review tasks. \\
-\hline
-
-Validation support & Often requires extra extraction or IT support & Supported & Intermediate values and rule-relevant fields were directly inspectable and comparable with expected business rules and SAP references. \\
-\hline
-
-\end{longtable}
-
-Compared with the SAP-based representation, the prototype made four differences visible within the evaluated scope. First, transparency improved because preparation, market view, adjustment, machine line split, and resplit outputs were exposed as separate inspectable stages rather than being dispersed across technical SAP artefacts. Second, traceability improved at stage level because outputs retained source and rule context such as country, machine line, source, brand, flags, split level, and split ratio. Third, usability improved because business users could review results through browser-based filtering, summaries, charts, and CSV export rather than SAP-specific navigation. Fourth, validation became more direct because intermediate values and rule-relevant fields could be inspected without additional extraction or IT-supported investigation.
+Compared with the SAP-based representation, the prototype made four differences visible within the evaluated scope: more explicit stage transparency, better stage-level traceability through preserved source and rule context, easier business-user review through browser-based inspection functions, and more direct validation of intermediate values without additional extraction or IT-supported investigation.
 
 
 
@@ -1290,8 +1279,6 @@ Compared with the SAP-based representation, the prototype made four differences 
 \section{Summary and Limitations}
 
 The evaluation showed that the artefact fulfilled its core purpose as a web-based prototype for the selected TMC workflow stages. Within the implemented scope, it supported structured CSV upload, staged backend processing, intermediate output inspection, and rule-based validation against 2024 SAP reference outputs where comparison was possible. The results indicate that the prototype improved transparency and stage-level traceability by making preparation, market view, adjustment, machine line split, and resplit outputs easier to inspect and verify.
-
-The validation results were largely consistent with the expected business rules. CRP preparation matched the SAP reference output, while the observed OTH reporter-flag difference was traced to a reporter-list version difference rather than a prototype error. For split and resplit, Excel-based checks showed that totals were preserved and sampled records followed the expected split-case, redistribution, and size-class flag rules. One split-ratio difference was identified as a rule-clarification issue.
 
 Several limitations nonetheless apply:
 \begin{itemize}
