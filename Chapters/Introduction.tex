@@ -50,24 +50,26 @@
 
 \section{Background}
 \pagestyle{plain}
-Enterprise data-processing workflows are often more difficult to inspect than they are to run. In many large organizations, important analytical outputs depend on several source files, maintained mapping tables, and stepwise transformations that are executed inside enterprise systems such as SAP \cite{davenport1998,klaus2000,sap_erp_guide}. This is useful for operational control, but it can also make it hard for business users to see how a reported value was produced, which input was used, or where an inconsistency first appeared \cite{foidl2024pipeline}.
+Enterprise data-processing workflows are often more difficult to inspect than they are to run. In many large organizations, important analytical outputs are produced through integrated enterprise processes that combine multiple data dependencies and staged transformations \cite{klaus2000,vassiliadis2009etl}. In ERP environments such as SAP, this supports operational control, but it can also make it harder for business users to inspect how a reported value was produced or where an inconsistency first appeared \cite{weber2022sap,foidl2024pipeline}.
 
-This kind of problem can also be found outside one specific company. Prior studies suggest that ERP- and SAP-based environments may become difficult to inspect when process logic is distributed across technical structures, transformation steps, and user-facing reporting layers \cite{weber2022sap,wong2016sap}. The construction equipment industry provides a relevant context because market analysis typically combines internal sales figures, external market data, and classification rules across countries, product categories, and machine segments \cite{cece2025,mordor2024construction}.
+The same kind of difficulty can arise in many enterprise settings rather than in one company alone. Prior studies suggest that ERP environments such as SAP may become difficult to inspect when process logic is distributed across technical structures and transformation steps \cite{weber2022sap}. The construction equipment industry provides a relevant context because market analysis typically combines internal sales figures, external market data, and classification rules across countries, product categories, and machine segments \cite{cece2025}.
 
-This thesis studies that broader issue through the case of Volvo Construction Equipment (Volvo CE). In the Volvo CE setting, market share estimation depends on a Total Market Calculation (TMC) process implemented in SAP. The process uses uploaded source data, maintained matrices, and staged calculations, but business users do not easily see how those elements connect to the intermediate and final outputs. In practice, this makes validation slower and makes discussions about unexpected results more dependent on technical specialists.
+This thesis studies that broader issue through the case of Volvo Construction Equipment (Volvo CE). In the Volvo CE setting, market share estimation depends on a Total Market Calculation (TMC) process implemented in SAP. The process uses uploaded source data, maintained matrices, and staged calculations, but business users do not easily see how those elements connect to the intermediate and staged outputs. In practice, this makes validation slower and makes discussions about unexpected results more dependent on technical specialists.
 
-The thesis therefore focuses on how selected parts of such a process can be shown in a form that is easier to inspect. A web-based prototype was designed as a research artefact and evaluated in the Volvo CE case setting. The case is specific, but the underlying design problem concerns transparency, traceability, and usability in complex enterprise data-processing workflows more generally.
+Prior work on ERP environments such as SAP also points to a combination of structural complexity and usability difficulties for end users \cite{weber2022sap,wong2016sap}. In this thesis, \textit{transparency} refers to how clearly users can see the stages, rules, and intermediate outputs that shape a reported result. \textit{Traceability} refers to how far users can follow a result back to its source data, applied rules, and staged transformations. \textit{Usability} refers to how easily business users can navigate, inspect, validate, and discuss workflow results in practice.
+
+The thesis therefore focuses on how selected stages of such a process can be re-expressed in a form that business users can inspect more directly. A web-based prototype was designed as a research artefact and evaluated in the Volvo CE case study. The case is specific, but the underlying design problem concerns transparency, traceability, and usability in ERP-based enterprise data processing more generally.
 
 
 
 
 
 \section{Problem and Motivation}
-In the studied Volvo CE setting, the TMC process is carried out in an SAP BW-based environment where uploads, mappings, staged calculations, and reporting are distributed across several technical objects \cite{weber2022sap,wong2016sap}. The process can produce the required outputs, but it does not give business users one place where they can follow the logic step by step. When a value looks wrong, it is not easy to tell whether the problem comes from the uploaded data, a matrix rule, a transformation step, or the way the result is shown later.
+In the studied Volvo CE setting, the TMC process is carried out in an SAP BW-based environment where uploads, mappings, staged calculations, and reporting are distributed across several technical objects \cite{weber2022sap}. From a business-user perspective, this kind of arrangement can also create usability and inspectability difficulties \cite{wong2016sap}. The process can produce the required outputs, but it does not give business users one place where they can follow the logic step by step. When a value looks wrong, it is not easy to tell whether the problem comes from the uploaded data, a matrix rule, a transformation step, or the way the result is shown later.
 
 This became especially important in the stages covered by the prototype, namely preparation, market view, adjustment, machine line split, and resplit. These stages combine CRP, SAL, OTH, and matrix-based rules, and they also contain several intermediate results that matter during validation. Without explicit views of those intermediate results, checking the process becomes slower and more dependent on technical assistance.
 
-The motivation for this thesis is therefore practical as well as academic. In the Volvo CE case, the immediate need was to make selected TMC stages easier to inspect and discuss. More generally, the same kind of need can arise in enterprise workflows where correctness alone is not enough and business users also need to understand how a result was formed.
+The motivation for this thesis is therefore practical as well as academic. In the Volvo CE case, the immediate need was to make selected TMC stages easier to inspect and discuss. More generally, the same kind of need can arise in ERP-based enterprise data processing where correctness alone is not enough and business users also need to understand how a result was formed.
 
 
 
@@ -101,12 +103,13 @@ The motivation for this thesis is therefore practical as well as academic. In th
 
 \section{Research Objective and Research Question}
 
-This thesis asks how complex enterprise data-processing workflows can be made easier for business users to inspect when they depend on heterogeneous inputs, maintained rules, and staged transformations. The Volvo CE TMC process is used as the empirical case setting for that question.
-The objective is to build and evaluate an interactive prototype that makes selected process stages easier to follow in practice. In the Volvo CE case, the implemented scope covers preparation, market view, adjustment, machine line split, and resplit. The prototype is therefore grounded in one real workflow, but it is also used to explore a broader design approach for making enterprise data-processing logic more visible and reviewable.
+This thesis asks how ERP-based enterprise data processing can be made easier for business users to inspect when such processing depends on heterogeneous inputs, maintained rules, and staged transformations. The Volvo CE TMC process is used as the empirical case study through which that question is examined.
+
+The objective is to build and evaluate an interactive prototype that makes selected process stages easier to follow in practice. In the Volvo CE case, the implemented scope covers preparation, market view, adjustment, machine line split, and resplit. The prototype is therefore grounded in one real workflow while also being used to explore a broader design approach for making enterprise data-processing logic more visible and reviewable.
 
 
 The main research question is:
-\textit{How can an interactive data processing and visualization prototype be designed and evaluated to enhance transparency, traceability, and usability in complex enterprise data-processing workflows?}
+\textit{How can an interactive data processing and visualization prototype be designed and evaluated to enhance transparency, traceability, and usability in ERP-based enterprise data processing?}
 This is addressed through three sub-questions:
 
 \textbf{Sub-RQ1:} How can the architecture and data handling of a web-based prototype be designed to support structured upload, storage, and management of heterogeneous workflow inputs, including source datasets and matrix-based business rules?\\
@@ -115,7 +118,7 @@ This is addressed through three sub-questions:
 
 \textbf{Sub-RQ3:} To what extent does the implemented prototype improve transparency, usability, and traceability compared to an existing SAP-based TMC implementation, as assessed through demonstration and stakeholder feedback?\\
 
-The expected outcome is a working web-based prototype that demonstrates how selected enterprise workflow logic can be re-expressed in a more accessible and inspectable environment, while still being grounded in a realistic industrial case.
+The expected outcome is a working web-based prototype that demonstrates how selected ERP-based enterprise data-processing logic can be re-expressed in a more accessible and inspectable environment, while still being grounded in a realistic industrial case.
 
 
 
@@ -152,9 +155,9 @@ The expected outcome is a working web-based prototype that demonstrates how sele
 
 \section{Scope and Delimitation}
 
-This thesis focuses on the design and implementation of a web-based prototype for selected stages of the Volvo CE TMC process. The implemented scope covers source-data upload, matrix input handling, preparation, market view, adjustment, machine line split, and resplit. The prototype provides interfaces for workflow navigation, layer-based visualization, interactive table exploration, filtering, summary calculation, and CSV export.
+This thesis focuses on the design and implementation of a web-based prototype. Within the Volvo CE case, the implemented scope covers source-data upload, matrix input handling, preparation, market view, adjustment, machine line split, and resplit. The prototype provides interfaces for workflow navigation, layer-based visualization, interactive table exploration, filtering, summary calculation, and CSV export.
 
-The thesis does not aim to replace the existing SAP system or implement the full TMC process. Full Total Market Calculation, full Restatement, and final Reporting remain outside the implemented scope. The case setting is used to study a broader workflow-design problem, but the empirical evaluation is still bounded to the selected TMC stages and the available organizational context.
+The thesis does not aim to replace the existing SAP system or implement the full TMC process. Full Total Market Calculation, full Restatement, and final Reporting remain outside the implemented scope. The case study is used to study a broader workflow-design problem, but the empirical evaluation is still bounded to the selected TMC stages and the available organizational context.
 
 
 
@@ -165,7 +168,15 @@ The thesis does not aim to replace the existing SAP system or implement the full
 
 \section{Thesis Structure}
 
-Following this introduction, the thesis is structured into six further chapters. The background chapter introduces enterprise workflow transparency issues and the Volvo CE case context. The methodology chapter describes the Design Science Research approach used in the study. The problem and requirements chapter defines the design problem and presents the requirements for the prototype. The artefact chapter explains the design and implementation of the web-based prototype. The evaluation chapter presents the demonstration and assessment of the prototype using the case setting. Finally, the discussion chapter answers the research questions, discusses contributions and limitations, and suggests future work.
+Following this introduction, the thesis is structured into six further chapters. The background chapter introduces transparency issues in ERP-based enterprise data processing and the Volvo CE case context. The methodology chapter describes the Design Science Research approach used in the study. The problem and requirements chapter defines the design problem and presents the requirements for the prototype. The artefact chapter explains the design and implementation of the web-based prototype. The evaluation chapter presents the demonstration and assessment of the prototype using the case study. Finally, the discussion chapter answers the research questions, discusses contributions and limitations, and suggests future work.
+
+
+
+
+
+
+
+
 
 
 

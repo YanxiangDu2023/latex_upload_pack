@@ -1,0 +1,1090 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{klaus2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=e3088d19c5ab2bb007567c6823aa28c7}{%
+           family={Klaus},
+           familyi={K\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cc4cef41bd47844b9236401db548216f}{%
+           family={Rosemann},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=43953a483bc5286e402bbd5f1dec6dc6}{%
+           family={Gable},
+           familyi={G\bibinitperiod},
+           given={Guy\bibnamedelima G.},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{dffab4cac4652bd6b9c97389e0dcb3a5}
+      \strng{fullhash}{dffab4cac4652bd6b9c97389e0dcb3a5}
+      \strng{fullhashraw}{dffab4cac4652bd6b9c97389e0dcb3a5}
+      \strng{bibnamehash}{dffab4cac4652bd6b9c97389e0dcb3a5}
+      \strng{authorbibnamehash}{dffab4cac4652bd6b9c97389e0dcb3a5}
+      \strng{authornamehash}{dffab4cac4652bd6b9c97389e0dcb3a5}
+      \strng{authorfullhash}{dffab4cac4652bd6b9c97389e0dcb3a5}
+      \strng{authorfullhashraw}{dffab4cac4652bd6b9c97389e0dcb3a5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Systems Frontiers}
+      \field{number}{2}
+      \field{title}{What Is ERP?}
+      \field{volume}{2}
+      \field{year}{2000}
+      \field{pages}{141\bibrangedash 162}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1023/A:1026543906354
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1023/A:1026543906354
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1023/A:1026543906354
+      \endverb
+    \endentry
+    \entry{vassiliadis2009etl}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=9e7a0590d59945c560f5f4d194ea78e0}{%
+           family={Vassiliadis},
+           familyi={V\bibinitperiod},
+           given={Panos},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e7a0590d59945c560f5f4d194ea78e0}
+      \strng{fullhash}{9e7a0590d59945c560f5f4d194ea78e0}
+      \strng{fullhashraw}{9e7a0590d59945c560f5f4d194ea78e0}
+      \strng{bibnamehash}{9e7a0590d59945c560f5f4d194ea78e0}
+      \strng{authorbibnamehash}{9e7a0590d59945c560f5f4d194ea78e0}
+      \strng{authornamehash}{9e7a0590d59945c560f5f4d194ea78e0}
+      \strng{authorfullhash}{9e7a0590d59945c560f5f4d194ea78e0}
+      \strng{authorfullhashraw}{9e7a0590d59945c560f5f4d194ea78e0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Data Warehousing and Mining}
+      \field{number}{3}
+      \field{title}{A Survey of Extract--Transform--Load Technology}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.4018/jdwm.2009070101
+      \endverb
+    \endentry
+    \entry{weber2022sap}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=eb46474567e8cd0bab5907dd817f427e}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=31aef31d05222aad4978469412b51f0a}{%
+           family={Berti},
+           familyi={B\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eea795b53e72f6fc654f9f5c15f35356}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Gyunam},
+           giveni={G\bibinitperiod}}}%
+        {{hash=006e495d71dc7927c3b90760a94191e6}{%
+           family={Rafiei},
+           familyi={R\bibinitperiod},
+           given={Majid},
+           giveni={M\bibinitperiod}}}%
+        {{hash=85ebc8e652a14d6b884569af106c5ed9}{%
+           family={Aalst},
+           familyi={A\bibinitperiod},
+           given={Wil},
+           giveni={W\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \strng{namehash}{1431b60c5735051649e33ba76fda2163}
+      \strng{fullhash}{e5aefb512d3b8150381cfb2ddbb100c1}
+      \strng{fullhashraw}{e5aefb512d3b8150381cfb2ddbb100c1}
+      \strng{bibnamehash}{1431b60c5735051649e33ba76fda2163}
+      \strng{authorbibnamehash}{1431b60c5735051649e33ba76fda2163}
+      \strng{authornamehash}{1431b60c5735051649e33ba76fda2163}
+      \strng{authorfullhash}{e5aefb512d3b8150381cfb2ddbb100c1}
+      \strng{authorfullhashraw}{e5aefb512d3b8150381cfb2ddbb100c1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv}
+      \field{note}{Process-mining paper describing the complexity of identifying processes and related tables in SAP ERP}
+      \field{title}{Interactive Process Identification and Selection from SAP ERP}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.48550/arXiv.2212.06514
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2212.06514
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2212.06514
+      \endverb
+    \endentry
+    \entry{foidl2024pipeline}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=bef5a845ede571810752ff576683778b}{%
+           family={Foidl},
+           familyi={F\bibinitperiod},
+           given={Harald},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6e88982a0d224a7715491b8a65d717f3}{%
+           family={Golendukhina},
+           familyi={G\bibinitperiod},
+           given={Valentina},
+           giveni={V\bibinitperiod}}}%
+        {{hash=7c3eb1f950e5cb675b406043ff30cb77}{%
+           family={Ramler},
+           familyi={R\bibinitperiod},
+           given={Rudolf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4fea700d0159ed5bda19febd84335a11}{%
+           family={Felderer},
+           familyi={F\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c534a030eb90164ba01fa1104d0b4a9c}
+      \strng{fullhash}{a57ae261bcd95a0d2d83e798026babbc}
+      \strng{fullhashraw}{a57ae261bcd95a0d2d83e798026babbc}
+      \strng{bibnamehash}{c534a030eb90164ba01fa1104d0b4a9c}
+      \strng{authorbibnamehash}{c534a030eb90164ba01fa1104d0b4a9c}
+      \strng{authornamehash}{c534a030eb90164ba01fa1104d0b4a9c}
+      \strng{authorfullhash}{a57ae261bcd95a0d2d83e798026babbc}
+      \strng{authorfullhashraw}{a57ae261bcd95a0d2d83e798026babbc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Systems and Software}
+      \field{title}{Data Pipeline Quality: Influencing Factors, Root Causes of Data-Related Issues, and Processing Problem Areas for Developers}
+      \field{volume}{207}
+      \field{year}{2024}
+      \field{pages}{111855}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jss.2023.111855
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.jss.2023.111855
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.jss.2023.111855
+      \endverb
+    \endentry
+    \entry{cece2025}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=53f0b5d188616de4b6bda38ea2165d7f}{%
+           family={{CECE}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Committee for European Construction Equipment}%
+      }
+      \strng{namehash}{53f0b5d188616de4b6bda38ea2165d7f}
+      \strng{fullhash}{53f0b5d188616de4b6bda38ea2165d7f}
+      \strng{fullhashraw}{53f0b5d188616de4b6bda38ea2165d7f}
+      \strng{bibnamehash}{53f0b5d188616de4b6bda38ea2165d7f}
+      \strng{authorbibnamehash}{53f0b5d188616de4b6bda38ea2165d7f}
+      \strng{authornamehash}{53f0b5d188616de4b6bda38ea2165d7f}
+      \strng{authorfullhash}{53f0b5d188616de4b6bda38ea2165d7f}
+      \strng{authorfullhashraw}{53f0b5d188616de4b6bda38ea2165d7f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{note}{Accessed 2026-04-26.}
+      \field{title}{Annual Economic Report No. 11: Equipment Market Outlook}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.cece.eu/stream/cece-annual-economic-report-2025
+      \endverb
+      \verb{url}
+      \verb https://www.cece.eu/stream/cece-annual-economic-report-2025
+      \endverb
+    \endentry
+    \entry{wong2016sap}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=758adab0b37c7125f442669533e1c7eb}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Wai-Peng},
+           giveni={W\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=93f3934fb1f5d19857e4e4509f2810b7}{%
+           family={Veneziano},
+           familyi={V\bibinitperiod},
+           given={Vito},
+           giveni={V\bibinitperiod}}}%
+        {{hash=37c5dafcba90da5958cf906187908773}{%
+           family={Mahmud},
+           familyi={M\bibinitperiod},
+           given={Imran},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{fullhash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{fullhashraw}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{bibnamehash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{authorbibnamehash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{authornamehash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{authorfullhash}{ced54fd2fcf605155ff20f87975ff038}
+      \strng{authorfullhashraw}{ced54fd2fcf605155ff20f87975ff038}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Development}
+      \field{month}{9}
+      \field{number}{4}
+      \field{title}{Usability of enterprise resource planning software systems: an evaluative analysis of the use of {SAP} in the textile industry in Bangladesh}
+      \field{volume}{32}
+      \field{year}{2016}
+      \field{pages}{1027\bibrangedash 1041}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1177/0266666915585364
+      \endverb
+    \endentry
+    \entry{davenport1998}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=418715aadaf08f606ff3e5575fa44f4f}{%
+           family={Davenport},
+           familyi={D\bibinitperiod},
+           given={Thomas\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{fullhash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{fullhashraw}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{bibnamehash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{authorbibnamehash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{authornamehash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{authorfullhash}{418715aadaf08f606ff3e5575fa44f4f}
+      \strng{authorfullhashraw}{418715aadaf08f606ff3e5575fa44f4f}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Harvard Business Review}
+      \field{note}{Official HBR page.}
+      \field{number}{4}
+      \field{title}{Putting the Enterprise into the Enterprise System}
+      \field{volume}{76}
+      \field{year}{1998}
+      \field{pages}{121\bibrangedash 131}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system
+      \endverb
+      \verb{url}
+      \verb https://hbr.org/1998/07/putting-the-enterprise-into-the-enterprise-system
+      \endverb
+    \endentry
+    \entry{sap_erp_guide}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=999bc6b18351bbe817d26f559ba408ae}{%
+           family={{SAP}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{bibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorbibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authornamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{No publication date stated; accessed 2026-04-06.}
+      \field{title}{What Is SAP ERP? Key Features \& Benefits}
+      \verb{urlraw}
+      \verb https://www.sap.com/products/erp/what-is-sap-erp.html
+      \endverb
+      \verb{url}
+      \verb https://www.sap.com/products/erp/what-is-sap-erp.html
+      \endverb
+    \endentry
+    \entry{monk2012erp}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=aba60d091fcb774292da7052b4704926}{%
+           family={Monk},
+           familyi={M\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod}}}%
+        {{hash=cdf49dde6f8998f7efaffd7be0e51ee2}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Bret},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{74940d1216bc63166e68653137dc3129}
+      \strng{fullhash}{74940d1216bc63166e68653137dc3129}
+      \strng{fullhashraw}{74940d1216bc63166e68653137dc3129}
+      \strng{bibnamehash}{74940d1216bc63166e68653137dc3129}
+      \strng{authorbibnamehash}{74940d1216bc63166e68653137dc3129}
+      \strng{authornamehash}{74940d1216bc63166e68653137dc3129}
+      \strng{authorfullhash}{74940d1216bc63166e68653137dc3129}
+      \strng{authorfullhashraw}{74940d1216bc63166e68653137dc3129}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4th}
+      \field{title}{Concepts in Enterprise Resource Planning}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://www.cengage.com/c/concepts-in-enterprise-resource-planning-4e-monk-wagner/9781111820398/
+      \endverb
+      \verb{url}
+      \verb https://www.cengage.com/c/concepts-in-enterprise-resource-planning-4e-monk-wagner/9781111820398/
+      \endverb
+    \endentry
+    \entry{sap_bw_guide}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=999bc6b18351bbe817d26f559ba408ae}{%
+           family={{SAP}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{bibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorbibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authornamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed 2026-04-06.}
+      \field{title}{SAP Business Warehouse}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://help.sap.com/docs/db6/bw-on-db2-admin-tasks/sap-business-warehouse-introduction
+      \endverb
+      \verb{url}
+      \verb https://help.sap.com/docs/db6/bw-on-db2-admin-tasks/sap-business-warehouse-introduction
+      \endverb
+    \endentry
+    \entry{sap_bw_ip_overview}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=999bc6b18351bbe817d26f559ba408ae}{%
+           family={{SAP}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{bibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorbibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authornamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{SAP Help Portal page; no publication date stated; accessed 2026-04-06.}
+      \field{title}{Planning Business Data with BW Integrated Planning}
+      \verb{urlraw}
+      \verb https://help.sap.com/docs/SAP_NETWEAVER_731_BW_ABAP/f9602001c09b44568672803a8a78f4ae/4cbb4ebeed80606be10000000a42189e.html
+      \endverb
+      \verb{url}
+      \verb https://help.sap.com/docs/SAP_NETWEAVER_731_BW_ABAP/f9602001c09b44568672803a8a78f4ae/4cbb4ebeed80606be10000000a42189e.html
+      \endverb
+    \endentry
+    \entry{sap_analysis_office_guide}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=999bc6b18351bbe817d26f559ba408ae}{%
+           family={{SAP}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{bibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorbibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authornamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{SAP Help Portal page; no publication date stated; accessed 2026-04-06.}
+      \field{title}{Analysis Plug-in User Guide: Planning Data with Planning Objects}
+      \verb{urlraw}
+      \verb https://help.sap.com/docs/SAP_BUSINESSOBJECTS_ANALYSIS_OFFICE/ca9c58444d64420d99d6c136a3207632/1364fda0a18d44c791536518df3cf197.html
+      \endverb
+      \verb{url}
+      \verb https://help.sap.com/docs/SAP_BUSINESSOBJECTS_ANALYSIS_OFFICE/ca9c58444d64420d99d6c136a3207632/1364fda0a18d44c791536518df3cf197.html
+      \endverb
+    \endentry
+    \entry{calisir2004erp}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=825db520bede9d20e789fdec80fa693a}{%
+           family={Calisir},
+           familyi={C\bibinitperiod},
+           given={Fethi},
+           giveni={F\bibinitperiod}}}%
+        {{hash=323b07511098b644d7b9875eab517d5f}{%
+           family={Calisir},
+           familyi={C\bibinitperiod},
+           given={Ferah},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0278786eb8d922c215ae3a215c035e7}
+      \strng{fullhash}{f0278786eb8d922c215ae3a215c035e7}
+      \strng{fullhashraw}{f0278786eb8d922c215ae3a215c035e7}
+      \strng{bibnamehash}{f0278786eb8d922c215ae3a215c035e7}
+      \strng{authorbibnamehash}{f0278786eb8d922c215ae3a215c035e7}
+      \strng{authornamehash}{f0278786eb8d922c215ae3a215c035e7}
+      \strng{authorfullhash}{f0278786eb8d922c215ae3a215c035e7}
+      \strng{authorfullhashraw}{f0278786eb8d922c215ae3a215c035e7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers in Human Behavior}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{The relation of interface usability characteristics, perceived usefulness, and perceived ease of use to end-user satisfaction with enterprise resource planning ({ERP}) systems}
+      \field{volume}{20}
+      \field{year}{2004}
+      \field{pages}{505\bibrangedash 515}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.chb.2003.10.004
+      \endverb
+    \endentry
+    \entry{mordor2024construction}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=bed88ffefb47aac601ec95157a59baa3}{%
+           family={{Mordor Intelligence}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Mordor Intelligence}%
+      }
+      \strng{namehash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{fullhash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{fullhashraw}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{bibnamehash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{authorbibnamehash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{authornamehash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{authorfullhash}{bed88ffefb47aac601ec95157a59baa3}
+      \strng{authorfullhashraw}{bed88ffefb47aac601ec95157a59baa3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official market report page; accessed 2026-04-05.}
+      \field{title}{Construction Equipment Market Size \& Industry Trends, 2031}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.mordorintelligence.com/industry-reports/construction-equipment-market
+      \endverb
+      \verb{url}
+      \verb https://www.mordorintelligence.com/industry-reports/construction-equipment-market
+      \endverb
+    \endentry
+    \entry{kotler2016marketing}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=68992773d1a840399049c9a31388c032}{%
+           family={Kotler},
+           familyi={K\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6d980ed30f2f84f3da5c4c9f1b5ec537}{%
+           family={Keller},
+           familyi={K\bibinitperiod},
+           given={Kevin\bibnamedelima Lane},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Harlow, UK}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{fullhash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{fullhashraw}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{bibnamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{authorbibnamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{authornamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{authorfullhash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{authorfullhashraw}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{15}
+      \field{title}{Marketing Management}
+      \field{year}{2016}
+    \endentry
+    \entry{offhighway2018method}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d30eda1001ea996b395cc2edeb8403d2}{%
+           family={{Off-Highway Research}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{d30eda1001ea996b395cc2edeb8403d2}
+      \strng{fullhash}{d30eda1001ea996b395cc2edeb8403d2}
+      \strng{fullhashraw}{d30eda1001ea996b395cc2edeb8403d2}
+      \strng{bibnamehash}{d30eda1001ea996b395cc2edeb8403d2}
+      \strng{authorbibnamehash}{d30eda1001ea996b395cc2edeb8403d2}
+      \strng{authornamehash}{d30eda1001ea996b395cc2edeb8403d2}
+      \strng{authorfullhash}{d30eda1001ea996b395cc2edeb8403d2}
+      \strng{authorfullhashraw}{d30eda1001ea996b395cc2edeb8403d2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Methodology page; accessed 2026-04-05.}
+      \field{title}{Frequently Asked Questions}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://offhighwayresearch.com/More-information/Frequently-asked-questions
+      \endverb
+      \verb{url}
+      \verb https://offhighwayresearch.com/More-information/Frequently-asked-questions
+      \endverb
+    \endentry
+    \entry{putrama2024heterogeneous}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=38c30788cfb38f6ffe2274354ee20a17}{%
+           family={Putrama},
+           familyi={P\bibinitperiod},
+           given={I\bibnamedelima Made},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b614a77d6102ca6f19d64e9f98ba7905}{%
+           family={Martinek},
+           familyi={M\bibinitperiod},
+           given={Péter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{fullhash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{fullhashraw}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{bibnamehash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{authorbibnamehash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{authornamehash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{authorfullhash}{b2ee229cb488bea52cc95935fdd0de18}
+      \strng{authorfullhashraw}{b2ee229cb488bea52cc95935fdd0de18}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data in Brief}
+      \field{title}{Heterogeneous data integration: Challenges and opportunities}
+      \field{volume}{56}
+      \field{year}{2024}
+      \field{pages}{110853}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.dib.2024.110853
+      \endverb
+    \endentry
+    \entry{march2007dss}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5aec260b5b1381edc4b8ff6755f2d543}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Salvatore\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1dc8c7c3c6db2d832f9919218d3e82e}
+      \strng{fullhash}{a1dc8c7c3c6db2d832f9919218d3e82e}
+      \strng{fullhashraw}{a1dc8c7c3c6db2d832f9919218d3e82e}
+      \strng{bibnamehash}{a1dc8c7c3c6db2d832f9919218d3e82e}
+      \strng{authorbibnamehash}{a1dc8c7c3c6db2d832f9919218d3e82e}
+      \strng{authornamehash}{a1dc8c7c3c6db2d832f9919218d3e82e}
+      \strng{authorfullhash}{a1dc8c7c3c6db2d832f9919218d3e82e}
+      \strng{authorfullhashraw}{a1dc8c7c3c6db2d832f9919218d3e82e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Decision Support Systems}
+      \field{number}{3}
+      \field{title}{Integrated decision support systems: A data warehousing perspective}
+      \field{volume}{43}
+      \field{year}{2007}
+      \field{pages}{1031\bibrangedash 1043}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.dss.2005.05.029
+      \endverb
+    \endentry
+    \entry{fan2006equipmentdw}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6dabd1c6d493dc0611daedf931611be7}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Hongqin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=30252244d36eb8e97428d4214c60308a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyoungkwan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=582ca6ab886b323a15386f46026a71b9}{%
+           family={Zaiane},
+           familyi={Z\bibinitperiod},
+           given={Osmar\bibnamedelima R.},
+           giveni={O\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
+      \strng{fullhash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
+      \strng{fullhashraw}{0d69bc14cecd0ca4a3e761ef1e71fc98}
+      \strng{bibnamehash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
+      \strng{authorbibnamehash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
+      \strng{authornamehash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
+      \strng{authorfullhash}{0d69bc14cecd0ca4a3e761ef1e71fc98}
+      \strng{authorfullhashraw}{0d69bc14cecd0ca4a3e761ef1e71fc98}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Canadian Journal of Civil Engineering}
+      \field{number}{12}
+      \field{title}{Data warehousing for construction equipment management}
+      \field{volume}{33}
+      \field{year}{2006}
+      \field{pages}{1480\bibrangedash 1489}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1139/L06-108
+      \endverb
+    \endentry
+    \entry{johannesson2021}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=dd80ac4b1137a2146cfe23198c3b97b4}{%
+           family={Johannesson},
+           familyi={J\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5738b162e36788f4d223f0b77218c657}{%
+           family={Perjons},
+           familyi={P\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{761a6a099c1d307d74864e60982d1956}
+      \strng{fullhash}{761a6a099c1d307d74864e60982d1956}
+      \strng{fullhashraw}{761a6a099c1d307d74864e60982d1956}
+      \strng{bibnamehash}{761a6a099c1d307d74864e60982d1956}
+      \strng{authorbibnamehash}{761a6a099c1d307d74864e60982d1956}
+      \strng{authornamehash}{761a6a099c1d307d74864e60982d1956}
+      \strng{authorfullhash}{761a6a099c1d307d74864e60982d1956}
+      \strng{authorfullhashraw}{761a6a099c1d307d74864e60982d1956}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{An Introduction to Design Science}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1007/978-3-030-78132-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-030-78132-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-030-78132-3
+      \endverb
+    \endentry
+    \entry{hevner2004design}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=5aec260b5b1381edc4b8ff6755f2d543}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Salvatore\bibnamedelima T.},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=c518c214dc9e77148493e9ea47f505ab}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jinsoo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=65565df90d4793da7a2f20e5e1b07345}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Sudha},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{fullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{fullhashraw}{b163bef761d9a2c79a3d232595321775}
+      \strng{bibnamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorbibnamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorfullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authorfullhashraw}{b163bef761d9a2c79a3d232595321775}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MIS Quarterly}
+      \field{number}{1}
+      \field{title}{Design science in information systems research}
+      \field{volume}{28}
+      \field{year}{2004}
+      \field{pages}{75\bibrangedash 105}
+      \range{pages}{31}
+    \endentry
+    \entry{yin2018}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=bf7eb9dbb747f641a5083488354145d6}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Robert\bibnamedelima K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{bf7eb9dbb747f641a5083488354145d6}
+      \strng{fullhash}{bf7eb9dbb747f641a5083488354145d6}
+      \strng{fullhashraw}{bf7eb9dbb747f641a5083488354145d6}
+      \strng{bibnamehash}{bf7eb9dbb747f641a5083488354145d6}
+      \strng{authorbibnamehash}{bf7eb9dbb747f641a5083488354145d6}
+      \strng{authornamehash}{bf7eb9dbb747f641a5083488354145d6}
+      \strng{authorfullhash}{bf7eb9dbb747f641a5083488354145d6}
+      \strng{authorfullhashraw}{bf7eb9dbb747f641a5083488354145d6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6}
+      \field{title}{Case Study Research and Applications: Design and Methods}
+      \field{year}{2018}
+    \endentry
+    \entry{susman1978}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=37b6a45ffcef48b8a062d0d2941a8bf4}{%
+           family={Susman},
+           familyi={S\bibinitperiod},
+           given={Gerald\bibnamedelima I.},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=35f0b717f0dba67290cf9fd80680b5a2}{%
+           family={Evered},
+           familyi={E\bibinitperiod},
+           given={Roger\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ff740a90e52025e79efa1771009ab0e}
+      \strng{fullhash}{7ff740a90e52025e79efa1771009ab0e}
+      \strng{fullhashraw}{7ff740a90e52025e79efa1771009ab0e}
+      \strng{bibnamehash}{7ff740a90e52025e79efa1771009ab0e}
+      \strng{authorbibnamehash}{7ff740a90e52025e79efa1771009ab0e}
+      \strng{authornamehash}{7ff740a90e52025e79efa1771009ab0e}
+      \strng{authorfullhash}{7ff740a90e52025e79efa1771009ab0e}
+      \strng{authorfullhashraw}{7ff740a90e52025e79efa1771009ab0e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Administrative Science Quarterly}
+      \field{number}{4}
+      \field{title}{An Assessment of the Scientific Merits of Action Research}
+      \field{volume}{23}
+      \field{year}{1978}
+      \field{pages}{582\bibrangedash 603}
+      \range{pages}{22}
+    \endentry
+    \entry{bowen2009document}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=969cf8b3998bee80d0308ce781bfc542}{%
+           family={Bowen},
+           familyi={B\bibinitperiod},
+           given={Glenn\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{969cf8b3998bee80d0308ce781bfc542}
+      \strng{fullhash}{969cf8b3998bee80d0308ce781bfc542}
+      \strng{fullhashraw}{969cf8b3998bee80d0308ce781bfc542}
+      \strng{bibnamehash}{969cf8b3998bee80d0308ce781bfc542}
+      \strng{authorbibnamehash}{969cf8b3998bee80d0308ce781bfc542}
+      \strng{authornamehash}{969cf8b3998bee80d0308ce781bfc542}
+      \strng{authorfullhash}{969cf8b3998bee80d0308ce781bfc542}
+      \strng{authorfullhashraw}{969cf8b3998bee80d0308ce781bfc542}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Qualitative Research Journal}
+      \field{number}{2}
+      \field{title}{Document Analysis as a Qualitative Research Method}
+      \field{volume}{9}
+      \field{year}{2009}
+      \field{pages}{27\bibrangedash 40}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.3316/QRJ0902027
+      \endverb
+    \endentry
+    \entry{runeson2009guidelines}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=306f73791e107dd9b83d45ee22e6b523}{%
+           family={Runeson},
+           familyi={R\bibinitperiod},
+           given={Per},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4d1752e9463ffc1043c0939de72a9097}{%
+           family={Höst},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d487493fbde07f44f703e74cfc39b73d}
+      \strng{fullhash}{d487493fbde07f44f703e74cfc39b73d}
+      \strng{fullhashraw}{d487493fbde07f44f703e74cfc39b73d}
+      \strng{bibnamehash}{d487493fbde07f44f703e74cfc39b73d}
+      \strng{authorbibnamehash}{d487493fbde07f44f703e74cfc39b73d}
+      \strng{authornamehash}{d487493fbde07f44f703e74cfc39b73d}
+      \strng{authorfullhash}{d487493fbde07f44f703e74cfc39b73d}
+      \strng{authorfullhashraw}{d487493fbde07f44f703e74cfc39b73d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Empirical Software Engineering}
+      \field{number}{2}
+      \field{title}{Guidelines for Conducting and Reporting Case Study Research in Software Engineering}
+      \field{volume}{14}
+      \field{year}{2009}
+      \field{pages}{131\bibrangedash 164}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/s10664-008-9102-8
+      \endverb
+    \endentry
+    \entry{su_ethics_policy}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=21a7a0960f34b591036204b46c117799}{%
+           family={{Stockholm University}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Stockholm University}%
+      }
+      \strng{namehash}{21a7a0960f34b591036204b46c117799}
+      \strng{fullhash}{21a7a0960f34b591036204b46c117799}
+      \strng{fullhashraw}{21a7a0960f34b591036204b46c117799}
+      \strng{bibnamehash}{21a7a0960f34b591036204b46c117799}
+      \strng{authorbibnamehash}{21a7a0960f34b591036204b46c117799}
+      \strng{authornamehash}{21a7a0960f34b591036204b46c117799}
+      \strng{authorfullhash}{21a7a0960f34b591036204b46c117799}
+      \strng{authorfullhashraw}{21a7a0960f34b591036204b46c117799}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Approved 2021-01-14; accessed 2026-04-07.}
+      \field{title}{Research Integrity and Ethics Policy}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://medarbetare.su.se/download/18.3a32dc34192192f39c8e2364/1727265410971/Research%20integrity%20and%20ethics%20policy.pdf
+      \endverb
+      \verb{url}
+      \verb https://medarbetare.su.se/download/18.3a32dc34192192f39c8e2364/1727265410971/Research%20integrity%20and%20ethics%20policy.pdf
+      \endverb
+    \endentry
+    \entry{etikprovningsmyndigheten_act}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7bb63cf7eaf322fa9a07d25426639ae9}{%
+           family={{Swedish Ethical Review Authority}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Swedish Ethical Review Authority}%
+      }
+      \strng{namehash}{7bb63cf7eaf322fa9a07d25426639ae9}
+      \strng{fullhash}{7bb63cf7eaf322fa9a07d25426639ae9}
+      \strng{fullhashraw}{7bb63cf7eaf322fa9a07d25426639ae9}
+      \strng{bibnamehash}{7bb63cf7eaf322fa9a07d25426639ae9}
+      \strng{authorbibnamehash}{7bb63cf7eaf322fa9a07d25426639ae9}
+      \strng{authornamehash}{7bb63cf7eaf322fa9a07d25426639ae9}
+      \strng{authorfullhash}{7bb63cf7eaf322fa9a07d25426639ae9}
+      \strng{authorfullhashraw}{7bb63cf7eaf322fa9a07d25426639ae9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed 2026-04-07.}
+      \field{title}{What the Act Says}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://etikprovningsmyndigheten.se/en/what-the-act-says/
+      \endverb
+      \verb{url}
+      \verb https://etikprovningsmyndigheten.se/en/what-the-act-says/
+      \endverb
+    \endentry
+    \entry{vr_good_research_2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=3030ad615e7ce63ccafbce1b4c10c5b2}{%
+           family={{Swedish Research Council}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Swedish Research Council}%
+      }
+      \strng{namehash}{3030ad615e7ce63ccafbce1b4c10c5b2}
+      \strng{fullhash}{3030ad615e7ce63ccafbce1b4c10c5b2}
+      \strng{fullhashraw}{3030ad615e7ce63ccafbce1b4c10c5b2}
+      \strng{bibnamehash}{3030ad615e7ce63ccafbce1b4c10c5b2}
+      \strng{authorbibnamehash}{3030ad615e7ce63ccafbce1b4c10c5b2}
+      \strng{authornamehash}{3030ad615e7ce63ccafbce1b4c10c5b2}
+      \strng{authorfullhash}{3030ad615e7ce63ccafbce1b4c10c5b2}
+      \strng{authorfullhashraw}{3030ad615e7ce63ccafbce1b4c10c5b2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published 2025-07-03; accessed 2026-04-07.}
+      \field{title}{Good Research Practice 2024}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.vr.se/download/18.4857b2ae197a1e923f913e07/1751465049917/Good%20research%20practice%202024%20VR.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.vr.se/download/18.4857b2ae197a1e923f913e07/1751465049917/Good%20research%20practice%202024%20VR.pdf
+      \endverb
+    \endentry
+    \entry{parasuraman1997humans}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=a4f897573d0e950a6e02bdbb1ecdb22c}{%
+           family={Parasuraman},
+           familyi={P\bibinitperiod},
+           given={Raja},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d95ec68bbd6afaf2b51a85c2c68b684c}{%
+           family={Riley},
+           familyi={R\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{9096e476dc33f8fb6a3beace6daf2029}
+      \strng{fullhash}{9096e476dc33f8fb6a3beace6daf2029}
+      \strng{fullhashraw}{9096e476dc33f8fb6a3beace6daf2029}
+      \strng{bibnamehash}{9096e476dc33f8fb6a3beace6daf2029}
+      \strng{authorbibnamehash}{9096e476dc33f8fb6a3beace6daf2029}
+      \strng{authornamehash}{9096e476dc33f8fb6a3beace6daf2029}
+      \strng{authorfullhash}{9096e476dc33f8fb6a3beace6daf2029}
+      \strng{authorfullhashraw}{9096e476dc33f8fb6a3beace6daf2029}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human Factors}
+      \field{number}{2}
+      \field{title}{Humans and Automation: Use, Misuse, Disuse, Abuse}
+      \field{volume}{39}
+      \field{year}{1997}
+      \field{pages}{230\bibrangedash 253}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1518/001872097778543886
+      \endverb
+    \endentry
+    \entry{martin2019ethics}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6c04b6b094e0b92dcfd729c30320db6c}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Kirsten},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c04b6b094e0b92dcfd729c30320db6c}
+      \strng{fullhash}{6c04b6b094e0b92dcfd729c30320db6c}
+      \strng{fullhashraw}{6c04b6b094e0b92dcfd729c30320db6c}
+      \strng{bibnamehash}{6c04b6b094e0b92dcfd729c30320db6c}
+      \strng{authorbibnamehash}{6c04b6b094e0b92dcfd729c30320db6c}
+      \strng{authornamehash}{6c04b6b094e0b92dcfd729c30320db6c}
+      \strng{authorfullhash}{6c04b6b094e0b92dcfd729c30320db6c}
+      \strng{authorfullhashraw}{6c04b6b094e0b92dcfd729c30320db6c}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Business Ethics}
+      \field{number}{4}
+      \field{title}{Ethical Implications and Accountability of Algorithms}
+      \field{volume}{160}
+      \field{year}{2019}
+      \field{pages}{835\bibrangedash 850}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s10551-018-3921-3
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
