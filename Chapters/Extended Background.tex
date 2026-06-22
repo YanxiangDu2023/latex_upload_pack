@@ -7,12 +7,12 @@
 
 
 
-This chapter provides the background for the thesis. It first introduces ERP systems and SAP as a general enterprise workflow environment, then presents the industry and Volvo CE case context, and finally reviews related work relevant to transparency, traceability, and usability in enterprise analytics.
+This chapter provides the background for the thesis. It first introduces ERP systems and SAP as a general enterprise data-processing environment, then presents the industry and Volvo CE case context, outlines broader challenges in SAP-based enterprise workflow implementations, and finally reviews related work relevant to transparency, traceability, and usability in enterprise analytics.
 
 
 \section{ERP Systems, SAP, and Enterprise Workflows}
 
-Enterprise resource planning (ERP) systems are widely used to integrate and manage core business processes across large organizations \cite{davenport1998,klaus2000}. Rather than treating finance, operations, procurement, manufacturing, logistics, and sales as isolated activities, ERP systems provide a shared environment in which data and processes can be coordinated across functional boundaries \cite{sap_erp_guide}. In that sense, ERP should be understood not only as a transactional business system, but also as an enterprise workflow environment in which important reporting, planning, and calculation processes are executed.
+Enterprise resource planning (ERP) systems are widely used to integrate and manage core business processes across large organizations \cite{davenport1998,klaus2000}. Rather than treating finance, operations, procurement, manufacturing, logistics, and sales as isolated activities, ERP systems provide a shared environment in which data and processes can be coordinated across functional boundaries \cite{sap_erp_guide}. In that sense, ERP should be understood not only as a transactional business system, but also as an enterprise data-processing setting environment in which important reporting, planning, and calculation processes are executed.
 
 Prior literature indicates that ERP-based environments can support activities beyond basic transaction processing. Integrated enterprise data may also be reused for reporting, planning, performance monitoring, and analytical routines in different organizational settings \cite{monk2012erp,fan2006equipmentdw}. In this thesis, this is taken as support for viewing complex business calculations in enterprise systems as part of a broader workflow context rather than only as an isolated practice in one company.
 
@@ -20,7 +20,7 @@ SAP is one of the most widely used ERP platforms in this broader landscape. With
 
 Within the SAP landscape, transactional processing and analytical processing are typically separated. Operational data is generated in ERP systems, while SAP Business Warehouse (BW) provides an analytical layer for reporting, modeling, and transformation \cite{sap_bw_guide}. SAP also supports structured data loading, multidimensional storage, sequential rule execution, and spreadsheet-based user interaction \cite{sap_bw_ip_overview,sap_analysis_office_guide}. These capabilities make SAP suitable for complex multi-step workflows, but they also contribute to technical complexity.
 
-This complexity is also reflected in prior work. Research on SAP ERP process extraction describes the identification of relevant process structures and related tables as a significant challenge because SAP ERP contains a large amount of process and data complexity \cite{weber2022sap}. ERP usability studies further report difficulties related to navigation, task support, learnability, and presentation of outputs \cite{calisir2004erp,wong2016sap}. Together, these studies support treating transparency, traceability, and usability as relevant concerns in ERP-based enterprise workflows beyond one company-specific case.
+This complexity is also reflected in prior work. Research on SAP ERP process extraction describes the identification of relevant process structures and related tables as a significant challenge because SAP ERP contains a large amount of process and data complexity \cite{weber2022sap}. ERP usability studies further report difficulties related to navigation, task support, learnability, and presentation of outputs \cite{calisir2004erp,wong2016sap}. Together, these studies support treating transparency, traceability, and usability as relevant concerns in ERP-based enterprise data processing beyond one company-specific case.
 
 
 
@@ -431,7 +431,7 @@ These challenges motivate structured data-processing frameworks that can integra
 \section{Enterprise Implementation of Market Share Estimation at Volvo CE}
 \label{subsec:enterprise_tmc_volvo}
 
-Because market share estimation involves integrating heterogeneous data and applying repeatable rules across multiple business dimensions, firms may choose to implement such workflows in enterprise systems rather than rely only on isolated spreadsheets or ad hoc scripts. In the Volvo CE case, this is realized through a Total Market Calculation (TMC) framework implemented in SAP for market reporting and market share analysis.
+To understand how this broader problem appears in a real organizational setting, this thesis uses Volvo CE as a case study. Because market share estimation involves integrating heterogeneous data and applying repeatable rules across multiple business dimensions, firms may choose to implement such workflows in enterprise systems rather than rely only on isolated spreadsheets or ad hoc scripts. In the Volvo CE case, this is realized through a Total Market Calculation (TMC) framework implemented in SAP for market reporting and market share analysis.
 
 \subsection{SAP as the Analytical Environment in the Volvo CE Case}
 
@@ -443,7 +443,7 @@ Because market share estimation involves integrating heterogeneous data and appl
 
 % Second, SAP provides an execution layer through planning functions and planning sequences. SAP states that planning functions allow system-based processing or generation of data, while planning sequences group multiple planning functions and execute them sequentially \cite{sap_bw_ip_overview, sap_planning_sequences}. Rather than calculating market share in a single static query, SAP makes it possible to break the process into ordered operations such as copying, recalculation, deletion, distribution, and formula-based transformation \cite{sap_bw_ip_overview, sap_planning_functions}. In addition, SAP Analysis for Office enables such planning objects to be triggered through Excel-based planning front ends, where users work with input-ready analytical data and execute planning logic from a spreadsheet interface \cite{sap_analysis_office_guide}.
 
-% Together, these capabilities provide the technical basis for implementing market share calculation in a structured and scalable enterprise environment. In the case of Volvo CE, they support the TMC framework as a controlled enterprise workflow for market-related data integration and calculation.
+% Together, these capabilities provide the technical basis for implementing market share calculation in a structured and scalable enterprise environment. In the case of Volvo CE, they support the TMC framework as a controlled enterprise data-processing setting for market-related data integration and calculation.
 
 
 % Within the SAP landscape, analytical processing is typically separated from transactional business processing. ERP systems generate and consolidate operational data, while SAP Business Warehouse (BW) serves as the analytical layer for reporting, modeling, and data transformation \cite{sap_bw4hana_guide}. This separation enables enterprise-level analytical workflows to be implemented on top of integrated operational data.
@@ -474,11 +474,11 @@ Because market share estimation involves integrating heterogeneous data and appl
 %     \item \textbf{User interaction and data input:} Tools such as Analysis for Office provide spreadsheet-based interfaces for data input, parameter control, and triggering calculation processes \cite{sap_analysis_office_guide}.
 % \end{itemize}
 
-% Together, these capabilities form a layered analytical environment in which data integration, storage, and rule-based processing are tightly coupled. This provides the technical foundation for implementing structured enterprise workflows.
+% Together, these capabilities form a layered analytical environment in which data integration, storage, and rule-based processing are tightly coupled. This provides the technical foundation for implementing structured enterprise data-processing settings.
 
 
 
-In the Volvo CE setting, SAP provides the technical environment in which the TMC process is carried out. Operational data is generated in enterprise systems, while SAP Business Warehouse (BW) provides the analytical layer for reporting, modeling, and transformation \cite{sap_bw_guide}. For this thesis, the key point is that SAP combines structured data loading, sequential rule execution, and spreadsheet-based user interaction \cite{sap_bw_ip_overview}. In the Volvo CE case, these capabilities form the technical foundation for a controlled enterprise workflow, while also making the calculation logic difficult to inspect from a business-user perspective.
+In the Volvo CE setting, SAP provides the technical environment in which the TMC process is carried out. Operational data is generated in enterprise systems, while SAP Business Warehouse (BW) provides the analytical layer for reporting, modeling, and transformation \cite{sap_bw_guide}. For this thesis, the key point is that SAP combines structured data loading, sequential rule execution, and spreadsheet-based user interaction \cite{sap_bw_ip_overview}. In the Volvo CE case, these capabilities form the technical foundation for a controlled enterprise data-processing setting, while also making the calculation logic difficult to inspect from a business-user perspective.
 
 
 
@@ -518,7 +518,7 @@ In the Volvo CE setting, SAP provides the technical environment in which the TMC
 
 At Volvo CE, market share estimation is carried out through an SAP-based TMC implementation that combines maintained configuration data with several categories of workflow input, especially internal sales data (SAL), industry exchange data (CRP), derived total-market reference data (TMA), and supplementary external data (OTH). The process is staged rather than monolithic: master data and matrix rules are maintained first, source data is then loaded into BW structures, and calculation logic is executed through planning functions and planning sequences.
 
-For the purposes of this thesis, three aspects of that implementation are most important. First, the process depends on maintained classification structures and mapping rules, not only on raw source files. Second, calculation is executed through sequential preparation, transformation, redistribution, and reporting stages. Third, the resulting logic is distributed across several SAP artefacts and interfaces rather than exposed as one inspectable process view. These characteristics make the Volvo CE TMC process a relevant case for studying transparency and traceability in enterprise data-processing workflows.
+For the purposes of this thesis, three aspects of that implementation are most important. First, the process depends on maintained classification structures and mapping rules, not only on raw source files. Second, calculation is executed through sequential preparation, transformation, redistribution, and reporting stages. Third, the resulting logic is distributed across several SAP artefacts and interfaces rather than exposed as one inspectable process view. These characteristics make the Volvo CE TMC process a relevant case for studying transparency and traceability in ERP-based enterprise data processing.
 
 
 \begin{figure}[H]
@@ -530,52 +530,24 @@ For the purposes of this thesis, three aspects of that implementation are most i
 
 
 
-Overall, the SAP-based TMC implementation can be understood as one example of a broader class of ERP-based enterprise workflows that integrate maintained rules, staged transformation, and reporting in one operational environment.
+\section{General Challenges in SAP-Based Enterprise Workflow Implementations}
+\label{sec:sap_general_challenges}
 
+The Volvo CE case is relevant because it reflects broader challenges that can arise when complex workflows are implemented in SAP-based enterprise environments. In such settings, business logic may be distributed across data-loading structures, maintained rules, planning objects, transformations, and reporting layers. Prior work on SAP ERP process identification highlights the difficulty of identifying relevant process structures and related tables in complex SAP environments \cite{weber2022sap}. ERP usability studies also report difficulties related to navigation, task support, presentation, and ease of use \cite{calisir2004erp,wong2016sap}.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection{Limitations of the Current SAP-based Implementation}
-\label{subsec:tmc_limitations}
-
-Although the existing SAP-based TMC implementation provides a structured environment for market share calculation, it introduces several limitations:
+Against that background, four general challenges are especially relevant to this thesis:
 
 \begin{itemize}
-    \item \textbf{Technical complexity:} The calculation logic is implemented through SAP-specific objects such as planning functions, planning sequences, and ABAP-based processing, which require specialized technical knowledge and limit accessibility for business users \cite{weber2022sap}.
+    \item \textbf{Technical complexity:} Workflow logic may be implemented through SAP-specific objects such as planning functions, planning sequences, and other system-specific processing structures, which require specialized technical knowledge.
 
-    \item \textbf{Limited transparency:} The calculation is executed across multiple system layers without a clear, consolidated representation of the full workflow, making intermediate transformations difficult to inspect and interpret.
+    \item \textbf{Limited transparency:} Processing may be executed across multiple system layers without one clear representation of the full workflow, making intermediate transformations difficult for business users to inspect and interpret.
 
-    \item \textbf{Dependency on IT:} Modifying or validating business logic typically requires technical intervention within SAP, reducing flexibility and limiting the ability of business users to directly interact with the calculation process.
+    \item \textbf{Dependency on technical specialists:} When logic is embedded in system-specific structures, modifying, validating, or explaining workflow behavior may require technical support rather than direct business-user inspection.
 
-    \item \textbf{Reduced traceability:} The distributed implementation across multiple SAP objects makes it difficult to trace data transformations, verify intermediate results, and assess the impact of logic changes.
+    \item \textbf{Reduced traceability:} A distributed implementation can make it difficult to trace how data moves through transformations, verify intermediate results, and assess the effect of logic changes.
 \end{itemize}
 
-These limitations motivate the need for a more transparent and traceable representation of the TMC process, which forms the starting point of this thesis.
+These broader challenges form the problem context for this thesis and are examined through the Volvo CE case study.
 
 
 
@@ -586,13 +558,17 @@ These limitations motivate the need for a more transparent and traceable represe
 
 \section{Related Work}
 
-Prior research relevant to this thesis can be grouped into three areas. First, data-warehouse and ETL literature describes enterprise analytics as staged workflows in which heterogeneous data is extracted, transformed, and prepared for reporting or decision support \cite{vassiliadis2009etl}. Related work on heterogeneous data integration shows that such workflows often involve inconsistent inputs and integration challenges \cite{putrama2024heterogeneous}. Work on data-pipeline quality similarly highlights transformation errors and related data-quality problems \cite{foidl2024pipeline}. This supports the need for explicit transformation stages and quality-control mechanisms in complex enterprise data-processing workflows.
+To position these challenges in prior research, the literature relevant to this thesis can be grouped into three areas. First, data-warehouse and ETL literature describes enterprise analytics as staged workflows in which heterogeneous data is extracted, transformed, and prepared for reporting or decision support \cite{vassiliadis2009etl}. Related work on heterogeneous data integration shows that such workflows often involve inconsistent inputs and integration challenges \cite{putrama2024heterogeneous}. Work on data-pipeline quality similarly highlights transformation errors and related data-quality problems \cite{foidl2024pipeline}. This supports the need for explicit transformation stages and quality-control mechanisms in ERP-based enterprise data processing.
 
 Second, ERP and SAP-related research highlights the complexity and usability challenges of enterprise systems. ERP systems integrate business processes across organisational functions \cite{klaus2000}. At the same time, that integration can introduce complex data structures, system-specific logic, and interfaces that require specialised knowledge \cite{davenport1998}. Research on SAP ERP process extraction shows that identifying relevant process structures and tables can be difficult in SAP environments \cite{weber2022sap}. ERP usability studies also show that navigation, task support, learnability, and output presentation affect end-user effectiveness \cite{calisir2004erp}. Similar concerns appear in SAP-related user settings \cite{wong2016sap}. These findings are relevant because the problem addressed in this thesis concerns not only workflow execution, but also whether business users can inspect and validate how outputs are produced.
 
 Third, decision-support and enterprise analytics literature suggests that analytical functionality can be supported through additional user-facing layers that help users review data and interpret outputs \cite{march2007dss}. Work in the construction domain similarly shows that data-warehouse and decision-support layers can support analytical tasks beyond transactional enterprise systems \cite{fan2006equipmentdw}. Such layers can complement existing enterprise systems by providing more accessible interfaces for inspection, comparison, and validation.
 
-Taken together, this literature supports the problem framing used in this thesis: enterprise workflows can be technically robust and operationally useful while still being difficult for business users to inspect step by step. Within the literature reviewed for this thesis, no concrete browser-based design example was identified that re-expresses selected SAP-based workflow logic as explicit, reviewable stages for business users. This thesis addresses that gap through a Design Science Research study using Volvo CE's Total Market Calculation process as the empirical case setting, while framing the underlying problem as a broader enterprise workflow challenge.
+Taken together, this literature supports the problem framing used in this thesis: ERP-based enterprise data processing can be technically robust and operationally useful while still being difficult for business users to inspect step by step. Within the literature reviewed for this thesis, no concrete browser-based design example was identified that re-expresses selected SAP-based workflow logic as explicit, reviewable stages for business users. This thesis addresses that gap through a Design Science Research study using Volvo CE's Total Market Calculation process as the empirical case study, while framing the underlying problem as a broader ERP-based enterprise data-processing challenge.
+
+
+
+
 
 
 

@@ -11,7 +11,7 @@ The frontend was implemented using React, TypeScript, Vite, and React Router. Ea
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.1\linewidth]{5.3.1.png}
+\includegraphics[width=\linewidth]{5.3.1.png}
     \caption{Selected frontend views developed during the implementation of the prototype}
     \label{fig:appendix-frontend-views}
 \end{figure}
@@ -24,14 +24,14 @@ Once persistence was established, source-level report generation was introduced.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.1\linewidth]{5.4.png}
+\includegraphics[width=\linewidth]{5.4.png}
     \caption{Implementation of CSV upload and preparation-stage processing}
     \label{fig:appendix-upload-preparation}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.1\linewidth]{5.4.1.png}
+\includegraphics[width=\linewidth]{5.4.1.png}
     \caption{Anonymised and simplified SQL fragments for CRP/TMA and OTH clean report generation}
     \label{fig:appendix-sql-preparation}
 \end{figure}
@@ -42,14 +42,14 @@ Adjustment-layer execution follows the same pattern, but the backend processing 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.1\linewidth]{5.6.1.1.png}
+\includegraphics[width=\linewidth]{5.6.1.1.png}
     \caption{Adjustment-layer result view}
     \label{fig:appendix-adjustment-view}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.1\linewidth]{5.6.1.1.1.png}
+\includegraphics[width=\linewidth]{5.6.1.1.1.png}
     \caption{Anonymised SQL fragment for adjustment-layer value calculation}
     \label{fig:appendix-adjustment-sql}
 \end{figure}
@@ -73,14 +73,14 @@ Once the calculation is completed, the backend constructs output rows containing
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.1\linewidth]{5.6.1.2.png}
+\includegraphics[width=\linewidth]{5.6.1.2.png}
     \caption{Machine line split layer overview}
     \label{fig:appendix-split-overview}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.1\linewidth]{5.6.1.3.png}
+\includegraphics[width=\linewidth]{5.6.1.3.png}
     \caption{Machine line split detail view}
     \label{fig:appendix-split-detail}
 \end{figure}
@@ -100,7 +100,9 @@ The artefact was evaluated against the functional and performance requirements d
 
 Stakeholder feedback was collected through weekly demo meetings and review discussions with Volvo CE stakeholders involved in the TMC workflow. During these meetings, prototype results and intermediate outputs were demonstrated, and the implemented rules were reviewed and confirmed with stakeholders. The feedback was reviewed in a qualitative and descriptive way to assess whether the separated workflow views, filters, summaries, and intermediate outputs improved practical transparency, inspectability, and usability. Manual Excel checks, output comparison, and runtime observations were used separately to assess rule correctness, validation support, and prototype performance.
 
-\begin{longtable}{|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{4.5cm}|>{\raggedright\arraybackslash}p{6.3cm}|}
+\setlength{\tabcolsep}{4pt}
+\small
+\begin{ltablex}{\textwidth}{|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{3.6cm}|X|}
 \caption{Evaluation against functional and performance requirements}
 \label{tab:evaluation_parameters} \\
 \hline
@@ -168,7 +170,7 @@ Yes. The prototype was tested through \textbf{five} repeated operation cycles us
 \\
 \hline
 
-\end{longtable}
+\end{ltablex}
 
 
 
